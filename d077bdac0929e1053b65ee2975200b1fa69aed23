@@ -16,6 +16,24 @@
       "revId": "d077bdac0929e1053b65ee2975200b1fa69aed23",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAXX//2Ac\u003d",
+        "filename": "test-requirements.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-04-25T20:24:13Z",
+      "side": 1,
+      "message": "OK, removing...",
+      "parentUuid": "AAAAXX//2Bc\u003d",
+      "revId": "d077bdac0929e1053b65ee2975200b1fa69aed23",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
