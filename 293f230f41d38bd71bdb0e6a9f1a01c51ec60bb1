@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAXX//16Y\u003d",
+        "filename": ".bzrignore",
+        "patchSetId": 6
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2014-04-25T20:49:05Z",
+      "side": 1,
+      "message": "I am sure you can drop that .bzrignore file :]  Though your local copy probably has both bzr and git.",
+      "revId": "293f230f41d38bd71bdb0e6a9f1a01c51ec60bb1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAXX//11k\u003d",
+        "filename": "tests/helper.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2014-04-25T20:49:05Z",
+      "side": 1,
+      "message": "That seems legit though we can use python six module that transparently achieve the same thing.\n\nhttp://pythonhosted.org/six/#six.StringIO\n\nIe something like:\n\n from six import StringIO",
+      "revId": "293f230f41d38bd71bdb0e6a9f1a01c51ec60bb1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}

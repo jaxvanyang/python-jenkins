@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAXX//13s\u003d",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 627,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2014-04-25T20:49:05Z",
+      "side": 0,
+      "message": "In get_build_console_output() you removed the handling of ValueError exception.  I guess it is a mistake since it is at the very end of the file.",
+      "revId": "0760bcb0e5c0b13a0e55ed0049d1dc7c56a06147",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
