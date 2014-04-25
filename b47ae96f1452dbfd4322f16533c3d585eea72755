@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAXX//19o\u003d",
+        "filename": "tox.ini",
+        "patchSetId": 2
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2014-04-25T20:35:08Z",
+      "side": 1,
+      "message": "On Jenkins Job Builder, Jeblair added hacking as well but explicitly ignored all hacking errors ( https://review.openstack.org/#/c/86679/ ):\n\n Solely for the transitive dependencies.  Ignore errors from hacking\n as do the other openstack-infra python projects.\n\nI dont mind using it there though.",
+      "revId": "b47ae96f1452dbfd4322f16533c3d585eea72755",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
