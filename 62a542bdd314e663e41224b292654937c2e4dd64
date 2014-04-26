@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAXX//zSM\u003d",
+        "filename": "tests/helper.py",
+        "patchSetId": 8
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1297
+      },
+      "writtenOn": "2014-04-26T20:28:01Z",
+      "side": 1,
+      "message": "Why not just use six?",
+      "revId": "62a542bdd314e663e41224b292654937c2e4dd64",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
