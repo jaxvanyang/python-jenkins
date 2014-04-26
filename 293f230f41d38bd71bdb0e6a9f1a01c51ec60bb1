@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAXX//0iI\u003d",
+        "filename": ".bzrignore",
+        "patchSetId": 6
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-04-26T03:58:50Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "AAAAXX//16Y\u003d",
+      "revId": "293f230f41d38bd71bdb0e6a9f1a01c51ec60bb1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAXX//0jc\u003d",
         "filename": "jenkins/__init__.py",
         "patchSetId": 6
