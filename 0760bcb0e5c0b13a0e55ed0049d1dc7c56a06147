@@ -16,6 +16,24 @@
       "revId": "0760bcb0e5c0b13a0e55ed0049d1dc7c56a06147",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAXX//0i4\u003d",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 627,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-04-26T03:57:48Z",
+      "side": 0,
+      "message": "Actually, this was intentional (though it took me a couple of minutes to remember why, as it\u0027s a little subtle).\n\nThe reason why is that this catches ValueError and you can tell from the message string that it\u0027s designed to catch a ValueError that occurs when trying to parse JSON (e.g.: calling `json.loads()`), but this function has no `json.loads()`.\n\nI suspect that this except clause was only here because it was copied from another function that does have `json.loads()`. Most of the functions retrieve something via HTTP and then calls `json.loads()` to parse the JSON, but in the case of console output, Jenkins just returns the straight text verbatim; it\u0027s not wrapped in JSON. So there is no `json.loads()` and therefore it should never fail to parse JSON! :-)\n\nThis is the kind of change that I feel would be easier to understand if it were in a very simple atomic changeset that just did this. And that\u0027s normally the way I work. But I feel that the Gerrit system and the overhead involved in getting reviews encourages much larger changesets. I\u0027m not sure how to handle these things. With GitHub, I would use more commits, but Gerrit doesn\u0027t seem to like that sort of workflow.",
+      "parentUuid": "AAAAXX//13s\u003d",
+      "revId": "0760bcb0e5c0b13a0e55ed0049d1dc7c56a06147",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
