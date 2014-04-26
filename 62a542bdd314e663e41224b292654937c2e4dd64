@@ -34,6 +34,24 @@
       "revId": "62a542bdd314e663e41224b292654937c2e4dd64",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAXX//zOM\u003d",
+        "filename": "tests/helper.py",
+        "patchSetId": 8
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1297
+      },
+      "writtenOn": "2014-04-26T21:57:05Z",
+      "side": 1,
+      "message": "Six is a pretty tiny dependency, and afaik its everywhere by now (all distributions likely have it installable), so might as well use it.",
+      "parentUuid": "AAAAXX//zQQ\u003d",
+      "revId": "62a542bdd314e663e41224b292654937c2e4dd64",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
