@@ -16,6 +16,24 @@
       "revId": "62a542bdd314e663e41224b292654937c2e4dd64",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAXX//zQQ\u003d",
+        "filename": "tests/helper.py",
+        "patchSetId": 8
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-04-26T20:48:50Z",
+      "side": 1,
+      "message": "I totally could. I love six and usually I do use it my own projects.\n\nSometimes if a project doesn\u0027t have a lot of dependencies and/or doesn\u0027t need a lot of six stuff, I\u0027ll just include stuff inline, because folks will often balk at adding a dependency.\n\nBut since two people have mentioned six already, I\u0027ll probably use it.",
+      "parentUuid": "AAAAXX//zSM\u003d",
+      "revId": "62a542bdd314e663e41224b292654937c2e4dd64",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
