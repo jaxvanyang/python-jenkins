@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAXX//zHo\u003d",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 870,
+      "author": {
+        "id": 11020
+      },
+      "writtenOn": "2014-04-27T01:50:08Z",
+      "side": 1,
+      "message": "A bunch of these test_disable_node* / test_disable_node* tests don\u0027t have assert statements. Is that normal?",
+      "revId": "b8034aa31562547f495614e138c0932e22533a99",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
