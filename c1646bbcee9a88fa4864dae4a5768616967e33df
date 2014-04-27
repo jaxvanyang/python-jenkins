@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "AAAAXX//yKw\u003d",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 11020
+      },
+      "writtenOn": "2014-04-27T19:52:31Z",
+      "side": 1,
+      "message": "Missing assert statements.",
+      "revId": "c1646bbcee9a88fa4864dae4a5768616967e33df",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAXX//yKs\u003d",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 11020
+      },
+      "writtenOn": "2014-04-27T19:52:31Z",
+      "side": 1,
+      "message": "why don\u0027t you call self.fail() directly, what\u0027s with the \"if 1\" statement?",
+      "revId": "c1646bbcee9a88fa4864dae4a5768616967e33df",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAXX//yHY\u003d",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 93,
+      "author": {
+        "id": 11020
+      },
+      "writtenOn": "2014-04-27T19:52:31Z",
+      "side": 1,
+      "message": "You could also have self.assertRaises(jenkins.JenkinsException, j.jenkins_open, request, add_crumb\u003dFalse), but then I guess you couldn\u0027t test for the actual string. I\u0027m assuming that this needs to work in Py26, but in py27 assertRaises is also a context manager:\n\nwith self.assertRaises(jenkins.JenkinsException) as exc:\n    j.jenkins_open(request, add_crumb\u003dFalse)\nself.assertEqual(str(exc), \u0027Error in request.Possibly authentication failed [401]\u0027)",
+      "revId": "c1646bbcee9a88fa4864dae4a5768616967e33df",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
