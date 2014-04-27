@@ -102,6 +102,24 @@
       "revId": "c1646bbcee9a88fa4864dae4a5768616967e33df",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAXX//yAE\u003d",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 94,
+      "author": {
+        "id": 11020
+      },
+      "writtenOn": "2014-04-27T21:53:09Z",
+      "side": 1,
+      "message": "Yeah, let\u0027s go with unittest2. Let\u0027s not introduce a py.test requirement just for pytest.raises, unittest2 fits the bill and people are more familiar with its API.",
+      "parentUuid": "AAAAXX//yBk\u003d",
+      "revId": "c1646bbcee9a88fa4864dae4a5768616967e33df",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
