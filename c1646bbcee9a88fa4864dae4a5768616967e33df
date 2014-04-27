@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "AAAAXX//yCo\u003d",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-04-27T21:21:39Z",
+      "side": 1,
+      "message": "Good call. I\u0027ll look at this later.",
+      "parentUuid": "AAAAXX//yKw\u003d",
+      "revId": "c1646bbcee9a88fa4864dae4a5768616967e33df",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAXX//yKs\u003d",
         "filename": "tests/test_jenkins.py",
         "patchSetId": 3
@@ -36,6 +54,23 @@
     },
     {
       "key": {
+        "uuid": "AAAAXX//yB0\u003d",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-04-27T21:21:39Z",
+      "side": 1,
+      "message": "Ha ha. Yeah, this is stupid. It\u0027s because if I put `#pragma: no cover` on the self.fail line then it\u0027s more than 78 characters. I\u0027m thinking of using unittest.assertRaises as you suggest below (and importing unittest2 for 2.6)",
+      "revId": "c1646bbcee9a88fa4864dae4a5768616967e33df",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "AAAAXX//yHY\u003d",
         "filename": "tests/test_jenkins.py",
         "patchSetId": 3
@@ -47,6 +82,23 @@
       "writtenOn": "2014-04-27T19:52:31Z",
       "side": 1,
       "message": "You could also have self.assertRaises(jenkins.JenkinsException, j.jenkins_open, request, add_crumb\u003dFalse), but then I guess you couldn\u0027t test for the actual string. I\u0027m assuming that this needs to work in Py26, but in py27 assertRaises is also a context manager:\n\nwith self.assertRaises(jenkins.JenkinsException) as exc:\n    j.jenkins_open(request, add_crumb\u003dFalse)\nself.assertEqual(str(exc), \u0027Error in request.Possibly authentication failed [401]\u0027)",
+      "revId": "c1646bbcee9a88fa4864dae4a5768616967e33df",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAXX//yBk\u003d",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 94,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-04-27T21:21:39Z",
+      "side": 1,
+      "message": "Yeah. I like this idea. It\u0027s clearer than what I have. I could import unittest2 for Python 2.6. Or use pytest.raises, but OpenStack projects like to use testrepository along with unittest discover. Folks may or may not want to introduce pytest.",
       "revId": "c1646bbcee9a88fa4864dae4a5768616967e33df",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
