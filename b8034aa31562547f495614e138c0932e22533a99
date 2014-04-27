@@ -16,6 +16,24 @@
       "revId": "b8034aa31562547f495614e138c0932e22533a99",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAXX//yxE\u003d",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 870,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-04-27T09:27:51Z",
+      "side": 1,
+      "message": "Good point! I\u0027m going to add some more asserts to these...",
+      "parentUuid": "AAAAXX//zHo\u003d",
+      "revId": "b8034aa31562547f495614e138c0932e22533a99",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
