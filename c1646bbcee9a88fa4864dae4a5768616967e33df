@@ -120,6 +120,24 @@
       "revId": "c1646bbcee9a88fa4864dae4a5768616967e33df",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "AAAAXX//xg0\u003d",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 94,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-04-28T02:29:38Z",
+      "side": 1,
+      "message": "In order to add the dependency, we need to modify setup.py or setup.cfg (I guess using pbr), so I\u0027m not really wanting to do this before https://review.openstack.org/90455 gets merged. Even then I\u0027m not sure how with pbr you can specify that you want unittest2 for Python 2 but not for Python 3.",
+      "parentUuid": "AAAAXX//yAE\u003d",
+      "revId": "c1646bbcee9a88fa4864dae4a5768616967e33df",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
