@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9ad9bd40_df33bbf4",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2014-04-29T21:59:18Z",
+      "side": 1,
+      "message": "Any reason not to simply remove this line?",
+      "revId": "572af727f3cf0a5c7601a7358134c4bd3aa93ae2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9ad9bd40_ff307fea",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2014-04-29T21:59:18Z",
+      "side": 1,
+      "message": "Same for this one?",
+      "revId": "572af727f3cf0a5c7601a7358134c4bd3aa93ae2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
