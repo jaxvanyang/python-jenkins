@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9ad9bd40_df40fc58",
+        "filename": ".gitignore",
+        "patchSetId": 3
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 7156
+      },
+      "writtenOn": "2014-04-30T21:10:07Z",
+      "side": 1,
+      "message": "We do not use this folder in python-jenkins. It was used in JJB to compare the old and new generated XML.",
+      "revId": "0760bcb0e5c0b13a0e55ed0049d1dc7c56a06147",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9ad9bd40_bfb6d888",
+        "filename": ".gitignore",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 7156
+      },
+      "writtenOn": "2014-04-30T21:10:07Z",
+      "side": 1,
+      "message": "We don\u0027t use testrepository (yet)",
+      "revId": "0760bcb0e5c0b13a0e55ed0049d1dc7c56a06147",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9ad9bd40_7fbc506d",
+        "filename": ".gitignore",
+        "patchSetId": 3
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 7156
+      },
+      "writtenOn": "2014-04-30T21:10:07Z",
+      "side": 1,
+      "message": "This one looks to be useless.",
+      "revId": "0760bcb0e5c0b13a0e55ed0049d1dc7c56a06147",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9ad9bd40_1fad0432",
+        "filename": ".gitignore",
+        "patchSetId": 3
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 7156
+      },
+      "writtenOn": "2014-04-30T21:10:07Z",
+      "side": 1,
+      "message": "Why should we ignore this one?",
+      "revId": "0760bcb0e5c0b13a0e55ed0049d1dc7c56a06147",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9ad9bd40_1f7424ce",
+        "filename": ".gitignore",
+        "patchSetId": 3
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 7156
+      },
+      "writtenOn": "2014-04-30T21:10:07Z",
+      "side": 1,
+      "message": "We do not use junit here. I would prefer for those ignores to be part of your own global .gitignore file. Same with other coverage files/folders.",
+      "revId": "0760bcb0e5c0b13a0e55ed0049d1dc7c56a06147",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
