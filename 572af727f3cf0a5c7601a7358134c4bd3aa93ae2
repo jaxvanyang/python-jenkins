@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "9ad9bd40_7f4d3072",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2014-04-30T20:37:28Z",
+      "side": 1,
+      "message": "I was not paying attention. Removing it.",
+      "parentUuid": "9ad9bd40_df33bbf4",
+      "revId": "572af727f3cf0a5c7601a7358134c4bd3aa93ae2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9ad9bd40_ff307fea",
         "filename": "jenkins/__init__.py",
         "patchSetId": 2
@@ -30,6 +48,24 @@
       "writtenOn": "2014-04-29T21:59:18Z",
       "side": 1,
       "message": "Same for this one?",
+      "revId": "572af727f3cf0a5c7601a7358134c4bd3aa93ae2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9ad9bd40_df5c7c28",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2014-04-30T20:37:28Z",
+      "side": 1,
+      "message": "ditto removing. thanks!",
+      "parentUuid": "9ad9bd40_ff307fea",
       "revId": "572af727f3cf0a5c7601a7358134c4bd3aa93ae2",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
