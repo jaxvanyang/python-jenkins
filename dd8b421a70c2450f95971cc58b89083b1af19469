@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9ad9bd40_96d47548",
+        "filename": ".gitignore",
+        "patchSetId": 4
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2014-05-02T15:37:39Z",
+      "side": 1,
+      "message": "That is already matched by the \u0027build/*\u0027 rule above :-]   Might want to prefix them with a slash.",
+      "revId": "dd8b421a70c2450f95971cc58b89083b1af19469",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
