@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9ad9bd40_67ec86c8",
+        "filename": "test-requirements.txt",
+        "patchSetId": 7
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-05-04T09:10:09Z",
+      "side": 1,
+      "message": "Note that \"unittest2\" does not work on Python 3. There is a port of it called \"unittest2py3k\". This means that for Python 3, I would need 2 test-requirements.txt files - sigh.\n\nAn alternative is to use pytest which has its own assertRaises and then we wouldn\u0027t need unittest2/unittest2py3k - I love pytest, so this is probably my preferred route.\n\nOr monkeypatch in our own assertRaises (a la https://marmida.com/blog/index.php/2012/08/08/monkey-patching-assert_raises/), but that\u0027s kind of yucky.",
+      "revId": "f5a13b198fa73ae036400593f10798ed85694a6b",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
