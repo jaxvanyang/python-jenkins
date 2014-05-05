@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9ad9bd40_929d2abf",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 612,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2014-05-05T15:32:26Z",
+      "side": 1,
+      "message": "should we add a node_exists method to check that a node exists?  then maybe in here we can raise an exception if the node isn\u0027t found?",
+      "revId": "3df6fb2611bb98dd44aa554742c4e80e5c2b5a14",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9ad9bd40_f2a836dd",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 624,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2014-05-05T15:32:26Z",
+      "side": 1,
+      "message": "same here, maybe a little error checking?",
+      "revId": "3df6fb2611bb98dd44aa554742c4e80e5c2b5a14",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
