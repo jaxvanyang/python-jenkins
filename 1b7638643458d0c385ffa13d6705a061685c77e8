@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9ad9bd40_4f75bdf8",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 344,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2014-05-05T15:21:40Z",
+      "side": 1,
+      "message": "is this ok?  get_job_info and job_exists don\u0027t work the same.  get_job_info raises an exception when no jobs are found while job_exists does not.  Would it not be better to make this a conditional?  something like..\n\nif not self.jobs_exists(from_name):\n  raise JenkinsException(\u0027job[%s] does not exist\u0027 % name)\n\nself.jenkins_open(urllib2.Request(self.server + COPY_JOB % locals(), \u0027\u0027))\nif not self.job_exists(to_name): \n    raise JenkinsException(\u0027create[%s] failed\u0027 % (to_name))",
+      "revId": "1b7638643458d0c385ffa13d6705a061685c77e8",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
