@@ -16,6 +16,24 @@
       "revId": "0173f1afc446548a58fb4a0e05474c72fd8281b4",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9ad9bd40_697519f9",
+        "filename": ".gitignore",
+        "patchSetId": 11
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-05-05T18:46:08Z",
+      "side": 1,
+      "message": "Oops. I can take those out.",
+      "parentUuid": "9ad9bd40_c3ce062e",
+      "revId": "0173f1afc446548a58fb4a0e05474c72fd8281b4",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
