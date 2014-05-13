@@ -1,0 +1,61 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7adec928_83b18091",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 13
+      },
+      "lineNbr": 136,
+      "author": {
+        "id": 9107
+      },
+      "writtenOn": "2014-05-13T08:50:16Z",
+      "side": 1,
+      "message": "bytes(str) is invalid in Python 3: it raises a BytesWarning exception if python3 is started with -bb. You must encode the string explicitly. Example:\n\nauth \u003d ...\nif isinstance(auth, six.text_type):\n    auth \u003d auth.encode(\u0027utf-8\u0027)\nreturn ...\n\nAnother question unrelated to your change: Why the last character of the base64 encoded string is dropped?",
+      "revId": "683e07d1935be50653f49f6ef43a4eb2ca4e1fe7",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7adec928_23650c45",
+        "filename": "setup.py",
+        "patchSetId": 13
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 9107
+      },
+      "writtenOn": "2014-05-13T08:50:16Z",
+      "side": 1,
+      "message": "You should not use setup.py to install dependencies. The list of dependencies is incomplete and depends on the Python version. If you really want to improve the management of dependencies, modify setup.py to use pbr instead.",
+      "range": {
+        "startLine": 12,
+        "startChar": 22,
+        "endLine": 12,
+        "endChar": 25
+      },
+      "revId": "683e07d1935be50653f49f6ef43a4eb2ca4e1fe7",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7adec928_a3d75cbe",
+        "filename": "test-requirements.txt",
+        "patchSetId": 13
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 9107
+      },
+      "writtenOn": "2014-05-13T08:50:16Z",
+      "side": 1,
+      "message": "You should not change different things in the same patch, it makes it harder to review.",
+      "revId": "683e07d1935be50653f49f6ef43a4eb2ca4e1fe7",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
