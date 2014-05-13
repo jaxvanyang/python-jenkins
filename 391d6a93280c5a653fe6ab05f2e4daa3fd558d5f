@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "7adec928_fd4bc784",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 12
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-05-13T06:24:46Z",
+      "side": 1,
+      "message": "I think in the next version, I might use six and then this will be even simpler.",
+      "parentUuid": "7adec928_994bc12a",
+      "revId": "391d6a93280c5a653fe6ab05f2e4daa3fd558d5f",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7adec928_59105901",
         "filename": "jenkins/__init__.py",
         "patchSetId": 12
@@ -42,6 +60,24 @@
     },
     {
       "key": {
+        "uuid": "7adec928_1d4f9393",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 12
+      },
+      "lineNbr": 151,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-05-13T06:24:46Z",
+      "side": 1,
+      "message": "Think I\u0027ll change to `six.b` which converts to bytes when needed.",
+      "parentUuid": "7adec928_59105901",
+      "revId": "391d6a93280c5a653fe6ab05f2e4daa3fd558d5f",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7adec928_b9f4fdcf",
         "filename": "jenkins/__init__.py",
         "patchSetId": 12
@@ -59,6 +95,24 @@
         "endLine": 447,
         "endChar": 24
       },
+      "revId": "391d6a93280c5a653fe6ab05f2e4daa3fd558d5f",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7adec928_bd305f02",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 12
+      },
+      "lineNbr": 447,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-05-13T06:24:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7adec928_b9f4fdcf",
       "revId": "391d6a93280c5a653fe6ab05f2e4daa3fd558d5f",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
@@ -105,6 +159,24 @@
     },
     {
       "key": {
+        "uuid": "7adec928_bd077f1b",
+        "filename": "test-requirements-py3.txt",
+        "patchSetId": 12
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-05-13T06:24:46Z",
+      "side": 1,
+      "message": "It is used here:\n\n    ? grep -Hn --after\u003d2 unittest2 tests/test_jenkins.py\n    tests/test_jenkins.py:5:    import unittest2 as unittest\n    tests/test_jenkins.py-6-except ImportError:\n    tests/test_jenkins.py-7-    if sys.version_info \u003c (2, 7):\n    --\n    tests/test_jenkins.py:8:        # On Pythons 2.6 and older, we must have unittest2, because the\n    tests/test_jenkins.py-9-        # standard library doesn\u0027t have what we need\n    tests/test_jenkins.py-10-        raise  # pragma: no cover\n\nThe reason for unittest2 is that I use self.assertRaises as a context manager. This feature is built into Python 2.7 but for Python 2.6 you need to install unittest2 to get it.",
+      "parentUuid": "7adec928_599a1964",
+      "revId": "391d6a93280c5a653fe6ab05f2e4daa3fd558d5f",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7adec928_f9ecc5f5",
         "filename": "tests/helper.py",
         "patchSetId": 12
@@ -116,6 +188,24 @@
       "writtenOn": "2014-05-12T12:59:24Z",
       "side": 1,
       "message": "six.StringIO might be used directly in tests instead of this helper, but your change is fine.",
+      "revId": "391d6a93280c5a653fe6ab05f2e4daa3fd558d5f",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7adec928_206342b2",
+        "filename": "tests/helper.py",
+        "patchSetId": 12
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-05-13T06:24:46Z",
+      "side": 1,
+      "message": "I think I will switch to using six. There are a few things that could benefit from it.",
+      "parentUuid": "7adec928_f9ecc5f5",
       "revId": "391d6a93280c5a653fe6ab05f2e4daa3fd558d5f",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
@@ -139,6 +229,24 @@
     },
     {
       "key": {
+        "uuid": "7adec928_60254aaa",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 12
+      },
+      "lineNbr": 220,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-05-13T06:24:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7adec928_99ce6182",
+      "revId": "391d6a93280c5a653fe6ab05f2e4daa3fd558d5f",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7adec928_19909142",
         "filename": "tox.ini",
         "patchSetId": 12
@@ -150,6 +258,24 @@
       "writtenOn": "2014-05-12T12:59:24Z",
       "side": 1,
       "message": "You should use the common dependencies and py3 specific dependencies like that:\n\ndeps \u003d -r{toxinidir}/test-requirements.txt -r{toxinidir}/test-requirements-py3.txt",
+      "revId": "391d6a93280c5a653fe6ab05f2e4daa3fd558d5f",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7adec928_c04c5e73",
+        "filename": "tox.ini",
+        "patchSetId": 12
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-05-13T06:24:46Z",
+      "side": 1,
+      "message": "This won\u0027t work because neither of the requirement sets are a subset of the other. Each has something that the other doesn\u0027t have.\n\nFor Python 2, we need unittest2. For Python 3, we need unittest2py3k because trying to install unittest2 on Python 3 will bomb out with an error.\n\nI could have 3 files, but maybe that\u0027s a bit complex:\n\n    # test-requirements.txt\n    discover\n    flake8\n    mock\n\n    # test-requirements-py2.txt\n    unittest2\n\n    # test-requirements-py3.txt\n    unittest2py3k\n\nHaving to have multiple requirements file is because unittest2 does not work on Python 3. I might just rip out unittest2 and instead use the assertRaises function in pytest, as pytest works on both Python 2 and Python 3.",
+      "parentUuid": "7adec928_19909142",
       "revId": "391d6a93280c5a653fe6ab05f2e4daa3fd558d5f",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
