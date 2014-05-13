@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7adec928_1a7eae6b",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 14
+      },
+      "lineNbr": 338,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-05-13T15:56:26Z",
+      "side": 1,
+      "message": "Hmmm, this method is odd in this PR. I probably should put it in my other changeset that adds testing (https://review.openstack.org/90500)...",
+      "revId": "3d8528caa91c367b55d0b6ac820a33cfca71a15e",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
