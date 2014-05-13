@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "7adec928_f764bb4a",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 13
+      },
+      "lineNbr": 136,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-05-13T15:39:26Z",
+      "side": 1,
+      "message": "six.b(str) is not the same as bytes(str).\n\n    ? .tox/py33/bin/python -bb\n    \u003e\u003e\u003e bytes(\u0027foo\u0027)\n    Traceback (most recent call last):\n      File \"\u003cstdin\u003e\", line 1, in \u003cmodule\u003e\n    TypeError: string argument without an encoding\n    \u003e\u003e\u003e import six\n    \u003e\u003e\u003e six.b(\u0027foo\u0027)\n    b\u0027foo\u0027\n\nHere\u0027s the definition:\n\n    if PY3:\n        def b(s):\n            return s.encode(\"latin-1\")\n\nMaybe encoding to UTF-8 is better? But I have no idea how Jenkins will deal with encodings.\n\nI don\u0027t know why the last character is dropped. I\u0027m preserving the existing behavior because it seems to work.\n\nOne of the original authors might know why the character is dropped.",
+      "parentUuid": "7adec928_83b18091",
+      "revId": "683e07d1935be50653f49f6ef43a4eb2ca4e1fe7",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7adec928_23650c45",
         "filename": "setup.py",
         "patchSetId": 13
@@ -42,6 +60,24 @@
     },
     {
       "key": {
+        "uuid": "7adec928_17b84775",
+        "filename": "setup.py",
+        "patchSetId": 13
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-05-13T15:39:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7adec928_23650c45",
+      "revId": "683e07d1935be50653f49f6ef43a4eb2ca4e1fe7",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7adec928_a3d75cbe",
         "filename": "test-requirements.txt",
         "patchSetId": 13
@@ -53,6 +89,24 @@
       "writtenOn": "2014-05-13T08:50:16Z",
       "side": 1,
       "message": "You should not change different things in the same patch, it makes it harder to review.",
+      "revId": "683e07d1935be50653f49f6ef43a4eb2ca4e1fe7",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7adec928_d7641f24",
+        "filename": "test-requirements.txt",
+        "patchSetId": 13
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-05-13T15:39:26Z",
+      "side": 1,
+      "message": "OK, eliminating pytest and putting unittest2 back.",
+      "parentUuid": "7adec928_a3d75cbe",
       "revId": "683e07d1935be50653f49f6ef43a4eb2ca4e1fe7",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
