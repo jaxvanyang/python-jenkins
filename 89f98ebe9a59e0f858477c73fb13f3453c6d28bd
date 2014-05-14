@@ -1,0 +1,95 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7adec928_bc9ccfc1",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 19
+      },
+      "lineNbr": 136,
+      "author": {
+        "id": 9107
+      },
+      "writtenOn": "2014-05-14T08:58:39Z",
+      "side": 1,
+      "message": "This is a strange usage of the six.b function. This function is written to be used with string literals: b(\"abc\").\n\nYou wrote that six.b(text) calls text.encode(\u0027utf8\u0027) on Python 3. Latin1 (ISO 8859-1) is a subset of Unicode: 256 code points, whereas the Unicode Character Set contains 1,114,112 code points. For example, chinese or the euro sign cannot be encoded to ISO-8859-1.\n\nI suggest to use an explicit conversion to UTF-8 if the auth type is six.text_type.",
+      "range": {
+        "startLine": 136,
+        "startChar": 43,
+        "endLine": 136,
+        "endChar": 44
+      },
+      "revId": "89f98ebe9a59e0f858477c73fb13f3453c6d28bd",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7adec928_bcd12f59",
+        "filename": "test-requirements.txt",
+        "patchSetId": 19
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 9107
+      },
+      "writtenOn": "2014-05-14T08:58:39Z",
+      "side": 1,
+      "message": "I didn\u0027t know this module. It looks like you still need unitest2 on Python 2 and unittest2py3k on Python 3:\n\n\"On Python 2, [unitest2six] imports unittest2. On Python 3, this imports unittest2py3k.\"\n\nYou should try to keep the patch simple and try to support more Python 3 versions in a different patch.\n\nBy the way, why do you focus on unittest2py3k? This module helps to support Python 3.1, but unitest.TestCase of Python 3.2 already has all new assertXXX() methods. OpenStack doesn\u0027t support Python 3.1. Python 3.1 is old, has many bugs, and no more Linux distribution uses it.\n\nIn short: you don\u0027t need unittest2py3k.\n\nIf you really want to do something, you can avoid installing unittest2 on Python 3, because it is no more needed. But it can be done in a second patch because it is a little bit tricky and it is not directly related to this patch.",
+      "revId": "89f98ebe9a59e0f858477c73fb13f3453c6d28bd",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7adec928_1c878310",
+        "filename": "tests/helper.py",
+        "patchSetId": 19
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 9107
+      },
+      "writtenOn": "2014-05-14T08:58:39Z",
+      "side": 1,
+      "message": "I don\u0027t think that six.StringIO is the right object on Python 3 (io.StringIO) because you use it to mock urlopen() function. urlopen() should returns a binary file, so BytesIO.\n\nUse six.BytesIO instead.",
+      "revId": "89f98ebe9a59e0f858477c73fb13f3453c6d28bd",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7adec928_bc068fcc",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 19
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 9107
+      },
+      "writtenOn": "2014-05-14T08:58:39Z",
+      "side": 1,
+      "message": "You may add a test with unicode credentials (login and password) to test the encoding. For example:\n\nj \u003d jenkins.Jenkins(\u0027http://example.com\u0027, six.u(\u0027nonascii\u0027), six.u(\u0027\\xe9\\u20ac\u0027))",
+      "revId": "89f98ebe9a59e0f858477c73fb13f3453c6d28bd",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7adec928_dc30bba0",
+        "filename": "tox.ini",
+        "patchSetId": 19
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 9107
+      },
+      "writtenOn": "2014-05-14T08:58:39Z",
+      "side": 1,
+      "message": "Does tox 1.6 supports Python 3.4? If you don\u0027t know, it\u0027s maybe safer to not add this young Python version.",
+      "revId": "89f98ebe9a59e0f858477c73fb13f3453c6d28bd",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
