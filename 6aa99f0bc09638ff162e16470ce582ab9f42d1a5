@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7adec928_bcc84f23",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 9107
+      },
+      "writtenOn": "2014-05-14T09:17:01Z",
+      "side": 1,
+      "message": "In your \"100% test coverage\" patch, you changed imports differently. To avoid conflicts between your patches, you should choose a rule how to sort and group imports.\n\nAnd it\u0027s probably better to follow OpenStack rules if you would like to move from StackForge to OpenStack:\nhttp://docs.openstack.org/developer/hacking/#imports",
+      "revId": "6aa99f0bc09638ff162e16470ce582ab9f42d1a5",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7adec928_fcd2d7d0",
+        "filename": "setup.cfg",
+        "patchSetId": 4
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 9107
+      },
+      "writtenOn": "2014-05-14T09:17:01Z",
+      "side": 1,
+      "message": "When your python3 patch will be accepted, you should add \"Programming Language :: Python :: 3\" to inform that your package supports Python 3. This information is very useful for tools checking if a module supports Python 3 or not.",
+      "revId": "6aa99f0bc09638ff162e16470ce582ab9f42d1a5",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7adec928_9ce1d39c",
+        "filename": "test-requirements.txt",
+        "patchSetId": 4
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 9107
+      },
+      "writtenOn": "2014-05-14T09:17:01Z",
+      "side": 1,
+      "message": "sphinx is only needed for tests? If not, move this dependency to requirements.txt.",
+      "revId": "6aa99f0bc09638ff162e16470ce582ab9f42d1a5",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
