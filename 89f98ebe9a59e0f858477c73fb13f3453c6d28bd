@@ -25,6 +25,24 @@
     },
     {
       "key": {
+        "uuid": "7adec928_b2d4f320",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 19
+      },
+      "lineNbr": 136,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-05-14T16:18:20Z",
+      "side": 1,
+      "message": "Done.\n\nHowever...\n\nNote that Unicode characters and HTTP Basic Auth are known to not work very well, because HTTP doesn\u0027t provide a way to specify what the encoding is and different browsers do different things. So this may not be worth a ton of effort, though this fix does no harm.\n\n- http://tools.ietf.org/id/draft-reschke-basicauth-enc-00.html\n- http://stackoverflow.com/questions/702629/utf-8-characters-mangled-in-http-basic-auth-username\n\nFrom the first link:\n\n The \"Basic\" authentication scheme defined in RFC 2617 does not \n properly define how to treat non-ASCII characters. This has lead to a \n situation where user agent implementations disagree, and servers make\n different assumptions based on the locales they are running in. There is\n little interoperability for characters in the ISO-8859-1 character set, and\n even less interoperability for any characters beyond that.",
+      "parentUuid": "7adec928_bc9ccfc1",
+      "revId": "89f98ebe9a59e0f858477c73fb13f3453c6d28bd",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7adec928_bcd12f59",
         "filename": "test-requirements.txt",
         "patchSetId": 19
@@ -36,6 +54,24 @@
       "writtenOn": "2014-05-14T08:58:39Z",
       "side": 1,
       "message": "I didn\u0027t know this module. It looks like you still need unitest2 on Python 2 and unittest2py3k on Python 3:\n\n\"On Python 2, [unitest2six] imports unittest2. On Python 3, this imports unittest2py3k.\"\n\nYou should try to keep the patch simple and try to support more Python 3 versions in a different patch.\n\nBy the way, why do you focus on unittest2py3k? This module helps to support Python 3.1, but unitest.TestCase of Python 3.2 already has all new assertXXX() methods. OpenStack doesn\u0027t support Python 3.1. Python 3.1 is old, has many bugs, and no more Linux distribution uses it.\n\nIn short: you don\u0027t need unittest2py3k.\n\nIf you really want to do something, you can avoid installing unittest2 on Python 3, because it is no more needed. But it can be done in a second patch because it is a little bit tricky and it is not directly related to this patch.",
+      "revId": "89f98ebe9a59e0f858477c73fb13f3453c6d28bd",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7adec928_523baf37",
+        "filename": "test-requirements.txt",
+        "patchSetId": 19
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-05-14T16:18:20Z",
+      "side": 1,
+      "message": "I just pushed this module to PyPI yesterday :-)\n\nAnd just now I corrected the docs for it, because the language that you quoted is confusing. It doesn\u0027t *import* unittest2 or unittest2py3k. Rather, it *install_requires* them. So you don\u0027t need either one. It picks the right one for you. The package has no code actually. It\u0027s just a \"meta package\" that pulls in the right dependency, depending on the Python version in use.\n\nI think I wasn\u0027t clear about why I did this. It\u0027s not because of Python 3.1. It\u0027s because of Python 2.6 (which I think OpenStack is still supporting?) \n\nPython 2.6 doesn\u0027t have all the unittest goodness that we all love in Python 2.7. So the natural thing to do is to add \"unittest2\" to test-requirements.txt in order to make Python 2.6 work. But then when porting to Python 3, one realizes that the mere act of trying to pip install unittest2 causes an error in Python 3 (including Python 3.3 and 3.4) and breaks everything. Which is really unfortunate, because Python 3.3 doesn\u0027t need the unittest2 stuff actually. One can solve this by having separate test-requirements files and separate tox targets for Python 2 and Python 3, but this strikes me as a lot of hoops to jump through to account for that fact that \"unittest2\" doesn\u0027t work on Python 3.\n\nThis is why I did the following:\n\n- https://github.com/msabramo/unittest2/pull/1\n- https://pypi.python.org/pypi/unittest2six\n\nSo really this is for Python 2.6, because that version needs this functionality and I see it tested in OpenStack projects. If Python 2.6 support were dropped, then this wouldn\u0027t be necessary.\n\nHopefully, this is clear now. Perhaps the fact that we had this exchange about unittest2 and unittest2py3k shows that it\u0027s confusing and is a good reason for unittest2six :-)",
+      "parentUuid": "7adec928_bcd12f59",
       "revId": "89f98ebe9a59e0f858477c73fb13f3453c6d28bd",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
@@ -59,6 +95,24 @@
     },
     {
       "key": {
+        "uuid": "7adec928_85ffafa9",
+        "filename": "tests/helper.py",
+        "patchSetId": 19
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-05-14T16:18:20Z",
+      "side": 1,
+      "message": "I think you\u0027re right, but it\u0027s not as simple as just changing it to a BytesIO. \n\n    from six import BytesIO as StringIO  # noqa\n\nFor one thing, the jenkins_open function is calling maybe_add_crumb which calls json.loads(response); if this gets binary, it fails with `TypeError: can\u0027t use a string pattern on a bytes-like object`.\n\nI also don\u0027t like that what I wrote above in that it import BytesIO and calls it StringIO which is very confusing from a Python 3 perspective. This means to me that we should probably go through the code and change a bunch of instances of StringIO to BytesIO.\n\nWhich is all well and good, but it might make this patch get rather complicated and you have made good points before about trying to keep patches fairly simple so they are easy to review and then doing more refinements later.\n\nWould you be okay with doing that here? Leaving as-is and then doing a review of all the StringIO/BytesIO stuff after this is merged and making that stuff right?\n\nI could do it here; it just might get a bit messy :-)",
+      "parentUuid": "7adec928_1c878310",
+      "revId": "89f98ebe9a59e0f858477c73fb13f3453c6d28bd",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7adec928_bc068fcc",
         "filename": "tests/test_jenkins.py",
         "patchSetId": 19
@@ -76,6 +130,24 @@
     },
     {
       "key": {
+        "uuid": "7adec928_080e5634",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 19
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-05-14T16:18:20Z",
+      "side": 1,
+      "message": "Sure I can add this.\n\nHowever, I will note that Unicode characters and HTTP Basic Auth are known to not work very well, because HTTP doesn\u0027t provide a way to specify what the encoding is and different browsers do different things. So this may not be worth a ton of effort, though maybe adding the test does no harm.\n\n- http://tools.ietf.org/id/draft-reschke-basicauth-enc-00.html\n- http://stackoverflow.com/questions/702629/utf-8-characters-mangled-in-http-basic-auth-username\n\nFrom the first link:\n\n The \"Basic\" authentication scheme defined in RFC 2617 does not \n properly define how to treat non-ASCII characters. This has lead to a \n situation where user agent implementations disagree, and servers make\n different assumptions based on the locales they are running in. There is\n little interoperability for characters in the ISO-8859-1 character set, and\n even less interoperability for any characters beyond that.",
+      "parentUuid": "7adec928_bc068fcc",
+      "revId": "89f98ebe9a59e0f858477c73fb13f3453c6d28bd",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7adec928_dc30bba0",
         "filename": "tox.ini",
         "patchSetId": 19
@@ -87,6 +159,24 @@
       "writtenOn": "2014-05-14T08:58:39Z",
       "side": 1,
       "message": "Does tox 1.6 supports Python 3.4? If you don\u0027t know, it\u0027s maybe safer to not add this young Python version.",
+      "revId": "89f98ebe9a59e0f858477c73fb13f3453c6d28bd",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7adec928_05ec7fc6",
+        "filename": "tox.ini",
+        "patchSetId": 19
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-05-14T16:18:20Z",
+      "side": 1,
+      "message": "Yes, it does:\n\n ? tox --version\n1.6.0 imported from /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tox/__init__.pyc\n\n ? tox\n    ...\n      pep8: commands succeeded\n      py26: commands succeeded\n      py27: commands succeeded\n      pypy: commands succeeded\n      py33: commands succeeded\n      py34: commands succeeded\n      congratulations :)",
+      "parentUuid": "7adec928_dc30bba0",
       "revId": "89f98ebe9a59e0f858477c73fb13f3453c6d28bd",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
