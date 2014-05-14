@@ -16,6 +16,24 @@
       "revId": "99cb14b25799b57c76e0e9d7928c97a98533d069",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7adec928_68f27ad3",
+        "filename": "setup.cfg",
+        "patchSetId": 5
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-05-14T16:35:57Z",
+      "side": 1,
+      "message": "I think it does, because I just pbr.util.cfg_to_args uses RawConfigParser and the Python docs say that you can use \u0027#\u0027 or \u0027;\u0027 for comments. Maybe this isn\u0027t worth the risk though.\n\nIf this PR gets merged soon, then I can rebase my Python 3 change and add it there...",
+      "parentUuid": "7adec928_c53b779a",
+      "revId": "99cb14b25799b57c76e0e9d7928c97a98533d069",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
