@@ -78,6 +78,24 @@
     },
     {
       "key": {
+        "uuid": "7adec928_c808ee93",
+        "filename": "test-requirements.txt",
+        "patchSetId": 19
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 9107
+      },
+      "writtenOn": "2014-05-14T16:43:43Z",
+      "side": 1,
+      "message": "Oh, I didn\u0027t know that unittest2 raises SyntaxError on Python 3.\n\nI sent a pull request to pip to be able to specify markers on dependencies, so I would be possible to only install unittest2 on python \u003c\u003d 2.6:\nhttps://github.com/pypa/pip/pull/1472\n\nBut my pull request was not accepted yet... The workaround is to use test-requirements-py2.txt which should now be used automatically by PBR.",
+      "parentUuid": "7adec928_523baf37",
+      "revId": "89f98ebe9a59e0f858477c73fb13f3453c6d28bd",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7adec928_1c878310",
         "filename": "tests/helper.py",
         "patchSetId": 19
@@ -107,6 +125,24 @@
       "side": 1,
       "message": "I think you\u0027re right, but it\u0027s not as simple as just changing it to a BytesIO. \n\n    from six import BytesIO as StringIO  # noqa\n\nFor one thing, the jenkins_open function is calling maybe_add_crumb which calls json.loads(response); if this gets binary, it fails with `TypeError: can\u0027t use a string pattern on a bytes-like object`.\n\nI also don\u0027t like that what I wrote above in that it import BytesIO and calls it StringIO which is very confusing from a Python 3 perspective. This means to me that we should probably go through the code and change a bunch of instances of StringIO to BytesIO.\n\nWhich is all well and good, but it might make this patch get rather complicated and you have made good points before about trying to keep patches fairly simple so they are easy to review and then doing more refinements later.\n\nWould you be okay with doing that here? Leaving as-is and then doing a review of all the StringIO/BytesIO stuff after this is merged and making that stuff right?\n\nI could do it here; it just might get a bit messy :-)",
       "parentUuid": "7adec928_1c878310",
+      "revId": "89f98ebe9a59e0f858477c73fb13f3453c6d28bd",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7adec928_28f95280",
+        "filename": "tests/helper.py",
+        "patchSetId": 19
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 9107
+      },
+      "writtenOn": "2014-05-14T16:43:43Z",
+      "side": 1,
+      "message": "IMO you should move the import where it is used directly. And yes, you should replace StringIO with BytesIO. If there are failures, you should fix them.\n\nUsing io.StringIO for urlopen() is just wrong in Python 3.",
+      "parentUuid": "7adec928_85ffafa9",
       "revId": "89f98ebe9a59e0f858477c73fb13f3453c6d28bd",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
@@ -148,6 +184,24 @@
     },
     {
       "key": {
+        "uuid": "7adec928_c82f0ef5",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 19
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 9107
+      },
+      "writtenOn": "2014-05-14T16:43:43Z",
+      "side": 1,
+      "message": "I know that HTTP standards are underspecified for non-ASCII characters, but OpenStack can have a well-defined behaviour, and UTF-8 is the expected encoding.",
+      "parentUuid": "7adec928_080e5634",
+      "revId": "89f98ebe9a59e0f858477c73fb13f3453c6d28bd",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7adec928_dc30bba0",
         "filename": "tox.ini",
         "patchSetId": 19
@@ -177,6 +231,24 @@
       "side": 1,
       "message": "Yes, it does:\n\n ? tox --version\n1.6.0 imported from /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/tox/__init__.pyc\n\n ? tox\n    ...\n      pep8: commands succeeded\n      py26: commands succeeded\n      py27: commands succeeded\n      pypy: commands succeeded\n      py33: commands succeeded\n      py34: commands succeeded\n      congratulations :)",
       "parentUuid": "7adec928_dc30bba0",
+      "revId": "89f98ebe9a59e0f858477c73fb13f3453c6d28bd",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7adec928_e8368a51",
+        "filename": "tox.ini",
+        "patchSetId": 19
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 9107
+      },
+      "writtenOn": "2014-05-14T16:43:43Z",
+      "side": 1,
+      "message": "Cool.",
+      "parentUuid": "7adec928_05ec7fc6",
       "revId": "89f98ebe9a59e0f858477c73fb13f3453c6d28bd",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
