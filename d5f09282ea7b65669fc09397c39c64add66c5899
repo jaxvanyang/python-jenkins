@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7adec928_bcb76fd7",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 8
+      },
+      "lineNbr": 623,
+      "author": {
+        "id": 9107
+      },
+      "writtenOn": "2014-05-14T09:10:41Z",
+      "side": 0,
+      "message": "This code was never used?",
+      "revId": "d5f09282ea7b65669fc09397c39c64add66c5899",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}

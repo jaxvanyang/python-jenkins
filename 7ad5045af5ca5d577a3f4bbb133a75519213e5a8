@@ -1,0 +1,112 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7adec928_5cc66b4a",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 8
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 9107
+      },
+      "writtenOn": "2014-05-14T09:10:41Z",
+      "side": 1,
+      "message": "In OpenStack, there is a rule to only import modules, not symbols:\nhttp://docs.openstack.org/developer/hacking/#imports\n\nI don\u0027t know if python-jenkins respects these rules or not, but it may help to respect them if you would like to move from StackForge to the OpenStack project.\n\n(I don\u0027t like this rule, but I don\u0027t want to discuss them here :-))",
+      "revId": "7ad5045af5ca5d577a3f4bbb133a75519213e5a8",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7adec928_fcff3765",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 8
+      },
+      "lineNbr": 178,
+      "author": {
+        "id": 9107
+      },
+      "writtenOn": "2014-05-14T09:10:41Z",
+      "side": 1,
+      "message": "It might be better to change the import style in a different commit, it\u0027s not related to your \"100% coverage\" change. But it\u0027s up to you :-) It\u0027s just a remark.",
+      "revId": "7ad5045af5ca5d577a3f4bbb133a75519213e5a8",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7adec928_1c3a2336",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 8
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 9107
+      },
+      "writtenOn": "2014-05-14T09:10:41Z",
+      "side": 1,
+      "message": "I don\u0027t understand the purpose of this check. You should not check if requirements are correctly installed in the code. Improve setup.py (ex: use pbr) and ensure that test-requirements.txt is correct (it\u0027s the case, unittest2 is present there).\n\nYou should remove this check to only keep the \"else:\" block below.",
+      "revId": "7ad5045af5ca5d577a3f4bbb133a75519213e5a8",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7adec928_fcb577ee",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 8
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 9107
+      },
+      "writtenOn": "2014-05-14T09:10:41Z",
+      "side": 1,
+      "message": "Oh, it took me 5 minutes to notice the difference between this test and the previous one. It would be nice to add a comment mentionning that this test checks an URL without trailing slash.",
+      "range": {
+        "startLine": 28,
+        "startChar": 9,
+        "endLine": 28,
+        "endChar": 10
+      },
+      "revId": "7ad5045af5ca5d577a3f4bbb133a75519213e5a8",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7adec928_dc16fba6",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 8
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 9107
+      },
+      "writtenOn": "2014-05-14T09:10:41Z",
+      "side": 1,
+      "message": "Oh, it\u0027s the first thime that I see \"__\" (instead of just \"_\") in a function. Is there a reason to use \"__\"?\n\nIf you want to group similar tests but with small variations, it\u0027s maybe better to use a dedicated \"MaybeAddCrumTest\" TestCase class to not have to repeat the \"maybe_add_crumb\" prefix.",
+      "revId": "7ad5045af5ca5d577a3f4bbb133a75519213e5a8",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7adec928_bc7a0fef",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 8
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 9107
+      },
+      "writtenOn": "2014-05-14T09:10:41Z",
+      "side": 1,
+      "message": "It looks like most of the code of this function is duplicated with test_maybe_add_crumb(). You may try to share more code. Maybe write a common subfunction and just keep differences in tests.\n\nSame remarks for other functions in this file.",
+      "revId": "7ad5045af5ca5d577a3f4bbb133a75519213e5a8",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
