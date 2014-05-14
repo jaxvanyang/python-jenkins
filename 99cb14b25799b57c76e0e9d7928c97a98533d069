@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7adec928_c53b779a",
+        "filename": "setup.cfg",
+        "patchSetId": 5
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 9107
+      },
+      "writtenOn": "2014-05-14T15:42:53Z",
+      "side": 1,
+      "message": "Are you sure that this format is valid? I suggest to not add the classifier yet.",
+      "revId": "99cb14b25799b57c76e0e9d7928c97a98533d069",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
