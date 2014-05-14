@@ -167,6 +167,24 @@
     },
     {
       "key": {
+        "uuid": "7adec928_94619f3b",
+        "filename": "tests/helper.py",
+        "patchSetId": 19
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-05-14T21:44:19Z",
+      "side": 1,
+      "message": "OK, you\u0027re right and it turned out to not be that much code to change actually. See patch set 21...",
+      "parentUuid": "7adec928_28f95280",
+      "revId": "89f98ebe9a59e0f858477c73fb13f3453c6d28bd",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7adec928_bc068fcc",
         "filename": "tests/test_jenkins.py",
         "patchSetId": 19
