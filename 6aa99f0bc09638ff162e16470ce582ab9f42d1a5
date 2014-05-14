@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "7adec928_0581df49",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 9107
+      },
+      "writtenOn": "2014-05-14T15:42:59Z",
+      "side": 1,
+      "message": "\u003e This here conforms to the OpenStack standard, no?\n\nOops, I saw an empty line between base64 and httplib, but it\u0027s an artifact of the review tool because a line was removed at the left. Yes, it conforms the OpenStack standard, sorry.",
+      "parentUuid": "7adec928_3d0d193f",
+      "revId": "6aa99f0bc09638ff162e16470ce582ab9f42d1a5",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7adec928_fcd2d7d0",
         "filename": "setup.cfg",
         "patchSetId": 4
@@ -72,6 +90,24 @@
     },
     {
       "key": {
+        "uuid": "7adec928_a5eaeb0c",
+        "filename": "setup.cfg",
+        "patchSetId": 4
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 9107
+      },
+      "writtenOn": "2014-05-14T15:42:59Z",
+      "side": 1,
+      "message": "I don\u0027t know if this format supports comments. Just try to remember to add it later. Or reorganize your patches to add the classifier in the Python 3 patch ;-)",
+      "parentUuid": "7adec928_afbd6c6a",
+      "revId": "6aa99f0bc09638ff162e16470ce582ab9f42d1a5",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7adec928_9ce1d39c",
         "filename": "test-requirements.txt",
         "patchSetId": 4
@@ -101,6 +137,24 @@
       "side": 1,
       "message": "Well, not for the tests per se, but for the tox target:\n\n    [testenv:doc]\n    commands \u003d python setup.py build_sphinx\n\nPutting \"sphinx\" in test-requirements.txt seems to be the norm in the OpenStack projects that I\u0027ve checked out:\n\n     ? grep sphinx ~/dev/git-repos/*/test-requirements.txt\n    /Users/marca/dev/git-repos/hacking/test-requirements.txt:sphinx\u003e\u003d1.1.2,\u003c1.2\n    /Users/marca/dev/git-repos/hacking/test-requirements.txt:oslosphinx\n    /Users/marca/dev/git-repos/jenkins-job-builder/test-requirements.txt:sphinx\u003e\u003d1.1.2,\u003c1.2\n    /Users/marca/dev/git-repos/jenkins-job-builder/test-requirements.txt:sphinxcontrib-programoutput\n    /Users/marca/dev/git-repos/pbr/test-requirements.txt:sphinx\u003e\u003d1.1.2,\u003c1.2\n    /Users/marca/dev/git-repos/python-jenkins/test-requirements.txt:sphinx\u003e\u003d1.1.2,\u003c1.2",
       "parentUuid": "7adec928_9ce1d39c",
+      "revId": "6aa99f0bc09638ff162e16470ce582ab9f42d1a5",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7adec928_65e8e310",
+        "filename": "test-requirements.txt",
+        "patchSetId": 4
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 9107
+      },
+      "writtenOn": "2014-05-14T15:42:59Z",
+      "side": 1,
+      "message": "ok.",
+      "parentUuid": "7adec928_cf3558f8",
       "revId": "6aa99f0bc09638ff162e16470ce582ab9f42d1a5",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
