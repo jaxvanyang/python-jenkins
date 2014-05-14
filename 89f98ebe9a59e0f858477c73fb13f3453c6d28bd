@@ -96,6 +96,24 @@
     },
     {
       "key": {
+        "uuid": "7adec928_a832c20d",
+        "filename": "test-requirements.txt",
+        "patchSetId": 19
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-05-14T20:37:46Z",
+      "side": 1,
+      "message": "Cool. I like your PR; I just +1\u0027d it. Maybe that will help get some attention on it, since no one has commented on it in a while.\n\nYour PR would also solve the unittest2 problem and it\u0027s more general. Though it\u0027s nice I think to have one package for unittest2 that works on all Python versions.",
+      "parentUuid": "7adec928_c808ee93",
+      "revId": "89f98ebe9a59e0f858477c73fb13f3453c6d28bd",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7adec928_1c878310",
         "filename": "tests/helper.py",
         "patchSetId": 19
