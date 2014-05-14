@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "7adec928_3d0d193f",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-05-14T14:43:44Z",
+      "side": 1,
+      "message": "This here conforms to the OpenStack standard, no? All imports are from stdlib so only one \"section\" and they are alphabetized:\n\n    import base64\n    import httplib\n    import json\n    import urllib\n    import urllib2\n\nThe other patch I guess violates the rule \"Do not import objects, only modules\".\n\n    import base64\n    from httplib import BadStatusLine\n    import json\n    import urllib\n    from urllib2 import Request, HTTPError, urlopen\n\nThat\u0027s unfortunate. The `from module import func` is useful for abstracting away the differences in where things are in Python 2 vs. 3. Maybe there is another way? But I suppose we should discuss that on the Python 3 patch: https://review.openstack.org/90114\n\nBut isn\u0027t this one good? If it isn\u0027t, let me know.",
+      "parentUuid": "7adec928_bcc84f23",
+      "revId": "6aa99f0bc09638ff162e16470ce582ab9f42d1a5",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7adec928_fcd2d7d0",
         "filename": "setup.cfg",
         "patchSetId": 4
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "7adec928_afbd6c6a",
+        "filename": "setup.cfg",
+        "patchSetId": 4
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-05-14T14:43:44Z",
+      "side": 1,
+      "message": "Yeah, good observation. How about I add it now, commented out, so that we are slightly less likely to forget to add it later?",
+      "parentUuid": "7adec928_fcd2d7d0",
+      "revId": "6aa99f0bc09638ff162e16470ce582ab9f42d1a5",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7adec928_9ce1d39c",
         "filename": "test-requirements.txt",
         "patchSetId": 4
@@ -47,6 +83,24 @@
       "writtenOn": "2014-05-14T09:17:01Z",
       "side": 1,
       "message": "sphinx is only needed for tests? If not, move this dependency to requirements.txt.",
+      "revId": "6aa99f0bc09638ff162e16470ce582ab9f42d1a5",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7adec928_cf3558f8",
+        "filename": "test-requirements.txt",
+        "patchSetId": 4
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-05-14T14:43:44Z",
+      "side": 1,
+      "message": "Well, not for the tests per se, but for the tox target:\n\n    [testenv:doc]\n    commands \u003d python setup.py build_sphinx\n\nPutting \"sphinx\" in test-requirements.txt seems to be the norm in the OpenStack projects that I\u0027ve checked out:\n\n     ? grep sphinx ~/dev/git-repos/*/test-requirements.txt\n    /Users/marca/dev/git-repos/hacking/test-requirements.txt:sphinx\u003e\u003d1.1.2,\u003c1.2\n    /Users/marca/dev/git-repos/hacking/test-requirements.txt:oslosphinx\n    /Users/marca/dev/git-repos/jenkins-job-builder/test-requirements.txt:sphinx\u003e\u003d1.1.2,\u003c1.2\n    /Users/marca/dev/git-repos/jenkins-job-builder/test-requirements.txt:sphinxcontrib-programoutput\n    /Users/marca/dev/git-repos/pbr/test-requirements.txt:sphinx\u003e\u003d1.1.2,\u003c1.2\n    /Users/marca/dev/git-repos/python-jenkins/test-requirements.txt:sphinx\u003e\u003d1.1.2,\u003c1.2",
+      "parentUuid": "7adec928_9ce1d39c",
       "revId": "6aa99f0bc09638ff162e16470ce582ab9f42d1a5",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
