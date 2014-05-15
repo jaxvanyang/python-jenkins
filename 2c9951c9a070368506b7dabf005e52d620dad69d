@@ -16,6 +16,24 @@
       "revId": "2c9951c9a070368506b7dabf005e52d620dad69d",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7adec928_5c048f49",
+        "filename": "test-requirements.txt",
+        "patchSetId": 22
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-05-15T20:51:52Z",
+      "side": 0,
+      "message": "Yep.\n\n    $ tox\n    ...\n      pep8: commands succeeded\n      py26: commands succeeded\n      py27: commands succeeded\n      pypy: commands succeeded\n      py33: commands succeeded\n      py34: commands succeeded\n      congratulations :)\n\nBecause I added unittest2 to line 15 of tox.ini:\n\n    $ grep -Hn --before\u003d2 unittest2 tox.ini\n    tox.ini-13-[testenv:py26]\n    tox.ini-14-deps \u003d -r{toxinidir}/test-requirements.txt\n    tox.ini:15:       unittest2",
+      "parentUuid": "7adec928_dca33fb0",
+      "revId": "2c9951c9a070368506b7dabf005e52d620dad69d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
