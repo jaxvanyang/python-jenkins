@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "7adec928_8e018008",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 8
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-05-15T17:22:49Z",
+      "side": 1,
+      "message": "Acknowledging your comment. I think I\u0027m going to keep it this way for now and maybe revisit this later. Reasons:\n\n1. Changing this will create merge conflicts with my python3_squash change (https://review.openstack.org/90114)\n\n2. python-jenkins only very recently came to stackforge; it used to live on LaunchPad as a non-OpenStack project. I don\u0027t think it conformed to OpenStack rules and I think it should be given time to conform to rules, if that is even desired.\n\n3. Even jenkins-job-builder, which is an OpenStack Infra project does not follow all the rules like this enforced by \"hacking\". James E. Blair said that he didn\u0027t want to make Infra projects have to follow these rules (I think the idea was to make the barrier/resistance for outside contributors lower?) See https://review.openstack.org/86679 and https://github.com/openstack-infra/jenkins-job-builder/blob/master/tox.ini#L38\n\n4. I like consistent style in code, but I think it\u0027s more important to get test coverage first. This will get us test coverage and then we can be more confident about other changes.",
+      "parentUuid": "7adec928_5cc66b4a",
+      "revId": "7ad5045af5ca5d577a3f4bbb133a75519213e5a8",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7adec928_fcff3765",
         "filename": "jenkins/__init__.py",
         "patchSetId": 8
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "7adec928_e9f59e57",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 8
+      },
+      "lineNbr": 178,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-05-15T17:22:49Z",
+      "side": 1,
+      "message": "I see your point and I kind of wish now that I did this a bit differently. The reason for changing the import style was to make it easier to mock these things in the tests. I have some ideas on how to do this a little differently (basically doing more of a dependency injection thing where urlopen and such are attributes of the Jenkins class) and I started playing with them, but just concluded that it\u0027s going to make too much of a mess of this PR and https://review.openstack.org/90114\n\nAre you ok with merging as-is (after I address other comments of course) and then perhaps changing this later?",
+      "parentUuid": "7adec928_fcff3765",
+      "revId": "7ad5045af5ca5d577a3f4bbb133a75519213e5a8",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7adec928_1c3a2336",
         "filename": "tests/test_jenkins.py",
         "patchSetId": 8
@@ -47,6 +83,24 @@
       "writtenOn": "2014-05-14T09:10:41Z",
       "side": 1,
       "message": "I don\u0027t understand the purpose of this check. You should not check if requirements are correctly installed in the code. Improve setup.py (ex: use pbr) and ensure that test-requirements.txt is correct (it\u0027s the case, unittest2 is present there).\n\nYou should remove this check to only keep the \"else:\" block below.",
+      "revId": "7ad5045af5ca5d577a3f4bbb133a75519213e5a8",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7adec928_e96afeec",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 8
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-05-15T17:22:49Z",
+      "side": 1,
+      "message": "You\u0027re right. This isn\u0027t needed if we assume that the user installed everything in test-requirements.txt.\n\nI think I was probably trying to make it work in the case that the user checked out the repo and tried to run it without creating a virtualenv or doing a pip install of anything. If they\u0027re on Python 2.7 maybe this could work since unittest has everything needed.\n\nHowever, maybe this code is too ugly to have just to support an edge case like that?\n\nI could change this to just:\n\n    import unittest2 as unittest",
+      "parentUuid": "7adec928_1c3a2336",
       "revId": "7ad5045af5ca5d577a3f4bbb133a75519213e5a8",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
@@ -76,6 +130,24 @@
     },
     {
       "key": {
+        "uuid": "7adec928_293f86d7",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 8
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-05-15T17:22:49Z",
+      "side": 1,
+      "message": "Sorry. I\u0027ll split this into 3 tests with appropriate names to make it clearer. Thanks!",
+      "parentUuid": "7adec928_fcb577ee",
+      "revId": "7ad5045af5ca5d577a3f4bbb133a75519213e5a8",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7adec928_dc16fba6",
         "filename": "tests/test_jenkins.py",
         "patchSetId": 8
@@ -93,6 +165,24 @@
     },
     {
       "key": {
+        "uuid": "7adec928_0911ea5c",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 8
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-05-15T17:22:49Z",
+      "side": 1,
+      "message": "Using the double underscore is a habit of mine. The idea is that the method name has underscores in it so the double underscore makes it clearer that the parts afterwards is not part of the method name. Maybe that\u0027s silly though, as I\u0027m probably the only one who knows to interpret it that way. :-)\n\nI thought of the  \"MaybeAddCrumTest\" TestCase class as well, but I didn\u0027t do it because there are only two tests and they\u0027re not super similar because one has crumb_data and one doesn\u0027t.",
+      "parentUuid": "7adec928_dc16fba6",
+      "revId": "7ad5045af5ca5d577a3f4bbb133a75519213e5a8",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7adec928_bc7a0fef",
         "filename": "tests/test_jenkins.py",
         "patchSetId": 8
@@ -104,6 +194,24 @@
       "writtenOn": "2014-05-14T09:10:41Z",
       "side": 1,
       "message": "It looks like most of the code of this function is duplicated with test_maybe_add_crumb(). You may try to share more code. Maybe write a common subfunction and just keep differences in tests.\n\nSame remarks for other functions in this file.",
+      "revId": "7ad5045af5ca5d577a3f4bbb133a75519213e5a8",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7adec928_c4844760",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 8
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-05-15T17:22:49Z",
+      "side": 1,
+      "message": "Yeah, this is pretty repetitive and maybe could be refactored later. I don\u0027t think I want to do it now though since the Python 3 PR is based on this one. Maybe later.\n\nI do tend to do less refactoring and code sharing in tests, because I like them to be very linear and easy to read and not too clever, but this is pretty darn repetitive, so it would be nice to clean it up a bit. I\u0027m not excited about doing it now though.",
+      "parentUuid": "7adec928_bc7a0fef",
       "revId": "7ad5045af5ca5d577a3f4bbb133a75519213e5a8",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false

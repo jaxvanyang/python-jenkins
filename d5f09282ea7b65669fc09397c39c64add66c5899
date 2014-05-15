@@ -16,6 +16,24 @@
       "revId": "d5f09282ea7b65669fc09397c39c64add66c5899",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7adec928_6988aec5",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 8
+      },
+      "lineNbr": 623,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-05-15T17:22:49Z",
+      "side": 0,
+      "message": "Nope. It had zero coverage when I ran tests and measured coverage.\n\nI think what happened is that it was copy/pasted from other methods in this file. However other methods, call json.loads which will raise a ValueError for invalid JSON, but this method doesn\u0027t call json.loads because Jenkins just returns the console output as a simple string.\n\nNote that the exception it raises is \"Could not parse JSON info...\" but there is no other mention of JSON in this function and the return value according to the doc string is `str`.",
+      "parentUuid": "7adec928_bcb76fd7",
+      "revId": "d5f09282ea7b65669fc09397c39c64add66c5899",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
