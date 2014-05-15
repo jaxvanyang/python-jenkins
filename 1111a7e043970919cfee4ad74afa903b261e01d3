@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7adec928_cbf53a58",
+        "filename": "test-requirements.txt",
+        "patchSetId": 21
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 9107
+      },
+      "writtenOn": "2014-05-15T15:19:29Z",
+      "side": 1,
+      "message": "I\u0027m still not sure that your idea of \"meta package\" works in OpenStack. OpenStack uses its own private PyPI with a limited list of packages. If unitttest2py3k is not part of the private PyPI, the installation will fail.\n\nAnyway, installing unittest2py3k in OpenStack is useless. It is not needed for Python 3.2+ and OpenStack doesn\u0027t support Python 3.1.",
+      "revId": "1111a7e043970919cfee4ad74afa903b261e01d3",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
