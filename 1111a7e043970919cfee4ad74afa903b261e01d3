@@ -16,6 +16,24 @@
       "revId": "1111a7e043970919cfee4ad74afa903b261e01d3",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7adec928_a4157be6",
+        "filename": "test-requirements.txt",
+        "patchSetId": 21
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-05-15T17:40:08Z",
+      "side": 1,
+      "message": "Oh, didn\u0027t realize OpenStack has its own PyPI. The Jenkins job for this change succeeded though...doesn\u0027t that mean that this is okay?\n\nunittest2six is more in this case for Python 2.6 then for Python 3. The idea is that you can put this in test-requirements.txt and it will not break Python 3 tests. Unlike \"unittest2\", which WILL break Python 3 tests because pip installing it will fail with syntax errors.\n\nI could put \"unittest2\" in test-requirements-py2.txt and add that to tox.ini - it\u0027s a little annoying to have to do that. Your pip requirements marker PR would be useful here. Then we could have one requirements file that says to only install unittest2 when Python \u003c 2.7.\n\nAlso useful here would be if Michael Foord incorporated into unittest2 the changes that I have here: \n\nhttps://github.com/msabramo/unittest2/pull/1\n\nI\u0027d love your feedback on that change if you\u0027re inclined to review it and have the time.",
+      "parentUuid": "7adec928_cbf53a58",
+      "revId": "1111a7e043970919cfee4ad74afa903b261e01d3",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
