@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7adec928_d4cc798d",
+        "filename": "setup.cfg",
+        "patchSetId": 6
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2014-05-20T23:47:48Z",
+      "side": 1,
+      "message": "home page should be http://git.openstack.org/cgit/stackforge/python-jenkins",
+      "revId": "386989c8e3d0fc70c9b44458033edd01a4211def",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7adec928_f477b539",
+        "filename": "tox.ini",
+        "patchSetId": 6
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2014-05-20T23:47:48Z",
+      "side": 1,
+      "message": "shouldn\u0027t this also include \u0027-r{toxinidir}/requirements.txt\u0027 ?",
+      "revId": "386989c8e3d0fc70c9b44458033edd01a4211def",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
