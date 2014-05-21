@@ -69,6 +69,24 @@
       "revId": "386989c8e3d0fc70c9b44458033edd01a4211def",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7adec928_321cca6a",
+        "filename": "tox.ini",
+        "patchSetId": 6
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2014-05-21T05:07:27Z",
+      "side": 1,
+      "message": "ohh, didn\u0027t realize that this project doesn\u0027t have any requirements.  Then I think better just to leave as is.",
+      "parentUuid": "7adec928_940bd17c",
+      "revId": "386989c8e3d0fc70c9b44458033edd01a4211def",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
