@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7adec928_d4ae392f",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 174,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2014-05-21T00:17:04Z",
+      "side": 1,
+      "message": "how about add doc for new depth param?",
+      "revId": "97004de4504487339cb7bed9e4f90c89684d88d1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7adec928_d42399bc",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 179,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2014-05-21T00:17:04Z",
+      "side": 1,
+      "message": "I might be missing something or my understanding of python isn\u0027t that good.  Is the use of locals() the thing that sets the depth for JOB_INFO?",
+      "revId": "97004de4504487339cb7bed9e4f90c89684d88d1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7adec928_f4ab351c",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 245,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2014-05-21T00:17:04Z",
+      "side": 1,
+      "message": "how about add doc for new depth param?",
+      "revId": "97004de4504487339cb7bed9e4f90c89684d88d1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7adec928_34a67d54",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 253,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2014-05-21T00:17:04Z",
+      "side": 1,
+      "message": "update example with new param?",
+      "revId": "97004de4504487339cb7bed9e4f90c89684d88d1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7adec928_54622917",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 489,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2014-05-21T00:17:04Z",
+      "side": 1,
+      "message": "how about add doc for new depth param?",
+      "revId": "97004de4504487339cb7bed9e4f90c89684d88d1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
