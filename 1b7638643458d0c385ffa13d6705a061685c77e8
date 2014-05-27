@@ -34,6 +34,24 @@
       "revId": "1b7638643458d0c385ffa13d6705a061685c77e8",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3ae8d1ca_ee952189",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 344,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2014-05-27T12:08:36Z",
+      "side": 1,
+      "message": "Sorry guys I missed that entirely. String replace does not work that well and indeed we need a condition as Khai said.\n\nTo avoid repeating the block:\n\n if not self.jobs_exists(from_name):\n  raise JenkinsException(\u0027job[%s] does not exist\u0027 % name)\n\nWhat do you think of wrapping that condition in yet another method like assert_job_exist(self, name) ?",
+      "parentUuid": "9ad9bd40_f2b756f3",
+      "revId": "1b7638643458d0c385ffa13d6705a061685c77e8",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
