@@ -16,6 +16,24 @@
       "revId": "ed5453bdb90df5d36aa8c5daa577aec39e3d89b3",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1ae5cdf2_82a21349",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 547,
+      "author": {
+        "id": 11011
+      },
+      "writtenOn": "2014-06-04T13:36:20Z",
+      "side": 1,
+      "message": "Thanks, adding in next change set!",
+      "parentUuid": "1ae5cdf2_897a4175",
+      "revId": "ed5453bdb90df5d36aa8c5daa577aec39e3d89b3",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
