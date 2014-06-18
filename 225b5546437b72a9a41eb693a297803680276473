@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1ae5cdf2_68c35c38",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 409,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2014-06-18T09:03:06Z",
+      "side": 1,
+      "message": "Minor typo:\n\n - job[%s] does not exists\n + job[%s] does not exist",
+      "revId": "225b5546437b72a9a41eb693a297803680276473",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
