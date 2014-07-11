@@ -54,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "baada198_2e496331",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 179,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2014-07-11T08:28:15Z",
+      "side": 1,
+      "message": "Khai: locals() is a python build in that craft a dict out of the current symbol table.  And string format % will use the keys to fill-in placeholders.\n\nSo yeah that is fine :)",
+      "parentUuid": "7adec928_d42399bc",
+      "revId": "97004de4504487339cb7bed9e4f90c89684d88d1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7adec928_f4ab351c",
         "filename": "jenkins/__init__.py",
         "patchSetId": 1
