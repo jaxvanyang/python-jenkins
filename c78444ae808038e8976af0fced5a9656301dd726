@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baada198_97830c55",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 402,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2014-07-21T18:24:25Z",
+      "side": 1,
+      "message": "Shouldn\u0027t it use \"does\" ?\n\n Raise an exception if a job does not exist\n                             ^^^^",
+      "revId": "c78444ae808038e8976af0fced5a9656301dd726",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
