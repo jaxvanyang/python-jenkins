@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da9df570_d4e680af",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2014-09-26T20:51:31Z",
+      "side": 1,
+      "message": "Might want to make depth an option to get_plugin_info() just like get_job_info().",
+      "revId": "3384b5dbe9d252090f18cd513ae8a15eadbc12fa",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9df570_74bf94aa",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 338,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2014-09-26T20:51:31Z",
+      "side": 1,
+      "message": "Mention the plugins can be queried by either short or long name and it must be an exact match.",
+      "revId": "3384b5dbe9d252090f18cd513ae8a15eadbc12fa",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9df570_9406b884",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 366,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2014-09-26T20:51:31Z",
+      "side": 1,
+      "message": "I would just:\n\n   return plugins\n\nAnd drop the else and level of indent below.  But that is coding style, depends whether you like early returns or a single one at the end.",
+      "revId": "3384b5dbe9d252090f18cd513ae8a15eadbc12fa",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9df570_b432dc5c",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 370,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2014-09-26T20:51:31Z",
+      "side": 1,
+      "message": "Since there is an exact match, you can return early:\n\n return plugin\n\n\nWith the suggestion above, \u0027info\u0027 can be removed entirely.",
+      "revId": "3384b5dbe9d252090f18cd513ae8a15eadbc12fa",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9df570_b4801cc1",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 380,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2014-09-26T20:51:31Z",
+      "side": 1,
+      "message": "One day we will have to make those three exceptions a decorator to avoid copy pasting them :-]",
+      "revId": "3384b5dbe9d252090f18cd513ae8a15eadbc12fa",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
