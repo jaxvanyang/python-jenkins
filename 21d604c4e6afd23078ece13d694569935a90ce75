@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da9df570_3188bec4",
+        "filename": "doc/source/conf.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2014-09-26T20:07:10Z",
+      "side": 1,
+      "message": "version_string_with_vcs  strips the alpha/beta tags\n\nrelease_string keep them\n\nFetching this change I have:\n\n canonical_version_string 0.3.1.9\n version_string_with_vcs 0.3.1.9.g21d604c\n release_string 0.3.1.9.g21d604c\n\n\nFor Zuul I went with release_string in https://review.openstack.org/#/c/87948/  not sure what is the best.",
+      "revId": "21d604c4e6afd23078ece13d694569935a90ce75",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
