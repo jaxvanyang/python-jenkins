@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa201ad_2b48f25a",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 368,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2014-09-29T13:24:17Z",
+      "side": 1,
+      "message": "That else: is no more needed since we return early. That saves a level of indentation.",
+      "revId": "17c976b3157c139172ddf7808cbce642e956af7d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa201ad_2b5f1210",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 372,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2014-09-29T13:24:17Z",
+      "side": 1,
+      "message": "The function returns None by default but I don\u0027t mind keeping this return which make it explicit that we might not find a plugin and thus return None. So keep it :]",
+      "revId": "17c976b3157c139172ddf7808cbce642e956af7d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa201ad_8bab9e88",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 609,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2014-09-29T13:24:17Z",
+      "side": 1,
+      "message": "When looking at the HTML coverage report:\n\n coverage run -m discover\n coverage html\n htmlcov/jenkins___init__.html\n\nThe get_plugin_info() are not covered unlike get_build_info() which has full coverage.\n\nShould be quite easy to copy paste the test methods for build_info, they are in tests/test_jenkins.py and prefixed: test_get_build_info",
+      "revId": "17c976b3157c139172ddf7808cbce642e956af7d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
