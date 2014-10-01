@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa201ad_2ff2736f",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 333,
+      "author": {
+        "id": 7156
+      },
+      "writtenOn": "2014-10-01T23:07:38Z",
+      "side": 1,
+      "message": "I would suggest creating get_plugins_info(self, depth\u003d2) AND get_plugin_info(self, name, depth\u003d2).\n\nThe method name will make the expected return explicit:\n- get_plugins_info always return a list of dicts (or None)\n- get_plugin_info always return a dict (or None)\n\nget_plugin_info could (re)use get_plugins_info and filter its output.\n\nExplicit is better than implicit.",
+      "revId": "e324f24f2abd27669da43050bb77a89149a181f1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa201ad_affd833d",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 364,
+      "author": {
+        "id": 7156
+      },
+      "writtenOn": "2014-10-01T23:07:38Z",
+      "side": 1,
+      "message": "Can we make the use of depth explicit? At first glance, I thought it was unused. I know that other methods use locals() but I think it\u0027s a problem. We should address it afterward in a different change.",
+      "revId": "e324f24f2abd27669da43050bb77a89149a181f1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
