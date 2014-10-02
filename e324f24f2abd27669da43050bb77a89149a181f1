@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "baa201ad_55bae1c0",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 333,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2014-10-02T06:41:08Z",
+      "side": 1,
+      "message": "How would you feel about the same method as proposed except that it always returns a list (or None)?  \n\n* if name is not specified return a list of all plugins\n* if a plugin name is specified and it is installed then return a list of one plugin?\n* if there are no plugins or the named plugin cannot be found then return an empty list?",
+      "parentUuid": "baa201ad_2ff2736f",
+      "revId": "e324f24f2abd27669da43050bb77a89149a181f1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa201ad_affd833d",
         "filename": "jenkins/__init__.py",
         "patchSetId": 7
@@ -30,6 +48,24 @@
       "writtenOn": "2014-10-01T23:07:38Z",
       "side": 1,
       "message": "Can we make the use of depth explicit? At first glance, I thought it was unused. I know that other methods use locals() but I think it\u0027s a problem. We should address it afterward in a different change.",
+      "revId": "e324f24f2abd27669da43050bb77a89149a181f1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa201ad_352c7d02",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 364,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2014-10-02T06:41:08Z",
+      "side": 1,
+      "message": "that sounds like a good idea but i\u0027m not sure what that actually means.  what would that look like?",
+      "parentUuid": "baa201ad_affd833d",
       "revId": "e324f24f2abd27669da43050bb77a89149a181f1",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
