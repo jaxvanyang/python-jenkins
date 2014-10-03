@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "baa201ad_d6f06969",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 333,
+      "author": {
+        "id": 7156
+      },
+      "writtenOn": "2014-10-03T22:09:38Z",
+      "side": 1,
+      "message": "I still prefer explicit over implicit/automagic.",
+      "parentUuid": "baa201ad_55bae1c0",
+      "revId": "e324f24f2abd27669da43050bb77a89149a181f1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa201ad_affd833d",
         "filename": "jenkins/__init__.py",
         "patchSetId": 7
