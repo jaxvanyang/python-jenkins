@@ -55,6 +55,24 @@
     },
     {
       "key": {
+        "uuid": "baa201ad_1c7bd6f5",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 333,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2014-10-06T17:47:23Z",
+      "side": 1,
+      "message": "I believe python function overloading is only supported in python 3 however we still need to support python 2.6 \u0026 2.7.  I think it\u0027s possible to make method overloading work in python 2.7 but since that feature is not supported in the core language I don\u0027t think it\u0027s the pythonic way to handle this situation.  If we still one 2 functions to get plugin info then an option would be to create 2 different function names like get_all_plugin_info(self, depth\u003d2) \u0026 get_plugin_info(self, name, depth\u003d2). \n\nWith that being said, I still prefer one function over two in this case, even if function overloading is supported.",
+      "parentUuid": "baa201ad_d6f06969",
+      "revId": "e324f24f2abd27669da43050bb77a89149a181f1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa201ad_affd833d",
         "filename": "jenkins/__init__.py",
         "patchSetId": 7
