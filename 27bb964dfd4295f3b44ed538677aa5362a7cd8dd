@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "baa201ad_48ce782f",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 9
+      },
+      "lineNbr": 370,
+      "author": {
+        "id": 7156
+      },
+      "writtenOn": "2014-10-06T20:27:24Z",
+      "side": 1,
+      "message": "This example is no longer valid.",
+      "revId": "27bb964dfd4295f3b44ed538677aa5362a7cd8dd",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa201ad_c8d988f4",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 9
+      },
+      "lineNbr": 402,
+      "author": {
+        "id": 7156
+      },
+      "writtenOn": "2014-10-06T20:27:24Z",
+      "side": 1,
+      "message": "I don\u0027t think we should suggest to use the None valid.",
+      "revId": "27bb964dfd4295f3b44ed538677aa5362a7cd8dd",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
