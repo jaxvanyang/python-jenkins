@@ -91,6 +91,24 @@
     },
     {
       "key": {
+        "uuid": "baa201ad_ed173eec",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 333,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2014-10-06T19:34:02Z",
+      "side": 1,
+      "message": "Ahh. I didn\u0027t notice the \u0027s\u0027 in your suggestion for the method name.   You\u0027ve convince me, thanks for pointing out that pattern in the openstack libraries.",
+      "parentUuid": "baa201ad_92440d1c",
+      "revId": "e324f24f2abd27669da43050bb77a89149a181f1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa201ad_affd833d",
         "filename": "jenkins/__init__.py",
         "patchSetId": 7
