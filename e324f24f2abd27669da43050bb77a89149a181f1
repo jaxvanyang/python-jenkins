@@ -73,6 +73,24 @@
     },
     {
       "key": {
+        "uuid": "baa201ad_92440d1c",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 333,
+      "author": {
+        "id": 7156
+      },
+      "writtenOn": "2014-10-06T18:46:43Z",
+      "side": 1,
+      "message": "We don\u0027t need function overloading.\n\nWhat I suggest is 2 distinct methods (instead of one doing both):\n- one to get \"many\" plugins: get_plugins_info(self, depth\u003d2)\n- one to get \"one\" plugin: get_plugin_info(self, name, depth\u003d2)\n\nAny decent library makes a distinction between methods returning \"many\" and those returning \"one\", list() vs get(). See any OpenStack client libraries.",
+      "parentUuid": "baa201ad_1c7bd6f5",
+      "revId": "e324f24f2abd27669da43050bb77a89149a181f1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa201ad_affd833d",
         "filename": "jenkins/__init__.py",
         "patchSetId": 7
