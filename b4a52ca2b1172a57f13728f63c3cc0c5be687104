@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "7a8c0949_6082ec50",
+        "filename": "README.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2014-10-31T17:08:09Z",
+      "side": 1,
+      "message": "sent an email to kwc.  you were CC on it.  hopefully he\u0027ll get back to us.",
+      "parentUuid": "7a8c0949_12bc3069",
+      "revId": "b4a52ca2b1172a57f13728f63c3cc0c5be687104",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7a8c0949_f26de405",
         "filename": "README.rst",
         "patchSetId": 1
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "7a8c0949_80a3589d",
+        "filename": "README.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2014-10-31T17:08:09Z",
+      "side": 1,
+      "message": "Good point, i\u0027ll make a change to create a python-jenkins project in storyboard.",
+      "parentUuid": "7a8c0949_f26de405",
+      "revId": "b4a52ca2b1172a57f13728f63c3cc0c5be687104",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7a8c0949_927e60ad",
         "filename": "README.rst",
         "patchSetId": 1
@@ -47,6 +83,24 @@
       "writtenOn": "2014-10-31T00:46:52Z",
       "side": 1,
       "message": "Nit: I guess that text comes from a cookiecutter template or some other project.   Since we use flake8, I guess we can drop references to pep8/pyflakes here and a couple lines below.",
+      "revId": "b4a52ca2b1172a57f13728f63c3cc0c5be687104",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a8c0949_c0c48042",
+        "filename": "README.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2014-10-31T17:08:09Z",
+      "side": 1,
+      "message": "good catch.  i actually got this from JJB which means it should probably get fixed in JJB doc as well.",
+      "parentUuid": "7a8c0949_927e60ad",
       "revId": "b4a52ca2b1172a57f13728f63c3cc0c5be687104",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
