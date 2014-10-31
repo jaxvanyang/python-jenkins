@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a8c0949_12bc3069",
+        "filename": "README.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2014-10-31T00:46:52Z",
+      "side": 1,
+      "message": "That documentation page is generated from the old repository on launchpad :-/  https://readthedocs.org/projects/python-jenkins/ \n\n Repository\n lp:python-jenkins\n\nWe would want to contact the original author to add us to it and point the project to the git repository.\n\nOr maybe stackforge has a documentation host?",
+      "revId": "b4a52ca2b1172a57f13728f63c3cc0c5be687104",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a8c0949_f26de405",
+        "filename": "README.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2014-10-31T00:46:52Z",
+      "side": 1,
+      "message": "python-jenkins is not yet on Storyboard: https://storyboard.openstack.org/#!/project/list\n\nI never looked at the original bug tracker since the switch though  https://launchpad.net/python-jenkins",
+      "revId": "b4a52ca2b1172a57f13728f63c3cc0c5be687104",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a8c0949_927e60ad",
+        "filename": "README.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2014-10-31T00:46:52Z",
+      "side": 1,
+      "message": "Nit: I guess that text comes from a cookiecutter template or some other project.   Since we use flake8, I guess we can drop references to pep8/pyflakes here and a couple lines below.",
+      "revId": "b4a52ca2b1172a57f13728f63c3cc0c5be687104",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a8c0949_325e8c46",
+        "filename": "README.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2014-10-31T00:46:52Z",
+      "side": 1,
+      "message": "Ditto just point to flake8?",
+      "revId": "b4a52ca2b1172a57f13728f63c3cc0c5be687104",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
