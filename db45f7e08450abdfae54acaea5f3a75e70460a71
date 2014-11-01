@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a8c0949_0795b732",
+        "filename": "README.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2014-11-01T21:37:01Z",
+      "side": 1,
+      "message": "Maybe we should stick to the existing launchpad project instead: https://launchpad.net/python-jenkins",
+      "revId": "db45f7e08450abdfae54acaea5f3a75e70460a71",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
