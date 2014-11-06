@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a8c0949_315c8325",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 237,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2014-11-06T10:51:11Z",
+      "side": 1,
+      "message": "could we add comment here for using e.msg instead of e.reason ?\n\n\"Turns out we use six six.moves.urllib.error.HTTPError which provides reason for all python version but 2.6.  So falling back to HTTPError.msg which seems acceptable.\"",
+      "revId": "63de15707e1a294dbac7dae85a91f5986312dddd",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
