@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a890539_69dd8a14",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2014-11-10T20:54:33Z",
+      "side": 1,
+      "message": "since the path is different for folders, would we need to refactor the methods that use JOB_INFO, JOB_NAME, CONFIG_JOB, DELETE_JOB, etc..?",
+      "revId": "8fb34f1b5670ddb07ac03213eca6f1efe911b509",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a890539_8e171ca3",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 313,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2014-11-10T20:54:33Z",
+      "side": 1,
+      "message": "what are the valid items?  maybe list them here?",
+      "revId": "8fb34f1b5670ddb07ac03213eca6f1efe911b509",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a890539_291aa217",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 467,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2014-11-10T20:54:33Z",
+      "side": 1,
+      "message": "shouldn\u0027t this be appending to jobs_list ?",
+      "revId": "8fb34f1b5670ddb07ac03213eca6f1efe911b509",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
