@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "5a890539_5fadd287",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2014-11-11T14:09:45Z",
+      "side": 1,
+      "message": "Suspect so. Probably need to add a method to expand job names to a full name to include the folder when needed.\n\nCurrently favouring having python-jenkins translate between \u003cfolder\u003e/\u003cjob\u003e being sent from using code for jobs to \u0027\u003cfolder\u003e/job/\u003cjob\u003e\u0027 before substituting into the various place holders.\n\nSeems better in the case where Jenkins may have other containers besides the folder plugin and will need to decide how to convert in python-jenkins instead of requiring the caller to know the correct url.\n\nThoughts?",
+      "parentUuid": "5a890539_69dd8a14",
+      "revId": "8fb34f1b5670ddb07ac03213eca6f1efe911b509",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a890539_8e171ca3",
         "filename": "jenkins/__init__.py",
         "patchSetId": 1
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "5a890539_bf65d646",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 313,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2014-11-11T14:09:45Z",
+      "side": 1,
+      "message": "Right now it could be either a folder or a job, but presumably that\u0027s just because that\u0027s all we are aware of.\n\nTechnically you can apply this to views, views in folders, jobs, really just about anything in Jenkins you just want to get a summary info on.\n\nShould I suggest known items or simply reword the variables and doc to indicate that it allows providing a sub path to retrieve summary information about the given area in jenkins?",
+      "parentUuid": "5a890539_8e171ca3",
+      "revId": "8fb34f1b5670ddb07ac03213eca6f1efe911b509",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a890539_291aa217",
         "filename": "jenkins/__init__.py",
         "patchSetId": 1
@@ -47,6 +83,24 @@
       "writtenOn": "2014-11-10T20:54:33Z",
       "side": 1,
       "message": "shouldn\u0027t this be appending to jobs_list ?",
+      "revId": "8fb34f1b5670ddb07ac03213eca6f1efe911b509",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a890539_bf095697",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 467,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2014-11-11T14:09:45Z",
+      "side": 1,
+      "message": "Need to evaluate whether any of the returned data contains nested folders first, hence modifying the list being enumerated instead.",
+      "parentUuid": "5a890539_291aa217",
       "revId": "8fb34f1b5670ddb07ac03213eca6f1efe911b509",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
