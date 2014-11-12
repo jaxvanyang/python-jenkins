@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a890539_e9bbf9e2",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 239,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2014-11-12T23:18:33Z",
+      "side": 1,
+      "message": "s/but/except/\n\nmaybe also s/2.6/\u003c\u003d2.6/ ?",
+      "revId": "e12a079ab2d75ee468e5b0587ff22b89363bab12",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a890539_c9c47d61",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 240,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2014-11-12T23:18:33Z",
+      "side": 1,
+      "message": "Presumably HTTPError.msg is the same as HTTPError.reason?",
+      "revId": "e12a079ab2d75ee468e5b0587ff22b89363bab12",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
