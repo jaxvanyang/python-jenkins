@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a890539_115aa34f",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 163,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2014-12-04T16:37:35Z",
+      "side": 1,
+      "message": "Is there a reason to use __ prefix and suffix on the method name?  I would have expected _get_encoded_params().  I try to avoid using the __ because of the convention that that indicates that magic—i.e., some special interaction with Python or with a framework—is happening here.",
+      "revId": "aa92c3ef8ff0b7a924c3e6ad24e79507be7b5684",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a890539_cc207e9c",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 473,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2014-12-04T16:37:35Z",
+      "side": 1,
+      "message": "You know, this may begin to explain a problem I\u0027ve been noticing with jenkins-jobs taking forever to run: we\u0027re doing at least 2 round-trips (and sometimes 3) with the API whenever we run any of these methods.  I wonder if my 404 suggestion would help eliminate the need for the assert_job_exists() call?",
+      "revId": "aa92c3ef8ff0b7a924c3e6ad24e79507be7b5684",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
