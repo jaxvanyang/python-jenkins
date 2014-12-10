@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "3a961159_a58ad418",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 224,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2014-12-10T23:01:57Z",
+      "side": 1,
+      "message": "the selection of 5 mins is pretty arbitrary.  I changed it to 2 mins.  \n\nGood point about setting the timeout in the constructor,  I have made that change.",
+      "parentUuid": "3a961159_104ccb41",
+      "revId": "95faaa741ca84644c60ed006f9da45cc98c2db02",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3a961159_50bf33fb",
         "filename": "jenkins/__init__.py",
         "patchSetId": 2
@@ -30,6 +48,24 @@
       "writtenOn": "2014-12-10T19:09:57Z",
       "side": 1,
       "message": "This seems redundant.  Did you intend to allow a different timeout to be specified to the get_version() method?",
+      "revId": "95faaa741ca84644c60ed006f9da45cc98c2db02",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a961159_65746c36",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 356,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2014-12-10T23:01:57Z",
+      "side": 1,
+      "message": "that was just a mistake. good catch, thanks.",
+      "parentUuid": "3a961159_50bf33fb",
       "revId": "95faaa741ca84644c60ed006f9da45cc98c2db02",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
