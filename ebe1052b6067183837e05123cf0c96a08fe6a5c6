@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a961159_10a4cba4",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 473,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2014-12-10T19:18:00Z",
+      "side": 1,
+      "message": "Well, for this case, if we were to try to rename a job and get a 404, we\u0027d know that the job doesn\u0027t, in fact, exist, which is what assert_job_exists() is trying to check.  That makes assert_job_exists() redundant.  You might still want it after the actions, to ensure that they\u0027ve done what they\u0027re supposed to, but it would reduce the number of round-trips you have to make to the API, which should speed things up quite a bit.\n\nTo put this in perspective, when we run jenkins-jobs on our Jenkins configuration, it can take 30 minutes or more to update 96 jobs; any small reduction in time taken, such as could come from reducing the number of round trips, would be a huge win for us.",
+      "revId": "ebe1052b6067183837e05123cf0c96a08fe6a5c6",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
