@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a961159_104ccb41",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 224,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2014-12-10T19:09:57Z",
+      "side": 1,
+      "message": "5 minutes seems like a long time.  Also, I\u0027d rather the default for the timeout come from some attribute on the object, so that it can be adjusted by the caller.  In the ideal case, the class constructor would take timeout as a keyword argument…",
+      "revId": "95faaa741ca84644c60ed006f9da45cc98c2db02",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a961159_50bf33fb",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 356,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2014-12-10T19:09:57Z",
+      "side": 1,
+      "message": "This seems redundant.  Did you intend to allow a different timeout to be specified to the get_version() method?",
+      "revId": "95faaa741ca84644c60ed006f9da45cc98c2db02",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
