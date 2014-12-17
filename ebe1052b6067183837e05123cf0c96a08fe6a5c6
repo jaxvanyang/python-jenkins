@@ -34,6 +34,24 @@
       "revId": "ebe1052b6067183837e05123cf0c96a08fe6a5c6",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a961159_2a07c182",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 473,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2014-12-17T19:51:59Z",
+      "side": 1,
+      "message": "Maybe it would be worth caching all the jobs from the jenkins server in the jenkins object with a single request. Then only updating that list as necessary.\n\nShould reduce the number of round trips needed.\n\n@Kevin if you\u0027re finding performance with JJB an issue, I would suggest testing out the following approaches to parallel upload in JJB:\n\nIee8426ff2dc4c5b4ebec4c15bdd21cae5b47eb83\n\nIe92be45d418b8076874b9eabca7e4ea8fb8fbad1",
+      "parentUuid": "3a961159_426cc635",
+      "revId": "ebe1052b6067183837e05123cf0c96a08fe6a5c6",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
