@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a961159_1fa2fafc",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 671,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2014-12-19T16:59:22Z",
+      "side": 1,
+      "message": "Bad merge",
+      "revId": "563e06cd5746a45ff8e75f327f86e7cd0716291a",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
