@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a961159_577130a7",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 179,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-01-12T18:35:55Z",
+      "side": 1,
+      "message": "You need to handle the NotFoundException here for systems that do not have the crumb enabled since a 404 is a valid result when querying the crumb url. Following diff will do the trick:\n\n --- a/jenkins/__init__.py\n +++ b/jenkins/__init__.py\n @@ -174,13 +174,14 @@ class Jenkins(object):\n      def maybe_add_crumb(self, req):\n          # We don\u0027t know yet whether we need a crumb\n          if self.crumb is None:\n -            response \u003d self.jenkins_open(Request(\n -                self.server + CRUMB_URL), add_crumb\u003dFalse)\n -            if response:\n -                self.crumb \u003d json.loads(response.decode(\u0027utf-8\u0027))\n -            else:\n +            try:\n +                response \u003d self.jenkins_open(Request(\n +                    self.server + CRUMB_URL), add_crumb\u003dFalse)\n +            except NotFoundException:\n                  # Don\u0027t need crumbs\n                  self.crumb \u003d False\n +            else:\n +                self.crumb \u003d json.loads(response.decode(\u0027utf-8\u0027))\n          if self.crumb:\n              req.add_header(self.crumb[\u0027crumbRequestField\u0027], self.crumb[\u0027crumb\u0027])",
+      "revId": "fd6feae32773c32bed887a9687440baf95f935df",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
