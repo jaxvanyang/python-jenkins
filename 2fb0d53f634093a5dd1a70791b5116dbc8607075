@@ -67,6 +67,23 @@
       "revId": "2fb0d53f634093a5dd1a70791b5116dbc8607075",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a961159_fc29f5f2",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 184,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-01-13T20:04:56Z",
+      "side": 1,
+      "message": "Two tests below look like they should be potentially updated have jenkins_open return a 404.",
+      "revId": "2fb0d53f634093a5dd1a70791b5116dbc8607075",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
