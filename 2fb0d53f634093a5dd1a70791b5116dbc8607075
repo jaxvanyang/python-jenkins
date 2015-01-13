@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "3a961159_d7a33241",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 218,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-01-13T20:49:21Z",
+      "side": 1,
+      "message": "There are two ways I can deal with this: I could let the exception continue to be raised, or I could wrap in a try/except and maintain the previous calling convention.  Which do you think is best?",
+      "parentUuid": "3a961159_1c07a1ca",
+      "revId": "2fb0d53f634093a5dd1a70791b5116dbc8607075",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3a961159_3caffd7e",
         "filename": "jenkins/__init__.py",
         "patchSetId": 5
