@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a961159_1c07a1ca",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 218,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-01-13T20:02:03Z",
+      "side": 1,
+      "message": "Note that this will now raise an exception where previously it did not.",
+      "revId": "2fb0d53f634093a5dd1a70791b5116dbc8607075",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a961159_3caffd7e",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 220,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-01-13T20:02:03Z",
+      "side": 1,
+      "message": "I believe that previously if the job didn\u0027t exist, response would be empty here so this method used to return None.",
+      "revId": "2fb0d53f634093a5dd1a70791b5116dbc8607075",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a961159_3c57fdcb",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 526,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-01-13T20:02:03Z",
+      "side": 1,
+      "message": "Just realised this will now trigger an exception, which is not the same as before. Previously it returned False if the job didn\u0027t exist.",
+      "revId": "2fb0d53f634093a5dd1a70791b5116dbc8607075",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a961159_1cd5e11a",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 538,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-01-13T20:02:03Z",
+      "side": 1,
+      "message": "The fact that this call will result in an exception if the job does not exist makes the raise statement below redundant.",
+      "revId": "2fb0d53f634093a5dd1a70791b5116dbc8607075",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
