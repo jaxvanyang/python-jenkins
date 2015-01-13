@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "3a961159_4f1eca0e",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 218,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-01-13T21:56:26Z",
+      "side": 1,
+      "message": "I\u0027ll have to leave that to the project maintainer, but I\u0027m guessing that for this to raise an exception it\u0027s an api change and probably requires some notes added to let consumers know along with a version bump.",
+      "parentUuid": "3a961159_d7a33241",
+      "revId": "2fb0d53f634093a5dd1a70791b5116dbc8607075",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3a961159_3caffd7e",
         "filename": "jenkins/__init__.py",
         "patchSetId": 5
