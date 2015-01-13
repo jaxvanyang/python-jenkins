@@ -120,6 +120,24 @@
       "revId": "2fb0d53f634093a5dd1a70791b5116dbc8607075",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a961159_1d65db1c",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 184,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-01-13T21:48:15Z",
+      "side": 1,
+      "message": "Ah, sorry, I was wrong about the second one. Due to comment and run!",
+      "parentUuid": "3a961159_024c9a75",
+      "revId": "2fb0d53f634093a5dd1a70791b5116dbc8607075",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
