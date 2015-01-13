@@ -102,6 +102,24 @@
       "revId": "2fb0d53f634093a5dd1a70791b5116dbc8607075",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a961159_024c9a75",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 184,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-01-13T20:54:04Z",
+      "side": 1,
+      "message": "Could you comment on the second test, so I can see which one you mean?  I can see how test_assert_job_exists__job_missing() needs to be amended, but test_assert_job_exists__job_exists()  looks like it\u0027s intended for the non-404 case…",
+      "parentUuid": "3a961159_fc29f5f2",
+      "revId": "2fb0d53f634093a5dd1a70791b5116dbc8607075",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
