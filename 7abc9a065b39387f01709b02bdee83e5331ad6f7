@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a930d6b_4c68b687",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 236,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-01-22T14:58:42Z",
+      "side": 1,
+      "message": "If this timeout fires, do we want to catch it, check we got a socket timeout and raise a JenkinsException?\n\nAdded a snippet to to the test code for how to mock this, though I don\u0027t have an easy way to confirm that the behaviour on python 2 \u0026 3 is the same.",
+      "revId": "7abc9a065b39387f01709b02bdee83e5331ad6f7",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a930d6b_6cbbb2e5",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-01-22T14:58:42Z",
+      "side": 1,
+      "message": "Suggested additional test if it\u0027s decided it\u0027s worth handing the URLError raised for a timeout:\n\n     @patch(\u0027jenkins.urlopen\u0027)\n     def test_timeout_fires(self, mock_urlopen):\n         j \u003d jenkins.Jenkins(\u0027http://example.com\u0027)\n         from socket import timeout\n         mock_urlopen.side_effect \u003d timeout()\n         with self.assertRaises(timeout):\n             j.get_job_config(u\u0027Timeout\u0027)\n\nThough I\u0027m not sure it\u0027s possible to detect a timeout in the same way across multiple versions of python. I can trigger one with python2 in messing with my proxy, but python3 results in a 503 returned in that case.",
+      "revId": "7abc9a065b39387f01709b02bdee83e5331ad6f7",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
