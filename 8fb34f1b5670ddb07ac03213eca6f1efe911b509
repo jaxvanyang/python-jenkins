@@ -72,6 +72,58 @@
     },
     {
       "key": {
+        "uuid": "da86d52c_b0278cb5",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 313,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-02-03T18:38:47Z",
+      "side": 1,
+      "message": "I think providing a concrete list would make it unambigous. So something like.. \n\n:param items:\n   :items values: \n          * **view name***\n          * **folder name**\n          * **job name **\n\nAlso how about the query param?",
+      "parentUuid": "5a890539_bf65d646",
+      "revId": "8fb34f1b5670ddb07ac03213eca6f1efe911b509",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da86d52c_a7eaef0c",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 319,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-02-03T18:38:47Z",
+      "side": 1,
+      "message": "should we maybe provide an example using the new params?",
+      "revId": "8fb34f1b5670ddb07ac03213eca6f1efe911b509",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da86d52c_270d1f3f",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 327,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-02-03T18:38:47Z",
+      "side": 1,
+      "message": "I think the correct URL is $server/job/$job_name/api/json but this will set the URL to $server/$job_name/api/json",
+      "revId": "8fb34f1b5670ddb07ac03213eca6f1efe911b509",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a890539_291aa217",
         "filename": "jenkins/__init__.py",
         "patchSetId": 1
