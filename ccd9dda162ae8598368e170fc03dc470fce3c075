@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da86d52c_a83dce2e",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 258,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-02-06T22:02:35Z",
+      "side": 1,
+      "message": "I\u0027d strongly suggest taking the approach of the NotFoundException and raising a subclass of JenkinsException—call it EmptyResponseException.  That way, you can eliminate the \u0027if …: … else raise\" from maybe_add_crumb().",
+      "revId": "ccd9dda162ae8598368e170fc03dc470fce3c075",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
