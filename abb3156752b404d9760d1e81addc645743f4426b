@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da86d52c_6603070e",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 194,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-02-06T22:41:13Z",
+      "side": 1,
+      "message": "Combine the NotFoundException and EmptyResponseException:\n\n    except (NotFoundException, EmptyResponseException):\n        # Don\u0027t need crumbs\n        self.crumb \u003d False",
+      "revId": "abb3156752b404d9760d1e81addc645743f4426b",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da86d52c_e60e1732",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 196,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-02-06T22:41:13Z",
+      "side": 1,
+      "message": "If all you\u0027re going to do is re-raise, eliminate the whole \u0027except JenkinsException\u0027 clause.",
+      "revId": "abb3156752b404d9760d1e81addc645743f4426b",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
