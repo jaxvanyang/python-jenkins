@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da86d52c_e84c26cb",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 196,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-02-06T22:06:23Z",
+      "side": 1,
+      "message": "Not valid by pep8.  Also, there\u0027s another way to do this: use a mock:\n\n    jenkins_mock.return_value \u003d mock.Mock(**{\u0027read.return_value\u0027: None})",
+      "revId": "17f260a2a2d659cfe2741370147fb54ffd749074",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
