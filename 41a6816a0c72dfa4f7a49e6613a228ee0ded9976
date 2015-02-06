@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da86d52c_c1d9fdf5",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 189,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-02-06T23:39:02Z",
+      "side": 1,
+      "message": "This could go back into the \u0027try\u0027 block\u0027s \u0027else\u0027 clause now…that would minimize the change.",
+      "revId": "41a6816a0c72dfa4f7a49e6613a228ee0ded9976",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da86d52c_41ed0d8e",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-02-06T23:39:02Z",
+      "side": 1,
+      "message": "I recommend against including docstrings in tests, as some frameworks report the docstring instead of the test method name.  That can make it difficult to track down the actual test that failed…",
+      "revId": "41a6816a0c72dfa4f7a49e6613a228ee0ded9976",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
