@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da86d52c_8cd907f7",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 189,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-02-06T17:28:11Z",
+      "side": 1,
+      "message": "Ah, that explains some errors I\u0027ve been seeing from jenkins-jobs…",
+      "revId": "930719a5480b54df97eee8e8ded3934195ca4502",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
