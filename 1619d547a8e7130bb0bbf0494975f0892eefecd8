@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da86d52c_1cac808b",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 357,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-02-06T05:21:59Z",
+      "side": 1,
+      "message": "Just about every request calls jenkins_open.  Can this check be done in jenkins_open method instead?  That way it will be handled for all requests.  The only exception looks like the get_version() method which doesn\u0027t call jenkins_open().",
+      "revId": "1619d547a8e7130bb0bbf0494975f0892eefecd8",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
