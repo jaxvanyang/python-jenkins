@@ -16,6 +16,24 @@
       "revId": "fa2cf7f99c0e9d68b1528ce49b67e7bc54ce0bea",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da86d52c_03a9627b",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-02-06T19:49:30Z",
+      "side": 1,
+      "message": "The \u0027tox -e pep8\u0027 test checks for alphabetical import declarations so that won\u0027t work.",
+      "parentUuid": "da86d52c_9d521367",
+      "revId": "fa2cf7f99c0e9d68b1528ce49b67e7bc54ce0bea",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
