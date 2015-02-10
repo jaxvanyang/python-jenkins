@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da86d52c_766d1d99",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2015-02-10T11:27:34Z",
+      "side": 1,
+      "message": "Looking at python2.7 socket.py , socket._GLOBAL_DEFAULT_TIMEOUT is an empty object meant to detect whether a timeout is requested to be set:\n\n if timeout is not _GLOBAL_DEFAULT_TIMEOUT:\n     sock.settimeout(timeout)\n\n\nSo we end up with no timeout at all imho, not necessarily a problem since that is what is used in other python core code.",
+      "revId": "214c00e6198ee651da8df9a2731cd6760c8dd060",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da86d52c_f6bd8dd8",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 151,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2015-02-10T11:27:34Z",
+      "side": 1,
+      "message": "I would remove our DEFAULT_CONN_TIMEOUT and rely directly on socket. _GLOBAL_DEFAULT_TIMEOUT  i.e.:\n\n timeout\u003dsocket._GLOBAL_DEFAULT_TIMEOUT",
+      "revId": "214c00e6198ee651da8df9a2731cd6760c8dd060",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da86d52c_76c99d78",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 159,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2015-02-10T11:27:34Z",
+      "side": 1,
+      "message": "Adjust the timeout parameter documentation to mention there is no timeout by default.",
+      "revId": "214c00e6198ee651da8df9a2731cd6760c8dd060",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da86d52c_f67caded",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2015-02-10T11:27:34Z",
+      "side": 1,
+      "message": "Sure :-).  I am also wondering whether we should exercise six urlopen() to connect to a listening socket and ensure the actual timeout value is properly set (i.e. no timeout).  Not sure it is worth it.",
+      "revId": "214c00e6198ee651da8df9a2731cd6760c8dd060",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
