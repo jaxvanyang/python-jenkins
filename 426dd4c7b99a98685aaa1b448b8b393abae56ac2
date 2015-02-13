@@ -2,6 +2,40 @@
   "comments": [
     {
       "key": {
+        "uuid": "da86d52c_06b7a23b",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-02-13T16:53:21Z",
+      "side": 1,
+      "message": "s/jused/used/ (femtonit)",
+      "revId": "426dd4c7b99a98685aaa1b448b8b393abae56ac2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da86d52c_a6f6d6f7",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 819,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-02-13T16:53:21Z",
+      "side": 1,
+      "message": "s/it\u0027s/its/ (femtonit)",
+      "revId": "426dd4c7b99a98685aaa1b448b8b393abae56ac2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "da86d52c_11ab8275",
         "filename": "jenkins/__init__.py",
         "patchSetId": 3
@@ -13,6 +47,24 @@
       "writtenOn": "2015-02-13T00:03:25Z",
       "side": 1,
       "message": "i\u0027m wondering if the delay might be less erratic if you use the get_version() method instead?  i don\u0027t think the mode provides much info anyways.",
+      "revId": "426dd4c7b99a98685aaa1b448b8b393abae56ac2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da86d52c_06bc0206",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 822,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-02-13T16:53:21Z",
+      "side": 1,
+      "message": "Yeah, pick the simplest method as a basic ping.  After that starts returning normally, then maybe you need to look at mode…but I don\u0027t know much about what \"mode\" signifies in Jenkins, so I don\u0027t know…",
+      "parentUuid": "da86d52c_11ab8275",
       "revId": "426dd4c7b99a98685aaa1b448b8b393abae56ac2",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
@@ -64,6 +116,41 @@
       "writtenOn": "2015-02-13T00:03:25Z",
       "side": 1,
       "message": "I think some slow processing is happening in between sleeps which causes the delay to be much longer than what a user might expect.  \n\nI added a command to print timestamp here:\n   print (time.strftime(\"%H:%M:%S\"))\n\nstop my jenkins\nstarted it then ran the following:\n\n\u003e\u003e\u003e j.wait_for_normal_op(10)\n  15:51:03\n  15:51:04\n  15:51:05\n  15:51:06\n  15:51:13   \n  15:51:14\n  15:51:43      \u003c-- 29 sec delay\n  15:51:44\n  15:51:46\n  15:51:48\n  15:51:49\n  False\n\u003e\u003e\u003e j.wait_for_normal_op(10)\n  15:51:54\n  15:51:56\n  15:51:57\n  15:51:59\n  15:52:00\n  15:52:02\n  15:52:03\n  15:52:04\n  True",
+      "revId": "426dd4c7b99a98685aaa1b448b8b393abae56ac2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da86d52c_668bfe1e",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 830,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-02-13T16:53:21Z",
+      "side": 1,
+      "message": "I\u0027m rather tempted to suggest using some sort of exponential backoff algorithm as well; after all, every REST hit is going to slow Jenkins down a bit to process that hit.\n\nAs for the huge delay, well, remember that it could take Jenkins a long time to finally reply to a query.  We\u0027re using LDAP-based authentication with Jenkins, and it can take nearly an hour to reconfigure Jenkins with JJB because of all the LDAP queries…so this is something that we\u0027re quite sensitive to :)",
+      "parentUuid": "da86d52c_b1839601",
+      "revId": "426dd4c7b99a98685aaa1b448b8b393abae56ac2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da86d52c_468d1a2a",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 1442,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-02-13T16:53:21Z",
+      "side": 1,
+      "message": "I think you should add a test to validate the looping back around and to verify that timeouts are set up properly.",
       "revId": "426dd4c7b99a98685aaa1b448b8b393abae56ac2",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
