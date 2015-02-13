@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da86d52c_c6ce6a5b",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 374,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-02-13T16:55:43Z",
+      "side": 1,
+      "message": "While you\u0027re in here, you could combine these two except clauses:\n\n    except (HTTPError, BadStatusLine):\n        raise BadHTTPException(\"Error communicating with server[%s]\"\n                               % self.server)\n\nJust a thought…",
+      "revId": "46be860b28c5e86ab3c89955c87812d200e7aa5e",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
