@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da86d52c_11ab8275",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 822,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-02-13T00:03:25Z",
+      "side": 1,
+      "message": "i\u0027m wondering if the delay might be less erratic if you use the get_version() method instead?  i don\u0027t think the mode provides much info anyways.",
+      "revId": "426dd4c7b99a98685aaa1b448b8b393abae56ac2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da86d52c_31eb26a5",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 824,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-02-13T00:03:25Z",
+      "side": 1,
+      "message": "I think you\u0027ll want to either add a JenkinsException here or another custom exception otherwise this method will exit when jenkins is not even accepting connections.  It will exit with \"\njenkins.JenkinsException: Error in request: [Errno 61] Connection refused\"",
+      "revId": "426dd4c7b99a98685aaa1b448b8b393abae56ac2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da86d52c_f1c6ee47",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 824,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-02-13T00:03:25Z",
+      "side": 1,
+      "message": "I think you\u0027ll want to add a JenkinsException here otherwise this method will exit when jenkins is not even accepting connections.  It will exit with \"\njenkins.JenkinsException: Error in request: [Errno 61] Connection refused\"",
+      "revId": "426dd4c7b99a98685aaa1b448b8b393abae56ac2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da86d52c_b1839601",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 830,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-02-13T00:03:25Z",
+      "side": 1,
+      "message": "I think some slow processing is happening in between sleeps which causes the delay to be much longer than what a user might expect.  \n\nI added a command to print timestamp here:\n   print (time.strftime(\"%H:%M:%S\"))\n\nstop my jenkins\nstarted it then ran the following:\n\n\u003e\u003e\u003e j.wait_for_normal_op(10)\n  15:51:03\n  15:51:04\n  15:51:05\n  15:51:06\n  15:51:13   \n  15:51:14\n  15:51:43      \u003c-- 29 sec delay\n  15:51:44\n  15:51:46\n  15:51:48\n  15:51:49\n  False\n\u003e\u003e\u003e j.wait_for_normal_op(10)\n  15:51:54\n  15:51:56\n  15:51:57\n  15:51:59\n  15:52:00\n  15:52:02\n  15:52:03\n  15:52:04\n  True",
+      "revId": "426dd4c7b99a98685aaa1b448b8b393abae56ac2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
