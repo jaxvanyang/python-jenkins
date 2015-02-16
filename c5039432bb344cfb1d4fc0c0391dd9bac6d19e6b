@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da86d52c_08e1312a",
+        "filename": "README.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-02-16T17:05:03Z",
+      "side": 0,
+      "message": "This line could remain, I think; it basically turns \"README\" into the top-most heading…",
+      "revId": "c5039432bb344cfb1d4fc0c0391dd9bac6d19e6b",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
