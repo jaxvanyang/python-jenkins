@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da86d52c_b824a9c6",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 157,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-02-18T12:59:45Z",
+      "side": 1,
+      "message": "While I dislike the idea of needing to access a modules private globals, it seems that we\u0027d have to do a bit of a dance otherwise.\n\nAlso since in socket timeouts \u0027None\u0027 has a special behaviour of triggering a blocking mode, it makes using it not possible.",
+      "revId": "503610b4e565943a48dbdc49e8d9da4693e49ee9",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da86d52c_b80bc929",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 165,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-02-18T12:59:45Z",
+      "side": 1,
+      "message": "\u0027None\u0027 has a special meaning for socket timeouts, do you want to use \u0027not set\u0027 or something else instead?\n\nPossibly worth adding a comment in the code about the special behaviour on \u0027None\u0027 as well.",
+      "revId": "503610b4e565943a48dbdc49e8d9da4693e49ee9",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
