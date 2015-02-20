@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba7be1f8_2ea0ec8f",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-02-20T20:20:07Z",
+      "side": 1,
+      "message": "nit: maybe group this with the imports above?",
+      "revId": "eca2bd6d0a2a5e81893e009e35b1262b089070f1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba7be1f8_611af56f",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 431,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-02-20T20:20:07Z",
+      "side": 1,
+      "message": "should this just return self.plugins?",
+      "revId": "eca2bd6d0a2a5e81893e009e35b1262b089070f1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba7be1f8_e181854b",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 803,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-02-20T20:20:07Z",
+      "side": 1,
+      "message": "This seems like its missing some tests from the JJB implementation.  Do  you intend to just have just a few tests here and cover the rest in JJB?  At minimum maybe test an \u0027less than or equal\u0027 and \u0027greater than or equal\u0027 as well?",
+      "revId": "eca2bd6d0a2a5e81893e009e35b1262b089070f1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba7be1f8_6ec5845a",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 811,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-02-20T20:20:07Z",
+      "side": 1,
+      "message": "this should fail?  the plugin_info_json is defined with version of \u00271.5\u0027",
+      "revId": "eca2bd6d0a2a5e81893e009e35b1262b089070f1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
