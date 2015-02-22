@@ -36,6 +36,23 @@
     },
     {
       "key": {
+        "uuid": "ba7be1f8_19919799",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 431,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-02-22T21:04:38Z",
+      "side": 1,
+      "message": "Possibly, and move the code to populate the plugins attribute into a separate function? The depth arg is putting me off a little since I\u0027m not sure of the best way to ensure that we\u0027re returning the correct depth of info, since this seems more of an API call to be used calling applications to get more detailed information.\n\nShould we leave this as a way to get direct access to the needed info?\nOr move it to a private method and only provide access through the plugins attribute?",
+      "revId": "eca2bd6d0a2a5e81893e009e35b1262b089070f1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba7be1f8_821a7515",
         "filename": "jenkins/plugins.py",
         "patchSetId": 3
@@ -47,6 +64,23 @@
       "writtenOn": "2015-02-22T08:50:12Z",
       "side": 1,
       "message": "Do you think it would ever be possible that someone might try\n\na \u003d PluginVersion(\"0.1.2\")\n...\nb \u003d PluginVersion(\"0.1.2\")\n\nif a \u003e b:\n  do_something_clever()\nelse:\n  do_something_boring()\n\nAnd does this class support that possibility? I think this call to resources.parse_version() may fail since pkg_resouces.parse_version seems to expect a string value (or at least something string-like)",
+      "revId": "eca2bd6d0a2a5e81893e009e35b1262b089070f1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba7be1f8_f991239b",
+        "filename": "jenkins/plugins.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-02-22T21:04:38Z",
+      "side": 1,
+      "message": "Be unusual, but shouldn\u0027t be too difficult to support.",
       "revId": "eca2bd6d0a2a5e81893e009e35b1262b089070f1",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
@@ -88,6 +122,23 @@
     },
     {
       "key": {
+        "uuid": "ba7be1f8_398c9b7f",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 803,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-02-22T21:04:38Z",
+      "side": 1,
+      "message": "Agreed, this should test the full spectrum I\u0027ll migrate the full range of tests, and probably move these to a separate file to allow for senarios similar to how it\u0027s done in JJB.",
+      "revId": "eca2bd6d0a2a5e81893e009e35b1262b089070f1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba7be1f8_6ec5845a",
         "filename": "tests/test_jenkins.py",
         "patchSetId": 3
@@ -117,6 +168,23 @@
       "side": 1,
       "message": "I think this should pass, going by the behavior of Maven 2.2.0:\n\nhttps://svn.apache.org/viewvc/maven/maven-2/tags/maven-2.2.0/maven-artifact/src/test/java/org/apache/maven/artifact/versioning/DefaultArtifactVersionTest.java?view\u003dmarkup\n\nLook for a function called \"testVersionComparing\"\n\nNot sure exactly which maven versioning scheme we should be attempting to emulate.",
       "parentUuid": "ba7be1f8_6ec5845a",
+      "revId": "eca2bd6d0a2a5e81893e009e35b1262b089070f1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba7be1f8_59ea2f10",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 811,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-02-22T21:04:38Z",
+      "side": 1,
+      "message": "Seems to be in keeping with both how maven and pkg_resources compare versions. Additional \u0027.0\u0027 are treated as being optional and insignificant unless followed by another significant number.",
       "revId": "eca2bd6d0a2a5e81893e009e35b1262b089070f1",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
