@@ -36,6 +36,23 @@
     },
     {
       "key": {
+        "uuid": "ba7be1f8_821a7515",
+        "filename": "jenkins/plugins.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 13487
+      },
+      "writtenOn": "2015-02-22T08:50:12Z",
+      "side": 1,
+      "message": "Do you think it would ever be possible that someone might try\n\na \u003d PluginVersion(\"0.1.2\")\n...\nb \u003d PluginVersion(\"0.1.2\")\n\nif a \u003e b:\n  do_something_clever()\nelse:\n  do_something_boring()\n\nAnd does this class support that possibility? I think this call to resources.parse_version() may fail since pkg_resouces.parse_version seems to expect a string value (or at least something string-like)",
+      "revId": "eca2bd6d0a2a5e81893e009e35b1262b089070f1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba7be1f8_e181854b",
         "filename": "tests/test_jenkins.py",
         "patchSetId": 3
@@ -53,6 +70,24 @@
     },
     {
       "key": {
+        "uuid": "ba7be1f8_22baa9de",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 803,
+      "author": {
+        "id": 13487
+      },
+      "writtenOn": "2015-02-22T08:50:12Z",
+      "side": 1,
+      "message": "Ah this hadn\u0027t occurred to me, but it does make sense that all the existing version string comparisons be moved into this library.",
+      "parentUuid": "ba7be1f8_e181854b",
+      "revId": "eca2bd6d0a2a5e81893e009e35b1262b089070f1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba7be1f8_6ec5845a",
         "filename": "tests/test_jenkins.py",
         "patchSetId": 3
@@ -64,6 +99,24 @@
       "writtenOn": "2015-02-20T20:20:07Z",
       "side": 1,
       "message": "this should fail?  the plugin_info_json is defined with version of \u00271.5\u0027",
+      "revId": "eca2bd6d0a2a5e81893e009e35b1262b089070f1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba7be1f8_82f195cf",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 811,
+      "author": {
+        "id": 13487
+      },
+      "writtenOn": "2015-02-22T08:50:12Z",
+      "side": 1,
+      "message": "I think this should pass, going by the behavior of Maven 2.2.0:\n\nhttps://svn.apache.org/viewvc/maven/maven-2/tags/maven-2.2.0/maven-artifact/src/test/java/org/apache/maven/artifact/versioning/DefaultArtifactVersionTest.java?view\u003dmarkup\n\nLook for a function called \"testVersionComparing\"\n\nNot sure exactly which maven versioning scheme we should be attempting to emulate.",
+      "parentUuid": "ba7be1f8_6ec5845a",
       "revId": "eca2bd6d0a2a5e81893e009e35b1262b089070f1",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
