@@ -16,6 +16,24 @@
       "revId": "0632d046b18d5192bcfd844b1f3f888556da074e",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba7be1f8_532f51f6",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 235,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-02-23T17:57:51Z",
+      "side": 1,
+      "message": "Because that\u0027s not how my simplistic brain works :)",
+      "parentUuid": "ba7be1f8_baf4f6f2",
+      "revId": "0632d046b18d5192bcfd844b1f3f888556da074e",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
