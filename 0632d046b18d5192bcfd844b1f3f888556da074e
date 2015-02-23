@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba7be1f8_baf4f6f2",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 235,
+      "author": {
+        "id": 4220
+      },
+      "writtenOn": "2015-02-23T06:19:17Z",
+      "side": 1,
+      "message": "Just out of curiosity - why not a list comprehension?\nreturn [self.get_job_info(job[\u0027name\u0027], depth\u003ddepth) for job in jobs if re.search(pattern, job[\u0027name\u0027])]",
+      "revId": "0632d046b18d5192bcfd844b1f3f888556da074e",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
