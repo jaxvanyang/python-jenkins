@@ -53,6 +53,58 @@
     },
     {
       "key": {
+        "uuid": "ba7be1f8_a442220e",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 431,
+      "author": {
+        "id": 13487
+      },
+      "writtenOn": "2015-02-23T00:24:46Z",
+      "side": 1,
+      "message": "I think this would be useful for allowing consuming applications a way to directly access the info. For example, a long-running process that wants to periodically compare plugin version info from the same Jenkins master obtained at different times. Although I guess judicious use of deep copy should allow that to be done anyway.\n\nIf we do hide this method, there would have to be some method, \"refresh_plugins_info\" that would either set self._plugins to None or call the hidden _get_plugins_info method to pass its return value to the self.plugins setter (see my comment below on the \"plugins\" method).",
+      "parentUuid": "ba7be1f8_19919799",
+      "revId": "eca2bd6d0a2a5e81893e009e35b1262b089070f1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba7be1f8_843b5e9b",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 469,
+      "author": {
+        "id": 13487
+      },
+      "writtenOn": "2015-02-23T00:24:46Z",
+      "side": 1,
+      "message": "Definitely not familiar with this pattern, but it looks interesting if a little non-obvious for newbies like myself.\n\nIt looks like the only way a consumer of this class could currently obtain updated plugins_info from the jenkins master is to either:\n\njenkins._plugins \u003d None\npinfo \u003d jenkins.plugins\n\nor:\n\njenksin.plugins \u003d jenkins.get_plugins_info()\n\nWhat do you think about a \"refresh_plugins_info\" method to handle a case like this? This would be useful for long-running processes that want to use this library but need to periodically validate that no plugin verions have changed. (For example, if someone wanted to tightly integrate Zuul and JJB...or maybe that\u0027s already a thing?)",
+      "revId": "eca2bd6d0a2a5e81893e009e35b1262b089070f1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba7be1f8_44e32633",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 479,
+      "author": {
+        "id": 13487
+      },
+      "writtenOn": "2015-02-23T00:24:46Z",
+      "side": 1,
+      "message": "nit: pluralizing \"plugin_info\" seems like it would be a good idea, to stick with the established convention of using \"plugins_info\" to indicate an iterable of plugin info dicts.",
+      "revId": "eca2bd6d0a2a5e81893e009e35b1262b089070f1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba7be1f8_821a7515",
         "filename": "jenkins/plugins.py",
         "patchSetId": 3
@@ -81,6 +133,24 @@
       "writtenOn": "2015-02-22T21:04:38Z",
       "side": 1,
       "message": "Be unusual, but shouldn\u0027t be too difficult to support.",
+      "revId": "eca2bd6d0a2a5e81893e009e35b1262b089070f1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba7be1f8_f92123fd",
+        "filename": "jenkins/plugins.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 13487
+      },
+      "writtenOn": "2015-02-23T00:24:46Z",
+      "side": 1,
+      "message": "I just thought of a use case...someone might try to automatically compare plugin versions between two different Jenki. If there\u0027s not already a way to do that. \n\nIn fact, I might use it for this in the near future.",
+      "parentUuid": "ba7be1f8_f991239b",
       "revId": "eca2bd6d0a2a5e81893e009e35b1262b089070f1",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
