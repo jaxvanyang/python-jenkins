@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a80dd14_3b94d435",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-03-16T16:54:39Z",
+      "side": 1,
+      "message": "Probably should remove \u0027pretty\u003dtrue\u0027 to make retrieving the info more efficient.",
+      "revId": "5ae8271b5eb5b6ce5179b9e06a374dfa3fbbbadf",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
