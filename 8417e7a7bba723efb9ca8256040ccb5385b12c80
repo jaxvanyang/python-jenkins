@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a80dd14_a278dd7e",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2015-03-19T21:49:55Z",
+      "side": 1,
+      "message": "./setup.py:1:1: H803  git commit title (\u0027Add info on how to contribute.\u0027) should not end with period\n\nhacking is being picky!",
+      "revId": "8417e7a7bba723efb9ca8256040ccb5385b12c80",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
