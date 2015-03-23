@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "1a6ced46_5a4eb8c2",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-03-23T19:06:20Z",
+      "side": 1,
+      "message": "since it\u0027s a third party import I assumed we were still following the following groupings?:\n\n \u003csystem\u003e\n\n \u003c3rd party\u003e\n\n \u003cproject\u003e",
+      "parentUuid": "ba7be1f8_2ea0ec8f",
+      "revId": "eca2bd6d0a2a5e81893e009e35b1262b089070f1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba7be1f8_611af56f",
         "filename": "jenkins/__init__.py",
         "patchSetId": 3
@@ -71,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "1a6ced46_7cd1affa",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 431,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-03-23T19:06:20Z",
+      "side": 1,
+      "message": "I guess the real question comes down to whether there should be methods to get the raw data as opposed to the parsed cached data that will be in the \u0027plugins\u0027 attribute.\n\nSince these methods also allow for control of the depth of info returned I\u0027m thinking of leaving them as is and have self.plugins populated by calling them rather than trying to make them get the info from the attribute.",
+      "parentUuid": "ba7be1f8_a442220e",
+      "revId": "eca2bd6d0a2a5e81893e009e35b1262b089070f1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba7be1f8_843b5e9b",
         "filename": "jenkins/__init__.py",
         "patchSetId": 3
@@ -82,6 +118,24 @@
       "writtenOn": "2015-02-23T00:24:46Z",
       "side": 1,
       "message": "Definitely not familiar with this pattern, but it looks interesting if a little non-obvious for newbies like myself.\n\nIt looks like the only way a consumer of this class could currently obtain updated plugins_info from the jenkins master is to either:\n\njenkins._plugins \u003d None\npinfo \u003d jenkins.plugins\n\nor:\n\njenksin.plugins \u003d jenkins.get_plugins_info()\n\nWhat do you think about a \"refresh_plugins_info\" method to handle a case like this? This would be useful for long-running processes that want to use this library but need to periodically validate that no plugin verions have changed. (For example, if someone wanted to tightly integrate Zuul and JJB...or maybe that\u0027s already a thing?)",
+      "revId": "eca2bd6d0a2a5e81893e009e35b1262b089070f1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a6ced46_7cca8f50",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 469,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-03-23T19:06:20Z",
+      "side": 1,
+      "message": "Decided to restore the get_plugin_info and leave both it and get_plugins_info as methods to retrieve raw plugin data from the jenkins server.\n\nAdding a refresh_plugins_info to allow the plugins property to be refreshed.",
+      "parentUuid": "ba7be1f8_843b5e9b",
       "revId": "eca2bd6d0a2a5e81893e009e35b1262b089070f1",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
