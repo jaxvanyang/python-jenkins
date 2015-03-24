@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a6ced46_893c46e4",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 503,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-03-24T15:40:05Z",
+      "side": 1,
+      "message": "Is it expected for the user to be able to set the plugins attribute?  If not, I\u0027d suggest changing refresh_plugins_info() to store data directly in the underlying self._plugins attribute, rather than having a setter like this.  That would essentially entail merging refresh_plugins_info() and this setter, but would eliminate the possibility of the user accidentally overwriting plugins.",
+      "revId": "558273cfc0f1b8685af6d10b09b24eac6ec70664",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a6ced46_bc13fe5a",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 511,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-03-24T15:40:05Z",
+      "side": 1,
+      "message": "I\u0027m thinking that this helper might be just a little too obvious; it might be better to drop it altogether.  After all, \"There should be one-- and preferably only one --obvious way to do it.\"",
+      "revId": "558273cfc0f1b8685af6d10b09b24eac6ec70664",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a6ced46_e63a4933",
+        "filename": "jenkins/plugins.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-03-24T15:40:05Z",
+      "side": 1,
+      "message": "I\u0027d suggest \"super(self, Plugin).__setitem__(self, key, value)\"",
+      "revId": "558273cfc0f1b8685af6d10b09b24eac6ec70664",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a6ced46_dc3c3ac2",
+        "filename": "jenkins/plugins.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-03-24T15:40:05Z",
+      "side": 1,
+      "message": "I\u0027d change the parameter names here to avoid symbol collision, i.e., s/operator/op/.  I thought at first you were calling the module :)",
+      "revId": "558273cfc0f1b8685af6d10b09b24eac6ec70664",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a6ced46_1cb5f230",
+        "filename": "jenkins/plugins.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-03-24T15:40:05Z",
+      "side": 1,
+      "message": "Any particular reason you\u0027re using the __xx__ versions of these functions?  You could just use \"operator.le\"…",
+      "revId": "558273cfc0f1b8685af6d10b09b24eac6ec70664",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a6ced46_664e5998",
+        "filename": "tests/test_plugins.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-03-24T15:40:05Z",
+      "side": 1,
+      "message": "Have you considered using, e.g., operator.gt for the value of \u0027op\u0027?  It would save you the getattr() calls, and you can use the function\u0027s __name__ attribute to format the error message.\n\nAnother point: it is mildly more efficient in Python to use dictionary literals (e.g., {\u0027v1\u0027: \u00271.0.0\u0027, \u0027op\u0027: operator.gt, \u0027v2\u0027: \u00270.8.0\u0027}) than to use the dict() constructor like this.  In essence, using dict() means Python has to build the dictionary twice: once to pass to the dict() function, then again by the operation of dict() itself.\n\nFinally, this class only has tests for the methods returning True, but nothing for returning False; you could incorporate a truth table into your dictionary to allow testing that, e.g. \"{…, \u0027ex\u0027: True}\" (\u0027ex\u0027 for \u0027expected\u0027).",
+      "revId": "558273cfc0f1b8685af6d10b09b24eac6ec70664",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
