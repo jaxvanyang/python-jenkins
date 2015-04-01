@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "da9b358b_7b89c825",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 503,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-04-01T09:28:47Z",
+      "side": 1,
+      "message": "Good point, I didn\u0027t think to rewrite this after abandoning having it be updated by get_plugins_info() to leave them as immediate raw retrieval methods.",
+      "parentUuid": "1a6ced46_893c46e4",
+      "revId": "558273cfc0f1b8685af6d10b09b24eac6ec70664",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a6ced46_bc13fe5a",
         "filename": "jenkins/__init__.py",
         "patchSetId": 5
@@ -30,6 +48,24 @@
       "writtenOn": "2015-03-24T15:40:05Z",
       "side": 1,
       "message": "I\u0027m thinking that this helper might be just a little too obvious; it might be better to drop it altogether.  After all, \"There should be one-- and preferably only one --obvious way to do it.\"",
+      "revId": "558273cfc0f1b8685af6d10b09b24eac6ec70664",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9b358b_9bc48c5f",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 511,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-04-01T09:28:47Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1a6ced46_bc13fe5a",
       "revId": "558273cfc0f1b8685af6d10b09b24eac6ec70664",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "da9b358b_bbc9907a",
+        "filename": "jenkins/plugins.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-04-01T09:28:47Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1a6ced46_e63a4933",
+      "revId": "558273cfc0f1b8685af6d10b09b24eac6ec70664",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a6ced46_dc3c3ac2",
         "filename": "jenkins/plugins.py",
         "patchSetId": 5
@@ -70,6 +124,24 @@
     },
     {
       "key": {
+        "uuid": "da9b358b_3bb580ed",
+        "filename": "jenkins/plugins.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-04-01T09:28:47Z",
+      "side": 1,
+      "message": "Oops! yes, that is bad!",
+      "parentUuid": "1a6ced46_dc3c3ac2",
+      "revId": "558273cfc0f1b8685af6d10b09b24eac6ec70664",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a6ced46_1cb5f230",
         "filename": "jenkins/plugins.py",
         "patchSetId": 5
@@ -81,6 +153,24 @@
       "writtenOn": "2015-03-24T15:40:05Z",
       "side": 1,
       "message": "Any particular reason you\u0027re using the __xx__ versions of these functions?  You could just use \"operator.le\"…",
+      "revId": "558273cfc0f1b8685af6d10b09b24eac6ec70664",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da9b358b_dbca146e",
+        "filename": "jenkins/plugins.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-04-01T09:28:47Z",
+      "side": 1,
+      "message": "None what so ever, probably just copying the name of the calling method.",
+      "parentUuid": "1a6ced46_1cb5f230",
       "revId": "558273cfc0f1b8685af6d10b09b24eac6ec70664",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
