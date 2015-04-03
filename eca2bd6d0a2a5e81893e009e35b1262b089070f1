@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "baa041b7_96211f50",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-04-03T17:27:42Z",
+      "side": 1,
+      "message": "actually i didn\u0027t know that was standard.  thanks for pointing it out to me.",
+      "parentUuid": "1a6ced46_5a4eb8c2",
+      "revId": "eca2bd6d0a2a5e81893e009e35b1262b089070f1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba7be1f8_611af56f",
         "filename": "jenkins/__init__.py",
         "patchSetId": 3
@@ -101,6 +119,24 @@
       "side": 1,
       "message": "I guess the real question comes down to whether there should be methods to get the raw data as opposed to the parsed cached data that will be in the \u0027plugins\u0027 attribute.\n\nSince these methods also allow for control of the depth of info returned I\u0027m thinking of leaving them as is and have self.plugins populated by calling them rather than trying to make them get the info from the attribute.",
       "parentUuid": "ba7be1f8_a442220e",
+      "revId": "eca2bd6d0a2a5e81893e009e35b1262b089070f1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_f6d62b26",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 431,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-04-03T17:27:42Z",
+      "side": 1,
+      "message": "++",
+      "parentUuid": "1a6ced46_7cd1affa",
       "revId": "eca2bd6d0a2a5e81893e009e35b1262b089070f1",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
@@ -309,6 +345,24 @@
       "writtenOn": "2015-02-22T21:04:38Z",
       "side": 1,
       "message": "Seems to be in keeping with both how maven and pkg_resources compare versions. Additional \u0027.0\u0027 are treated as being optional and insignificant unless followed by another significant number.",
+      "revId": "eca2bd6d0a2a5e81893e009e35b1262b089070f1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_7678db2b",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 811,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-04-03T17:27:42Z",
+      "side": 1,
+      "message": "i didn\u0027t realize that but cool!",
+      "parentUuid": "ba7be1f8_59ea2f10",
       "revId": "eca2bd6d0a2a5e81893e009e35b1262b089070f1",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
