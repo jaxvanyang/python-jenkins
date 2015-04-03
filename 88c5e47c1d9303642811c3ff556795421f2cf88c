@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "baa041b7_b6f663f7",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 185,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-04-03T17:35:06Z",
+      "side": 1,
+      "message": "Maybe it\u0027s just me but I think this variable is misleading.  It\u0027s a cache for the list of plugins with only name and version info.  I thought it might be a list containing all of the plugin info.  I\u0027m not sure how to make it more clear, maybe just some comments or maybe a variable name change?  Or maybe it\u0027s just me and leave it as-is?",
+      "revId": "88c5e47c1d9303642811c3ff556795421f2cf88c",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_76e70d41",
         "filename": "jenkins/__init__.py",
         "patchSetId": 6
@@ -13,6 +30,41 @@
       "writtenOn": "2015-04-01T18:30:18Z",
       "side": 1,
       "message": "Suggestion to make this a hair more readable:\n\n    key \u003d (str(plugin_data[\u0027shortName\u0027]), str(plugin_data[\u0027longName\u0027]))\n    self._plugins[key] \u003d plugins.Plugin(**plugin_data)",
+      "revId": "88c5e47c1d9303642811c3ff556795421f2cf88c",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_bb3e4ed8",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 490,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-04-03T17:35:06Z",
+      "side": 1,
+      "message": "+1",
+      "parentUuid": "baa041b7_76e70d41",
+      "revId": "88c5e47c1d9303642811c3ff556795421f2cf88c",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "baa041b7_3b7d9eb1",
+        "filename": "tests/test_plugins.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-04-03T17:35:06Z",
+      "side": 1,
+      "message": "nit: This can probably be made as a global and shared in these two tests classes.",
       "revId": "88c5e47c1d9303642811c3ff556795421f2cf88c",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
