@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9aa53dc9_b9e2fcd3",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 489,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-04-07T15:36:02Z",
+      "side": 1,
+      "message": "Why did you name the variable \"keys\"?  You\u0027re associating the plugins.Plugin instance with the (single) key composed of a tuple of the short name and the long name of the plugin; that\u0027s only a single key, right?\n\nOh, I just looked up the documentation for the multi_key_dict class, and now I understand.  I\u0027m not sure I understand why this needs to use that class, though; couldn\u0027t you achieve the same effect with this construction:\n\n    self._plugins \u003d {}\n    for plugin_data in self.get_plugins_info():\n        plugin \u003d plugins.Plugin(**plugin_data)\n        self._plugins[plugin_data[\u0027shortName\u0027]] \u003d plugin\n        self._plugins[plugin_data[\u0027longName\u0027]] \u003d plugin",
+      "revId": "e6d73265f65f84bf48de8c8ff552f724669d6d86",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
