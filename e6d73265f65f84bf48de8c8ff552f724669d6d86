@@ -16,6 +16,24 @@
       "revId": "e6d73265f65f84bf48de8c8ff552f724669d6d86",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5aa745d1_c902c46f",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 489,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-04-16T00:20:14Z",
+      "side": 1,
+      "message": "Use of a reliable package seems like a smart choice to me.",
+      "parentUuid": "9aa53dc9_b9e2fcd3",
+      "revId": "e6d73265f65f84bf48de8c8ff552f724669d6d86",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
