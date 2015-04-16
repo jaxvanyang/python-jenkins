@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "5aa745d1_69adf087",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 185,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-04-16T00:16:58Z",
+      "side": 1,
+      "message": "Sorry about that.  The use of multi_key_dict tripped me up.",
+      "parentUuid": "9aa53dc9_f0b660db",
+      "revId": "88c5e47c1d9303642811c3ff556795421f2cf88c",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "baa041b7_76e70d41",
         "filename": "jenkins/__init__.py",
         "patchSetId": 6
