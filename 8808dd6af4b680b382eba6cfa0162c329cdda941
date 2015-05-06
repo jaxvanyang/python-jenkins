@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1aca2d91_5109a594",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-05-06T14:09:19Z",
+      "side": 1,
+      "message": "Are you sure that it\u0027s only jobs that are placed under folders? I\u0027d a feeling that just about everything could be placed and queried under a folder.",
+      "revId": "8808dd6af4b680b382eba6cfa0162c329cdda941",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1aca2d91_51940536",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 140,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-05-06T14:09:19Z",
+      "side": 1,
+      "message": "Planning to use this for some tests?",
+      "revId": "8808dd6af4b680b382eba6cfa0162c329cdda941",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1aca2d91_f1543155",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 516,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-05-06T14:09:19Z",
+      "side": 1,
+      "message": "Believe this needs to be modified to allowing searching sub folders for jobs  as otherwise you\u0027ll only ever return the top level list when querying.\n\nSee I8b27f4d1d1ddc9a55ada8569282d8c56502286a2",
+      "revId": "8808dd6af4b680b382eba6cfa0162c329cdda941",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1aca2d91_912cddac",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 887,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-05-06T14:09:19Z",
+      "side": 1,
+      "message": "I\u0027m relatively certain that \"string.join()\" is not python 3 compatible. following should work just fine though.\n\n \u0027/job/\u0027.join(a_path[:-1])",
+      "revId": "8808dd6af4b680b382eba6cfa0162c329cdda941",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
