@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a016987_97f5e884",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 198,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-05-14T11:18:28Z",
+      "side": 1,
+      "message": "Need to remove the decode from here since it\u0027s now in the jenkins_open method.",
+      "revId": "273ab81d28ea28d5ac733ce07f995e1b32cb8000",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a016987_d7392043",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-05-14T11:18:28Z",
+      "side": 1,
+      "message": "The decode is still needed here as this is testing something that is not automatically decoded and needs to be sent in unicode with the url requests anyway.",
+      "revId": "273ab81d28ea28d5ac733ce07f995e1b32cb8000",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a016987_574650c0",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 164,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-05-14T11:18:28Z",
+      "side": 1,
+      "message": "This encode is no longer needed since the response is now decoded all the time.",
+      "revId": "273ab81d28ea28d5ac733ce07f995e1b32cb8000",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
