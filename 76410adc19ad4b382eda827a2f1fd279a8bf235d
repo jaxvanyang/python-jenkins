@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a016987_d6079e7f",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 488,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-05-15T22:54:49Z",
+      "side": 1,
+      "message": "need to send the byte here?",
+      "revId": "76410adc19ad4b382eda827a2f1fd279a8bf235d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a016987_7627ca12",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 690,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-05-15T22:54:49Z",
+      "side": 1,
+      "message": "need to send the byte here?",
+      "revId": "76410adc19ad4b382eda827a2f1fd279a8bf235d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a016987_565a8e51",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 829,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-05-15T22:54:49Z",
+      "side": 1,
+      "message": "need to send the byte here?",
+      "revId": "76410adc19ad4b382eda827a2f1fd279a8bf235d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a016987_1654161f",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 840,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-05-15T22:54:49Z",
+      "side": 1,
+      "message": "need to send the byte here?",
+      "revId": "76410adc19ad4b382eda827a2f1fd279a8bf235d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
