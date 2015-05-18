@@ -54,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "7a016987_c091ed9a",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 690,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-05-18T18:13:21Z",
+      "side": 1,
+      "message": "Nope, this is a GET request.",
+      "parentUuid": "7a016987_7627ca12",
+      "revId": "76410adc19ad4b382eda827a2f1fd279a8bf235d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7a016987_565a8e51",
         "filename": "jenkins/__init__.py",
         "patchSetId": 3
@@ -71,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "7a016987_6086b966",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 829,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-05-18T18:13:21Z",
+      "side": 1,
+      "message": "Requirement here is that config_xml is a byte string, so the only question would be should we ensure config_xml is encoded before sending the request, and I think that it makes sense that we should.",
+      "parentUuid": "7a016987_565a8e51",
+      "revId": "76410adc19ad4b382eda827a2f1fd279a8bf235d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7a016987_1654161f",
         "filename": "jenkins/__init__.py",
         "patchSetId": 3
@@ -82,6 +118,24 @@
       "writtenOn": "2015-05-15T22:54:49Z",
       "side": 1,
       "message": "need to send the byte here?",
+      "revId": "76410adc19ad4b382eda827a2f1fd279a8bf235d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a016987_e092a99e",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 840,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-05-18T18:13:21Z",
+      "side": 1,
+      "message": "Nope, this is a GET request since there is no optional data specified.",
+      "parentUuid": "7a016987_1654161f",
       "revId": "76410adc19ad4b382eda827a2f1fd279a8bf235d",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
