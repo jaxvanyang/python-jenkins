@@ -34,6 +34,24 @@
       "revId": "e6d73265f65f84bf48de8c8ff552f724669d6d86",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a016987_91c33bed",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 489,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-05-19T15:06:08Z",
+      "side": 1,
+      "message": "Also multi_key_dict is doing more than just having two keys point to the same data, it also ensures that if you update the data under one of the keys, all the other keys now also reference the new data.\n\nSo:\n\n keys \u003d (str(plugin_data[\u0027shortName\u0027]), str(plugin_data[\u0027longName\u0027])\n self._plugins[keys] \u003d plugins.Plugin(**plugin_data)\n\n new_plugin_data \u003d dict(plugin_data)\n new_plugin_data[\u0027version\u0027] \u003d \"UNKNOWN\"\n self._plugins[plugin_data[\u0027shortName\u0027]] \u003d new_plugin_data\n\n assert self._plugins[plugin_data[\u0027shortName\u0027]] \u003d\u003d self._plugins[plugin_data[\u0027longName\u0027]]\n\nwould pass with multi_key_dict, but not with the suggested alternative.",
+      "parentUuid": "5aa745d1_c902c46f",
+      "revId": "e6d73265f65f84bf48de8c8ff552f724669d6d86",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
