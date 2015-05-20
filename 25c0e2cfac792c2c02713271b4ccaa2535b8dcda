@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a016987_1aebd114",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 604,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-05-20T09:28:35Z",
+      "side": 1,
+      "message": "I don\u0027t believe the b\u0027\u0027 is needed here, should be just whether a second (or data) parameter to Request() which determines if Request builds a POST request or GET request. So as long as config_xml.encode(\u0027utf-8\u0027) is used that should be fine.",
+      "revId": "25c0e2cfac792c2c02713271b4ccaa2535b8dcda",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a016987_faefd51b",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 630,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-05-20T09:28:35Z",
+      "side": 1,
+      "message": "I\u0027m not sure the b\u0027\u0027 is needed here, should be just whether a second (or data) parameter to Request() which determines if Request builds a POST request or GET request. So as long as config_xml.encode(\u0027utf-8\u0027) is used that should be fine.",
+      "revId": "25c0e2cfac792c2c02713271b4ccaa2535b8dcda",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a016987_daf099ff",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 672,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-05-20T09:28:35Z",
+      "side": 1,
+      "message": "b\u0027\u0027 should be the second arg to the Request() to trigger a POST request.",
+      "revId": "25c0e2cfac792c2c02713271b4ccaa2535b8dcda",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a016987_3a8b2d6a",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 822,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-05-20T09:28:35Z",
+      "side": 1,
+      "message": "b\u0027\u0027 should be the second arg to the Request() to trigger a POST request.",
+      "revId": "25c0e2cfac792c2c02713271b4ccaa2535b8dcda",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a016987_ba7efd67",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 846,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-05-20T09:28:35Z",
+      "side": 1,
+      "message": "I don\u0027t believe the b\u0027\u0027 is needed here, should be just whether a second (or data) parameter to Request() which determines if Request builds a POST request or GET request. So as long as config_xml.encode(\u0027utf-8\u0027) is used that should be fine.",
+      "revId": "25c0e2cfac792c2c02713271b4ccaa2535b8dcda",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
