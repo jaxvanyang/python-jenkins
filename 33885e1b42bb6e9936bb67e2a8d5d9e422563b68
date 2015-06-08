@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "3afb71cf_f3e9881b",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 85,
+      "author": {
+        "id": 16230
+      },
+      "writtenOn": "2015-06-08T12:09:57Z",
+      "side": 1,
+      "message": "yes you may be right, views could be added as well but I don\u0027t see the link with my patch. What do you expect me to fix?",
+      "parentUuid": "5afe65bd_1a830d9a",
+      "revId": "33885e1b42bb6e9936bb67e2a8d5d9e422563b68",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5afe65bd_1aac2d33",
         "filename": "jenkins/__init__.py",
         "patchSetId": 6
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "3afb71cf_335600d3",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 141,
+      "author": {
+        "id": 16230
+      },
+      "writtenOn": "2015-06-08T12:09:57Z",
+      "side": 1,
+      "message": "It is there for same purpose as EMPTY_CONFIG_XML. You could use it in a python script with create_job func.",
+      "parentUuid": "5afe65bd_1aac2d33",
+      "revId": "33885e1b42bb6e9936bb67e2a8d5d9e422563b68",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3afb71cf_47e65eb5",
         "filename": "jenkins/__init__.py",
         "patchSetId": 6
@@ -47,6 +83,23 @@
       "writtenOn": "2015-06-08T10:30:43Z",
       "side": 1,
       "message": "Believe this needs to be modified to allowing searching sub folders for jobs as otherwise you\u0027ll only ever return the top level list when querying.\n\nSee I8b27f4d1d1ddc9a55ada8569282d8c56502286a2",
+      "revId": "33885e1b42bb6e9936bb67e2a8d5d9e422563b68",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3afb71cf_f32bc8e9",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 523,
+      "author": {
+        "id": 16230
+      },
+      "writtenOn": "2015-06-08T12:09:57Z",
+      "side": 1,
+      "message": "I believe I already answered you for this. Or maybe I misunderstood what you did.\nYou seem to have submitted a patch for this. No need to do it twice, don\u0027t you think so?",
       "revId": "33885e1b42bb6e9936bb67e2a8d5d9e422563b68",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
