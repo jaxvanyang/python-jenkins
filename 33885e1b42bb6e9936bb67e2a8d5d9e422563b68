@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5afe65bd_1a830d9a",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 85,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-06-08T10:30:43Z",
+      "side": 1,
+      "message": "As mentioned previously:\n\"Are you sure that it\u0027s only jobs that are placed under folders? I\u0027d a feeling that just about everything could be placed and queried under a folder.\"\n\nI didn\u0027t see a response to this, although I may have missed it.",
+      "revId": "33885e1b42bb6e9936bb67e2a8d5d9e422563b68",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5afe65bd_1aac2d33",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 141,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-06-08T10:30:43Z",
+      "side": 1,
+      "message": "So I\u0027m not seeing that this is being used anyway?\n\nI suspect that the others above should also be removed, is there a reason this is being added in the first place?",
+      "revId": "33885e1b42bb6e9936bb67e2a8d5d9e422563b68",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3afb71cf_47e65eb5",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 523,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-06-08T10:30:43Z",
+      "side": 1,
+      "message": "Believe this needs to be modified to allowing searching sub folders for jobs as otherwise you\u0027ll only ever return the top level list when querying.\n\nSee I8b27f4d1d1ddc9a55ada8569282d8c56502286a2",
+      "revId": "33885e1b42bb6e9936bb67e2a8d5d9e422563b68",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
