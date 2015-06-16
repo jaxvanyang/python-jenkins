@@ -55,6 +55,24 @@
     },
     {
       "key": {
+        "uuid": "fa32b979_65227cbb",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 85,
+      "author": {
+        "id": 16230
+      },
+      "writtenOn": "2015-06-16T12:39:40Z",
+      "side": 1,
+      "message": "This was David proposal. But doing so I will need to patch jenkins job builder as well. With this solution, no need to patch it.",
+      "parentUuid": "fa32b979_580c2894",
+      "revId": "33885e1b42bb6e9936bb67e2a8d5d9e422563b68",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5afe65bd_1aac2d33",
         "filename": "jenkins/__init__.py",
         "patchSetId": 6
@@ -108,6 +126,24 @@
     },
     {
       "key": {
+        "uuid": "fa32b979_30d8341d",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 141,
+      "author": {
+        "id": 16230
+      },
+      "writtenOn": "2015-06-16T12:39:40Z",
+      "side": 1,
+      "message": "I disagree, it seems easier to use it in a python script to create a folder. If a 3rd party agree with you, I will remove it.",
+      "parentUuid": "fa32b979_78ed6c8a",
+      "revId": "33885e1b42bb6e9936bb67e2a8d5d9e422563b68",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fa32b979_93461922",
         "filename": "jenkins/__init__.py",
         "patchSetId": 6
@@ -125,6 +161,24 @@
     },
     {
       "key": {
+        "uuid": "fa32b979_70f55c81",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 201,
+      "author": {
+        "id": 16230
+      },
+      "writtenOn": "2015-06-16T12:39:40Z",
+      "side": 1,
+      "message": "ok",
+      "parentUuid": "fa32b979_93461922",
+      "revId": "33885e1b42bb6e9936bb67e2a8d5d9e422563b68",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fa32b979_53f731d3",
         "filename": "jenkins/__init__.py",
         "patchSetId": 6
@@ -136,6 +190,24 @@
       "writtenOn": "2015-06-15T15:34:35Z",
       "side": 1,
       "message": "Could be a tuple rather than a list; although a list will work, a simple tuple would be more idiomatic.\n\n    folder_url, short_name \u003d self.get_job_folder(name)",
+      "revId": "33885e1b42bb6e9936bb67e2a8d5d9e422563b68",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa32b979_2b69a58b",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 225,
+      "author": {
+        "id": 16230
+      },
+      "writtenOn": "2015-06-16T12:39:40Z",
+      "side": 1,
+      "message": "ok",
+      "parentUuid": "fa32b979_53f731d3",
       "revId": "33885e1b42bb6e9936bb67e2a8d5d9e422563b68",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
@@ -229,6 +301,24 @@
     },
     {
       "key": {
+        "uuid": "fa32b979_abeb75af",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 533,
+      "author": {
+        "id": 16230
+      },
+      "writtenOn": "2015-06-16T12:39:40Z",
+      "side": 1,
+      "message": "ok",
+      "parentUuid": "fa32b979_73e7d5e4",
+      "revId": "33885e1b42bb6e9936bb67e2a8d5d9e422563b68",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fa32b979_93037973",
         "filename": "jenkins/__init__.py",
         "patchSetId": 6
@@ -246,6 +336,24 @@
     },
     {
       "key": {
+        "uuid": "fa32b979_eb089d93",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 534,
+      "author": {
+        "id": 16230
+      },
+      "writtenOn": "2015-06-16T12:39:40Z",
+      "side": 1,
+      "message": "ok",
+      "parentUuid": "fa32b979_93037973",
+      "revId": "33885e1b42bb6e9936bb67e2a8d5d9e422563b68",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fa32b979_730cb594",
         "filename": "jenkins/__init__.py",
         "patchSetId": 6
@@ -257,6 +365,24 @@
       "writtenOn": "2015-06-15T15:34:35Z",
       "side": 1,
       "message": "Is this intended for use by the user, or is it only internal use?  If the latter, it should probably be marked internal with a leading underscore (\u0027_\u0027)",
+      "revId": "33885e1b42bb6e9936bb67e2a8d5d9e422563b68",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa32b979_eb2f3df4",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 885,
+      "author": {
+        "id": 16230
+      },
+      "writtenOn": "2015-06-16T12:39:40Z",
+      "side": 1,
+      "message": "yes you are right",
+      "parentUuid": "fa32b979_730cb594",
       "revId": "33885e1b42bb6e9936bb67e2a8d5d9e422563b68",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
@@ -298,6 +424,24 @@
     },
     {
       "key": {
+        "uuid": "fa32b979_8b5b1187",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 901,
+      "author": {
+        "id": 16230
+      },
+      "writtenOn": "2015-06-16T12:39:40Z",
+      "side": 1,
+      "message": "I confirm what Darragh said.",
+      "parentUuid": "fa32b979_69ab648a",
+      "revId": "33885e1b42bb6e9936bb67e2a8d5d9e422563b68",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fa32b979_f3aa0519",
         "filename": "jenkins/__init__.py",
         "patchSetId": 6
@@ -309,6 +453,24 @@
       "writtenOn": "2015-06-15T15:34:35Z",
       "side": 1,
       "message": "The idiom in Python would be to return a tuple rather than a list, e.g.:\n\n    return folder_url, short_name",
+      "revId": "33885e1b42bb6e9936bb67e2a8d5d9e422563b68",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa32b979_6bd80df0",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 903,
+      "author": {
+        "id": 16230
+      },
+      "writtenOn": "2015-06-16T12:39:40Z",
+      "side": 1,
+      "message": "of course :o)",
+      "parentUuid": "fa32b979_f3aa0519",
       "revId": "33885e1b42bb6e9936bb67e2a8d5d9e422563b68",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
