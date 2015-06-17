@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "fa32b979_d432eef1",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 535,
+      "author": {
+        "id": 16230
+      },
+      "writtenOn": "2015-06-17T09:09:50Z",
+      "side": 1,
+      "message": "ok, I fixed my code.",
+      "parentUuid": "fa32b979_e4e1a49b",
+      "revId": "1efb3af67134c5863dda09e50882db7c303f7b52",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fa32b979_c7e82213",
         "filename": "jenkins/__init__.py",
         "patchSetId": 7
@@ -30,6 +48,24 @@
       "writtenOn": "2015-06-16T15:35:38Z",
       "side": 1,
       "message": "I didn\u0027t see a unit test specifically for _get_job_folder(); I suppose it\u0027s adequately tested by the other tests, but that\u0027s sort of closer to a functional test than a unit test.  Femtonit again, but I was thinking that it would be good to have a test specifically on the multiple-folder case, e.g., does this function return the right thing for foo/bar/baz/bink/qux/quxx?  (OK, it doesn\u0027t have to be *that* long, but at least a couple of elements :)",
+      "revId": "1efb3af67134c5863dda09e50882db7c303f7b52",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa32b979_1444d647",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 886,
+      "author": {
+        "id": 16230
+      },
+      "writtenOn": "2015-06-17T09:09:50Z",
+      "side": 1,
+      "message": "you are totally right, I\u0027m going to add it.",
+      "parentUuid": "fa32b979_c7e82213",
       "revId": "1efb3af67134c5863dda09e50882db7c303f7b52",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
