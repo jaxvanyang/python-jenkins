@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa32b979_2c2b3596",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 8
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-06-26T18:14:31Z",
+      "side": 1,
+      "message": "maybe rename to \"EMPTY_FOLDER_XML\"? would be more consistent with the other and a little more descriptive.  \n\nIt would be good provide an example usage of this in the examples.rst file (similar to the above vars).  Also I think it should be stated explicitly somewhere that usage of folders methods requires the folders plugin, which isn\u0027t a jenkins core plugin.",
+      "revId": "7a062951b4ad7e671429521541cd859264cdf608",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa32b979_b2e0fefb",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 8
+      },
+      "lineNbr": 535,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-06-26T18:14:31Z",
+      "side": 1,
+      "message": "Would be nice to explicitly state this limitation in the above description so it will show up in the docs.",
+      "revId": "7a062951b4ad7e671429521541cd859264cdf608",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa32b979_12920af7",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 8
+      },
+      "lineNbr": 552,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-06-26T18:14:31Z",
+      "side": 1,
+      "message": "same here",
+      "revId": "7a062951b4ad7e671429521541cd859264cdf608",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa32b979_0f02e3b4",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 8
+      },
+      "lineNbr": 896,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-06-26T18:14:31Z",
+      "side": 1,
+      "message": "nit: should this be described as a tuple instead of array?",
+      "revId": "7a062951b4ad7e671429521541cd859264cdf608",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
