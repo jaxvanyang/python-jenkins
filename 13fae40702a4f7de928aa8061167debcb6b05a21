@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa32b979_4a853c05",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-06-26T16:48:39Z",
+      "side": 1,
+      "message": "If you take a look at examples.rst there is an example of using this variable.  It would be nice to add an \"EMPTY_VIEW_CONFIG_XML\" here and add an example in the rst for views as well.",
+      "revId": "13fae40702a4f7de928aa8061167debcb6b05a21",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa32b979_6f613211",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 909,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-06-26T16:48:39Z",
+      "side": 1,
+      "message": "This fails for me...\n\n  \u003e\u003e\u003e print j.view_exists(\"foo\")\n  True\n  \u003e\u003e\u003e print j.get_views()\n  [{u\u0027url\u0027: u\u0027http://dockerhost:49154/\u0027, u\u0027name\u0027: u\u0027All\u0027}, {u\u0027url\u0027: u\u0027http://dockerhost:49154/view/foo/\u0027, u\u0027name\u0027: u\u0027foo\u0027}]\n  \u003e\u003e\u003e j.rename_view(\"foo\", \"bar\")\n  Traceback (most recent call last):\n    File \"\u003cstdin\u003e\", line 1, in \u003cmodule\u003e\n    File \"jenkins/__init__.py\", line 917, in rename_view\n      def view_exists(self, name):\n    File \"jenkins/__init__.py\", line 305, in jenkins_open\n      \u0027\u0027\u0027\n  jenkins.NotFoundException: Requested item could not be found\n\n\n\nWhen I make a request from the browser Jenkins says \u0027doRename\u0027 not found..\n\n  http://dockerhost:49154/view/foo/doRename?newName\u003dbar\n\n  HTTP ERROR 404\n    Problem accessing /view/foo/doRename. Reason:\n    Not Found",
+      "revId": "13fae40702a4f7de928aa8061167debcb6b05a21",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
