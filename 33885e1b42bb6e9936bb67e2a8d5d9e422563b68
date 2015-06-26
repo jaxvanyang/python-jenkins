@@ -144,6 +144,24 @@
     },
     {
       "key": {
+        "uuid": "fa32b979_f2e0c6ce",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 141,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-06-26T17:49:17Z",
+      "side": 1,
+      "message": "I agree with Jerome, IMO it helps new users test out this library.",
+      "parentUuid": "fa32b979_30d8341d",
+      "revId": "33885e1b42bb6e9936bb67e2a8d5d9e422563b68",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fa32b979_93461922",
         "filename": "jenkins/__init__.py",
         "patchSetId": 6
