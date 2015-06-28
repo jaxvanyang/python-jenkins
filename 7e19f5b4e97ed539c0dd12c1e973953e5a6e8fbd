@@ -16,6 +16,24 @@
       "revId": "7e19f5b4e97ed539c0dd12c1e973953e5a6e8fbd",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa32b979_28e461aa",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 187,
+      "author": {
+        "id": 16889
+      },
+      "writtenOn": "2015-06-28T13:24:18Z",
+      "side": 1,
+      "message": "i think not\nfirst of all there is a pydoc for this in the class doc that says the legal option\nsecond of all giving a bad parameter will raise an exception from the inner module as you can try for yourself\n\u003e\u003e\u003e encodings.utf_8.decode(\u0027\\x00\\x00\\xfe\\xff\u0027,\u0027fsdf\u0027)\nTraceback (most recent call last):\n  File \"\u003cstdin\u003e\", line 1, in \u003cmodule\u003e\n  File \"/usr/lib64/python2.6/encodings/utf_8.py\", line 16, in decode\n    return codecs.utf_8_decode(input, errors, True)\nLookupError: unknown error handler name \u0027fsdf\u0027\n\nthird even if i will do a validation, it will be bad because if in the future codecs will support more keywords i will have to change my validation and there will be more code to maintain.\nfinally i can add another except around the decode catching LookupError but i\u0027m against it because translating the exception to another one will just cause confusion and  will make it hard to find the real bug in google\\stackoverflow etc.",
+      "parentUuid": "fa32b979_6c3b7d39",
+      "revId": "7e19f5b4e97ed539c0dd12c1e973953e5a6e8fbd",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
