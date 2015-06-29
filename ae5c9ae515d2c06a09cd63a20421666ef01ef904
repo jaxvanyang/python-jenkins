@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "ba3cc151_3e636c1c",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-06-29T16:21:40Z",
+      "side": 1,
+      "message": "remove \u0027rename\u0027? and what is \u0027index views\u0027?",
+      "revId": "ae5c9ae515d2c06a09cd63a20421666ef01ef904",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba3cc151_be953c41",
         "filename": "doc/source/example.rst",
         "patchSetId": 2
