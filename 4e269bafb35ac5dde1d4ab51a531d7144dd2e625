@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba3cc151_4681bf49",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 9
+      },
+      "lineNbr": 504,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-06-29T19:58:16Z",
+      "side": 1,
+      "message": "if we already have a get_plugins_info and get_plugin_info methods then I assume users would only ever use this as a helper for comparing plugin versions?  would it make sense to change this method name to _get_plugins?",
+      "revId": "4e269bafb35ac5dde1d4ab51a531d7144dd2e625",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
