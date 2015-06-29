@@ -16,6 +16,24 @@
       "revId": "4e269bafb35ac5dde1d4ab51a531d7144dd2e625",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba3cc151_46145ff4",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 9
+      },
+      "lineNbr": 504,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-06-29T20:03:05Z",
+      "side": 1,
+      "message": "I\u0027d actually think maybe we want to go the other way: mark the get_plugins_info() and get_plugin_info() methods as deprecated, with this method being the replacement.  After all, this change no longer calls get_plugins() anywhere, so marking it internal with a leading \u0027_\u0027 doesn\u0027t really make sense…",
+      "parentUuid": "ba3cc151_4681bf49",
+      "revId": "4e269bafb35ac5dde1d4ab51a531d7144dd2e625",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
