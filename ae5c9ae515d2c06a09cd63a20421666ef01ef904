@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba3cc151_be953c41",
+        "filename": "doc/source/example.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-06-29T16:18:32Z",
+      "side": 1,
+      "message": "nit: please remove trailing white space.",
+      "revId": "ae5c9ae515d2c06a09cd63a20421666ef01ef904",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
