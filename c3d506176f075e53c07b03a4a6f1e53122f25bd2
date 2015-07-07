@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba3cc151_403ddfb9",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 11
+      },
+      "lineNbr": 202,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-07-07T16:41:03Z",
+      "side": 1,
+      "message": "Looks like to_name and from_name are no longer used.",
+      "revId": "c3d506176f075e53c07b03a4a6f1e53122f25bd2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
