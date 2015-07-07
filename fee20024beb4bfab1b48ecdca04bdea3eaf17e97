@@ -107,6 +107,24 @@
     },
     {
       "key": {
+        "uuid": "ba3cc151_c5d3415e",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 9
+      },
+      "lineNbr": 391,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-07-07T16:39:13Z",
+      "side": 1,
+      "message": "That\u0027s correct, essentially anything that has a registered REST api endpoint can be queried.",
+      "parentUuid": "ba3cc151_d56b6fef",
+      "revId": "fee20024beb4bfab1b48ecdca04bdea3eaf17e97",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba3cc151_4541bc0a",
         "filename": "jenkins/__init__.py",
         "patchSetId": 9
@@ -118,6 +136,24 @@
       "writtenOn": "2015-06-29T18:07:53Z",
       "side": 1,
       "message": "is there a list of items?  or at least a reference to some other documentation with an up to date list of items?",
+      "revId": "fee20024beb4bfab1b48ecdca04bdea3eaf17e97",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba3cc151_45917151",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 9
+      },
+      "lineNbr": 392,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-07-07T16:39:13Z",
+      "side": 1,
+      "message": "I don\u0027t believe there is a definitive list, the documentation suggests that many parts of jenkins can be retrieved and plugins can expose additional components.\n\nhttps://wiki.jenkins-ci.org/display/JENKINS/Remote+access+API is one source of information and it also suggests accessing https://\u003cjenkins\u003e/api for further information.",
+      "parentUuid": "ba3cc151_4541bc0a",
       "revId": "fee20024beb4bfab1b48ecdca04bdea3eaf17e97",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
@@ -141,6 +177,24 @@
     },
     {
       "key": {
+        "uuid": "ba3cc151_859c595e",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 9
+      },
+      "lineNbr": 393,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-07-07T16:39:13Z",
+      "side": 1,
+      "message": "Probably just forgotten in my original change.",
+      "parentUuid": "ba3cc151_a58d2833",
+      "revId": "fee20024beb4bfab1b48ecdca04bdea3eaf17e97",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba3cc151_c51aac17",
         "filename": "jenkins/__init__.py",
         "patchSetId": 9
@@ -152,6 +206,24 @@
       "writtenOn": "2015-06-29T18:07:53Z",
       "side": 1,
       "message": "I think a reference to the items would be handy here.",
+      "revId": "fee20024beb4bfab1b48ecdca04bdea3eaf17e97",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba3cc151_4550915e",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 9
+      },
+      "lineNbr": 394,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-07-07T16:39:13Z",
+      "side": 1,
+      "message": "Would just adding the link above to the Jenkins remote api and suggesting that the most common ones are those identified by the constants *_INFO above, but jenkins and it\u0027s plugins can expose additional internal API endpoints?",
+      "parentUuid": "ba3cc151_c51aac17",
       "revId": "fee20024beb4bfab1b48ecdca04bdea3eaf17e97",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
@@ -193,6 +265,24 @@
     },
     {
       "key": {
+        "uuid": "ba3cc151_c534a1fc",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 9
+      },
+      "lineNbr": 525,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-07-07T16:39:13Z",
+      "side": 1,
+      "message": "Wondering if you mean that you\u0027re expecting me to step in and add the tests?\n\nI\u0027ll certainly look to try in a few days.",
+      "parentUuid": "ba3cc151_757b83be",
+      "revId": "fee20024beb4bfab1b48ecdca04bdea3eaf17e97",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba3cc151_62f876e6",
         "filename": "jenkins/__init__.py",
         "patchSetId": 9
@@ -204,6 +294,24 @@
       "writtenOn": "2015-06-29T18:07:53Z",
       "side": 1,
       "message": "Other methods in here use \u0027depth\u0027 for the json depth so users may get confused.  Maybe elaborate on this description with \u0027Number of folder levels\u0027? and let users know that this param only applies when using folders.",
+      "revId": "fee20024beb4bfab1b48ecdca04bdea3eaf17e97",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba3cc151_e506851f",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 9
+      },
+      "lineNbr": 530,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-07-07T16:39:13Z",
+      "side": 1,
+      "message": "Could switch to folder_depth?",
+      "parentUuid": "ba3cc151_62f876e6",
       "revId": "fee20024beb4bfab1b48ecdca04bdea3eaf17e97",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
