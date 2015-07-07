@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "ba3cc151_46abb889",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 9
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-07-07T18:08:44Z",
+      "side": 1,
+      "message": "just add that co-author line right here.",
+      "parentUuid": "ba3cc151_f536b34f",
+      "revId": "fee20024beb4bfab1b48ecdca04bdea3eaf17e97",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba3cc151_7c9b3dca",
         "filename": "doc/source/example.rst",
         "patchSetId": 9
@@ -66,6 +84,24 @@
       "side": 1,
       "message": "Are you suggesting to create new example file?",
       "parentUuid": "ba3cc151_7c9b3dca",
+      "revId": "fee20024beb4bfab1b48ecdca04bdea3eaf17e97",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba3cc151_0642903e",
+        "filename": "doc/source/example.rst",
+        "patchSetId": 9
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-07-07T18:08:44Z",
+      "side": 1,
+      "message": "Yes, create a new file that can be referenced from here or just create a new section called \u0027Example Using Folders::\u0027 with a similar example except using the new folders api.  Another option would be to add examples in the API docs.  Some of the current APIs have examples inline so maybe you can use those as examples.",
+      "parentUuid": "ba3cc151_9570870c",
       "revId": "fee20024beb4bfab1b48ecdca04bdea3eaf17e97",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
@@ -230,6 +266,24 @@
     },
     {
       "key": {
+        "uuid": "ba3cc151_c60348b7",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 9
+      },
+      "lineNbr": 394,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-07-07T18:08:44Z",
+      "side": 1,
+      "message": "Yes, that would work.  How about also providing a short list of \u0027currently known items\u0027 that can be retrieved?  Or maybe just telling that they can get the list of itms by calling get_info() *without params*?",
+      "parentUuid": "ba3cc151_4550915e",
+      "revId": "fee20024beb4bfab1b48ecdca04bdea3eaf17e97",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba3cc151_45f3fc0a",
         "filename": "jenkins/__init__.py",
         "patchSetId": 9
@@ -312,6 +366,24 @@
       "side": 1,
       "message": "Could switch to folder_depth?",
       "parentUuid": "ba3cc151_62f876e6",
+      "revId": "fee20024beb4bfab1b48ecdca04bdea3eaf17e97",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba3cc151_86d30038",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 9
+      },
+      "lineNbr": 530,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-07-07T18:08:44Z",
+      "side": 1,
+      "message": "that sounds good to me.",
+      "parentUuid": "ba3cc151_e506851f",
       "revId": "fee20024beb4bfab1b48ecdca04bdea3eaf17e97",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
