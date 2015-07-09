@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba3cc151_5c98e774",
+        "filename": "tests/helper.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-07-09T18:02:34Z",
+      "side": 1,
+      "message": "this exception could be useful for catching timeouts in jenkins_open().  Maybe should move it to an exceptions.py for general reference?",
+      "revId": "b10015fdd2898cb8cfdafbdf488da5a670e9bb64",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba3cc151_b9b34599",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 1867,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-07-09T18:02:34Z",
+      "side": 1,
+      "message": "maybe put in separate file so this one doesn\u0027t get too big?",
+      "revId": "b10015fdd2898cb8cfdafbdf488da5a670e9bb64",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
