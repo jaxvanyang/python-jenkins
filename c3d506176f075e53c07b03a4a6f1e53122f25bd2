@@ -34,6 +34,24 @@
       "revId": "c3d506176f075e53c07b03a4a6f1e53122f25bd2",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba3cc151_378cdc7e",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 11
+      },
+      "lineNbr": 202,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-07-10T21:05:04Z",
+      "side": 1,
+      "message": "Because you removed them from the url format strings at thet top in favour of from_short_name and to_short_name, so the is escaping two locals that are not used as encoded params any more",
+      "parentUuid": "ba3cc151_6e85b5ab",
+      "revId": "c3d506176f075e53c07b03a4a6f1e53122f25bd2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
