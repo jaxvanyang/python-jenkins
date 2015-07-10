@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "ba3cc151_bc7c5ab6",
+        "filename": "tests/helper.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-07-10T18:17:38Z",
+      "side": 1,
+      "message": "Agreed, will do",
+      "parentUuid": "ba3cc151_5c98e774",
+      "revId": "b10015fdd2898cb8cfdafbdf488da5a670e9bb64",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba3cc151_b9b34599",
         "filename": "tests/test_jenkins.py",
         "patchSetId": 1
@@ -30,6 +48,24 @@
       "writtenOn": "2015-07-09T18:02:34Z",
       "side": 1,
       "message": "maybe put in separate file so this one doesn\u0027t get too big?",
+      "revId": "b10015fdd2898cb8cfdafbdf488da5a670e9bb64",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba3cc151_1c422669",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 1867,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-07-10T18:17:38Z",
+      "side": 1,
+      "message": "Will do, this was just expedient initially.",
+      "parentUuid": "ba3cc151_b9b34599",
       "revId": "b10015fdd2898cb8cfdafbdf488da5a670e9bb64",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
