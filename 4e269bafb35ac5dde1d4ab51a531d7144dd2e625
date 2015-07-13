@@ -34,6 +34,24 @@
       "revId": "4e269bafb35ac5dde1d4ab51a531d7144dd2e625",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a41bdd9_58a40fa5",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 9
+      },
+      "lineNbr": 504,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-07-13T18:25:41Z",
+      "side": 1,
+      "message": "That was my thinking as well, leave get_plugins_info() as the raw access to plugin json. This method would always be processed information.\n\nSince this restricts the depth of information query for plugins, it seems sensible to at least retain one method that can be alter to query for more/less info.\n\nOr should this method get a depth arg as well?",
+      "parentUuid": "ba3cc151_46145ff4",
+      "revId": "4e269bafb35ac5dde1d4ab51a531d7144dd2e625",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
