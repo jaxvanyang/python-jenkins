@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "9a41bdd9_b8f67bf7",
+        "filename": "tests/helper.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-07-13T18:20:56Z",
+      "side": 1,
+      "message": "Actually forgot that this is used internally to the helper to catch when the test execution has exceeded it\u0027s timeout.\n\nSo it cannot be safely reused, though I added a new exception to jenkins based on JenkinsException called TimeoutException to be raised from there and renamed this to TestsTimeoutException.",
+      "parentUuid": "ba3cc151_bc7c5ab6",
+      "revId": "b10015fdd2898cb8cfdafbdf488da5a670e9bb64",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba3cc151_b9b34599",
         "filename": "tests/test_jenkins.py",
         "patchSetId": 1
