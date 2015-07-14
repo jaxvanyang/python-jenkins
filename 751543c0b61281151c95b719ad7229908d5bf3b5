@@ -1,0 +1,140 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a41bdd9_8ea21efc",
+        "filename": "doc/source/example.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-07-14T17:26:24Z",
+      "side": 1,
+      "message": "this example seems out of place here.  would it be possible to create completely new example for this?  Maybe call it \u0027Automate Jenkins Example::\u0027?  Then maybe change this section to \u0027Managing Jenkins Jobs Example::\u0027?  Or if you don\u0027t fee like it, then I\u0027m fine with the example you provided in the safe_shutdown api.",
+      "revId": "751543c0b61281151c95b719ad7229908d5bf3b5",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a41bdd9_f1faab74",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 1004,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-07-14T17:26:24Z",
+      "side": 1,
+      "message": "would \u0027assert_shutting_down\u0027 be a better name?",
+      "revId": "751543c0b61281151c95b719ad7229908d5bf3b5",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a41bdd9_8e33feaa",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 1005,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-07-14T17:26:24Z",
+      "side": 1,
+      "message": "would you mind wrapping to \u003c 80 chars?",
+      "revId": "751543c0b61281151c95b719ad7229908d5bf3b5",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a41bdd9_2713f55c",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 1007,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-07-14T17:26:24Z",
+      "side": 1,
+      "message": "I\u0027m wondering whether some of this documentation would be more appropriate in safe_shutdown()",
+      "revId": "751543c0b61281151c95b719ad7229908d5bf3b5",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a41bdd9_2ca3da9e",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 1020,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-07-14T17:26:24Z",
+      "side": 1,
+      "message": "In cases where Jenkins is starting but not fully able to accept REST request this will throw a \u0027jenkins.BadHTTPException jenkins.BadHTTPException: Error communicating with server\u0027 exception.  Maybe catch that exception as well?  But i\u0027m not sure whether that would be considered in \u0027shutdown\u0027 or not.  I\u0027m inclined to consider this a shutdown state because you can\u0027t interact with Jenkins in this state.  Whichever you decide there should be some comments to explain the logic.",
+      "revId": "751543c0b61281151c95b719ad7229908d5bf3b5",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a41bdd9_711a1b7f",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 1025,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-07-14T17:26:24Z",
+      "side": 1,
+      "message": "Script is not necessary here.  You can get the same info from the REST API by issuing jenkins.get_info()[\u0027quietingDown\u0027].  Do you know if there\u0027s a benefit to running a script in this case?",
+      "revId": "751543c0b61281151c95b719ad7229908d5bf3b5",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a41bdd9_f1e94be7",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 1037,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-07-14T17:26:24Z",
+      "side": 1,
+      "message": "what happens if it takes more time to shutdown, like when there\u0027s a long running job?  This will assert \"jenkins is not shutting down\"?  But that\u0027s not actually correct because it will shutdown after all jobs complete correct?  I think these 2 options might be better:\n\n1.  Don\u0027t bother asserting that jenkins has shutdown.  Just tell user that \"Safe shutdown initiated, jenkins will shutdown once all jobs have completed\". \n\n2. If you prefer to assert that Jenkins has shutdown then I think we need to poll jenkins to make sure it\u0027s shutdown.  I think in this scenario i would just use the get_version() to check whether it\u0027s still up.",
+      "revId": "751543c0b61281151c95b719ad7229908d5bf3b5",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a41bdd9_e7466d4e",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 1875,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-07-14T17:26:24Z",
+      "side": 1,
+      "message": "would like to see test case for assert_shutdown to exercise all paths in that method.",
+      "revId": "751543c0b61281151c95b719ad7229908d5bf3b5",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
