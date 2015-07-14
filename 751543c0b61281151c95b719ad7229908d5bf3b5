@@ -70,6 +70,23 @@
     },
     {
       "key": {
+        "uuid": "9a41bdd9_753e7edb",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 1015,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-07-14T19:53:28Z",
+      "side": 1,
+      "message": "Maybe a specific exception required here instead of asking consumers to inspect the exception string.",
+      "revId": "751543c0b61281151c95b719ad7229908d5bf3b5",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9a41bdd9_2ca3da9e",
         "filename": "jenkins/__init__.py",
         "patchSetId": 2
@@ -115,6 +132,24 @@
       "writtenOn": "2015-07-14T17:26:24Z",
       "side": 1,
       "message": "what happens if it takes more time to shutdown, like when there\u0027s a long running job?  This will assert \"jenkins is not shutting down\"?  But that\u0027s not actually correct because it will shutdown after all jobs complete correct?  I think these 2 options might be better:\n\n1.  Don\u0027t bother asserting that jenkins has shutdown.  Just tell user that \"Safe shutdown initiated, jenkins will shutdown once all jobs have completed\". \n\n2. If you prefer to assert that Jenkins has shutdown then I think we need to poll jenkins to make sure it\u0027s shutdown.  I think in this scenario i would just use the get_version() to check whether it\u0027s still up.",
+      "revId": "751543c0b61281151c95b719ad7229908d5bf3b5",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a41bdd9_954c629f",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 1037,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-07-14T19:53:28Z",
+      "side": 1,
+      "message": "For option 2, perhaps it should check for get_info()[\u0027quietingDown\u0027] and other states. After all once it\u0027s in quieting down phase, if you\u0027re polling until it completes, depending on the timeout it may be possible (if not improbable) for it to have completed coming back up between polls.",
+      "parentUuid": "9a41bdd9_f1e94be7",
       "revId": "751543c0b61281151c95b719ad7229908d5bf3b5",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
