@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a41bdd9_633fa324",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 422,
+      "author": {
+        "id": 15362
+      },
+      "writtenOn": "2015-07-14T22:47:19Z",
+      "side": 1,
+      "message": "would be good to handle the exception here for the requests on the jobs without any builds.\n\nor perhaps this can be neglected if the exception(s) are handled in get_last_build_info() properly.",
+      "revId": "faf1580f79a303c21c36af58e5964c3a418083f4",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a41bdd9_6326c316",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 831,
+      "author": {
+        "id": 15362
+      },
+      "writtenOn": "2015-07-14T22:47:19Z",
+      "side": 1,
+      "message": "would it be possible to test other case as well?",
+      "revId": "faf1580f79a303c21c36af58e5964c3a418083f4",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
