@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a41bdd9_60a3199e",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 381,
+      "author": {
+        "id": 15362
+      },
+      "writtenOn": "2015-07-14T22:35:07Z",
+      "side": 1,
+      "message": "small correction; information about the last build of the job rather than information about the last job.",
+      "revId": "7b2fd9a669f2df9b63c528c58945a17b68b2cb99",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a41bdd9_80973d39",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 386,
+      "author": {
+        "id": 15362
+      },
+      "writtenOn": "2015-07-14T22:35:07Z",
+      "side": 1,
+      "message": "another small thing to be more precise in the example; it is actually the last_build_info we get here rather than the last_build.",
+      "revId": "7b2fd9a669f2df9b63c528c58945a17b68b2cb99",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a41bdd9_e3541300",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 398,
+      "author": {
+        "id": 15362
+      },
+      "writtenOn": "2015-07-14T22:35:07Z",
+      "side": 1,
+      "message": "a general comment: should there be a check first to see if the job exists and then lastBuild status is queried?\n\nthe reason is that rest api returns same response for requests for non-existent jobs and jobs without any builds.",
+      "revId": "7b2fd9a669f2df9b63c528c58945a17b68b2cb99",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a41bdd9_03b81729",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 650,
+      "author": {
+        "id": 15362
+      },
+      "writtenOn": "2015-07-14T22:35:07Z",
+      "side": 1,
+      "message": "job might exist but without any build so it could be good to test both cases perhaps.",
+      "revId": "7b2fd9a669f2df9b63c528c58945a17b68b2cb99",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
