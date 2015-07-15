@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "9a41bdd9_2567564e",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 381,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-07-15T17:12:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9a41bdd9_60a3199e",
+      "revId": "7b2fd9a669f2df9b63c528c58945a17b68b2cb99",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9a41bdd9_80973d39",
         "filename": "jenkins/__init__.py",
         "patchSetId": 1
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "9a41bdd9_c5578a58",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 386,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-07-15T17:12:01Z",
+      "side": 1,
+      "message": "I\u0027ll just use a generic \u0027info\u0027 variable. Done",
+      "parentUuid": "9a41bdd9_80973d39",
+      "revId": "7b2fd9a669f2df9b63c528c58945a17b68b2cb99",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9a41bdd9_e3541300",
         "filename": "jenkins/__init__.py",
         "patchSetId": 1
@@ -47,6 +83,24 @@
       "writtenOn": "2015-07-14T22:35:07Z",
       "side": 1,
       "message": "a general comment: should there be a check first to see if the job exists and then lastBuild status is queried?\n\nthe reason is that rest api returns same response for requests for non-existent jobs and jobs without any builds.",
+      "revId": "7b2fd9a669f2df9b63c528c58945a17b68b2cb99",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a41bdd9_652a3e92",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 398,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-07-15T17:12:01Z",
+      "side": 1,
+      "message": "I would prefer not to check first because that means we would need 2 requests to do this task.  Check change If78dea9ad60d4468  to see further reasoning.\n\nIn this specific case this will return a non-existing item exception which I think makes sense.",
+      "parentUuid": "9a41bdd9_e3541300",
       "revId": "7b2fd9a669f2df9b63c528c58945a17b68b2cb99",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
