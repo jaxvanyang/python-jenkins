@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "9a41bdd9_ffe472ac",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 422,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-07-15T17:31:37Z",
+      "side": 1,
+      "message": "I believe all request exceptions are handled in get_last_build_info() and jenkins_open() methods.",
+      "parentUuid": "9a41bdd9_633fa324",
+      "revId": "faf1580f79a303c21c36af58e5964c3a418083f4",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9a41bdd9_6326c316",
         "filename": "tests/test_jenkins.py",
         "patchSetId": 4
@@ -30,6 +48,24 @@
       "writtenOn": "2015-07-14T22:47:19Z",
       "side": 1,
       "message": "would it be possible to test other case as well?",
+      "revId": "faf1580f79a303c21c36af58e5964c3a418083f4",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a41bdd9_3a99887c",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 831,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-07-15T17:31:37Z",
+      "side": 1,
+      "message": "I could be wrong but I don\u0027t believe that is necessary since the method only contains a single line.  That logic is in get_last_build_info() method and i believe there is already tests for that.",
+      "parentUuid": "9a41bdd9_6326c316",
       "revId": "faf1580f79a303c21c36af58e5964c3a418083f4",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
