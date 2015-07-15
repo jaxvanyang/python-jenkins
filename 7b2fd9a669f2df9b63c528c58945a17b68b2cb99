@@ -107,6 +107,24 @@
     },
     {
       "key": {
+        "uuid": "9a41bdd9_5acd6c83",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 398,
+      "author": {
+        "id": 15362
+      },
+      "writtenOn": "2015-07-15T17:30:59Z",
+      "side": 1,
+      "message": "that\u0027s fair.\n\nthx for pointing to that change btw good to get some historical info regarding why things in this way.",
+      "parentUuid": "9a41bdd9_652a3e92",
+      "revId": "7b2fd9a669f2df9b63c528c58945a17b68b2cb99",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9a41bdd9_03b81729",
         "filename": "tests/test_jenkins.py",
         "patchSetId": 1
