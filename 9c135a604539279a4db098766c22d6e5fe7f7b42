@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a41bdd9_bd3d7bc5",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 432,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-07-16T05:21:07Z",
+      "side": 1,
+      "message": "would be better to throw a Timeout Exception so users can distinguise whether\nthe timeout occurred or the job completed it\u0027s build",
+      "revId": "9c135a604539279a4db098766c22d6e5fe7f7b42",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a41bdd9_dd387fd5",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 436,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-07-16T05:21:07Z",
+      "side": 1,
+      "message": "better example would be..\n\n j.build_job(\u0027TestJob\u0027)\n # wait 1 minute for job to complete\n j.wait_for_build(\u0027TestJob\u0027, timeout\u003d60)\n print \u0027TestJob completed\u0027",
+      "revId": "9c135a604539279a4db098766c22d6e5fe7f7b42",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a41bdd9_7d3373f6",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 442,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-07-16T05:21:07Z",
+      "side": 1,
+      "message": "raise timeout exception here",
+      "revId": "9c135a604539279a4db098766c22d6e5fe7f7b42",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
