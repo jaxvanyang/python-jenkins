@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "3a50d1a3_9d4958d3",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 199,
+      "author": {
+        "id": 16889
+      },
+      "writtenOn": "2015-07-20T14:49:38Z",
+      "side": 1,
+      "message": "first understand the issue then you can offer a different name for this variable",
+      "parentUuid": "3a50d1a3_27b035dd",
+      "revId": "b8c3100c15d26eaf4df4608911b9156a3f98cec7",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3a50d1a3_871d8975",
         "filename": "jenkins/__init__.py",
         "patchSetId": 4
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "3a50d1a3_1dfea86b",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 208,
+      "author": {
+        "id": 16889
+      },
+      "writtenOn": "2015-07-20T14:49:38Z",
+      "side": 1,
+      "message": "ok first finish other remarks",
+      "parentUuid": "3a50d1a3_871d8975",
+      "revId": "b8c3100c15d26eaf4df4608911b9156a3f98cec7",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3a50d1a3_c74631bf",
         "filename": "jenkins/__init__.py",
         "patchSetId": 4
@@ -47,6 +83,24 @@
       "writtenOn": "2015-07-20T14:27:52Z",
       "side": 1,
       "message": "What is the problem that you\u0027re running into with the strict decoding? Can you simulate this with a basic test.",
+      "revId": "b8c3100c15d26eaf4df4608911b9156a3f98cec7",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a50d1a3_7de24cd7",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 322,
+      "author": {
+        "id": 16889
+      },
+      "writtenOn": "2015-07-20T14:49:38Z",
+      "side": 1,
+      "message": "\u003e\u003e\u003e encodings.codecs.utf_8_decode(\u0027\\x00\\x00\\xfe\\xff\u0027)\nTraceback (most recent call last):\n  File \"\u003cstdin\u003e\", line 1, in \u003cmodule\u003e\nUnicodeDecodeError: \u0027utf8\u0027 codec can\u0027t decode byte 0xfe in position 2: invalid start byte\n\u003e\u003e\u003e encodings.codecs.utf_8_decode(\u0027\\x00\\x00\\xfe\\xff\u0027,\u0027ignore\u0027)\n(u\u0027\\x00\\x00\u0027, 4)",
+      "parentUuid": "3a50d1a3_c74631bf",
       "revId": "b8c3100c15d26eaf4df4608911b9156a3f98cec7",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
