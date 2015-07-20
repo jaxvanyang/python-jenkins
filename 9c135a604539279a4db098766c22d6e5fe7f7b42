@@ -50,6 +50,23 @@
       "revId": "9c135a604539279a4db098766c22d6e5fe7f7b42",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a50d1a3_0fd98021",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 442,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2015-07-20T19:25:51Z",
+      "side": 1,
+      "message": "There is an issue with jobs that run very fast. By the time you trigger the build and then wait for it, the build is already complete and that it is going to loop.\n\nThere is also an issue when jobs are run multiple times. If only one build can run at anytime and a build is already happening, the build will be considered running while it is really enqueued.  Same effect when a job can run concurrently and a build is already running :-(\n\nAccording to Jenkins API, the \u003cjob name\u003e/build POST returns a 201:\n\n\u003e To programmatically schedule a new build, post to job/build. If the build has parameters, post to job/buildWithParameters and provide the parameters as form data.\n\u003e Either way, the successful queueing will result in 201 status code with Location HTTP header pointing the URL of the item in the queue. By polling the api/xml sub-URL of the queue item, you can track the status of the queued task. Generally, the task will go through some state transitions, then eventually it becomes either cancelled (look for the \"cancelled\" boolean property), or gets executed (look for the \"executable\" property that typically points to the AbstractBuild object.) \n\n\nhttps://issues.jenkins-ci.org/browse/JENKINS-12827 has some more details (resolved/wontfix).\n\nSo you poll the entry in the queue with something like /queue/item/25/api/xml and once the build starts you get the build #.  Though that still does not solve the issue of short living jobs that would disappear from the queue rather quickly.\n\nSeems the queue items have a 300 seconds TTL from https://issues.jenkins-ci.org/browse/JENKINS-26228 . So that should be good enough :)",
+      "revId": "9c135a604539279a4db098766c22d6e5fe7f7b42",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
