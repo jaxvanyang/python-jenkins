@@ -104,6 +104,24 @@
       "revId": "b8c3100c15d26eaf4df4608911b9156a3f98cec7",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a50d1a3_a75d16eb",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 322,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-07-20T18:29:06Z",
+      "side": 1,
+      "message": "Ok, to be more specific:\n\nWhat response are you getting from a Jenkins server that triggers this?\n\nCan always provide garbage to trigger an error somewhere, but that doesn\u0027t actually identify in what scenarios would a response back from Jenkins not be utf-8 encoded.",
+      "parentUuid": "3a50d1a3_7de24cd7",
+      "revId": "b8c3100c15d26eaf4df4608911b9156a3f98cec7",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
