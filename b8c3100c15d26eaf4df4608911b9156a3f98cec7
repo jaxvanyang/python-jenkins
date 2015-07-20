@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a50d1a3_27b035dd",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 199,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-07-20T14:27:52Z",
+      "side": 1,
+      "message": "I\u0027m a little concerned that err_handle is somewhat misleading. What about a custom err_handler for other errors that occur, such as providing a callback to provide handling for other errors.\n\nI would suggest something that identifies this as response decoding at least.\n\nRather than trying to hack various options in to allow changing how we handle different error scenarios, perhaps a setting to control whether we return the raw response object instead of the response it self would be a solution here?",
+      "revId": "b8c3100c15d26eaf4df4608911b9156a3f98cec7",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a50d1a3_871d8975",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 208,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-07-20T14:27:52Z",
+      "side": 1,
+      "message": "trailing slash is not needed, just indent the following line by 4 spaces from the start of the preceding line and sphinx will handle the continuation just fine.",
+      "revId": "b8c3100c15d26eaf4df4608911b9156a3f98cec7",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a50d1a3_c74631bf",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 322,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-07-20T14:27:52Z",
+      "side": 1,
+      "message": "What is the problem that you\u0027re running into with the strict decoding? Can you simulate this with a basic test.",
+      "revId": "b8c3100c15d26eaf4df4608911b9156a3f98cec7",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
