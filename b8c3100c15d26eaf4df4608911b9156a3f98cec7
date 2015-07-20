@@ -122,6 +122,24 @@
       "revId": "b8c3100c15d26eaf4df4608911b9156a3f98cec7",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a50d1a3_a75f5671",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 322,
+      "author": {
+        "id": 16889
+      },
+      "writtenOn": "2015-07-20T18:38:20Z",
+      "side": 1,
+      "message": "i\u0027m running a very long script that compiles lots of stuff, this exception happens when i\u0027m trying to get the output.\nyou can blame the script but still this module is not flexible enough",
+      "parentUuid": "3a50d1a3_a75d16eb",
+      "revId": "b8c3100c15d26eaf4df4608911b9156a3f98cec7",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
