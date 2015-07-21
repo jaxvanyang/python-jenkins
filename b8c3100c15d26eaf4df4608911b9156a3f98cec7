@@ -176,6 +176,24 @@
       "revId": "b8c3100c15d26eaf4df4608911b9156a3f98cec7",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a50d1a3_32fd9b3a",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 322,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-07-21T14:05:07Z",
+      "side": 1,
+      "message": "So a few lines above where we call:\n\n    response \u003d urlopen(req, timeout\u003dself.timeout).read()\n\nWe should probably really drop the .read() call and hold onto the response object returned by urlopen by using:\n\n    response \u003d urlopen(req, timeout\u003dself.timeout)\n    contents \u003d response.read()\n    if contents is None:\n        ....\n\nThe response object then in this case is like a file object, but also contains the methods info(), getcode() and geturl() to retrieve addition information.\n\nSee https://docs.python.org/2/library/urllib.html#high-level-interface for details. Basically the info() method returns an instance of mimetools.Message that can be queried using gettype() to determine the content type which will return \u0027text/plain\u0027 if none is defined. We should probably check this to ensure it starts with \u0027text/\u0027 before attempting to read the contents, and also before attempting to decode anything. i.e.\n\n    if response.info().getmaintype() \u003d\u003d \u0027text\u0027:\n        # only read and decode text data\n\nAdditionally the mimetools.Message has a method getplist() (https://docs.python.org/2/library/mimetools.html#mimetools.Message.getplist) which will return everything in the header \u0027Content-Type: text/plain; \u003cextra data\u003e\u0027 listed in \"\u003cextra data\u003e\" which is exactly where the charset would be defined.\n\nI would expect we should be getting the following header from Jenkins:\n\n    Content-Type:text/xml; charset\u003dutf-8\n\nReading the documentation on https://docs.python.org/2/library/mimetools.html#module-mimetools suggests that the following should be used to extract the expected charset:\n\n        charset \u003d response.info().getparam(\u0027charset\u0027)\n        return contents.decode(charset)\n\n\nPutting this altogether:\n\n    response \u003d urlopen(req, timeout\u003dself.timeout)\n    mimedata \u003d response.info()\n    if mimedata.getmaintype() \u003d\u003d \u0027text\u0027:\n        # only read and decode text data\n        contents \u003d response.read()\n        # provide a default of utf-8 if it\u0027s missing\n        charset \u003d mimedata.getparam(\u0027charset\u0027) or \u0027utf-8\u0027\n        return contents.decode(charset)\n    else:\n        # return the raw contents, though this may not be a good idea\n        # with a long stream of data\n        return response.read()\n\n\nHowever as you\u0027ve stated this is still a little limited, so I would suggest placing from \u0027mimedata \u003d response.info()\u0027 downwards into a _response_handler method on the object, and have the init function take a custom response_handler callback to use instead of the default.\n\nThis would allow for situations where we cannot predict how people will use the API calls to customize how the response is handled to their application usage.\n\nUnfortunately digging through the documentation suggests that the above won\u0027t work on python 3, so it looks as though we probably also need to switch to using the requests library to be able to handle various responses.\n\nIt would be still be a useful information point if you can patch locally with the above suggestion to establish whether the idea works in your case. At the very least that may allow you to add some print statements to dump out information about what headers are defined and the charset detected.\n\nI will look at converting the library to use \"requests\" instead, which will probably clean up a few things and provide a generic python 2/3 version of a response_handler and then this change could be co-opted to add support for a custom response_handler to be registered through the constructor.",
+      "parentUuid": "3a50d1a3_8cca656d",
+      "revId": "b8c3100c15d26eaf4df4608911b9156a3f98cec7",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
