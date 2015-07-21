@@ -158,6 +158,24 @@
       "revId": "b8c3100c15d26eaf4df4608911b9156a3f98cec7",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a50d1a3_8cca656d",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 322,
+      "author": {
+        "id": 16889
+      },
+      "writtenOn": "2015-07-21T07:53:42Z",
+      "side": 1,
+      "message": "i have no idea what is the char-set of the response and how to check it, if you will explain how i can check this.\nbut i do know that the assumption that jenkins returns utf8 is wrong and causes errors.",
+      "parentUuid": "3a50d1a3_837d60b3",
+      "revId": "b8c3100c15d26eaf4df4608911b9156a3f98cec7",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
