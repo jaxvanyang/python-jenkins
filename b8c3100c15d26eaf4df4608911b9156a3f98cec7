@@ -140,6 +140,24 @@
       "revId": "b8c3100c15d26eaf4df4608911b9156a3f98cec7",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a50d1a3_837d60b3",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 322,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-07-21T00:53:53Z",
+      "side": 1,
+      "message": "Is there anyway to debug the raw response due to that script?\n\nI suspect the underlying problem is that we are decoding a response that is not in utf-8 and has a different charset specified in the headers. So if instead of just assuming utf-8, we decoded the response based on what we\u0027re told to use to decode (provided we check that the return type is actually text), it would work as expected.\n\nOther than that, I would be looking to change the code to register a custom response handler that is called each time, where the default is to decode the response using the charset from the headers.\n\nBut allowing to ignore the errors means that we are returning a potentially corrupted response instead, with no way for the caller to get the original response to do anything with it. That potentially renders the response worthless and at the same time adds another option to the API that must be supported in the future.\n\n\nIf we can\u0027t decode the response correctly, then we need to find a way to allow the caller to handle the response instead rather than trashing it and returning garbage.",
+      "parentUuid": "3a50d1a3_a75f5671",
+      "revId": "b8c3100c15d26eaf4df4608911b9156a3f98cec7",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
