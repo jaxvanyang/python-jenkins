@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3a50d1a3_ef3a0234",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 466,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-07-26T04:02:49Z",
+      "side": 1,
+      "message": "Should this maybe use _build_url() as well?  \n\n  request \u003d Request(self._build_url(\u0027\u0027))",
+      "revId": "7fac173a8eb020cf69e45cedfb183ed255342537",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a50d1a3_af44fab6",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 722,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-07-26T04:02:49Z",
+      "side": 1,
+      "message": "i assume we ant to use _build_url here as well?",
+      "revId": "7fac173a8eb020cf69e45cedfb183ed255342537",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a50d1a3_6f159299",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 742,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-07-26T04:02:49Z",
+      "side": 1,
+      "message": "use _build_url?",
+      "revId": "7fac173a8eb020cf69e45cedfb183ed255342537",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
