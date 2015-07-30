@@ -91,6 +91,24 @@
     },
     {
       "key": {
+        "uuid": "3a50d1a3_ddae002f",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 9
+      },
+      "lineNbr": 504,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-07-30T18:02:22Z",
+      "side": 1,
+      "message": "I just realised, we don\u0027t pass back raw json, we pass back the dict taken from json.loads(response).\n\nGuess that means we should use an argument to get_plugins for to get the raw unprocessed dict back.",
+      "parentUuid": "3a50d1a3_ea7a1425",
+      "revId": "4e269bafb35ac5dde1d4ab51a531d7144dd2e625",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3a50d1a3_4aea28ae",
         "filename": "jenkins/__init__.py",
         "patchSetId": 9
