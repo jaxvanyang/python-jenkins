@@ -52,6 +52,24 @@
       "revId": "4e269bafb35ac5dde1d4ab51a531d7144dd2e625",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a50d1a3_9575c1fb",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 9
+      },
+      "lineNbr": 504,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-07-30T11:16:43Z",
+      "side": 1,
+      "message": "So before I rebase this to fix the merge comflict, would be good to have a clear idea of what direction we want to go.\n\n* Merge this with the get_plugins_info() method and simply always alter what is returned to use the Plugin class\n* Merge this with get_plugins_info() and add a raw option to the method for those that want to get the pure json response to both get_plugin_info() and get_plugins_info() methods\n* Keep both sets of methods separate as currently in place.\n\nI\u0027m actually tempted to go with option 1? But I have some concerns about altering the response given from the API, even if in 99.99% of cases the receiving application won\u0027t notice. Is this sufficiently transparent that we can slip it in? or is it still breaking the API?",
+      "parentUuid": "9a41bdd9_58a40fa5",
+      "revId": "4e269bafb35ac5dde1d4ab51a531d7144dd2e625",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
