@@ -70,6 +70,41 @@
       "revId": "4e269bafb35ac5dde1d4ab51a531d7144dd2e625",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a50d1a3_ea7a1425",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 9
+      },
+      "lineNbr": 504,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-07-30T16:44:06Z",
+      "side": 1,
+      "message": "Here\u0027s an alternative.  How about we make get_plugins() the best of all three and just call it in get_plugins_info() and get_plugin_info()?  When it\u0027s called in get_plugins_info() just convert the dict to raw json?\n\nMy rational: \n\n  1. safe for backwards compatibility\n  2. get_plugins_info() and get_plugin_info() can just reuse get_plugins() which matches your thinking to allow the user to decide what to do with the data.\n  3. lets us decide whether we want to deprecate get_plugins_info() and get_plugin_info() at a later time?",
+      "parentUuid": "3a50d1a3_9575c1fb",
+      "revId": "4e269bafb35ac5dde1d4ab51a531d7144dd2e625",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3a50d1a3_4aea28ae",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 9
+      },
+      "lineNbr": 509,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-07-30T16:44:06Z",
+      "side": 1,
+      "message": "add the input and return params? and would be good to add an example.",
+      "revId": "4e269bafb35ac5dde1d4ab51a531d7144dd2e625",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
