@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "1a4dcd0f_9c448a1b",
+        "filename": "doc/source/examples.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-08-05T22:20:16Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1a4dcd0f_e23e89d9",
+      "revId": "6eb722106392f50fc826925aa4f1158d311e6183",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a4dcd0f_820d4540",
         "filename": "doc/source/examples.rst",
         "patchSetId": 1
@@ -30,6 +48,24 @@
       "writtenOn": "2015-08-04T22:38:23Z",
       "side": 1,
       "message": "\"Jenkins server instance\" would imply something other than what I think is meant.  Maybe this should be phrased, \"while creating a ``Jenkins`` instance.\"\n\n(Also, s/an/a/ (English error))",
+      "revId": "6eb722106392f50fc826925aa4f1158d311e6183",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_3c4e963b",
+        "filename": "doc/source/examples.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-08-05T22:20:16Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1a4dcd0f_820d4540",
       "revId": "6eb722106392f50fc826925aa4f1158d311e6183",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
