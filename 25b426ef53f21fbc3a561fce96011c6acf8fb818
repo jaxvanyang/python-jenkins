@@ -1,0 +1,174 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a4dcd0f_5f3a74cd",
+        "filename": "doc/source/examples.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-08-05T22:58:45Z",
+      "side": 1,
+      "message": "The \u0027s\u0027 needs to be dropped from one (and only one) of the two words \"APIs\" or \"allows\".  Also, \"thru\" is very informal; for a more formal feeling, use \"through\".",
+      "revId": "25b426ef53f21fbc3a561fce96011c6acf8fb818",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_1ca63a53",
+        "filename": "doc/source/examples.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-08-05T22:58:45Z",
+      "side": 1,
+      "message": "s/The/This/ (typo correction)\n\ns/retrieving/retrieve/ (English correction)",
+      "revId": "25b426ef53f21fbc3a561fce96011c6acf8fb818",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_1c54fa1e",
+        "filename": "doc/source/examples.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-08-05T22:58:45Z",
+      "side": 1,
+      "message": "You use second person everywhere else in this paragraph, so s/one/you/ for consistency.",
+      "revId": "25b426ef53f21fbc3a561fce96011c6acf8fb818",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_3c28d699",
+        "filename": "doc/source/examples.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-08-05T22:58:45Z",
+      "side": 1,
+      "message": "s/against Jenkins/against the Jenkins/ (English correction, insertion of the article \"the\")",
+      "revId": "25b426ef53f21fbc3a561fce96011c6acf8fb818",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_dc6a12ee",
+        "filename": "doc/source/examples.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-08-05T22:58:45Z",
+      "side": 1,
+      "message": "Missed the doubled \u0027the\u0027 at the beginning of the line…\n\nAlso, I believe there\u0027s a way in .rst to turn a multiword phrase like \"Jenkins Authentication\" into a link; I think that would look better here.",
+      "revId": "25b426ef53f21fbc3a561fce96011c6acf8fb818",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_fc2d8ea8",
+        "filename": "doc/source/examples.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-08-05T22:58:45Z",
+      "side": 1,
+      "message": "s/of real/of a real/ (English correction, insertion of the article \"the\")",
+      "revId": "25b426ef53f21fbc3a561fce96011c6acf8fb818",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_7f073018",
+        "filename": "doc/source/examples.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-08-05T22:58:45Z",
+      "side": 1,
+      "message": "So, there\u0027s a recurring argument among the grammatically inclined about the use of commas in configurations like this.  There are two basic camps: one camp advocates writing a list like this, with no comma before the conjunction (\"and\" in this case), and the other camp advocates using a comma each time.  I tend to adhere to the second camp, but because of the controversy, I wouldn\u0027t -1 if you left this sentence (and the others below) as-is.  For reference, written in my preferred style, this sentence would read:\n\n    This is an example showing how to create, configure, and delete Jenkins jobs.",
+      "revId": "25b426ef53f21fbc3a561fce96011c6acf8fb818",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_bc4ce69e",
+        "filename": "doc/source/examples.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-08-05T22:58:45Z",
+      "side": 1,
+      "message": "For a more formal feeling, s/info/information/…",
+      "revId": "25b426ef53f21fbc3a561fce96011c6acf8fb818",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_5fafd4e1",
+        "filename": "doc/source/examples.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-08-05T22:58:45Z",
+      "side": 1,
+      "message": "I guess what I was hoping for here was a little more explanation of what\u0027s in that dictionary.  Is the key the plugin name?  What is the value, the plugin version?  It doesn\u0027t have to be extensive, just enough to help a new user understand the data, maybe with a link to the part of the documentation that provides all the details.",
+      "revId": "25b426ef53f21fbc3a561fce96011c6acf8fb818",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_3c61b605",
+        "filename": "doc/source/examples.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-08-05T22:58:45Z",
+      "side": 1,
+      "message": "Again, s/info/information/ for a more formal voice.",
+      "revId": "25b426ef53f21fbc3a561fce96011c6acf8fb818",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
