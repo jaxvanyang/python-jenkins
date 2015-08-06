@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "1a4dcd0f_6018d51e",
+        "filename": "doc/source/examples.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-08-06T13:32:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1a4dcd0f_5f3a74cd",
+      "revId": "25b426ef53f21fbc3a561fce96011c6acf8fb818",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a4dcd0f_1ca63a53",
         "filename": "doc/source/examples.rst",
         "patchSetId": 3
@@ -30,6 +48,24 @@
       "writtenOn": "2015-08-05T22:58:45Z",
       "side": 1,
       "message": "s/The/This/ (typo correction)\n\ns/retrieving/retrieve/ (English correction)",
+      "revId": "25b426ef53f21fbc3a561fce96011c6acf8fb818",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_20d5ed1a",
+        "filename": "doc/source/examples.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-08-06T13:32:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1a4dcd0f_1ca63a53",
       "revId": "25b426ef53f21fbc3a561fce96011c6acf8fb818",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "1a4dcd0f_a0e9fde7",
+        "filename": "doc/source/examples.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-08-06T13:32:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1a4dcd0f_1c54fa1e",
+      "revId": "25b426ef53f21fbc3a561fce96011c6acf8fb818",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a4dcd0f_3c28d699",
         "filename": "doc/source/examples.rst",
         "patchSetId": 3
@@ -64,6 +118,24 @@
       "writtenOn": "2015-08-05T22:58:45Z",
       "side": 1,
       "message": "s/against Jenkins/against the Jenkins/ (English correction, insertion of the article \"the\")",
+      "revId": "25b426ef53f21fbc3a561fce96011c6acf8fb818",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_c0e68914",
+        "filename": "doc/source/examples.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-08-06T13:32:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1a4dcd0f_3c28d699",
       "revId": "25b426ef53f21fbc3a561fce96011c6acf8fb818",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
@@ -87,6 +159,24 @@
     },
     {
       "key": {
+        "uuid": "1a4dcd0f_60ef75e9",
+        "filename": "doc/source/examples.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-08-06T13:32:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1a4dcd0f_dc6a12ee",
+      "revId": "25b426ef53f21fbc3a561fce96011c6acf8fb818",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a4dcd0f_fc2d8ea8",
         "filename": "doc/source/examples.rst",
         "patchSetId": 3
@@ -98,6 +188,24 @@
       "writtenOn": "2015-08-05T22:58:45Z",
       "side": 1,
       "message": "s/of real/of a real/ (English correction, insertion of the article \"the\")",
+      "revId": "25b426ef53f21fbc3a561fce96011c6acf8fb818",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_40c11953",
+        "filename": "doc/source/examples.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-08-06T13:32:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1a4dcd0f_fc2d8ea8",
       "revId": "25b426ef53f21fbc3a561fce96011c6acf8fb818",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
@@ -121,6 +229,24 @@
     },
     {
       "key": {
+        "uuid": "1a4dcd0f_408fd929",
+        "filename": "doc/source/examples.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-08-06T13:32:05Z",
+      "side": 1,
+      "message": "I suspect that your english is better than mine but I\u0027ve always been taught to leave out the last comma so i will leave as-is.",
+      "parentUuid": "1a4dcd0f_7f073018",
+      "revId": "25b426ef53f21fbc3a561fce96011c6acf8fb818",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a4dcd0f_bc4ce69e",
         "filename": "doc/source/examples.rst",
         "patchSetId": 3
@@ -132,6 +258,24 @@
       "writtenOn": "2015-08-05T22:58:45Z",
       "side": 1,
       "message": "For a more formal feeling, s/info/information/…",
+      "revId": "25b426ef53f21fbc3a561fce96011c6acf8fb818",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_e07f0515",
+        "filename": "doc/source/examples.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-08-06T13:32:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1a4dcd0f_bc4ce69e",
       "revId": "25b426ef53f21fbc3a561fce96011c6acf8fb818",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
@@ -155,6 +299,24 @@
     },
     {
       "key": {
+        "uuid": "1a4dcd0f_20df2d0e",
+        "filename": "doc/source/examples.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-08-06T13:32:05Z",
+      "side": 1,
+      "message": "there\u0027s already an example of the dictionary in the api doc so i will reference it there.  had a difficult time doing a cross reference directly to the method so just provide enough info for users to look up.",
+      "parentUuid": "1a4dcd0f_5fafd4e1",
+      "revId": "25b426ef53f21fbc3a561fce96011c6acf8fb818",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a4dcd0f_3c61b605",
         "filename": "doc/source/examples.rst",
         "patchSetId": 3
@@ -166,6 +328,24 @@
       "writtenOn": "2015-08-05T22:58:45Z",
       "side": 1,
       "message": "Again, s/info/information/ for a more formal voice.",
+      "revId": "25b426ef53f21fbc3a561fce96011c6acf8fb818",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_00ea31ac",
+        "filename": "doc/source/examples.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-08-06T13:32:05Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1a4dcd0f_3c61b605",
       "revId": "25b426ef53f21fbc3a561fce96011c6acf8fb818",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
