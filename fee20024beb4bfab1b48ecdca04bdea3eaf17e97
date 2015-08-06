@@ -108,6 +108,24 @@
     },
     {
       "key": {
+        "uuid": "1a4dcd0f_6f318759",
+        "filename": "doc/source/example.rst",
+        "patchSetId": 9
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-08-06T23:48:29Z",
+      "side": 1,
+      "message": "As an example, please take a look at change I609dd06ee33033ae5e\n\nYou can rebase on that change and provide a new and separate example.",
+      "parentUuid": "ba3cc151_0642903e",
+      "revId": "fee20024beb4bfab1b48ecdca04bdea3eaf17e97",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba3cc151_e5e4903c",
         "filename": "jenkins/__init__.py",
         "patchSetId": 9
@@ -419,6 +437,24 @@
       "side": 1,
       "message": "If this exception will occur it\u0027s mean that folder for this job does not exist. But ok I can remove this try block.",
       "parentUuid": "ba3cc151_e217a6eb",
+      "revId": "fee20024beb4bfab1b48ecdca04bdea3eaf17e97",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_8fac138d",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 9
+      },
+      "lineNbr": 674,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-08-06T23:48:29Z",
+      "side": 1,
+      "message": "No, don\u0027t remove it.  i just had an issue with the message.  I would expect the message to tell me what\u0027s wrong rather than tell me what i should do.  Something like \"Cannot create job[%s] because folder for the job does not exist\" will work.",
+      "parentUuid": "ba3cc151_75df03d6",
       "revId": "fee20024beb4bfab1b48ecdca04bdea3eaf17e97",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
