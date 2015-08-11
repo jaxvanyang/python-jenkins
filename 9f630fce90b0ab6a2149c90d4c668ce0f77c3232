@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a4dcd0f_17413aa9",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 18
+      },
+      "lineNbr": 395,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-08-11T19:41:09Z",
+      "side": 1,
+      "message": "*raises eyebrow* not that I wouldn\u0027t mind these being word-wrapped, but why this change?",
+      "revId": "9f630fce90b0ab6a2149c90d4c668ce0f77c3232",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
