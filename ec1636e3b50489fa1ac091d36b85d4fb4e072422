@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "1a4dcd0f_4832ce5f",
+        "filename": "doc/source/examples.rst",
+        "patchSetId": 15
+      },
+      "lineNbr": 128,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-08-11T16:24:33Z",
+      "side": 1,
+      "message": "all the the other examples use \u0027server\u0027 instead of \u0027j\u0027",
+      "revId": "ec1636e3b50489fa1ac091d36b85d4fb4e072422",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a4dcd0f_f75ffb3e",
         "filename": "jenkins/__init__.py",
         "patchSetId": 15
