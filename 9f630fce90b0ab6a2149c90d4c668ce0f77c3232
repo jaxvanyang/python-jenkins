@@ -70,6 +70,24 @@
       "revId": "9f630fce90b0ab6a2149c90d4c668ce0f77c3232",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_c92c9604",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 18
+      },
+      "lineNbr": 395,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-08-11T21:02:41Z",
+      "side": 1,
+      "message": "And that\u0027s why I posted a comment with the text \"recheck\"; that\u0027s a command to the gate to re-run the check tests, including the python34 test :)",
+      "parentUuid": "1a4dcd0f_0674ad33",
+      "revId": "9f630fce90b0ab6a2149c90d4c668ce0f77c3232",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
