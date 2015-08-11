@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a4dcd0f_94531517",
+        "filename": "doc/source/examples.rst",
+        "patchSetId": 13
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-08-11T15:16:09Z",
+      "side": 1,
+      "message": "This looks like a bad rebase…",
+      "revId": "e0888776d1b55940cf2ec12a6931acc75dec204b",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a4dcd0f_94d6b54d",
+        "filename": ".coveragerc",
+        "patchSetId": 13
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-08-11T15:16:09Z",
+      "side": 0,
+      "message": "Is there a reason you\u0027re now removing .coveragerc?",
+      "revId": "5b8fbd3640e776657aae3bacb3c6833d211a16ff",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
