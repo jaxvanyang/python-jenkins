@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a4dcd0f_a30610cc",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 16
+      },
+      "lineNbr": 595,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-08-11T18:15:07Z",
+      "side": 1,
+      "message": "I think your docs failure probably comes from this line; indent it a bit so rst can tell it\u0027s a continuation of the preceding :throws: clause…",
+      "revId": "d02808f4ea118509b8db65f48b52c37f4e39659f",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_43f86cc3",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 16
+      },
+      "lineNbr": 617,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-08-11T18:15:07Z",
+      "side": 1,
+      "message": "ditto here…",
+      "revId": "d02808f4ea118509b8db65f48b52c37f4e39659f",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
