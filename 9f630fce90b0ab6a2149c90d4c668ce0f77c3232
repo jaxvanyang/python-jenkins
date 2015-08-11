@@ -52,6 +52,24 @@
       "revId": "9f630fce90b0ab6a2149c90d4c668ce0f77c3232",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_0674ad33",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 18
+      },
+      "lineNbr": 395,
+      "author": {
+        "id": 16099
+      },
+      "writtenOn": "2015-08-11T20:36:54Z",
+      "side": 1,
+      "message": "Jenkins said that gate-python-jenkins-python34 failed. That\u0027s why I created new git review.",
+      "parentUuid": "1a4dcd0f_06490d60",
+      "revId": "9f630fce90b0ab6a2149c90d4c668ce0f77c3232",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
