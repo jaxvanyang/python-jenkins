@@ -1,0 +1,140 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a4dcd0f_835e90e7",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-08-11T11:36:36Z",
+      "side": 1,
+      "message": "I\u0027ve found it a little easier to follow by ensuring it\u0027s clear where the exceptions are coming from instead of previously just having the class name as sometimes it wasn\u0027t obvious if it was a python-jenkins or a library exception.",
+      "revId": "c588c77f2a2826516984078602eed4a685da23df",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_83a1b0ab",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 303,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-08-11T11:36:36Z",
+      "side": 1,
+      "message": "Oops, this is a mistake, should only return None for the NotFoundException.",
+      "revId": "c588c77f2a2826516984078602eed4a685da23df",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_e3719445",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 408,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-08-11T11:36:36Z",
+      "side": 1,
+      "message": "I suspect we should only catch the NotFoundException here and allow any other HTTPError from requests to propagate.",
+      "revId": "c588c77f2a2826516984078602eed4a685da23df",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_03de006d",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 470,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-08-11T11:36:36Z",
+      "side": 1,
+      "message": "I suspect we could actually skip handling many of these errors here now and delegate to the _response_handler method instead, but as a first pass I didn\u0027t want to deviate too much from the existing code/behaviour.",
+      "revId": "c588c77f2a2826516984078602eed4a685da23df",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_a385cc59",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 495,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-08-11T11:36:36Z",
+      "side": 1,
+      "message": "I suspect we could actually skip handling many of these errors here now and delegate to the _response_handler method instead, but as a first pass I didn\u0027t want to deviate too much from the existing code/behaviour.",
+      "revId": "c588c77f2a2826516984078602eed4a685da23df",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_838f7022",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 796,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-08-11T11:36:36Z",
+      "side": 1,
+      "message": "Perhaps we should just catch NotFoundException?",
+      "revId": "c588c77f2a2826516984078602eed4a685da23df",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_03a4c0a3",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 952,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-08-11T11:36:36Z",
+      "side": 1,
+      "message": "Maybe just catch NotFoundException?",
+      "revId": "c588c77f2a2826516984078602eed4a685da23df",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_c3ad7889",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 969,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-08-11T11:36:36Z",
+      "side": 1,
+      "message": "Oops, this should definitely only catch the NotFoundException.",
+      "revId": "c588c77f2a2826516984078602eed4a685da23df",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}

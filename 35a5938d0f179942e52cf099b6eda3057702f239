@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a4dcd0f_43a5e801",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 472,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-08-11T11:36:36Z",
+      "side": 0,
+      "message": "Not raised by the handler.",
+      "revId": "35a5938d0f179942e52cf099b6eda3057702f239",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
