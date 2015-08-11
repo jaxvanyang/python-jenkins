@@ -16,6 +16,24 @@
       "revId": "9f630fce90b0ab6a2149c90d4c668ce0f77c3232",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_12b14847",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 18
+      },
+      "lineNbr": 395,
+      "author": {
+        "id": 16099
+      },
+      "writtenOn": "2015-08-11T19:56:26Z",
+      "side": 1,
+      "message": "Sorry but I couldn\u0027t do git review without doing any change.",
+      "parentUuid": "1a4dcd0f_17413aa9",
+      "revId": "9f630fce90b0ab6a2149c90d4c668ce0f77c3232",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
