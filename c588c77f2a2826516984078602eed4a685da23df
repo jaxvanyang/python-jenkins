@@ -36,6 +36,23 @@
     },
     {
       "key": {
+        "uuid": "1a4dcd0f_590b7e24",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 358,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-08-11T17:13:27Z",
+      "side": 1,
+      "message": "For a first-cut conversion like this, doing this in an exception handler makes sense, but it might be worth considering handling the response codes directly, *then* calling raise_for_status() (and doing the empty body check)…",
+      "revId": "c588c77f2a2826516984078602eed4a685da23df",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a4dcd0f_e3719445",
         "filename": "jenkins/__init__.py",
         "patchSetId": 2
@@ -132,6 +149,40 @@
       "writtenOn": "2015-08-11T11:36:36Z",
       "side": 1,
       "message": "Oops, this should definitely only catch the NotFoundException.",
+      "revId": "c588c77f2a2826516984078602eed4a685da23df",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_d95c6e1b",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-08-11T17:13:27Z",
+      "side": 1,
+      "message": "I\u0027d rather import requests directly, then use \"requests.Response()\"; makes it a little more explicit that we\u0027re doing something with requests and reduces how much you need to type…",
+      "revId": "c588c77f2a2826516984078602eed4a685da23df",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_59f5beea",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 132,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-08-11T17:13:27Z",
+      "side": 1,
+      "message": "You should be able to mock \u0027requests.Session.send\u0027 and not even involve the jenkins module.  I tend to find that a bit clearer.  It\u0027s also worth pointing out that, in cases where I\u0027ve imported a module (like jenkins here, or like requests, as I suggest above), I typically use mock.patch.object().  Assuming the \"import requests\", that would change this to be:\n\n    @patch.object(requests, \u0027Session.send\u0027, autospec\u003dTrue)",
       "revId": "c588c77f2a2826516984078602eed4a685da23df",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
