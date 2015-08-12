@@ -292,6 +292,24 @@
       "revId": "c588c77f2a2826516984078602eed4a685da23df",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_8cd2eecf",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 132,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-08-12T17:14:57Z",
+      "side": 1,
+      "message": "That advice has been in the mock docs for some time, and I\u0027ve found that it is more consistent to patch the object where it is being looked up instead.\n\nSimple example of where this falls down:\n\ntest1.py\n--\n\n class DummyClass(object):\n     def method(self):\n         return \"Hello World\"\n\n\ntest2.py\n--\n\n from test1 import DummyClass\n \n \n def create():\n     d \u003d DummyClass()\n     print(d.method())\n\ntest.py\n--\n\n import test2\n import test1\n import mock\n\n\n @mock.patch(\u0027test1.DummyClass\u0027)\n def example1(dummyclass_mock):\n     dummyclass_mock.return_value.method.return_value \u003d \"Goodbye World!\"\n\n     test2.create()\n\n example1()\n\n\nWill print \u0027Hello World\u0027, change the patch to mock \u0027test2.DummyClass\u0027 and it\u0027ll print \u0027Goodbye World!\u0027. This tends to catch people by surprise.\n\nUse the following mock and you\u0027ll get \u0027Hello World\u0027\n\n @mock.patch.object(test1, \u0027DummyClass\u0027)\n\nChange to the following and you\u0027ll get \u0027Goodbye World\u0027\n\n @mock.patch.object(test2, \u0027DummyClass\u0027)\n\n\n\nWhen mocking methods on objects, you\u0027ll get the expected behaviour, but due to the quirks around mocking entire classes I\u0027ve defaulted to using the recommendation from the mock docs to mock from where the object will be looked up so as to avoid surprises when switching between mocking the class versus methods.",
+      "parentUuid": "1a4dcd0f_6983d903",
+      "revId": "c588c77f2a2826516984078602eed4a685da23df",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
