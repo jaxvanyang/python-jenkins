@@ -310,6 +310,24 @@
       "revId": "c588c77f2a2826516984078602eed4a685da23df",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_25c72d97",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 132,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-08-12T18:08:09Z",
+      "side": 1,
+      "message": "Yep, of course, but allow me to point out again: you\u0027re importing an object, not a module, so mocking the class in the importing module is the only way to effect the mock.  When you import the *module*, both forms of mock work the same, just as you point out when you talk about mocking out a *method* on the class.",
+      "parentUuid": "1a4dcd0f_8cd2eecf",
+      "revId": "c588c77f2a2826516984078602eed4a685da23df",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
