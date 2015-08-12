@@ -274,6 +274,24 @@
       "revId": "c588c77f2a2826516984078602eed4a685da23df",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_6983d903",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 132,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-08-12T15:16:07Z",
+      "side": 1,
+      "message": "1. That does work; that particular idiom is used all over nova, novaclient, and virtually everything I\u0027ve written.\n\n2. I have never seen that advice you\u0027ve linked to, and as I say, everything I\u0027ve seen that uses mock mocks out from the underlying package.  This is, in fact, one of the reasons nova and other OpenStack projects enforce the convention of importing modules rather than symbols from modules.  I can definitely see the advantages of this advice in the case where you import the symbols, but that\u0027s not what we\u0027re doing here; in essence, \"jenkins.requests.Session.send\" is simply an alias for \"requests.Session.send\", and if you patch the former, you are *also* patching the latter.  In that situation, I think I prefer the shorter version, to make it clear exactly what\u0027s being patched.",
+      "parentUuid": "1a4dcd0f_477b7dbe",
+      "revId": "c588c77f2a2826516984078602eed4a685da23df",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
