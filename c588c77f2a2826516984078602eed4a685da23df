@@ -328,6 +328,24 @@
       "revId": "c588c77f2a2826516984078602eed4a685da23df",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_5c89cb6d",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 132,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-08-13T11:39:41Z",
+      "side": 1,
+      "message": "Mocking at where the lookup occurs is consistent across modules, objects and methods. This seems like a sensible idea which will help contributors just copy the existing mocking approach and a apply to any as needed without needing to be aware of an subtle changes in behaviour depending on what is being mocked.\n\nMocking at the lookup point also includes information about where in the API being unit tested that an object needs to be mocked to exercise the code. While this is currently less important for python-jenkins, given it currently has a single module, it still is a useful default.\n\nAn example of this: https://github.com/openstack-infra/jenkins-job-builder/blob/master/tests/cmd/subcommands/test_test.py#L102-L132 tells you exactly where in the modules the mocking of os.walk and os.path.isdir is intended to affect so you know where to focus looking in the code.\n\n\nReferencing the underlying module has the appearance of reaching in behind the curtain and changing internal behaviour instead of mocking where the object is being accessed. The effect may be ultimately the same, but it hides where in the code being tested it\u0027s intended to affect.\n\n\nIt does appear that in a number of cases nova is doing the exact same as here, nova/tests/unit/db/test_db_api.py mocks a number of methods under \u0027nova.db.sqlalchemy.api\u0027 which turn out to be mainly imports from sqlalchemy. Where they use @mock.patch.object(\u0027sqlalchemy_api\u0027, \u003cfunction\u003e) it turns out the functions are their internal ones instead of references to what is implemented by sqlalchemy.\n\nAs far as I can tell, there are multiple approaches being taken, sometimes the mock is directly on the system module being utilised, sometimes it\u0027s done using where the lookup occurs.\n\nWithout a better reason than less characters, it appears more beneficial to follow the recommendation from the mock documentation, and only deviate from that as and when needed.",
+      "parentUuid": "1a4dcd0f_25c72d97",
+      "revId": "c588c77f2a2826516984078602eed4a685da23df",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
