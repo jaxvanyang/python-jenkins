@@ -50,6 +50,23 @@
       "revId": "92cf00b4982a73f48f58006c34808cb60e08d5fa",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_73990879",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 21
+      },
+      "lineNbr": 1476,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-08-14T18:17:26Z",
+      "side": 1,
+      "message": "Would be nice to word-wrap the long strings…",
+      "revId": "92cf00b4982a73f48f58006c34808cb60e08d5fa",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
