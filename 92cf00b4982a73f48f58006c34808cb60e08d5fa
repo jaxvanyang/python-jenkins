@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a4dcd0f_f3f438f2",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 21
+      },
+      "lineNbr": 579,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-08-14T18:14:40Z",
+      "side": 1,
+      "message": "Fixed a bug here were fullname was not added to the root level jobs.\n\nThis also opens a question whether this is really the best way to do this, or if we should also wrap the jobs returned with a light weight object that by default behaves like a dict for all the normal properties, but also provides a method to retrieve the fullname as provided by this API instead of making it appear like that is being provided by Jenkins?",
+      "revId": "92cf00b4982a73f48f58006c34808cb60e08d5fa",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_337620a4",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 21
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-08-14T18:14:40Z",
+      "side": 1,
+      "message": "Probably don\u0027t need to ensure that the url\u0027s being returned fully match what jenkins would return, because presumably jenkins will do the right thing there and testing it has no benefit. So need for the test code here to flesh out the correct urls based on the folder.",
+      "revId": "92cf00b4982a73f48f58006c34808cb60e08d5fa",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a4dcd0f_9367f4e9",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 21
+      },
+      "lineNbr": 1124,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-08-14T18:14:40Z",
+      "side": 1,
+      "message": "I need to add a few more tests on top of this to exercise the different aspects of the recursive folder searching.",
+      "revId": "92cf00b4982a73f48f58006c34808cb60e08d5fa",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
