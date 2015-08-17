@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa1b9901_ebd54eb9",
+        "filename": "tests/helper.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-08-17T15:23:39Z",
+      "side": 1,
+      "message": "Need a better way to send this information back to the calling process and for it to be outputted from there instead of using logging here. That will help the reuse.",
+      "revId": "664cd7ebce71268a885531f25bcc2b708298beaf",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa1b9901_2b090696",
+        "filename": "tests/helper.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-08-17T15:23:39Z",
+      "side": 1,
+      "message": "So I suspect this is my actual problem, I need to make sure that terminate is called afterwards, otherwise the exitcode my be set to \u0027-15\u0027 which is SIGTERM, and would correspond to a forced terminate.\n\nMaybe switch to:\n\n    if p.is_alive():\n        p.terminate()\n        raise TestsTimeoutException\n    else:\n        # output information about the exit code/tracebacks if avail",
+      "revId": "664cd7ebce71268a885531f25bcc2b708298beaf",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
