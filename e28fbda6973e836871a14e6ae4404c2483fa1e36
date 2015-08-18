@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa1b9901_4b1c4577",
+        "filename": "tests/test_jobs.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-08-18T14:22:47Z",
+      "side": 1,
+      "message": "I have some concern that this file with grow further and the same problem will be duplicated as with having all tests in a single file.\n\nSee I6d3957c217e1253e53152d90d5fcce5e69c77674 for the addition of new tests to this file.\n\nAny thoughts or suggestions on how to split this further?\n\nMaybe all information retrieval in one file and actions in another?",
+      "revId": "e28fbda6973e836871a14e6ae4404c2483fa1e36",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
