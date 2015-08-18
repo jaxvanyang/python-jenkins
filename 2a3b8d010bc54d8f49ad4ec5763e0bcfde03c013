@@ -1,0 +1,140 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa1b9901_1fb444cf",
+        "filename": "README.rst",
+        "patchSetId": 23
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-08-18T22:29:26Z",
+      "side": 1,
+      "message": "nit: I\u0027ve not used folders but is it possible to modify folders?  could you please add an example of that in examples.rst?  I think users would like to know the possibilities:\n\n  - rename a folder?\n  - move jobs between folders?\n  - change folder properties, like a description?\n  - copy a folder?  would that copy it\u0027s contents?",
+      "revId": "2a3b8d010bc54d8f49ad4ec5763e0bcfde03c013",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa1b9901_fffe306a",
+        "filename": "doc/source/examples.rst",
+        "patchSetId": 23
+      },
+      "lineNbr": 124,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-08-18T22:29:26Z",
+      "side": 1,
+      "message": "Should really state that this requires the Folders plugin.",
+      "revId": "2a3b8d010bc54d8f49ad4ec5763e0bcfde03c013",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa1b9901_bf275811",
+        "filename": "doc/source/examples.rst",
+        "patchSetId": 23
+      },
+      "lineNbr": 128,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-08-18T22:29:26Z",
+      "side": 1,
+      "message": "I didn\u0027t think about this earlier but it seems odd that users would need to use the jobs APIs to add/remove/modify folders.  At a conceptual level I would think most users associate folders to views.  I think it would be nice to have a create_folder()/delete_folder()/modify_folder() methods so the API is more intuitive and consistent with the views APIs.  Also that would allow users to create/update folders independently of jobs.  With that said i also feel that my suggestion can be done in a follow on change.",
+      "revId": "2a3b8d010bc54d8f49ad4ec5763e0bcfde03c013",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa1b9901_1fbaf923",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 23
+      },
+      "lineNbr": 281,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-08-18T22:29:26Z",
+      "side": 1,
+      "message": "I\u0027m wondering what would be the most appropriate way to tell users that the \u0027folder_depth\u0027 param here and in all other methods only applies when using the Folder plugin?",
+      "revId": "2a3b8d010bc54d8f49ad4ec5763e0bcfde03c013",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa1b9901_ff50650c",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 23
+      },
+      "lineNbr": 563,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-08-18T22:29:26Z",
+      "side": 1,
+      "message": "nit: probably would be good to update this description to just \"Get the list of jobs\"",
+      "revId": "2a3b8d010bc54d8f49ad4ec5763e0bcfde03c013",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa1b9901_53ee30b5",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 23
+      },
+      "lineNbr": 576,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-08-18T22:29:26Z",
+      "side": 1,
+      "message": "nit: upto/up to",
+      "revId": "2a3b8d010bc54d8f49ad4ec5763e0bcfde03c013",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa1b9901_f34d0473",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 23
+      },
+      "lineNbr": 748,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-08-18T22:29:26Z",
+      "side": 1,
+      "message": "hmm.  Wondering if this should just be replaced with the more performant run_script method since this method always gets all jobs.  Maybe having this method was just a bad idea altogether since it\u0027s just a call to get_all_jobs().  In any case, probably can be dealt with in a follow on change.",
+      "revId": "2a3b8d010bc54d8f49ad4ec5763e0bcfde03c013",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa1b9901_0ee97080",
+        "filename": "test-requirements.txt",
+        "patchSetId": 23
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-08-18T22:29:26Z",
+      "side": 1,
+      "message": "How is this update related to this change?  pbr doesn\u0027t work with sphinx 1.3 yet, it will require change Iba92628263e20efca84  also this single update is done in change Ibb838b9d7fe086f784",
+      "revId": "2a3b8d010bc54d8f49ad4ec5763e0bcfde03c013",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
