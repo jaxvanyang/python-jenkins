@@ -16,6 +16,24 @@
       "revId": "e28fbda6973e836871a14e6ae4404c2483fa1e36",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa1b9901_f8d96684",
+        "filename": "tests/test_jobs.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-08-18T17:15:02Z",
+      "side": 1,
+      "message": "I\u0027m not a fan of splitting it by retrieval and actions because retrieval is an action. How about we create a hierarchy organized by folders?  So for this one I would create a tests/jobs/config.py, tests/jobs/assert.py, tests/jobs/create.py, tests/jobs/info.py,  etc..",
+      "parentUuid": "fa1b9901_4b1c4577",
+      "revId": "e28fbda6973e836871a14e6ae4404c2483fa1e36",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
