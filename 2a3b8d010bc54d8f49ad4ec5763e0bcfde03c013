@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "fa1b9901_8bcb2453",
+        "filename": "README.rst",
+        "patchSetId": 23
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-08-19T00:06:48Z",
+      "side": 1,
+      "message": "Believe that\u0027s limited with the free version, but the folder plus version suggests that you can copy folders and copy it\u0027s contents as a set of new jobs.\n\nSee https://documentation.cloudbees.com/docs/cje-user-guide/folders-plus.html",
+      "parentUuid": "fa1b9901_1fb444cf",
+      "revId": "2a3b8d010bc54d8f49ad4ec5763e0bcfde03c013",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fa1b9901_fffe306a",
         "filename": "doc/source/examples.rst",
         "patchSetId": 23
@@ -47,6 +65,24 @@
       "writtenOn": "2015-08-18T22:29:26Z",
       "side": 1,
       "message": "I didn\u0027t think about this earlier but it seems odd that users would need to use the jobs APIs to add/remove/modify folders.  At a conceptual level I would think most users associate folders to views.  I think it would be nice to have a create_folder()/delete_folder()/modify_folder() methods so the API is more intuitive and consistent with the views APIs.  Also that would allow users to create/update folders independently of jobs.  With that said i also feel that my suggestion can be done in a follow on change.",
+      "revId": "2a3b8d010bc54d8f49ad4ec5763e0bcfde03c013",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa1b9901_4be66cb5",
+        "filename": "doc/source/examples.rst",
+        "patchSetId": 23
+      },
+      "lineNbr": 128,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-08-19T00:06:48Z",
+      "side": 1,
+      "message": "Even if we make the folders api wrap around the jobs methods to create folders it might be a good abstraction.",
+      "parentUuid": "fa1b9901_bf275811",
       "revId": "2a3b8d010bc54d8f49ad4ec5763e0bcfde03c013",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
@@ -121,6 +157,24 @@
     },
     {
       "key": {
+        "uuid": "fa1b9901_2b93f850",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 23
+      },
+      "lineNbr": 748,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-08-19T00:06:48Z",
+      "side": 1,
+      "message": "I\u0027m not sure if you always have access to the script console. I recall that you can query significant amounts of information about jobs without being granted access to the console, so it probably need to be easily configurable.",
+      "parentUuid": "fa1b9901_f34d0473",
+      "revId": "2a3b8d010bc54d8f49ad4ec5763e0bcfde03c013",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fa1b9901_0ee97080",
         "filename": "test-requirements.txt",
         "patchSetId": 23
@@ -132,6 +186,24 @@
       "writtenOn": "2015-08-18T22:29:26Z",
       "side": 1,
       "message": "How is this update related to this change?  pbr doesn\u0027t work with sphinx 1.3 yet, it will require change Iba92628263e20efca84  also this single update is done in change Ibb838b9d7fe086f784",
+      "revId": "2a3b8d010bc54d8f49ad4ec5763e0bcfde03c013",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa1b9901_6bc4905e",
+        "filename": "test-requirements.txt",
+        "patchSetId": 23
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-08-19T00:06:48Z",
+      "side": 1,
+      "message": "needed for note support, also limits sphinx to 1.2.* versions so as not to require 1.3 just yet.",
+      "parentUuid": "fa1b9901_0ee97080",
       "revId": "2a3b8d010bc54d8f49ad4ec5763e0bcfde03c013",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
