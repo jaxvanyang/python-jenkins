@@ -16,6 +16,24 @@
       "revId": "0ad706629976d6489e26b562400e6faab26356c5",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da20952f_4f31710a",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 1012,
+      "author": {
+        "id": 4146
+      },
+      "writtenOn": "2015-09-10T22:46:43Z",
+      "side": 1,
+      "message": "I chose quiet_down because that is what Jenkins calls it and \"shutdown\" always seems ambiguous since it doesn\u0027t actually shut down anything.\n\nI could see using something like \"prepare_for_shutdown\" but just \"shutdown\" isn\u0027t very meaningful imo.",
+      "parentUuid": "da20952f_cf958140",
+      "revId": "0ad706629976d6489e26b562400e6faab26356c5",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
