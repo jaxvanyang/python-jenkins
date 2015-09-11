@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da20952f_27899d6f",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 11
+      },
+      "lineNbr": 491,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-09-11T20:35:48Z",
+      "side": 1,
+      "message": "Do you think there should there be a warning log for this?  \n\nAlso i\u0027m a little concerned about this since get_plugins_info returns a list while get_plugins returns a dict.  Users would need to know that so they can get the same result to be compatible with their existing scripts. Maybe just a little more documentation and update to the example in examples.rst might do it?",
+      "revId": "3647ce668d21cd1cdb9f36401ce54ea6b2d17c18",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da20952f_07733917",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 11
+      },
+      "lineNbr": 562,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-09-11T20:35:48Z",
+      "side": 1,
+      "message": "maybe a more representative example showing the multi key dict return value?\n\nsomething like ..\n\n\n{(\u0027gearman-plugin\u0027, \u0027Gearman Plugin\u0027): {u\u0027backupVersion\u0027: u\u0027${project-version}\u0027, \u0027version\u0027: ${project-version}, u\u0027deleted\u0027: False, u\u0027supportsDynamicLoad\u0027: u\u0027MAYBE\u0027, u\u0027hasUpdate\u0027: True, u\u0027enabled\u0027: True, u\u0027pinned\u0027: False, u\u0027url\u0027: u\u0027http://wiki.jenkins-ci.org/display/JENKINS/Gearman+Plugin\u0027, u\u0027dependencies\u0027: [], u\u0027longName\u0027: u\u0027Gearman Plugin\u0027, u\u0027downgradable\u0027: True, u\u0027shortName\u0027: u\u0027gearman-plugin\u0027, u\u0027bundled\u0027: False, u\u0027active\u0027: True}, (\u0027matrix-project\u0027, \u0027Matrix Project Plugin\u0027): {u\u0027backupVersion\u0027: u\u00271.2\u0027, \u0027version\u0027: 1.4, u\u0027deleted\u0027: False, u\u0027supportsDynamicLoad\u0027: u\u0027MAYBE\u0027, u\u0027hasUpdate\u0027: False, u\u0027enabled\u0027: True, u\u0027pinned\u0027: True, u\u0027url\u0027: u\u0027https://wiki.jenkins-ci.org/display/JENKINS/Matrix+Project+Plugin\u0027, u\u0027dependencies\u0027: [], u\u0027longName\u0027: u\u0027Matrix Project Plugin\u0027, u\u0027downgradable\u0027: True, u\u0027shortName\u0027: u\u0027matrix-project\u0027, u\u0027bundled\u0027: True, u\u0027active\u0027: True}, ..}",
+      "revId": "3647ce668d21cd1cdb9f36401ce54ea6b2d17c18",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
