@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da20952f_37c6cb9c",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 1013,
+      "author": {
+        "id": 15362
+      },
+      "writtenOn": "2015-09-11T08:07:33Z",
+      "side": 1,
+      "message": "Very minor; comment could perhaps be adjusted and state what really is happening; Prepare Jenkins for shutdown so no further builds can be performed - just like what Jenkins says when it\u0027s taken into quiet down mode.\n\nApart from this, people and Jenkins use both \"quiet down\" and \"prepare for shutdown\" interchangeably.\n\nBut, if we think that we might need another method cancelling quiet_down then we can\u0027t call this new method cancel_shutdown since shutdown hasn\u0027t started happening yet so having cancel_quiet_down method and renaming this method to its original name, quiet_down, might be more logical.",
+      "revId": "0f0d3e1e060761f3abc886f44eb01b7c318ffceb",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
