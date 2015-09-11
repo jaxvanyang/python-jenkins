@@ -16,6 +16,41 @@
       "revId": "0f0d3e1e060761f3abc886f44eb01b7c318ffceb",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da20952f_bab14993",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 1013,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-09-11T18:24:06Z",
+      "side": 1,
+      "message": "Good point Fatih,  I agree with you on both items.  I am OK with either \u0027quite_down\u0027 or \u0027prepare_shutdown\u0027 then cancel methods can be \u0027cancel_quite_down\u0027 or \u0027cancel_prepare_shutdown\u0027.",
+      "parentUuid": "da20952f_37c6cb9c",
+      "revId": "0f0d3e1e060761f3abc886f44eb01b7c318ffceb",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da20952f_ee9f02b2",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 1018,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-09-11T18:24:06Z",
+      "side": 1,
+      "message": "would it make sense to make this message \u0027preparing for shutdown failed\u0027?",
+      "revId": "0f0d3e1e060761f3abc886f44eb01b7c318ffceb",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
