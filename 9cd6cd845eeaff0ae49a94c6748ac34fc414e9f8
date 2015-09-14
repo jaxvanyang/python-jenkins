@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba15a1d1_00f2b8d2",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 730,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-09-14T21:42:47Z",
+      "side": 1,
+      "message": "nit: \u0027of running\u0027/\u0027of currently running\u0027\n\nIt\u0027s a little unclear as to what is in the returned builds object.  From reading the doc i would tend to think that it\u0027s just a list of job names, however it\u0027s actually a list of executables.  Specifying the return type and adding an example similar to get_info() would help.",
+      "revId": "9cd6cd845eeaff0ae49a94c6748ac34fc414e9f8",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba15a1d1_60529469",
+        "filename": "tests/test_build.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-09-14T21:42:47Z",
+      "side": 1,
+      "message": "how about specifying non master node for one of these tests?",
+      "revId": "9cd6cd845eeaff0ae49a94c6748ac34fc414e9f8",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
