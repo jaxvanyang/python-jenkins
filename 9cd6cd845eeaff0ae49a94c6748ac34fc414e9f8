@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "ba15a1d1_0dabd075",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 730,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-09-14T22:41:56Z",
+      "side": 1,
+      "message": "Agreed, documentation is needed for the return type.  Also, I think it would be better if this gave you the names (and maybe build numbers) of the jobs; I can imagine that someone using this interface would want to use the return value to manually kill off some of the running builds.",
+      "parentUuid": "ba15a1d1_00f2b8d2",
+      "revId": "9cd6cd845eeaff0ae49a94c6748ac34fc414e9f8",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba15a1d1_60529469",
         "filename": "tests/test_build.py",
         "patchSetId": 2
