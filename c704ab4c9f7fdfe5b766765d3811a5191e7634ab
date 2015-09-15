@@ -143,6 +143,24 @@
     },
     {
       "key": {
+        "uuid": "ba15a1d1_32435944",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 751,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-09-15T21:46:17Z",
+      "side": 1,
+      "message": "OK, I just did some testing, and I\u0027ve confirmed that fullDisplayName is exactly what I worried that it was: the display name of the job.  It looks like the only way to get the job name that I want is to parse the URL…",
+      "parentUuid": "ba15a1d1_975b372e",
+      "revId": "c704ab4c9f7fdfe5b766765d3811a5191e7634ab",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba15a1d1_3910244e",
         "filename": "tests/test_build.py",
         "patchSetId": 3
