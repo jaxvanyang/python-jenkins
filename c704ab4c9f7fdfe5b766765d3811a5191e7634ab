@@ -71,6 +71,24 @@
     },
     {
       "key": {
+        "uuid": "ba15a1d1_bc998221",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 751,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-09-15T21:19:50Z",
+      "side": 1,
+      "message": "What\u0027s bothering me—and I\u0027ll confess I haven\u0027t looked at the Jenkins API docs on this point—but a job has both a \"name,\" that you use to query it through the API; and a \"display name,\" which you can populate with a human-friendly name for the UI.  I want to make sure that what\u0027s being returned is the former, rather than the latter, as I\u0027m expecting that passing a display name to something like stop_build() would give an error.  (For the record, my not having checked an example yet is why I didn\u0027t vote when making the above comment…)",
+      "parentUuid": "ba15a1d1_e6820b94",
+      "revId": "c704ab4c9f7fdfe5b766765d3811a5191e7634ab",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba15a1d1_3910244e",
         "filename": "tests/test_build.py",
         "patchSetId": 3
