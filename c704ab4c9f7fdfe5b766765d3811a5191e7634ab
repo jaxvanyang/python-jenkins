@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "ba15a1d1_2656c35c",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 732,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-09-15T20:44:10Z",
+      "side": 1,
+      "message": "Providing the \u0027estimatedDuration\u0027 time might be useful.\n\nAn example of the resulting output from this method would be helpful.",
+      "revId": "c704ab4c9f7fdfe5b766765d3811a5191e7634ab",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba15a1d1_cb05957a",
         "filename": "jenkins/__init__.py",
         "patchSetId": 3
@@ -31,6 +48,40 @@
       "side": 1,
       "message": "The data structure called \"build\" in https://review.openstack.org/#/c/223276/3/tests/test_build.py is verbatim what you get from Jenkins. There are two values with the job name in it. fullDisplayName and url. I chose to parse it out of fullDisplayName instead of url.\n\nIf you can find a better way to do this given what Jenkins tells you I would be glad to do it that way but this seems to be our only option (parse either of those two fields).",
       "parentUuid": "ba15a1d1_cb05957a",
+      "revId": "c704ab4c9f7fdfe5b766765d3811a5191e7634ab",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba15a1d1_e6820b94",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 751,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-09-15T20:44:10Z",
+      "side": 1,
+      "message": "I don\u0027t see a difference between fullDisplayName and \"actual name\".  What is this \u0027actual name\u0027 you are referring to?",
+      "revId": "c704ab4c9f7fdfe5b766765d3811a5191e7634ab",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba15a1d1_3910244e",
+        "filename": "tests/test_build.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-09-15T20:44:10Z",
+      "side": 1,
+      "message": "how about making one of these tests exercise the path with a non master node?",
       "revId": "c704ab4c9f7fdfe5b766765d3811a5191e7634ab",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
