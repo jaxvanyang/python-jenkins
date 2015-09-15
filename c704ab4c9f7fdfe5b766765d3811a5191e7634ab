@@ -16,6 +16,24 @@
       "revId": "c704ab4c9f7fdfe5b766765d3811a5191e7634ab",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba15a1d1_d64e986e",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 751,
+      "author": {
+        "id": 4146
+      },
+      "writtenOn": "2015-09-15T18:41:48Z",
+      "side": 1,
+      "message": "The data structure called \"build\" in https://review.openstack.org/#/c/223276/3/tests/test_build.py is verbatim what you get from Jenkins. There are two values with the job name in it. fullDisplayName and url. I chose to parse it out of fullDisplayName instead of url.\n\nIf you can find a better way to do this given what Jenkins tells you I would be glad to do it that way but this seems to be our only option (parse either of those two fields).",
+      "parentUuid": "ba15a1d1_cb05957a",
+      "revId": "c704ab4c9f7fdfe5b766765d3811a5191e7634ab",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
