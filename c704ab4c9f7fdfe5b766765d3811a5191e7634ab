@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba15a1d1_cb05957a",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 751,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-09-15T18:28:17Z",
+      "side": 1,
+      "message": "Wouldn\u0027t this be the job\u0027s display name, rather than its actual name?  I would be expecting the actual name, the name I would pass to, e.g., stop_build().",
+      "revId": "c704ab4c9f7fdfe5b766765d3811a5191e7634ab",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
