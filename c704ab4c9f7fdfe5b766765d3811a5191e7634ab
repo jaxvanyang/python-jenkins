@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "ba15a1d1_37158b3f",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 732,
+      "author": {
+        "id": 4146
+      },
+      "writtenOn": "2015-09-15T21:24:01Z",
+      "side": 1,
+      "message": "This docstring does exactly what get_nodes does below. You want me to also add python interactive interpreter output?",
+      "parentUuid": "ba15a1d1_2656c35c",
+      "revId": "c704ab4c9f7fdfe5b766765d3811a5191e7634ab",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba15a1d1_cb05957a",
         "filename": "jenkins/__init__.py",
         "patchSetId": 3
@@ -89,6 +107,24 @@
     },
     {
       "key": {
+        "uuid": "ba15a1d1_975b372e",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 751,
+      "author": {
+        "id": 4146
+      },
+      "writtenOn": "2015-09-15T21:24:01Z",
+      "side": 1,
+      "message": "Again, the fullDisplayName in the test is verbatim from Jenkins... You get what appears to be the job name with #run_number appended. In this case fullDisplay name is \"test #1\". The only other alternative I see here is to parse the name out of the url value. I get that you want ot just get the name but it does not exist here.",
+      "parentUuid": "ba15a1d1_bc998221",
+      "revId": "c704ab4c9f7fdfe5b766765d3811a5191e7634ab",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba15a1d1_3910244e",
         "filename": "tests/test_build.py",
         "patchSetId": 3
@@ -100,6 +136,24 @@
       "writtenOn": "2015-09-15T20:44:10Z",
       "side": 1,
       "message": "how about making one of these tests exercise the path with a non master node?",
+      "revId": "c704ab4c9f7fdfe5b766765d3811a5191e7634ab",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba15a1d1_d79f6fb2",
+        "filename": "tests/test_build.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 4146
+      },
+      "writtenOn": "2015-09-15T21:24:01Z",
+      "side": 1,
+      "message": "It won\u0027t actually affect the coverage really other than to get the one line that doesn\u0027t special case master. I can add it.",
+      "parentUuid": "ba15a1d1_3910244e",
       "revId": "c704ab4c9f7fdfe5b766765d3811a5191e7634ab",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
