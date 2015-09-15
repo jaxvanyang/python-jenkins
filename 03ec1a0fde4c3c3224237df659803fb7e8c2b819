@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba15a1d1_0daaba70",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 738,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-09-15T22:28:59Z",
+      "side": 1,
+      "message": "It\u0027d be nice to wrap this at 79 columns…",
+      "revId": "03ec1a0fde4c3c3224237df659803fb7e8c2b819",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba15a1d1_adb70ed7",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 739,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-09-15T22:28:59Z",
+      "side": 1,
+      "message": "Why have the \u0027;\u0027 set off from the rest of the string like this?",
+      "revId": "03ec1a0fde4c3c3224237df659803fb7e8c2b819",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba15a1d1_0d463abf",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 743,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-09-15T22:28:59Z",
+      "side": 1,
+      "message": "This will always return True:\n\n    \u003e\u003e\u003e bool(u\u0027Result: false\\n\u0027.replace(\u0027 \u0027, \u0027\u0027).split(\u0027:\u0027)[1])\n    True\n\nPart of that is the newline at the end, and part of it is the fact that any non-empty string always coerces to boolean True.  Try this instead:\n\n    return response.split(\u0027:\u0027)[1].strip().lower() \u003d\u003d \u0027true\u0027\n\nProof that this works:\n\n    \u003e\u003e\u003e u\u0027Result: true\\n\u0027.split(\u0027:\u0027)[1].strip().lower() \u003d\u003d \u0027true\u0027\n    True\n    \u003e\u003e\u003e u\u0027Result: false\\n\u0027.split(\u0027:\u0027)[1].strip().lower() \u003d\u003d \u0027true\u0027\n    False",
+      "revId": "03ec1a0fde4c3c3224237df659803fb7e8c2b819",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba15a1d1_4d519261",
+        "filename": "tests/test_script.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-09-15T22:28:59Z",
+      "side": 1,
+      "message": "It would probably be a nice idea to add tests on the return value of the method…",
+      "revId": "03ec1a0fde4c3c3224237df659803fb7e8c2b819",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
