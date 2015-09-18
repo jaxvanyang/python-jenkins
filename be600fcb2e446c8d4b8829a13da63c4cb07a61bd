@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba15a1d1_48a49649",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 12
+      },
+      "lineNbr": 523,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-09-18T17:00:52Z",
+      "side": 1,
+      "message": "hmm.  get_plugins method does not take a name so should this be deprecated yet?",
+      "revId": "be600fcb2e446c8d4b8829a13da63c4cb07a61bd",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba15a1d1_0818ded1",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 12
+      },
+      "lineNbr": 568,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-09-18T17:00:52Z",
+      "side": 1,
+      "message": "dict not an array correct?  so it should be  {(\u0027gearman-plugin\u0027, \u0027Gearman Plugin\u0027) ...",
+      "revId": "be600fcb2e446c8d4b8829a13da63c4cb07a61bd",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba15a1d1_c85bc684",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 12
+      },
+      "lineNbr": 575,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-09-18T17:00:52Z",
+      "side": 1,
+      "message": "Should probably end like this:\n\n...  u\u0027gearman-plugin\u0027, u\u0027bundled\u0027: False} ..}",
+      "revId": "be600fcb2e446c8d4b8829a13da63c4cb07a61bd",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
