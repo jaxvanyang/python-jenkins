@@ -69,6 +69,24 @@
       "revId": "e6e1dd6f367c9ac214b00c975ed5e6e9634d1a8d",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba15a1d1_90cd3d32",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 743,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-09-23T22:33:16Z",
+      "side": 1,
+      "message": "Hmm.  I was hoping the request would throw an error but since it doesn\u0027t i\u0027m not sure how we want to handle it.  i see 2 valid options.\n\n 1. make two requests. \n 2. keep as is and document that this function is a NOOP if number \u003c current_next_build_number.\n\nI don\u0027t really like option #1 because in your example it would actually take 3 requests to set the next build number.  The first one being to get the next number.   I think i would actually be ok with option #2 in this case.",
+      "parentUuid": "ba15a1d1_73b19e8e",
+      "revId": "e6e1dd6f367c9ac214b00c975ed5e6e9634d1a8d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
