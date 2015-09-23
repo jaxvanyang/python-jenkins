@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba15a1d1_587b59be",
+        "filename": "doc/source/examples.rst",
+        "patchSetId": 6
+      },
+      "lineNbr": 144,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-09-23T17:27:49Z",
+      "side": 1,
+      "message": "nit: might be better to put this info in the docstring of the set_next_build_number method instead of here since not everyone reads the examples.  or you can put in both places but i think it\u0027s preferable to put  it in the method.",
+      "revId": "e6e1dd6f367c9ac214b00c975ed5e6e9634d1a8d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ba15a1d1_4d707d40",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 743,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-09-23T17:27:49Z",
+      "side": 1,
+      "message": "Would you get an error of some kind if number \u003c current_next_build_number?\n\nI\u0027m wondering if we need to verify that the number is valid before sending this request?",
+      "revId": "e6e1dd6f367c9ac214b00c975ed5e6e9634d1a8d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
