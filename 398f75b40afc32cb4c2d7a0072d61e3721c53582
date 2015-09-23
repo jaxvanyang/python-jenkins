@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba15a1d1_3690ea42",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 727,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-09-23T22:54:54Z",
+      "side": 1,
+      "message": "Maybe rephrase this last sentence like so:\n\n    If the specified next build number is less than the last build number,\n    Jenkins will ignore the request.",
+      "revId": "398f75b40afc32cb4c2d7a0072d61e3721c53582",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
