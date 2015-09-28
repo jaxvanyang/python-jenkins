@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "9a1a9d01_079850bf",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 12
+      },
+      "lineNbr": 523,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-09-28T16:50:43Z",
+      "side": 1,
+      "message": "Depends on whether we think users should call get_plugins and decide themselves on whether to cache the information or not?\n\nThis call is inherently expensive since it retrieves all information for all plugins and only returns the one needed, but will re-request the next time.\n\nAt the very least I might warn that this is expensive to call repeatedly.",
+      "parentUuid": "ba15a1d1_48a49649",
+      "revId": "be600fcb2e446c8d4b8829a13da63c4cb07a61bd",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba15a1d1_0818ded1",
         "filename": "jenkins/__init__.py",
         "patchSetId": 12
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "9a1a9d01_27c1d480",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 12
+      },
+      "lineNbr": 568,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-09-28T16:50:43Z",
+      "side": 1,
+      "message": "This is a copy n paste from the actual output, so it\u0027s due to how multi_key_dict represents it\u0027s output.",
+      "parentUuid": "ba15a1d1_0818ded1",
+      "revId": "be600fcb2e446c8d4b8829a13da63c4cb07a61bd",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba15a1d1_c85bc684",
         "filename": "jenkins/__init__.py",
         "patchSetId": 12
@@ -47,6 +83,24 @@
       "writtenOn": "2015-09-18T17:00:52Z",
       "side": 1,
       "message": "Should probably end like this:\n\n...  u\u0027gearman-plugin\u0027, u\u0027bundled\u0027: False} ..}",
+      "revId": "be600fcb2e446c8d4b8829a13da63c4cb07a61bd",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a1a9d01_8738e0a1",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 12
+      },
+      "lineNbr": 575,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-09-28T16:50:43Z",
+      "side": 1,
+      "message": "will do.",
+      "parentUuid": "ba15a1d1_c85bc684",
       "revId": "be600fcb2e446c8d4b8829a13da63c4cb07a61bd",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
