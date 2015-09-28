@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "9a1a9d01_6787ccd7",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 12
+      },
+      "lineNbr": 523,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-09-28T17:03:52Z",
+      "side": 1,
+      "message": "on second thought, i think deprecating this method would be more beneficial than keeping it around.",
+      "parentUuid": "9a1a9d01_079850bf",
+      "revId": "be600fcb2e446c8d4b8829a13da63c4cb07a61bd",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba15a1d1_0818ded1",
         "filename": "jenkins/__init__.py",
         "patchSetId": 12
@@ -66,6 +84,24 @@
       "side": 1,
       "message": "This is a copy n paste from the actual output, so it\u0027s due to how multi_key_dict represents it\u0027s output.",
       "parentUuid": "ba15a1d1_0818ded1",
+      "revId": "be600fcb2e446c8d4b8829a13da63c4cb07a61bd",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a1a9d01_67d58cb7",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 12
+      },
+      "lineNbr": 568,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-09-28T17:03:52Z",
+      "side": 1,
+      "message": "ohh thats weird, it not a list for me.",
+      "parentUuid": "9a1a9d01_27c1d480",
       "revId": "be600fcb2e446c8d4b8829a13da63c4cb07a61bd",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
