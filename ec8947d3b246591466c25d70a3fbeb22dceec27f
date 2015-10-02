@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a1a9d01_e46b1584",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 248,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-10-02T15:02:27Z",
+      "side": 1,
+      "message": "This function is specifically an internal one because of that behaviour as it depends on the format_spec when expanded never starting with a \u0027/\u0027.\n\nDon\u0027t see any occurrences of that occurring within this library.\n\nIn any case:\n\n return urljoin(self.server, url_path.lstrip(\u0027/\u0027))",
+      "revId": "ec8947d3b246591466c25d70a3fbeb22dceec27f",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a1a9d01_2777cfd5",
+        "filename": "tests/test_misc.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-10-02T15:02:27Z",
+      "side": 1,
+      "message": "Is there any way the _get_job_folder() would return a value with a leading \u0027/\u0027 since this is a private method that can only get a preceding \u0027slash\u0027 if the detected job folder name returned starts with \u0027/\u0027.",
+      "revId": "ec8947d3b246591466c25d70a3fbeb22dceec27f",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
