@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a1a9d01_04e37b34",
+        "filename": "tests/test_misc.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2015-10-05T15:05:53Z",
+      "side": 1,
+      "message": "This may be the easiest way to test the change, but I think it\u0027s important to include a test that is actually representative of the bug you are encountering. \n\nI.e. what api call is being made where the jenkins server is set to http://example.com/jenkins and results in the wrong url being constructed.\n\nI would be looking to add a test or two to the API tests that tickle this bug by inspecting the uri that would be used rather than worrying about testing the helper method.\n\nThat also makes it easier to understand in the future where the bug could be coming from for future maintainers, cause the way I see this, it would not be unreasonable for someone to submit a revert saying this is a superfluous fix since it\u0027s not clear where the starting \u0027/\u0027 that causes the problem would appear from, and on first view it would appear not to be possible making this current test somewhat limited.",
+      "revId": "6a7f4f33047615295ad318d5bcbb241c670cf9a3",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
