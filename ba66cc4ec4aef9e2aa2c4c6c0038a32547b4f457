@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a2fa921_5df628d8",
+        "filename": "tests/base.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-10-07T15:31:48Z",
+      "side": 1,
+      "message": "Since this is your first step, you could write this using __init__() instead of __new__().",
+      "revId": "ba66cc4ec4aef9e2aa2c4c6c0038a32547b4f457",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a2fa921_1d9c3068",
+        "filename": "tests/base.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-10-07T15:31:48Z",
+      "side": 1,
+      "message": "You could wrap this into the new_class construction:\n\n    new_class \u003d type(name.replace(\"Test\", \"UrlPathTest\"),\n                     tuple(new_bases),\n                     {\n                         \u0027base_url\u0027: \u0027http://example.com/jenkins\u0027,\n                         \u0027__module__\u0027: cls.__module__,\n                     })",
+      "revId": "ba66cc4ec4aef9e2aa2c4c6c0038a32547b4f457",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a2fa921_5d238805",
+        "filename": "tests/base.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-10-07T15:31:48Z",
+      "side": 1,
+      "message": "So, this is one way of doing this, but I wonder if you could do the same thing with a class decorator, which would have the advantage of being more explicit:\n\n    def multi_url(cls):\n        new_cls \u003d type(name.replace(\u0027Test\u0027, \u0027UrlPathTest\u0027),\n                       (cls,),\n                       {\n                           \u0027base_url\u0027: \u0027http://example.com/jenkins\u0027,\n                           \u0027__module__\u0027: cls.__module__,\n                       })\n        setattr(sys.modules(cls.__module__], new_cls.__name__, new_cls)\n        return cls\n\nFor that matter, doesn\u0027t testscenarios provide tooling for this sort of thing?  That\u0027s something I haven\u0027t used, so I don\u0027t know the syntax to perform the necessary modifications, but it may be worth checking into.",
+      "revId": "ba66cc4ec4aef9e2aa2c4c6c0038a32547b4f457",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
