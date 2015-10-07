@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "7a2fa921_3910194e",
+        "filename": "tests/base.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-10-07T17:11:20Z",
+      "side": 1,
+      "message": "A metaclass is just like a class; __new__() is called to allocate the object, then __init__() is called to initialize it.  And, for the record, I have used both __new__() and __init__() in a metaclass; in fact, I think I may have written one metaclass that used both.",
+      "parentUuid": "7a2fa921_38281ae2",
+      "revId": "ba66cc4ec4aef9e2aa2c4c6c0038a32547b4f457",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7a2fa921_1d9c3068",
         "filename": "tests/base.py",
         "patchSetId": 3
@@ -101,6 +119,24 @@
       "side": 1,
       "message": "Didn\u0027t think of using a decorator. Will it be inherited to apply against subclasses or does it still only get applied against the base class each time it\u0027s encountered in the MRO? Otherwise we\u0027re relying on remembering to add the decorator when testing new API additions.\n\nI\u0027ll have to test anyway.\n\n\nI\u0027m not entirely sure how to ensure it is always applied with testscenarios. Presumably would have to make sure that the subclasses always applied the scenarios listed in the baseclass in addition to any others they might request?",
       "parentUuid": "7a2fa921_5d238805",
+      "revId": "ba66cc4ec4aef9e2aa2c4c6c0038a32547b4f457",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a2fa921_795bf12e",
+        "filename": "tests/base.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-10-07T17:11:20Z",
+      "side": 1,
+      "message": "No, the decorator I describe above wouldn\u0027t apply by way of inheritance.  The property I\u0027m going for by describing it is \"explicitness\".",
+      "parentUuid": "7a2fa921_735b1388",
       "revId": "ba66cc4ec4aef9e2aa2c4c6c0038a32547b4f457",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
