@@ -51,6 +51,24 @@
       "revId": "ce69828653d78007b3650a832d7d668fc04fcfa6",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a2fa921_ed237756",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 1007,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-10-08T21:49:35Z",
+      "side": 1,
+      "message": "thanks kevin.  I thought i would take a break from gerrit hacking to review but  didn\u0027t realized that my brain was too fried for it.  for some reason i thought that continue was a break.",
+      "parentUuid": "7a2fa921_58f033fe",
+      "revId": "ce69828653d78007b3650a832d7d668fc04fcfa6",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
