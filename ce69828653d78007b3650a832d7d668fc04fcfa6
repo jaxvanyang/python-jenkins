@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a2fa921_36c30959",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 1007,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-10-08T18:45:16Z",
+      "side": 1,
+      "message": "info object may not get initialized if depth\u003d2 doesn\u0027t work and depth\u003d0 does work for all nodes.  Should probably check for that?",
+      "revId": "ce69828653d78007b3650a832d7d668fc04fcfa6",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
