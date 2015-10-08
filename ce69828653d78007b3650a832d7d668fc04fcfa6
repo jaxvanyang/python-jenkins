@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "7a2fa921_f8c7bf95",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 1002,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-10-08T18:59:54Z",
+      "side": 1,
+      "message": "I hate that we have to do a string comparison here, but there\u0027s no other way to do it :/",
+      "revId": "ce69828653d78007b3650a832d7d668fc04fcfa6",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7a2fa921_36c30959",
         "filename": "jenkins/__init__.py",
         "patchSetId": 2
@@ -13,6 +30,24 @@
       "writtenOn": "2015-10-08T18:45:16Z",
       "side": 1,
       "message": "info object may not get initialized if depth\u003d2 doesn\u0027t work and depth\u003d0 does work for all nodes.  Should probably check for that?",
+      "revId": "ce69828653d78007b3650a832d7d668fc04fcfa6",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a2fa921_58f033fe",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 1007,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-10-08T18:59:54Z",
+      "side": 1,
+      "message": "Can\u0027t get here if get_node_info() 500\u0027s.  If the exception isn\u0027t JenkinsException, it isn\u0027t caught and bubbles up.  If the exception *is* JenkinsException, but not 500, then it\u0027s reraised at line 1006.  If the exception *is* JenkinsException and *is* 500, then the node is skipped and the loop continued at line 1004.  Only if get_node_info() is successful does the control flow reach line 1007.",
+      "parentUuid": "7a2fa921_36c30959",
       "revId": "ce69828653d78007b3650a832d7d668fc04fcfa6",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
