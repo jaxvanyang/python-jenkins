@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a26ad4f_c8f8edc5",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-11-03T00:57:45Z",
+      "side": 1,
+      "message": "please shorten to less than 80 chars per line.",
+      "revId": "f5c4be3ba29b302059aa861100f26b71fb0b3a47",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
