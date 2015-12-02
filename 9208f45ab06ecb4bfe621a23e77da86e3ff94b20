@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a8ffd7b_84e5fda4",
+        "filename": "tests/base.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-12-02T18:54:33Z",
+      "side": 1,
+      "message": "femtonit: I\u0027d prefer if we stick with snake_case everywhere we can; obviously we can\u0027t for setUp(), but this method we could easily name make_url().",
+      "revId": "9208f45ab06ecb4bfe621a23e77da86e3ff94b20",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
