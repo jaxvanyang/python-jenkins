@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a8ffd7b_7acc2489",
+        "filename": "jenkins/urllib_kerb.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-12-02T22:56:40Z",
+      "side": 1,
+      "message": "nit: similar",
+      "revId": "0a0339686e11359101140876c30774989b5c43af",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a8ffd7b_1a9cf868",
+        "filename": "jenkins/urllib_kerb.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 124,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-12-02T22:56:40Z",
+      "side": 1,
+      "message": "Could you please move tests to the \u0027tests\u0027 folder?",
+      "revId": "0a0339686e11359101140876c30774989b5c43af",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a8ffd7b_1a73984f",
+        "filename": "jenkins/urllib_kerb.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 134,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-12-02T22:56:40Z",
+      "side": 1,
+      "message": "not needed once tests are moved.",
+      "revId": "0a0339686e11359101140876c30774989b5c43af",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
