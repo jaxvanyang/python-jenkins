@@ -2,6 +2,91 @@
   "comments": [
     {
       "key": {
+        "uuid": "9a8ffd7b_1ac5d85a",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-12-02T22:57:52Z",
+      "side": 1,
+      "message": "It would be nice to expand the commit message some.  This is an excellent summary, but there should be a paragraph going into a bit more detail about the details of the implementation.  (Set that paragraph off from the summary with a blank line, or gerrit will think the whole description is the summary :)",
+      "revId": "0a0339686e11359101140876c30774989b5c43af",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a8ffd7b_7aa18493",
+        "filename": "jenkins/urllib_kerb.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-12-02T22:57:52Z",
+      "side": 1,
+      "message": "Eliminate the #! line and the test code at the bottom, and add appropriate unit tests to the test suite.  Also, please make sure this file is not set executable…",
+      "revId": "0a0339686e11359101140876c30774989b5c43af",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a8ffd7b_9ae308d8",
+        "filename": "jenkins/urllib_kerb.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-12-02T22:57:52Z",
+      "side": 1,
+      "message": "Openstack projects use a tripartite import style, as you can see from the imports at the top of __init__.py; the first part is imports from the standard Python library, the second part is third party imports (such as six or kerberos), and the third part is imports from the package—__init__.py only contains one: \"from jenkins import plugins\".\n\nAlso note that, while python-jenkins does not conform to this particular rule, most Openstack projects enforce a style which imports only modules, not objects from modules; thus, \"from six.moves.urllib import error\" and referencing \"error.HTTPError\".  This is a style rule I won\u0027t force you to follow, but I think it would be nice if you did :)",
+      "revId": "0a0339686e11359101140876c30774989b5c43af",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a8ffd7b_fa17b4a0",
+        "filename": "jenkins/urllib_kerb.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-12-02T22:57:52Z",
+      "side": 1,
+      "message": "Another stylistic rule that python-jenkins *does* follow is sorting of imports; this import should be before the \u0027six.moves.urllib.error.HTTPError\" import.  (It should be after the \"re\" import only because there should be a blank line after that one, since \"re\" is a standard library import and \"kerberos\" is a third-party import.)",
+      "revId": "0a0339686e11359101140876c30774989b5c43af",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a8ffd7b_3a71bc0c",
+        "filename": "jenkins/urllib_kerb.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-12-02T22:57:52Z",
+      "side": 1,
+      "message": "It would probably be better to use something other than strings of underscores for parameter names here.  For one, there is always the potential that translations could be added to python-jenkins, and the \u0027_\u0027 name would clash with the typical name used for that functionality.",
+      "revId": "0a0339686e11359101140876c30774989b5c43af",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9a8ffd7b_7acc2489",
         "filename": "jenkins/urllib_kerb.py",
         "patchSetId": 4
@@ -13,6 +98,23 @@
       "writtenOn": "2015-12-02T22:56:40Z",
       "side": 1,
       "message": "nit: similar",
+      "revId": "0a0339686e11359101140876c30774989b5c43af",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a8ffd7b_9ae468a8",
+        "filename": "jenkins/urllib_kerb.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2015-12-02T22:57:52Z",
+      "side": 1,
+      "message": "Again, probably best to avoid using \u0027_\u0027 as a variable name, so we don\u0027t have accidental clashes with any future i18n conversion.  I like to use a leading underscore to mark variables that are not intended to be referenced, e.g., \"_dummy\".",
       "revId": "0a0339686e11359101140876c30774989b5c43af",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
