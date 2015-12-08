@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a740942_996a3580",
+        "filename": "jenkins/exceptions.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 9725
+      },
+      "writtenOn": "2015-12-08T07:14:34Z",
+      "side": 1,
+      "message": "One small question: if we need the first line for the new python module?",
+      "revId": "6d6e5d52c2321f434a377b820521c257f080def6",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
