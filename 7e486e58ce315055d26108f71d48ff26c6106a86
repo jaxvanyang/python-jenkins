@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a740942_04581889",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 9725
+      },
+      "writtenOn": "2015-12-08T07:57:52Z",
+      "side": 1,
+      "message": "typo \u0027file\u0027",
+      "revId": "7e486e58ce315055d26108f71d48ff26c6106a86",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a740942_e4762cd6",
+        "filename": "doc/source/examples.rst",
+        "patchSetId": 3
+      },
+      "lineNbr": 132,
+      "author": {
+        "id": 9725
+      },
+      "writtenOn": "2015-12-08T07:57:52Z",
+      "side": 1,
+      "message": "The EMPTY_FOLDER_XML seems not defined",
+      "revId": "7e486e58ce315055d26108f71d48ff26c6106a86",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
