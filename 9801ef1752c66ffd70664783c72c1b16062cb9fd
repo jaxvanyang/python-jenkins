@@ -16,6 +16,24 @@
       "revId": "9801ef1752c66ffd70664783c72c1b16062cb9fd",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a740942_76e1329a",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 9725
+      },
+      "writtenOn": "2015-12-09T17:48:34Z",
+      "side": 1,
+      "message": "Added more info on commit message, please help review",
+      "parentUuid": "7a740942_0e457244",
+      "revId": "9801ef1752c66ffd70664783c72c1b16062cb9fd",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
