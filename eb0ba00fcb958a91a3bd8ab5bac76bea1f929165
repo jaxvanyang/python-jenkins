@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a740942_80d43bbd",
+        "filename": "tests/test_node.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 250,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2015-12-11T00:56:58Z",
+      "side": 1,
+      "message": "The reason why the URL seems random is that the parameters are passed in as a dict.  In python a dict does not guarantee ordering so when it gets processed by _get_encoded_params() the parameters might get re-ordered.\n\n\nI think there are 2 options to make the test work:\n1. Verify sections of the URL with self.assertIn() instead of the entire URL, so something like this:\n\n actual \u003d jenkins_mock.call_args_list[1][0][0].get_full_url()\n self.assertIn(u\u0027remoteFS%22%3A+%22%2Fhome%2Fjuser\u0027, actual)\n self.assertIn(u\u0027labelString%22%3A+%22precise\u0027, actual)\n etc..\n\n\n2. Use an ordered for inner_params and params in create_node() method.  This might be slightly tricky though because ordered dict is different for py27 vs py34.  take a look here https://stackoverflow.com/questions/1617078/ordereddict-for-older-versions-of-python",
+      "revId": "eb0ba00fcb958a91a3bd8ab5bac76bea1f929165",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
