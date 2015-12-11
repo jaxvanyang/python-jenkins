@@ -16,6 +16,24 @@
       "revId": "eb0ba00fcb958a91a3bd8ab5bac76bea1f929165",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a740942_af2d8347",
+        "filename": "tests/test_node.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 250,
+      "author": {
+        "id": 9725
+      },
+      "writtenOn": "2015-12-11T15:35:06Z",
+      "side": 1,
+      "message": "Thanks for helping with this, I preferred the option 1 and made changes.",
+      "parentUuid": "7a740942_80d43bbd",
+      "revId": "eb0ba00fcb958a91a3bd8ab5bac76bea1f929165",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
