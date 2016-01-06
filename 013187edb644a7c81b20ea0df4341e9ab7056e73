@@ -1,0 +1,140 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa69d971_2c7f50ac",
+        "filename": "doc/source/examples.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 156,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2016-01-06T00:41:32Z",
+      "side": 1,
+      "message": "nit: need a few more dashes here",
+      "revId": "013187edb644a7c81b20ea0df4341e9ab7056e73",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa69d971_eeb36298",
+        "filename": "doc/source/examples.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 166,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2016-01-06T00:41:32Z",
+      "side": 1,
+      "message": "what is \u0027xml\u0027 object here?  I think a more complete example would be to go thru the process of creating a job then create a promotion from that job.  Also it would be nice to create a sample \u0027PROMO_XML\u0027 object and reference it like it\u0027s done for the create job example (line 42).",
+      "revId": "013187edb644a7c81b20ea0df4341e9ab7056e73",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa69d971_61fa2345",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 114,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2016-01-06T00:41:32Z",
+      "side": 1,
+      "message": "Is there a depth that you can specify for this endpoint, similar to job or build info?  if so it might be nice to allow users to specify that.",
+      "revId": "013187edb644a7c81b20ea0df4341e9ab7056e73",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa69d971_21be6b65",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 1329,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2016-01-06T00:41:32Z",
+      "side": 1,
+      "message": "we prefer \u0027job_name\u0027 instead of \u0027jobname\u0027.",
+      "revId": "013187edb644a7c81b20ea0df4341e9ab7056e73",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa69d971_21bc2bdb",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 1376,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2016-01-06T00:41:32Z",
+      "side": 1,
+      "message": "This method will return None if the promo does not exist which probably should be false instead.  I see you followed the pattern for jobs_exists() which I think should return \u0027False\u0027 if job doesn\u0027t exist as well.  How about adding an else to this and add a test to verify?",
+      "revId": "013187edb644a7c81b20ea0df4341e9ab7056e73",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa69d971_01ea47ac",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 1399,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2016-01-06T00:41:32Z",
+      "side": 1,
+      "message": "Would it make sense to call this method without specifying a job_name so that users can get all promotions from all jobs?  or specify a job_name if they want to get promotions on a specific job?",
+      "revId": "013187edb644a7c81b20ea0df4341e9ab7056e73",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa69d971_61f0e391",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 1423,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2016-01-06T00:41:32Z",
+      "side": 1,
+      "message": "having an example config_xml would be very handy, maybe something similar to EMPTY_JOB_CONFIG above",
+      "revId": "013187edb644a7c81b20ea0df4341e9ab7056e73",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa69d971_a10edb38",
+        "filename": "tests/test_promotion.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2016-01-06T00:41:32Z",
+      "side": 1,
+      "message": "Thanks for adding tests.  If you run \u0027tox -ecover\u0027 locally and open cover/index.html  you\u0027ll see that there a few lines not tested.   Would you closing the gap there?   There\u0027s an entire suite of tests for jobs in tests/jobs so that might help.",
+      "revId": "013187edb644a7c81b20ea0df4341e9ab7056e73",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
