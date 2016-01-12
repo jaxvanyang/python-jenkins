@@ -72,6 +72,24 @@
     },
     {
       "key": {
+        "uuid": "da6ed579_c5ab52d5",
+        "filename": "doc/source/examples.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 166,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2016-01-12T23:47:32Z",
+      "side": 1,
+      "message": "looks good",
+      "parentUuid": "da6ed579_423f66b4",
+      "revId": "013187edb644a7c81b20ea0df4341e9ab7056e73",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fa69d971_61fa2345",
         "filename": "jenkins/__init__.py",
         "patchSetId": 2
@@ -206,6 +224,24 @@
       "side": 1,
       "message": "Promotions are always tied to a job so we can\u0027t get them individually.",
       "parentUuid": "fa69d971_01ea47ac",
+      "revId": "013187edb644a7c81b20ea0df4341e9ab7056e73",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da6ed579_ba78bd2c",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 1399,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2016-01-12T23:47:32Z",
+      "side": 1,
+      "message": "Sorry, I don\u0027t understand what you mean.  I was thinking this could work like get_all_jobs() method.  which in this case will iterate over all jobs to get all promotions. if a specific job is passed in then it will only return promo info for that one specific job.  Although i guess it\u0027s not required for this change but maybe can add a get_all_promotions on a separate change?",
+      "parentUuid": "da6ed579_a2e9821c",
       "revId": "013187edb644a7c81b20ea0df4341e9ab7056e73",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
