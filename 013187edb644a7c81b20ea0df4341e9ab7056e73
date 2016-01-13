@@ -248,6 +248,24 @@
     },
     {
       "key": {
+        "uuid": "da6ed579_e19bbc70",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 1399,
+      "author": {
+        "id": 9943
+      },
+      "writtenOn": "2016-01-13T16:53:09Z",
+      "side": 1,
+      "message": "Yes, we can do a get_all_promotions() it would need to return a ditionary:\n\n{ \u0027jobname1\u0027: [ \u0027promo1\u0027, \u0027promo2\u0027, ], \u0027jobname2\u0027: [], \u0027jobnam3\u0027: [ \u0027promofoo\u0027, \u0027promobar\u0027 ] } \n\nor similar since promotions are tied to jobs (you can\u0027t just reuse the promotion from another job (without copying it\u0027s xml).\n\nI\u0027d be happy to add this but would prefer to do this in a follow up since it might spark more discussion on this topic (and doesn\u0027t affect the current API).",
+      "parentUuid": "da6ed579_ba78bd2c",
+      "revId": "013187edb644a7c81b20ea0df4341e9ab7056e73",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fa69d971_61f0e391",
         "filename": "jenkins/__init__.py",
         "patchSetId": 2
