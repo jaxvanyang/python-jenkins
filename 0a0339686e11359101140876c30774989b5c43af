@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "9a68dd71_a2e9fde7",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 15869
+      },
+      "writtenOn": "2016-01-24T17:29:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9a8ffd7b_1ac5d85a",
+      "revId": "0a0339686e11359101140876c30774989b5c43af",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9a8ffd7b_7aa18493",
         "filename": "jenkins/urllib_kerb.py",
         "patchSetId": 4
@@ -30,6 +48,24 @@
       "writtenOn": "2015-12-02T22:57:52Z",
       "side": 1,
       "message": "Eliminate the #! line and the test code at the bottom, and add appropriate unit tests to the test suite.  Also, please make sure this file is not set executable…",
+      "revId": "0a0339686e11359101140876c30774989b5c43af",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a68dd71_82187976",
+        "filename": "jenkins/urllib_kerb.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 15869
+      },
+      "writtenOn": "2016-01-24T17:29:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9a8ffd7b_7aa18493",
       "revId": "0a0339686e11359101140876c30774989b5c43af",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "9a68dd71_e254d5fe",
+        "filename": "jenkins/urllib_kerb.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 15869
+      },
+      "writtenOn": "2016-01-24T17:29:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9a8ffd7b_9ae308d8",
+      "revId": "0a0339686e11359101140876c30774989b5c43af",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9a8ffd7b_fa17b4a0",
         "filename": "jenkins/urllib_kerb.py",
         "patchSetId": 4
@@ -64,6 +118,24 @@
       "writtenOn": "2015-12-02T22:57:52Z",
       "side": 1,
       "message": "Another stylistic rule that python-jenkins *does* follow is sorting of imports; this import should be before the \u0027six.moves.urllib.error.HTTPError\" import.  (It should be after the \"re\" import only because there should be a blank line after that one, since \"re\" is a standard library import and \"kerberos\" is a third-party import.)",
+      "revId": "0a0339686e11359101140876c30774989b5c43af",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a68dd71_025a492a",
+        "filename": "jenkins/urllib_kerb.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 15869
+      },
+      "writtenOn": "2016-01-24T17:29:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9a8ffd7b_fa17b4a0",
       "revId": "0a0339686e11359101140876c30774989b5c43af",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
@@ -87,6 +159,24 @@
     },
     {
       "key": {
+        "uuid": "9a68dd71_6249c55f",
+        "filename": "jenkins/urllib_kerb.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 15869
+      },
+      "writtenOn": "2016-01-24T17:29:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9a8ffd7b_3a71bc0c",
+      "revId": "0a0339686e11359101140876c30774989b5c43af",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9a8ffd7b_7acc2489",
         "filename": "jenkins/urllib_kerb.py",
         "patchSetId": 4
@@ -104,6 +194,24 @@
     },
     {
       "key": {
+        "uuid": "9a68dd71_8246394d",
+        "filename": "jenkins/urllib_kerb.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 15869
+      },
+      "writtenOn": "2016-01-24T17:29:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9a8ffd7b_7acc2489",
+      "revId": "0a0339686e11359101140876c30774989b5c43af",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9a8ffd7b_9ae468a8",
         "filename": "jenkins/urllib_kerb.py",
         "patchSetId": 4
@@ -115,6 +223,24 @@
       "writtenOn": "2015-12-02T22:57:52Z",
       "side": 1,
       "message": "Again, probably best to avoid using \u0027_\u0027 as a variable name, so we don\u0027t have accidental clashes with any future i18n conversion.  I like to use a leading underscore to mark variables that are not intended to be referenced, e.g., \"_dummy\".",
+      "revId": "0a0339686e11359101140876c30774989b5c43af",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a68dd71_a26a5db1",
+        "filename": "jenkins/urllib_kerb.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 15869
+      },
+      "writtenOn": "2016-01-24T17:29:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9a8ffd7b_9ae468a8",
       "revId": "0a0339686e11359101140876c30774989b5c43af",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
