@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a68dd71_d3c84eaa",
+        "filename": "test-requirements.txt",
+        "patchSetId": 9
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2016-01-25T21:15:42Z",
+      "side": 1,
+      "message": "Let me suggest using:\n\n    kerberos\u003e\u003d1.2.4",
+      "revId": "f53dfcc837994580ba4d9167a0abd93968f8421f",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a68dd71_b3491a33",
+        "filename": "tests/test_kerberos.py",
+        "patchSetId": 9
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2016-01-25T21:15:42Z",
+      "side": 1,
+      "message": "So, testtools is one of those \"third party\" imports, so it should be imported after the \"from mock import patch, Mock\" line…",
+      "revId": "f53dfcc837994580ba4d9167a0abd93968f8421f",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
