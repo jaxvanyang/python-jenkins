@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "9a68dd71_2ebdc6d7",
+        "filename": "test-requirements.txt",
+        "patchSetId": 8
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 15869
+      },
+      "writtenOn": "2016-01-25T19:46:16Z",
+      "side": 1,
+      "message": "Sorted.\n\nkerberos 1.2.4 has been released and the build problem has been fixed.",
+      "parentUuid": "9a68dd71_ca42dfad",
+      "revId": "cdee9d4be32fdb29ea92f02223b62464e8db4cb9",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9a68dd71_3522fca3",
         "filename": "tests/test_kerberos.py",
         "patchSetId": 8
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "9a68dd71_6ec73e64",
+        "filename": "tests/test_kerberos.py",
+        "patchSetId": 8
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 15869
+      },
+      "writtenOn": "2016-01-25T19:46:16Z",
+      "side": 1,
+      "message": "I have changed the base class to testtools.TestBase.",
+      "parentUuid": "9a68dd71_3522fca3",
+      "revId": "cdee9d4be32fdb29ea92f02223b62464e8db4cb9",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9a68dd71_5508d0d9",
         "filename": "tests/test_kerberos.py",
         "patchSetId": 8
@@ -47,6 +83,24 @@
       "writtenOn": "2016-01-25T16:44:03Z",
       "side": 1,
       "message": "What I like to do with unit tests is test each unit, that is, each function or method, independently.  That is, there\u0027d be a set of tests for __init__(), one for http_error_401(), etc.  I say \"set of tests\" because my personal preference is to try to test every single branch, and it\u0027s helpful to have each of those tests in a separate test method, so test failure messages can help you narrow down what failed.",
+      "revId": "cdee9d4be32fdb29ea92f02223b62464e8db4cb9",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a68dd71_2e2e26fb",
+        "filename": "tests/test_kerberos.py",
+        "patchSetId": 8
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 15869
+      },
+      "writtenOn": "2016-01-25T19:46:16Z",
+      "side": 1,
+      "message": "I have added many more tests, I didn\u0027t want to go overboard here but I have added also tests for several possible error conditions (including both unexpected responses from the web server and kerberos exceptions).",
+      "parentUuid": "9a68dd71_5508d0d9",
       "revId": "cdee9d4be32fdb29ea92f02223b62464e8db4cb9",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
