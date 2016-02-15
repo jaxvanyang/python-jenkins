@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dae33548_8e94d537",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 1299,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2016-02-15T16:54:11Z",
+      "side": 1,
+      "message": "It would be nice to document exactly what sort of information is returned for the jobs here; that is, is the information structurally the same as what you get from, say, get_all_jobs()?  The library is quite short on that sort of information, so treat this as a femtonit…",
+      "revId": "27f0079a527e68586669c7e210f1ba47af115c20",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
