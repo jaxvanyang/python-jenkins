@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "dae33548_83bbd1e4",
+        "filename": "doc/source/examples.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 19094
+      },
+      "writtenOn": "2016-02-16T19:15:41Z",
+      "side": 1,
+      "message": "Thought it is more about jobs management, but okey, have moved into the views section.",
+      "parentUuid": "dae33548_08dd1ee0",
+      "revId": "27f0079a527e68586669c7e210f1ba47af115c20",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "dae33548_287462fb",
         "filename": "jenkins/__init__.py",
         "patchSetId": 1
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "dae33548_c63de6bc",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 674,
+      "author": {
+        "id": 19094
+      },
+      "writtenOn": "2016-02-16T19:15:41Z",
+      "side": 1,
+      "message": "I believe that `get_all_jobs` operates `depth` (int) argument so we need to retrieve additional info for each job to see if it belongs to the view required.\n\nBut after your question I have found another way to achieve the same result as new proposed method:\n`server.get_info(\u0027view/ISO\u0027)[\u0027jobs\u0027]`.\n\nThe cons of it for me are:\n- a bit more cryptic form `view/ISO` rather than just \u0027ISO\u0027\n- in case of nonexistent view name the error message is a bit more generic \"Requested item could not be found\".\n- it actually returns more info than required (could be slower) and we use only part of it (the `jobs` key).\n\nBut the results seems equal.",
+      "parentUuid": "dae33548_287462fb",
+      "revId": "27f0079a527e68586669c7e210f1ba47af115c20",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "dae33548_8e94d537",
         "filename": "jenkins/__init__.py",
         "patchSetId": 1
@@ -47,6 +83,24 @@
       "writtenOn": "2016-02-15T16:54:11Z",
       "side": 1,
       "message": "It would be nice to document exactly what sort of information is returned for the jobs here; that is, is the information structurally the same as what you get from, say, get_all_jobs()?  The library is quite short on that sort of information, so treat this as a femtonit…",
+      "revId": "27f0079a527e68586669c7e210f1ba47af115c20",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dae33548_88ef6e86",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 1299,
+      "author": {
+        "id": 19094
+      },
+      "writtenOn": "2016-02-16T19:15:41Z",
+      "side": 1,
+      "message": "Yeah, it is pretty similar to results of `get_all_jobs()` just without `fullname` attribute.\n\nI will add result example to the docstring.",
+      "parentUuid": "dae33548_8e94d537",
       "revId": "27f0079a527e68586669c7e210f1ba47af115c20",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
