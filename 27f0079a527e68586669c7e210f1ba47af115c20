@@ -54,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "dae33548_254aa8ac",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 661,
+      "author": {
+        "id": 19094
+      },
+      "writtenOn": "2016-02-17T11:41:39Z",
+      "side": 1,
+      "message": "I got you. The only difference between them is that `fullname` key is absent in results for jobs from the view.",
+      "parentUuid": "dae33548_36de7711",
+      "revId": "27f0079a527e68586669c7e210f1ba47af115c20",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "dae33548_287462fb",
         "filename": "jenkins/__init__.py",
         "patchSetId": 1
