@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "dae33548_e08533cf",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 19094
+      },
+      "writtenOn": "2016-02-17T17:45:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dae33548_aa3dca90",
+      "range": {
+        "startLine": 9,
+        "startChar": 28,
+        "endLine": 9,
+        "endChar": 41
+      },
+      "revId": "b22a8511061bf563357c510587ab10ad8d378fd3",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "dae33548_0a1e765e",
         "filename": "jenkins/__init__.py",
         "patchSetId": 3
@@ -36,6 +60,30 @@
       "writtenOn": "2016-02-17T16:55:47Z",
       "side": 1,
       "message": "There\u0027s no need to update the quotes for this docstring.",
+      "range": {
+        "startLine": 662,
+        "startChar": 8,
+        "endLine": 662,
+        "endChar": 11
+      },
+      "revId": "b22a8511061bf563357c510587ab10ad8d378fd3",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dae33548_00581789",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 662,
+      "author": {
+        "id": 19094
+      },
+      "writtenOn": "2016-02-17T17:45:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dae33548_0a1e765e",
       "range": {
         "startLine": 662,
         "startChar": 8,
@@ -65,6 +113,24 @@
     },
     {
       "key": {
+        "uuid": "dae33548_40569f5c",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 669,
+      "author": {
+        "id": 19094
+      },
+      "writtenOn": "2016-02-17T17:45:00Z",
+      "side": 1,
+      "message": "Thanks!",
+      "parentUuid": "dae33548_ea7072a6",
+      "revId": "b22a8511061bf563357c510587ab10ad8d378fd3",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "dae33548_2a953a86",
         "filename": "jenkins/__init__.py",
         "patchSetId": 3
@@ -76,6 +142,24 @@
       "writtenOn": "2016-02-17T16:55:47Z",
       "side": 1,
       "message": "More corrections:\n\n    :param view_name: Name of a Jenkins view for which to\n        retrieve jobs, ``str``.  By default, the job list is\n        not limited to a specific view.",
+      "revId": "b22a8511061bf563357c510587ab10ad8d378fd3",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dae33548_2001db38",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 674,
+      "author": {
+        "id": 19094
+      },
+      "writtenOn": "2016-02-17T17:45:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dae33548_2a953a86",
       "revId": "b22a8511061bf563357c510587ab10ad8d378fd3",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
