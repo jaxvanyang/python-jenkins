@@ -37,6 +37,23 @@
     },
     {
       "key": {
+        "uuid": "dae33548_36de7711",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 661,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2016-02-17T00:40:21Z",
+      "side": 1,
+      "message": "What I was trying to get at in my previous comment is that get_jobs() should just give me a list of jobs.  It shouldn\u0027t matter whether it\u0027s from folder or a view.  All variations seem to return the same dict of jobs.  Filtering by view/folder/none should be done with a parameter.  So if I want to get jobs on a specific view I should just pass in that view name.\n\n\n  get_jobs() - get all jobs on the server\n  get_jobs(my_folder) - get all jobs in my_folder\n  get_jobs(my_view) - get all jobs in my_view\n\n\nI think this is better than requiring the user to use multiple get_jobs methods.",
+      "revId": "27f0079a527e68586669c7e210f1ba47af115c20",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "dae33548_287462fb",
         "filename": "jenkins/__init__.py",
         "patchSetId": 1
@@ -66,6 +83,24 @@
       "side": 1,
       "message": "I believe that `get_all_jobs` operates `depth` (int) argument so we need to retrieve additional info for each job to see if it belongs to the view required.\n\nBut after your question I have found another way to achieve the same result as new proposed method:\n`server.get_info(\u0027view/ISO\u0027)[\u0027jobs\u0027]`.\n\nThe cons of it for me are:\n- a bit more cryptic form `view/ISO` rather than just \u0027ISO\u0027\n- in case of nonexistent view name the error message is a bit more generic \"Requested item could not be found\".\n- it actually returns more info than required (could be slower) and we use only part of it (the `jobs` key).\n\nBut the results seems equal.",
       "parentUuid": "dae33548_287462fb",
+      "revId": "27f0079a527e68586669c7e210f1ba47af115c20",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dae33548_369cb7bf",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 674,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2016-02-17T00:40:21Z",
+      "side": 1,
+      "message": "I see.  I agree that server.get_info(..) is more cryptic and we should use the view endpoint instead.",
+      "parentUuid": "dae33548_c63de6bc",
       "revId": "27f0079a527e68586669c7e210f1ba47af115c20",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
