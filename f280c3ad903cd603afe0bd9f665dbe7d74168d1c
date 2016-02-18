@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "dae33548_01259d07",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 670,
+      "author": {
+        "id": 19094
+      },
+      "writtenOn": "2016-02-18T08:53:25Z",
+      "side": 1,
+      "message": "Okey, I will add `fullname` \u003d\u003d `name` into the result dict. Just thought that in case real `fullname` and `name` are differs it might lead to hard to track issue.\n\nWill assume that this `fullanme` is depth\u003d0 and relative to the view specified.",
+      "parentUuid": "dae33548_2a5b71f7",
+      "revId": "f280c3ad903cd603afe0bd9f665dbe7d74168d1c",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "dae33548_35447619",
         "filename": "jenkins/__init__.py",
         "patchSetId": 4
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "dae33548_21df01da",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 701,
+      "author": {
+        "id": 19094
+      },
+      "writtenOn": "2016-02-18T08:53:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dae33548_35447619",
+      "revId": "f280c3ad903cd603afe0bd9f665dbe7d74168d1c",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "dae33548_ca9125f3",
         "filename": "jenkins/__init__.py",
         "patchSetId": 4
@@ -47,6 +83,24 @@
       "writtenOn": "2016-02-17T20:03:02Z",
       "side": 1,
       "message": "would you mind creating tests to validate these error conditions?  There should be plenty of examples in the existing \u0027jobs\u0027 tests.",
+      "revId": "f280c3ad903cd603afe0bd9f665dbe7d74168d1c",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dae33548_41e04596",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 708,
+      "author": {
+        "id": 19094
+      },
+      "writtenOn": "2016-02-18T08:53:25Z",
+      "side": 1,
+      "message": "Yeah, sure!",
+      "parentUuid": "dae33548_ca9125f3",
       "revId": "f280c3ad903cd603afe0bd9f665dbe7d74168d1c",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
