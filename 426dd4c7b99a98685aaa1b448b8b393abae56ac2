@@ -71,6 +71,24 @@
     },
     {
       "key": {
+        "uuid": "1a122d0e_8e3a0633",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 822,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2016-04-22T21:07:08Z",
+      "side": 1,
+      "message": "Probably also a case that communication takes a while if jenkins is slow to respond but still processing the query.\n\nNormal mode is required for most operations to succeed, basically it means that it\u0027s not still coming up and processing it\u0027s internal data and can accept requests such as update jobs, create new jobs, etc. When not in normal mode anything that is not a query won\u0027t work, possibly could implement a common wait and provide some condition, i.e. is responding, is starting, is ready.",
+      "parentUuid": "da86d52c_06bc0206",
+      "revId": "426dd4c7b99a98685aaa1b448b8b393abae56ac2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "da86d52c_31eb26a5",
         "filename": "jenkins/__init__.py",
         "patchSetId": 3
@@ -134,6 +152,24 @@
       "side": 1,
       "message": "I\u0027m rather tempted to suggest using some sort of exponential backoff algorithm as well; after all, every REST hit is going to slow Jenkins down a bit to process that hit.\n\nAs for the huge delay, well, remember that it could take Jenkins a long time to finally reply to a query.  We\u0027re using LDAP-based authentication with Jenkins, and it can take nearly an hour to reconfigure Jenkins with JJB because of all the LDAP queries…so this is something that we\u0027re quite sensitive to :)",
       "parentUuid": "da86d52c_b1839601",
+      "revId": "426dd4c7b99a98685aaa1b448b8b393abae56ac2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a122d0e_0e3436f9",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 830,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2016-04-22T21:07:08Z",
+      "side": 1,
+      "message": "The other thing to remember is that when you set the socket timeout to default global timeout, it becomes blocking and waits for the other side.\n\nI think the correct approach is actually to leave the timeout set as it is, which is a connection timeout, then treat this timeout as being the overall wait timeout, and document the difference.\n\nIf someone sets a high timeout on the jenkins object for connections and then a lower timeout, then they should only get a single attempt at a connection if connection takes a long time to respond.",
+      "parentUuid": "da86d52c_668bfe1e",
       "revId": "426dd4c7b99a98685aaa1b448b8b393abae56ac2",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
