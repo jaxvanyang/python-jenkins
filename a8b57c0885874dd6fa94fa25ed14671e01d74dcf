@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a122d0e_75f6c4d7",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 354,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2016-04-29T01:44:24Z",
+      "side": 1,
+      "message": "I\u0027m wondering about performance.  My concern here is that it might become slow to load if there are many builds.  I don\u0027t have a setup to test that but if you do would you be able to give us some ballpark metrics?  If it\u0027s slow it might be good to pass in an option to add the missing builds.",
+      "revId": "a8b57c0885874dd6fa94fa25ed14671e01d74dcf",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a122d0e_357d6c6d",
+        "filename": "tests/jobs/test_info.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2016-04-29T01:44:24Z",
+      "side": 1,
+      "message": "I think a better home for this test is in \u0027tests/test_build.py\u0027",
+      "revId": "a8b57c0885874dd6fa94fa25ed14671e01d74dcf",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
