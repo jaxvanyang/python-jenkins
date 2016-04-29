@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "1a122d0e_c1d43048",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 354,
+      "author": {
+        "id": 11748
+      },
+      "writtenOn": "2016-04-29T14:24:51Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1a122d0e_75f6c4d7",
+      "revId": "a8b57c0885874dd6fa94fa25ed14671e01d74dcf",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a122d0e_357d6c6d",
         "filename": "tests/jobs/test_info.py",
         "patchSetId": 2
@@ -30,6 +48,24 @@
       "writtenOn": "2016-04-29T01:44:24Z",
       "side": 1,
       "message": "I think a better home for this test is in \u0027tests/test_build.py\u0027",
+      "revId": "a8b57c0885874dd6fa94fa25ed14671e01d74dcf",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a122d0e_018468d0",
+        "filename": "tests/jobs/test_info.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 11748
+      },
+      "writtenOn": "2016-04-29T14:24:51Z",
+      "side": 1,
+      "message": "I disagree; this is testing the get_job_info() call, and should go with the other tests for that unit.",
+      "parentUuid": "1a122d0e_357d6c6d",
       "revId": "a8b57c0885874dd6fa94fa25ed14671e01d74dcf",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
