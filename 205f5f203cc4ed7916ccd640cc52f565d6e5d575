@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "1a122d0e_dbba62bf",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 1344,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2016-04-29T10:20:37Z",
+      "side": 1,
+      "message": "I believe timeout of 0 would be, attempt the two calls and return without retrying, but should still respect the connection timeout set on object creation.\n\n0 would mean that a failure from either get_version() or checking of get_info() for normal mode would return false, but not necessarily immediately, could still take a number of seconds.\n\nThe only real way to be absolutely sure that you only wait the exact number of seconds would be to spin off a separate process to check, looping here and terminating it should it fail to return success. But I think that\u0027s a little overkill for scenarios where someone set a 5 second connection timeout via __init__ and then complains that waiting for jenkins to be up doesn\u0027t return in less time than that.\n\nI\u0027m inclined to just document the unintended consequences of picking bad values and add warnings where sensible.\n\nDoes this make sense?",
+      "parentUuid": "1a122d0e_d21eceb9",
+      "revId": "205f5f203cc4ed7916ccd640cc52f565d6e5d575",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a122d0e_556c68cf",
         "filename": "jenkins/__init__.py",
         "patchSetId": 4
@@ -30,6 +48,24 @@
       "writtenOn": "2016-04-29T01:22:57Z",
       "side": 1,
       "message": "This call will timeout on _GLOBAL_DEFAULT_TIMEOUT instead of the timeout that\u0027s pased into this function so even if you call \"j.wait_for_normal_op(5)\" and the jenkins server does not respond within 5 seconds it will continue to wait longer than 5 seconds.  I think we need to temporarily set _GLOBAL_DEFAULT_TIMEOUT before making this call?",
+      "revId": "205f5f203cc4ed7916ccd640cc52f565d6e5d575",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a122d0e_5b3e52b8",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 1364,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2016-04-29T10:20:37Z",
+      "side": 1,
+      "message": "I think we need to separate between the different timeouts:\n\n * __init__ timeout: control connection timeouts\n * wait_for_normal_op: absolute timeout to wait for multiple connections to connect.\n\nAs this is an API, we should allow the consumer to control both options, and to respect them, presumably even if they could cause something stupid to happen.\n\nI don\u0027t think we should ever explicitly reset the timeout to _GLOBAL_DEFAULT_TIMEOUT, since that actually means by default to never timeout, or rather default to the system connection timeout which AFAIK is 15 minutes for TCP. Assuming you didn\u0027t get connection refused but rather just no response.\n\n\nThe questions remaining:\n\nIf someone using this API doesn\u0027t set the timeout when creating the jenkins object, is it correct to override the default timeout? What would be an appropriate value? I guess the total time of the passed timeout to this method might be most correct? If you can\u0027t connect within that time, should return false anyway.\n\nIf the API user puts in a bad value (what if they explicitly set _GLOBAL_DEFAULT_TIMEOUT), should we correct them or just warn them that it might be a bad idea?\n\nCurrently leaning towards just warning them instead of trying to correct them as I feel API\u0027s should warn about possible bad consequences, while it\u0027s more an application\u0027s job to prevent bad consequences.\n\nIf that makes sense to you, I\u0027m update the code and function docstring to reflect.",
+      "parentUuid": "1a122d0e_556c68cf",
       "revId": "205f5f203cc4ed7916ccd640cc52f565d6e5d575",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
