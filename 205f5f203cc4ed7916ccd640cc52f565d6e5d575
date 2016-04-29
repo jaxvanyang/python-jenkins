@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a122d0e_d21eceb9",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 1344,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2016-04-29T01:22:57Z",
+      "side": 1,
+      "message": "is 0 a valid timeout?  if so what does a timeout of 0 mean?  wait indefinitely?  whatever the functionality, it should probably be documented above.",
+      "revId": "205f5f203cc4ed7916ccd640cc52f565d6e5d575",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a122d0e_556c68cf",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 1364,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2016-04-29T01:22:57Z",
+      "side": 1,
+      "message": "This call will timeout on _GLOBAL_DEFAULT_TIMEOUT instead of the timeout that\u0027s pased into this function so even if you call \"j.wait_for_normal_op(5)\" and the jenkins server does not respond within 5 seconds it will continue to wait longer than 5 seconds.  I think we need to temporarily set _GLOBAL_DEFAULT_TIMEOUT before making this call?",
+      "revId": "205f5f203cc4ed7916ccd640cc52f565d6e5d575",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
