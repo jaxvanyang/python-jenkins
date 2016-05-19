@@ -69,6 +69,24 @@
       "revId": "a8b57c0885874dd6fa94fa25ed14671e01d74dcf",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bab6814e_1de117ff",
+        "filename": "tests/jobs/test_info.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2016-05-19T05:19:51Z",
+      "side": 1,
+      "message": "you are correct. sorry about that.",
+      "parentUuid": "1a122d0e_018468d0",
+      "revId": "a8b57c0885874dd6fa94fa25ed14671e01d74dcf",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
