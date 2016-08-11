@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9ad45d7e_6bb607fa",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2016-08-11T15:52:17Z",
+      "side": 1,
+      "message": "1. Is there a bug report?  If so, it should be referenced with a \"Closes-Bug\" footer.\n\n2. The first line of the commit message should be a summary of what the change does.  Ideally, that summary would be 50 characters long or less.\n\n3. There should be a paragraph describing how the change accomplishes its bug fix.\n\nYou may want to read [1] for more information on how we like commit messages structured.\n\n[1] https://wiki.openstack.org/wiki/GitCommitMessages",
+      "revId": "4b02232732d4e1421ac4fbb1056d6b236625e3b8",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9ad45d7e_eb99577a",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 1152,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2016-08-11T15:52:17Z",
+      "side": 1,
+      "message": "Is this the only example of this problem?",
+      "revId": "4b02232732d4e1421ac4fbb1056d6b236625e3b8",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
