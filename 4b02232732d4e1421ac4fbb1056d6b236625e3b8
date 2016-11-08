@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "9a629dbe_9f36e501",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2016-11-08T09:52:30Z",
+      "side": 1,
+      "message": "Done. I rephrased the summary message in PS2.",
+      "parentUuid": "9ad45d7e_6bb607fa",
+      "revId": "4b02232732d4e1421ac4fbb1056d6b236625e3b8",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9ad45d7e_eb99577a",
         "filename": "jenkins/__init__.py",
         "patchSetId": 1
@@ -30,6 +48,24 @@
       "writtenOn": "2016-08-11T15:52:17Z",
       "side": 1,
       "message": "Is this the only example of this problem?",
+      "revId": "4b02232732d4e1421ac4fbb1056d6b236625e3b8",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a629dbe_9f68a5f7",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 1152,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2016-11-08T09:52:30Z",
+      "side": 1,
+      "message": "Almost.\n\n2aa1a5f1b8fce6fe8bdde3805748a97079da53dc introduced the test scenario system to have the test suite run with a server URL not having any path (eg: http://example.org/) and with a path (eg: http://example.org/ci/).\n\nBut for the scenario to be applied, the tests should not hardcode any URL and instead rely on the helper make_url() which would craft a url with or without a path depending on the scenario being played.\n\nPatchset 2 does the switch to make_url for the JenkinsListRunningBuildsTest class that covers get_running_builds() and would have caught the bug.  Would have to update the other tests.\n\nI changed from re.match() to re.search().",
+      "parentUuid": "9ad45d7e_eb99577a",
       "revId": "4b02232732d4e1421ac4fbb1056d6b236625e3b8",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
