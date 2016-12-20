@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a6eadb0_4172854a",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 232,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2016-12-20T16:40:04Z",
+      "side": 1,
+      "message": "It\u0027d probably be better to use assertTrue() and assertFalse() here and on line 240.",
+      "revId": "80f838b52a1bb871e6fd3c6eb61416e8589b0640",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
