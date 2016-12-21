@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "1a6eadb0_56e305d9",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 1660,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2016-12-21T10:26:44Z",
+      "side": 1,
+      "message": "I\u0027m guessing you mean \"Setting timeout to be less than the configured connection timeout may result in this waiting for at least the connection timeout length of time before returning\" isn\u0027t clear enough.\n\nShould I say:\n\n When your jenkins server is not responding to connection attempts,\n setting `timeout` less than the connection `timeout` set in the __init__,\n will result in always waiting for at least the connection `timeout` here.\n To avoid, you must set the connection timeout to the lowest value that you\n expect your jenkins instance to be able to return a valid response and\n ensure that timeout here is greater.",
+      "parentUuid": "1a6eadb0_789b9566",
+      "revId": "7edb8ce46bf917fe28118723848d7ec892115b32",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1a6eadb0_7846357c",
         "filename": "jenkins/__init__.py",
         "patchSetId": 6
@@ -30,6 +48,24 @@
       "writtenOn": "2016-12-21T07:50:16Z",
       "side": 1,
       "message": "I\u0027m still not sure why 0 is a valid timeout.  Also what would be the use case for using 0 seconds as a timeout?  This info would be nice to add next to an example usage of this method.",
+      "revId": "7edb8ce46bf917fe28118723848d7ec892115b32",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a6eadb0_96375d4c",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 1662,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2016-12-21T10:26:44Z",
+      "side": 1,
+      "message": "0 means try one and return immediately, don\u0027t sleep, don\u0027t loop around multiple times if the connection succeeded in less than a second, just perform a single call and return the result.\n\nIt turns this into a non-blocking call to check for normal operation and of course helps testing return immediately.\n\nIs it worth re-factoring that out to a seperate method that can be called instead to check status? I suspect it would result in duplication, rather than reuse.\n\nOr just document the non-blocking single attempt behaviour with the method?",
+      "parentUuid": "1a6eadb0_7846357c",
       "revId": "7edb8ce46bf917fe28118723848d7ec892115b32",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
