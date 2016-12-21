@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1a6eadb0_789b9566",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 1660,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2016-12-21T07:50:16Z",
+      "side": 1,
+      "message": "The usage of this might result in unexpected behavior.  I\u0027m wondering if it might be beneficial to add one or more examples of this in the documentation which would also make this disclaimer more prominent to users.",
+      "revId": "7edb8ce46bf917fe28118723848d7ec892115b32",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a6eadb0_7846357c",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 1662,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2016-12-21T07:50:16Z",
+      "side": 1,
+      "message": "I\u0027m still not sure why 0 is a valid timeout.  Also what would be the use case for using 0 seconds as a timeout?  This info would be nice to add next to an example usage of this method.",
+      "revId": "7edb8ce46bf917fe28118723848d7ec892115b32",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
