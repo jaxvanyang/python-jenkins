@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "da4df55a_3f2f1789",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 16099
+      },
+      "writtenOn": "2016-12-28T21:57:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "da4df55a_8be0d897",
+      "revId": "e3dfc44b7a4e5b497a309ca29bc58556c22ab112",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "da4df55a_4b1fd007",
         "filename": "jenkins/__init__.py",
         "patchSetId": 4
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "da4df55a_bf7067a5",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 94,
+      "author": {
+        "id": 16099
+      },
+      "writtenOn": "2016-12-28T21:57:12Z",
+      "side": 1,
+      "message": "I didn\u0027t get the point. I\u0027ve used this new query to limit the result to only views.",
+      "parentUuid": "da4df55a_4b1fd007",
+      "revId": "e3dfc44b7a4e5b497a309ca29bc58556c22ab112",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "da4df55a_8b49b8b9",
         "filename": "jenkins/__init__.py",
         "patchSetId": 4
@@ -47,6 +83,24 @@
       "writtenOn": "2016-12-28T07:19:19Z",
       "side": 1,
       "message": "Wouldn\u0027t this only return views on the main folder?  Now that views can be in sub folders wouldn\u0027t we want this method to return all views (in all subfolders)?\n\n\nAlso what if we want a list of views under a specific folder?",
+      "revId": "e3dfc44b7a4e5b497a309ca29bc58556c22ab112",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da4df55a_ff94af8b",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 1453,
+      "author": {
+        "id": 16099
+      },
+      "writtenOn": "2016-12-28T21:57:12Z",
+      "side": 1,
+      "message": "That\u0027s true. I\u0027ve fixed this with the latest patch. I\u0027ve proposed new method: get_all_views with ability to retrieved all existing views.\n\nThere is no method to list all views inside specific folder as it is IMHO out of scope of this change. We also don\u0027t have ability to list all jobs in specific folder. So this should be a new dedicated methods like list_jobs_in_folder and list_views_in_folder.",
+      "parentUuid": "da4df55a_8b49b8b9",
       "revId": "e3dfc44b7a4e5b497a309ca29bc58556c22ab112",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
