@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "da4df55a_7fa7dfbc",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 220,
+      "author": {
+        "id": 16099
+      },
+      "writtenOn": "2016-12-28T22:28:18Z",
+      "side": 1,
+      "message": "I\u0027ve added this missing static as we have references in the example.",
+      "revId": "5b42d85d12d5e91cc76fa7da4b91c613b857347d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
