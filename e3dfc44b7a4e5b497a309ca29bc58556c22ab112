@@ -72,6 +72,24 @@
     },
     {
       "key": {
+        "uuid": "7a3c09a3_0d551b1c",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 94,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2017-01-16T16:32:54Z",
+      "side": 1,
+      "message": "There\u0027s nothing wrong with this.  I was just wondering whether it would make sense to move this line down to where VIEW_NAME is so that all VIEW endpoints are in one place.",
+      "parentUuid": "da4df55a_bf7067a5",
+      "revId": "e3dfc44b7a4e5b497a309ca29bc58556c22ab112",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "da4df55a_8b49b8b9",
         "filename": "jenkins/__init__.py",
         "patchSetId": 4
