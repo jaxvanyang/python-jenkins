@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a3c09a3_99070ac9",
+        "filename": "doc/source/examples.rst",
+        "patchSetId": 8
+      },
+      "lineNbr": 245,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2017-01-18T17:43:19Z",
+      "side": 1,
+      "message": "containing/continuing",
+      "range": {
+        "startLine": 245,
+        "startChar": 33,
+        "endLine": 245,
+        "endChar": 43
+      },
+      "revId": "abc9008ae4aed8ecac79591b6ee7885f6671b06d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a3c09a3_f9272e60",
+        "filename": "doc/source/examples.rst",
+        "patchSetId": 8
+      },
+      "lineNbr": 250,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2017-01-18T17:43:19Z",
+      "side": 1,
+      "message": "backhole/black hole ?",
+      "range": {
+        "startLine": 250,
+        "startChar": 52,
+        "endLine": 250,
+        "endChar": 60
+      },
+      "revId": "abc9008ae4aed8ecac79591b6ee7885f6671b06d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a3c09a3_19423aae",
+        "filename": "doc/source/examples.rst",
+        "patchSetId": 8
+      },
+      "lineNbr": 268,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2017-01-18T17:43:19Z",
+      "side": 1,
+      "message": "This is the clarification that I was suggesting. thanks.",
+      "range": {
+        "startLine": 261,
+        "startChar": 0,
+        "endLine": 268,
+        "endChar": 30
+      },
+      "revId": "abc9008ae4aed8ecac79591b6ee7885f6671b06d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a3c09a3_79d5fee2",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 8
+      },
+      "lineNbr": 1683,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2017-01-18T17:43:19Z",
+      "side": 1,
+      "message": "node/mode",
+      "range": {
+        "startLine": 1683,
+        "startChar": 45,
+        "endLine": 1683,
+        "endChar": 49
+      },
+      "revId": "abc9008ae4aed8ecac79591b6ee7885f6671b06d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
