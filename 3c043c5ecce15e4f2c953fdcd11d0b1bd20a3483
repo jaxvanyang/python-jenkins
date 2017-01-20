@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a3905b3_885bc686",
+        "filename": "doc/source/examples.rst",
+        "patchSetId": 9
+      },
+      "lineNbr": 250,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2017-01-20T16:42:08Z",
+      "side": 1,
+      "message": "s/back hole/black-hole/ (dash for consistency)",
+      "range": {
+        "startLine": 250,
+        "startChar": 52,
+        "endLine": 250,
+        "endChar": 56
+      },
+      "revId": "3c043c5ecce15e4f2c953fdcd11d0b1bd20a3483",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a3905b3_a8eb22af",
+        "filename": "doc/source/examples.rst",
+        "patchSetId": 9
+      },
+      "lineNbr": 263,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2017-01-20T16:42:08Z",
+      "side": 1,
+      "message": "s/were/where/ (femtonit)",
+      "range": {
+        "startLine": 263,
+        "startChar": 38,
+        "endLine": 263,
+        "endChar": 42
+      },
+      "revId": "3c043c5ecce15e4f2c953fdcd11d0b1bd20a3483",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
