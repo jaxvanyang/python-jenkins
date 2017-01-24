@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a3905b3_04b2d1e4",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2017-01-24T16:25:50Z",
+      "side": 1,
+      "message": "I\u0027d like to see more detail in the commit message.  Check out [1] for a suggestion of what the commit message could look like.  (femtonit for this repository)\n\n[1] https://wiki.openstack.org/wiki/GitCommitMessages",
+      "revId": "50966135b04de5e649d4d991ba540c665a1758e9",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
