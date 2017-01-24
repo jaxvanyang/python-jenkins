@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a3905b3_0c0a068a",
+        "filename": "tests/test_view.py",
+        "patchSetId": 8
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2017-01-24T13:16:08Z",
+      "side": 1,
+      "message": "If I queried the jenkins api with the view query endpoint, would I every actually see something like this returned?",
+      "revId": "c02b3a8e73d6252afdf8b02b057762988cc31d7b",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a3905b3_0c31265a",
+        "filename": "tests/test_view.py",
+        "patchSetId": 8
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2017-01-24T13:16:08Z",
+      "side": 1,
+      "message": "Better leave this as it original was calling `.get_views()` instead of changing to test `get_info()` directly.\n\nShould create a separate test to call `get_all_views()` with a json object containing the nested views otherwise it\u0027s not testing the rather complex loop logic inside that function.",
+      "revId": "c02b3a8e73d6252afdf8b02b057762988cc31d7b",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
