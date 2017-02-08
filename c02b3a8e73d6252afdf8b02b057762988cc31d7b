@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "1a430d35_84dc2547",
+        "filename": "tests/test_view.py",
+        "patchSetId": 8
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2017-02-08T19:00:21Z",
+      "side": 1,
+      "message": "This is what i see using `http://localhost:8080/api/json?depth\u003d1`\n\n\n\n{\n   \"assignedLabels\":[\n      {\n         \"actions\":[\n\n         ],\n         \"busyExecutors\":0,\n         \"clouds\":[\n\n         ],\n         \"description\":null,\n         \"idleExecutors\":2,\n         \"loadStatistics\":{\n\n         },\n         \"name\":\"master\",\n         \"nodes\":[\n            {\n               \"nodeName\":\"\"\n            }\n         ],\n         \"offline\":false,\n         \"tiedJobs\":[\n\n         ],\n         \"totalExecutors\":2,\n         \"propertiesList\":[\n\n         ]\n      }\n   ],\n   \"mode\":\"NORMAL\",\n   \"nodeDescription\":\"the master Jenkins node\",\n   \"nodeName\":\"\",\n   \"numExecutors\":2,\n   \"description\":null,\n   \"jobs\":[\n      {\n         \"actions\":[\n            {\n\n            },\n            {\n\n            }\n         ],\n         \"description\":\"\",\n         \"displayName\":\"folderA\",\n         \"displayNameOrNull\":null,\n         \"name\":\"folderA\",\n         \"url\":\"http://localhost:8080/job/folderA/\",\n         \"healthReport\":[\n\n         ],\n         \"jobs\":[\n            {\n               \"name\":\"jobA\",\n               \"url\":\"http://localhost:8080/job/folderA/job/jobA/\",\n               \"color\":\"notbuilt\"\n            },\n            {\n               \"name\":\"jobB\",\n               \"url\":\"http://localhost:8080/job/folderA/job/jobB/\",\n               \"color\":\"notbuilt\"\n            }\n         ],\n         \"primaryView\":{\n            \"name\":\"All\",\n            \"url\":\"http://localhost:8080/job/folderA/\"\n         },\n         \"views\":[\n            {\n               \"name\":\"All\",\n               \"url\":\"http://localhost:8080/job/folderA/\"\n            },\n            {\n               \"name\":\"viewA\",\n               \"url\":\"http://localhost:8080/job/folderA/view/viewA/\"\n            },\n            {\n               \"name\":\"viewB\",\n               \"url\":\"http://localhost:8080/job/folderA/view/viewB/\"\n            },\n            {\n               \"name\":\"viewC\",\n               \"url\":\"http://localhost:8080/job/folderA/view/viewC/\"\n            }\n         ]\n      }\n   ],\n   \"overallLoad\":{\n      \"availableExecutors\":{\n\n      },\n      \"busyExecutors\":{\n\n      },\n      \"connectingExecutors\":{\n\n      },\n      \"definedExecutors\":{\n\n      },\n      \"idleExecutors\":{\n\n      },\n      \"onlineExecutors\":{\n\n      },\n      \"queueLength\":{\n\n      },\n      \"totalExecutors\":{\n\n      },\n      \"totalQueueLength\":{\n\n      }\n   },\n   \"primaryView\":{\n      \"description\":null,\n      \"jobs\":[\n         {\n            \"name\":\"folderA\",\n            \"url\":\"http://localhost:8080/job/folderA/\"\n         }\n      ],\n      \"name\":\"All\",\n      \"property\":[\n\n      ],\n      \"url\":\"http://localhost:8080/\"\n   },\n   \"quietingDown\":false,\n   \"slaveAgentPort\":50000,\n   \"unlabeledLoad\":{\n      \"availableExecutors\":{\n\n      },\n      \"busyExecutors\":{\n\n      },\n      \"connectingExecutors\":{\n\n      },\n      \"definedExecutors\":{\n\n      },\n      \"idleExecutors\":{\n\n      },\n      \"onlineExecutors\":{\n\n      },\n      \"queueLength\":{\n\n      },\n      \"totalExecutors\":{\n\n      }\n   },\n   \"useCrumbs\":false,\n   \"useSecurity\":false,\n   \"views\":[\n      {\n         \"description\":null,\n         \"jobs\":[\n            {\n               \"name\":\"folderA\",\n               \"url\":\"http://localhost:8080/job/folderA/\"\n            }\n         ],\n         \"name\":\"All\",\n         \"property\":[\n\n         ],\n         \"url\":\"http://localhost:8080/\"\n      }\n   ]\n}",
+      "parentUuid": "5a3905b3_0c0a068a",
+      "revId": "c02b3a8e73d6252afdf8b02b057762988cc31d7b",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5a3905b3_0c31265a",
         "filename": "tests/test_view.py",
         "patchSetId": 8
@@ -30,6 +48,24 @@
       "writtenOn": "2017-01-24T13:16:08Z",
       "side": 1,
       "message": "Better leave this as it original was calling `.get_views()` instead of changing to test `get_info()` directly.\n\nShould create a separate test to call `get_all_views()` with a json object containing the nested views otherwise it\u0027s not testing the rather complex loop logic inside that function.",
+      "revId": "c02b3a8e73d6252afdf8b02b057762988cc31d7b",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1a430d35_24c37158",
+        "filename": "tests/test_view.py",
+        "patchSetId": 8
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2017-02-08T19:00:21Z",
+      "side": 1,
+      "message": "added a test for this but it doesn\u0027t exercise all the logic. hoping someone else can finish it up.",
+      "parentUuid": "5a3905b3_0c31265a",
       "revId": "c02b3a8e73d6252afdf8b02b057762988cc31d7b",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
