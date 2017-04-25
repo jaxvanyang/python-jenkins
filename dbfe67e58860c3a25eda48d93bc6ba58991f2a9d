@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5ff73747_e9a6e553",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2017-04-25T13:25:26Z",
+      "side": 1,
+      "message": "I\u0027d like to see more detail in this commit message.  Why should we use fullname instead of name?  In which context(s)?  What exactly is better about fullname vs. name?",
+      "revId": "dbfe67e58860c3a25eda48d93bc6ba58991f2a9d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5ff73747_490ef93b",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 387,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2017-04-25T13:25:26Z",
+      "side": 1,
+      "message": "So, we\u0027re calling get_job_info() with the fullname after using name for the search.  Is this appropriate?  Should we be doing the regex match on the fullname instead of the name?  How should the tests be updated to accommodate this change?  If the tests aren\u0027t currently testing this method, they probably should be updated to do so; if they *are* testing this method, then why haven\u0027t you needed to update them?",
+      "revId": "dbfe67e58860c3a25eda48d93bc6ba58991f2a9d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
