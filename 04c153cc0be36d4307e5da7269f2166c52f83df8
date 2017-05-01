@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5ff73747_55102b00",
+        "filename": "tests/test_node.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 261,
+      "author": {
+        "id": 14051
+      },
+      "writtenOn": "2017-05-01T16:33:43Z",
+      "side": 1,
+      "message": "Prior to this change, this test fails because %2B gets double-encoded as %252B.",
+      "revId": "04c153cc0be36d4307e5da7269f2166c52f83df8",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
