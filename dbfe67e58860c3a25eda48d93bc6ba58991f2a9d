@@ -33,6 +33,24 @@
       "revId": "dbfe67e58860c3a25eda48d93bc6ba58991f2a9d",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3f044301_eb0e1d31",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 387,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2017-05-03T21:58:08Z",
+      "side": 1,
+      "message": "That comes from the patch that added support for the Cloudbees folder plugin: 7267eec4542696b48fea6a07ccdf34c6e887f75f  The bug report on https://bugs.launchpad.net/python-jenkins/+bug/1685575 has an example with the folder/jobs:\n\n job1\n frontend/front-build\n frontend/front-deploy\n\nThe bug hints about:\n\n\u003e Because we\u0027re not sending the folder name to _get_job_folder.\n\nSo although on line 386 we match both \u0027front-build\u0027 and \u0027front-deploy\u0027 jobs, we attempt to get their job information using solely the base name.  _get_job_folder thus yields nothing since no jobs exist by that name.\n\n\nSo indeed we need to pass the fullname, so get_job_info() can use the folder to look it up. The match will still be done solely on the job base name though which match the method description.\n\n\nThere are some tests in tests/jobs/test_info.py test_regex().  I gave it a try this evening, but eventually gave up trying to mock the jenkins_open return based on the Request given.\n\nI believe my summary above is sufficient to justify merging this without tests.",
+      "parentUuid": "5ff73747_490ef93b",
+      "revId": "dbfe67e58860c3a25eda48d93bc6ba58991f2a9d",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
