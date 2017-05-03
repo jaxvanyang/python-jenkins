@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3f044301_3fe9e37f",
+        "filename": "doc/source/examples.rst",
+        "patchSetId": 1
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2017-05-03T19:55:16Z",
+      "side": 1,
+      "message": "I would skip the my_job variable and just:\n\n  print(server.get_job_config(\u0027cool-job\u0027)  # prints XML config\n\nBut that is not important :]",
+      "revId": "828eb92c481898e574f4729d030a7ea5b850a0d2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
