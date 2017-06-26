@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f201791_0c6b0bb7",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2017-06-26T15:17:52Z",
+      "side": 1,
+      "message": "This summary doesn\u0027t seem to match what the change is actually doing, which is to allow jenkins_open() to pass back the raw response object, and using that support in the get_version() method.  I\u0027d like to see a more comprehensive description of what this change is doing and how it\u0027s accomplishing that task.  (I suspect that the trouble you\u0027re solving is that get_version()\u0027s direct use of urlopen() is not including certain headers that jenkins_open() is passing, so I\u0027m just looking for that to be spelled out explicitly in the commit message.)",
+      "revId": "ef27aff10b3b484d20677b6445cb4abf168a69bf",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
