@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1f1a1f67_ad5e5a41",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 1180,
+      "author": {
+        "id": 6987
+      },
+      "writtenOn": "2017-07-17T17:36:39Z",
+      "side": 1,
+      "message": "I\u0027m not seeing why this is needed.  Doesn\u0027t `get_nodes` return the same info?",
+      "revId": "1339ba7a2ee676a82ff7cf2ecc5d87470285d443",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
