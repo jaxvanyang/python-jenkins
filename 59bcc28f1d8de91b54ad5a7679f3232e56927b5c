@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "9f91af0f_ba356f48",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 16
+      },
+      "lineNbr": 256,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-01-05T18:30:53Z",
+      "side": 1,
+      "message": "Is that any different to the decision being based on whether they have \u0027kerberos\u0027 installed with the existing codebase?\n\nI\u0027m happy to add another argument to the constructor, but is it ok to break with existing behaviour then by not automagically using kerberos if a particular library is present?\n\nActually looking closer at the existing code, what might need to be done is test if the kerberos authentication works, and then fall back to the BasicAuth if it doesn\u0027t, setting on the session then for all subsequent requests. But still this should probably only be done on the first requests.",
+      "parentUuid": "9f91af0f_b4e7c8e4",
+      "revId": "59bcc28f1d8de91b54ad5a7679f3232e56927b5c",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9f91af0f_140a3489",
         "filename": "jenkins/__init__.py",
         "patchSetId": 16
@@ -30,6 +48,24 @@
       "writtenOn": "2018-01-05T17:11:48Z",
       "side": 1,
       "message": "If we\u0027re allocating a session, I\u0027d argue that we should set the authentication on the session directly, rather than on each request, which is what we appear to be doing right now.",
+      "revId": "59bcc28f1d8de91b54ad5a7679f3232e56927b5c",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9f91af0f_3ae5dfa8",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 16
+      },
+      "lineNbr": 264,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-01-05T18:30:53Z",
+      "side": 1,
+      "message": "good idea",
+      "parentUuid": "9f91af0f_140a3489",
       "revId": "59bcc28f1d8de91b54ad5a7679f3232e56927b5c",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "9f91af0f_1af49b5a",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 16
+      },
+      "lineNbr": 267,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-01-05T18:30:53Z",
+      "side": 1,
+      "message": "good point, not sure why I did that, wonder if there is an issue if you update keys in a dict while iterating over it, I\u0027ve a feeling that that I was assuming that it could sometimes result in entries being skipped.",
+      "parentUuid": "9f91af0f_54ef5caf",
+      "revId": "59bcc28f1d8de91b54ad5a7679f3232e56927b5c",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9f91af0f_746dc030",
         "filename": "jenkins/__init__.py",
         "patchSetId": 16
@@ -70,6 +124,24 @@
     },
     {
       "key": {
+        "uuid": "9f91af0f_1ac25bea",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 16
+      },
+      "lineNbr": 270,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-01-05T18:30:53Z",
+      "side": 1,
+      "message": "I might drop this piece from the change anyway, as it shouldn\u0027t impact and we can update as needed in the future.",
+      "parentUuid": "9f91af0f_746dc030",
+      "revId": "59bcc28f1d8de91b54ad5a7679f3232e56927b5c",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9f91af0f_34817890",
         "filename": "jenkins/__init__.py",
         "patchSetId": 16
@@ -81,6 +153,24 @@
       "writtenOn": "2018-01-05T17:11:48Z",
       "side": 1,
       "message": "We\u0027re using this idiom over and over again, where we call self.jenkins_open() on a requests.Request() that we create inline, or possibly before the jenkins_open() in some places.  I have to wonder if we could instead have jenkins_open() create the request for us?  Maybe that needs to be a future patch, since this is just converting from Request to requests.Request, but something to think about.",
+      "revId": "59bcc28f1d8de91b54ad5a7679f3232e56927b5c",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9f91af0f_9a518b65",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 16
+      },
+      "lineNbr": 287,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-01-05T18:30:53Z",
+      "side": 1,
+      "message": "Possibly, though it would certainly complicate the jenkins_open call, and also change the the API, though maybe this change is sufficient that we would need a major version bump before releasing, in which case should definitely make the change before continuing.",
+      "parentUuid": "9f91af0f_34817890",
       "revId": "59bcc28f1d8de91b54ad5a7679f3232e56927b5c",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
