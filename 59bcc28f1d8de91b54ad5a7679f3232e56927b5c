@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9f91af0f_b4e7c8e4",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 16
+      },
+      "lineNbr": 256,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2018-01-05T17:11:48Z",
+      "side": 1,
+      "message": "This really doesn\u0027t look right to me.  We\u0027re basing the decision on whether to go with Kerberos authentication solely on the presence of the requests_kerberos module; so, if someone has requests_kerberos installed for some other reason, they\u0027re forced to use Kerberos authentication even if their target Jenkins isn\u0027t actually set up to support it.  I\u0027d say we really need to have another argument to the constructor to control whether we use Kerberos or basic authentication.",
+      "revId": "59bcc28f1d8de91b54ad5a7679f3232e56927b5c",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9f91af0f_140a3489",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 16
+      },
+      "lineNbr": 264,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2018-01-05T17:11:48Z",
+      "side": 1,
+      "message": "If we\u0027re allocating a session, I\u0027d argue that we should set the authentication on the session directly, rather than on each request, which is what we appear to be doing right now.",
+      "revId": "59bcc28f1d8de91b54ad5a7679f3232e56927b5c",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9f91af0f_54ef5caf",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 16
+      },
+      "lineNbr": 267,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2018-01-05T17:11:48Z",
+      "side": 1,
+      "message": "There\u0027s no need to coerce the output of keys() to a list; regardless of Python version, the result will be an iterable, which we then iterate over.",
+      "revId": "59bcc28f1d8de91b54ad5a7679f3232e56927b5c",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9f91af0f_746dc030",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 16
+      },
+      "lineNbr": 270,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2018-01-05T17:11:48Z",
+      "side": 1,
+      "message": "I\u0027m not sure I understand why we went from iterating over .items() to iterating over .keys() and getting the value from params.  If we\u0027re going to do that, then maybe we should change this whole thing to:\n\n    _valid_keys \u003d [\"name\", \"msg\", …]\n    …\n    def _get_encoded_params(self, params):\n        return {k: quote(params[k]) for k in self._valid_keys\n                if k in params}",
+      "revId": "59bcc28f1d8de91b54ad5a7679f3232e56927b5c",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9f91af0f_34817890",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 16
+      },
+      "lineNbr": 287,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2018-01-05T17:11:48Z",
+      "side": 1,
+      "message": "We\u0027re using this idiom over and over again, where we call self.jenkins_open() on a requests.Request() that we create inline, or possibly before the jenkins_open() in some places.  I have to wonder if we could instead have jenkins_open() create the request for us?  Maybe that needs to be a future patch, since this is just converting from Request to requests.Request, but something to think about.",
+      "revId": "59bcc28f1d8de91b54ad5a7679f3232e56927b5c",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9f91af0f_74db80ec",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 16
+      },
+      "lineNbr": 448,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2018-01-05T17:11:48Z",
+      "side": 1,
+      "message": "I wonder if we could drop the extraneous \u0027+\u0027 operator here…",
+      "revId": "59bcc28f1d8de91b54ad5a7679f3232e56927b5c",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
