@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "9f91af0f_8e65d0e3",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 16
+      },
+      "lineNbr": 256,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2018-01-05T18:45:54Z",
+      "side": 1,
+      "message": "Yeah, sounds like we\u0027ve shot ourselves in the foot if the existing behavior is to go kerberos if a particular library is present.  Doing the fall-back to BasicAuth would be acceptable to me, though; that may be something we could do with a custom authentication type, btw.",
+      "parentUuid": "9f91af0f_ba356f48",
+      "revId": "59bcc28f1d8de91b54ad5a7679f3232e56927b5c",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9f91af0f_140a3489",
         "filename": "jenkins/__init__.py",
         "patchSetId": 16
@@ -107,6 +125,24 @@
     },
     {
       "key": {
+        "uuid": "9f91af0f_0e9f80b4",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 16
+      },
+      "lineNbr": 267,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2018-01-05T18:45:54Z",
+      "side": 1,
+      "message": "Probably, but I don\u0027t see why we would mutate params if we\u0027re then going to return the mutated version.  I think we need to look closer at how this routine is used (I didn\u0027t during my previous review) and think about other ways of addressing the need…",
+      "parentUuid": "9f91af0f_1af49b5a",
+      "revId": "59bcc28f1d8de91b54ad5a7679f3232e56927b5c",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9f91af0f_746dc030",
         "filename": "jenkins/__init__.py",
         "patchSetId": 16
@@ -171,6 +207,24 @@
       "side": 1,
       "message": "Possibly, though it would certainly complicate the jenkins_open call, and also change the the API, though maybe this change is sufficient that we would need a major version bump before releasing, in which case should definitely make the change before continuing.",
       "parentUuid": "9f91af0f_34817890",
+      "revId": "59bcc28f1d8de91b54ad5a7679f3232e56927b5c",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9f91af0f_aecc54bc",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 16
+      },
+      "lineNbr": 287,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2018-01-05T18:45:54Z",
+      "side": 1,
+      "message": "*nod* I\u0027d say we\u0027re making a pretty major change going to requests anyway, so we can probably take the opportunity to additionally clean up some API elements.",
+      "parentUuid": "9f91af0f_9a518b65",
       "revId": "59bcc28f1d8de91b54ad5a7679f3232e56927b5c",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
