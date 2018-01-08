@@ -143,6 +143,24 @@
     },
     {
       "key": {
+        "uuid": "9f91af0f_ca02c93d",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 16
+      },
+      "lineNbr": 267,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-01-08T11:16:15Z",
+      "side": 1,
+      "message": "I don\u0027t think it\u0027s mutating them, but with python3 because params.keys(), params.values() \u0026 params.items() are all view objects, even replacing a key\u0027s value can result in a slightly different layout altering any existing views in a way where you could end up skipping an element you were previously going to iterate over.\n\nI\u0027ll test, but I suspect the reason I included the change here was because I was hitting this issue.\n\nSee https://stackoverflow.com/a/6777832 and https://cito.github.io/blog/never-iterate-a-changing-dict/\n\nOnce confirmed, I\u0027ll move it out to a separate patch in any case.",
+      "parentUuid": "9f91af0f_0e9f80b4",
+      "revId": "59bcc28f1d8de91b54ad5a7679f3232e56927b5c",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9f91af0f_746dc030",
         "filename": "jenkins/__init__.py",
         "patchSetId": 16
@@ -225,6 +243,24 @@
       "side": 1,
       "message": "*nod* I\u0027d say we\u0027re making a pretty major change going to requests anyway, so we can probably take the opportunity to additionally clean up some API elements.",
       "parentUuid": "9f91af0f_9a518b65",
+      "revId": "59bcc28f1d8de91b54ad5a7679f3232e56927b5c",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9f91af0f_0a38b13a",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 16
+      },
+      "lineNbr": 287,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-01-08T11:16:15Z",
+      "side": 1,
+      "message": "Thinking about it over the weekend, the one advantage is that you can construct a requests object to have whatever arguments you need and pass it to jenkins_open(), without the function needing to know anything more than it is a requests object and whether to add the crumb or not.\n\nTo achieve the same flexibility we would eventually end up with a definition like the following:\n\n def jenkins_open(self, add_crumb\u003dTrue, *args, **kwargs):\n \n     req \u003d requests.Request(*args, **kwargs)\n\n     ....\n\n\nIs that better or worse than the current?",
+      "parentUuid": "9f91af0f_aecc54bc",
       "revId": "59bcc28f1d8de91b54ad5a7679f3232e56927b5c",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
