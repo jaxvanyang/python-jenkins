@@ -161,6 +161,24 @@
     },
     {
       "key": {
+        "uuid": "9f91af0f_9ef87a49",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 16
+      },
+      "lineNbr": 267,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2018-01-08T16:57:52Z",
+      "side": 1,
+      "message": "Yep, it makes sense to me that modifying the dict could make keys unstable.  I honestly wouldn\u0027t expect that to be a problem during iteration—the size of the dict isn\u0027t being altered—but I haven\u0027t looked at the details of how Python does dicts, so…",
+      "parentUuid": "9f91af0f_ca02c93d",
+      "revId": "59bcc28f1d8de91b54ad5a7679f3232e56927b5c",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9f91af0f_746dc030",
         "filename": "jenkins/__init__.py",
         "patchSetId": 16
@@ -261,6 +279,24 @@
       "side": 1,
       "message": "Thinking about it over the weekend, the one advantage is that you can construct a requests object to have whatever arguments you need and pass it to jenkins_open(), without the function needing to know anything more than it is a requests object and whether to add the crumb or not.\n\nTo achieve the same flexibility we would eventually end up with a definition like the following:\n\n def jenkins_open(self, add_crumb\u003dTrue, *args, **kwargs):\n \n     req \u003d requests.Request(*args, **kwargs)\n\n     ....\n\n\nIs that better or worse than the current?",
       "parentUuid": "9f91af0f_aecc54bc",
+      "revId": "59bcc28f1d8de91b54ad5a7679f3232e56927b5c",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9f91af0f_f9a200fc",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 16
+      },
+      "lineNbr": 287,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2018-01-08T16:57:52Z",
+      "side": 1,
+      "message": "You have a good point about that.  The way I\u0027ve usually approached creating Python clients has been to create _get(), _post(), etc. methods that take a path and other data, then have those methods call the appropriate methods on the session created by the constructor…but that\u0027s hardly the only way to accomplish this task, and the jenkins_open() method is just as valid, and has the advantage of letting users set up their own calls.  Given how extensive the Jenkins API is, and how easily Jenkins plugins can add to it, sticking with the existing methodology makes sense.  I do have to point out that we are changing the interface, though, as now users have to allocate a requests.Request instead of a urllib Request.  That may require some additional communication and a version bump, if we truly consider jenkins_open() to be an exposed interface…",
+      "parentUuid": "9f91af0f_0a38b13a",
       "revId": "59bcc28f1d8de91b54ad5a7679f3232e56927b5c",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
