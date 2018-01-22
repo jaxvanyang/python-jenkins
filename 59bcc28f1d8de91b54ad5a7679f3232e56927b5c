@@ -179,6 +179,24 @@
     },
     {
       "key": {
+        "uuid": "7f96bb07_5cd01dca",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 16
+      },
+      "lineNbr": 267,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-01-22T19:02:03Z",
+      "side": 1,
+      "message": "I\u0027ve reverted this piece temporarily, I think it\u0027s only encountered when running python 3.6, which means we\u0027ll need to fix at some point, but it\u0027s not part of this change.",
+      "parentUuid": "9f91af0f_9ef87a49",
+      "revId": "59bcc28f1d8de91b54ad5a7679f3232e56927b5c",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9f91af0f_746dc030",
         "filename": "jenkins/__init__.py",
         "patchSetId": 16
