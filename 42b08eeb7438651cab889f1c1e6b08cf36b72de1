@@ -36,6 +36,24 @@
     },
     {
       "key": {
+        "uuid": "7f96bb07_25941044",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 17
+      },
+      "lineNbr": 325,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2018-01-22T20:26:49Z",
+      "side": 1,
+      "message": "TBH, I haven\u0027t been thinking about using this library in any kind of threaded way; I\u0027m not sure I\u0027d be comfortable with that.  Is there a risk?  Yes, multiple threads could invoke _maybe_add_auth() simultaneously.  That wouldn\u0027t be an issue for, say, maybe_add_crumb(), since it shouldn\u0027t matter which wins, but for authentication, it could be an issue.  The solution would be to lock around the method.\n\nMy quick perusal—which is emphatically not a formal analysis, and is based solely on the contents of __init__()—is that the authentication setup represented here is likely the only part of the class vulnerable to some sort of race condition.  That problem could be mitigated by moving the authentication into the __init__(), as discussed below (I\u0027m going through the comments in reverse order, FYI).  Another alternative *could* be to switch to a for loop on the contents of _auths—so it doesn\u0027t get modified.  That way, if a race condition does occur, both threads should come to the same conclusion and store the same auth into the session.  Finally, creating a specialized auth class for _session would move the threading race condition problem out of the Jenkins class and into that auth class.",
+      "parentUuid": "7f96bb07_9c622516",
+      "revId": "42b08eeb7438651cab889f1c1e6b08cf36b72de1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7f96bb07_bcc041e2",
         "filename": "jenkins/__init__.py",
         "patchSetId": 17
@@ -47,6 +65,24 @@
       "writtenOn": "2018-01-22T19:02:03Z",
       "side": 1,
       "message": "So this seems hacky, should I call this in the init? or as done here?\n\nDoing it here matches the existing behaviour, in which we try to resolve the authentication at the first request. Putting it in the init will mean an initial request will be made first.",
+      "revId": "42b08eeb7438651cab889f1c1e6b08cf36b72de1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7f96bb07_45c03c7d",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 17
+      },
+      "lineNbr": 470,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2018-01-22T20:26:49Z",
+      "side": 1,
+      "message": "I don\u0027t have any problem with putting it in the init, personally; that would let us know as soon as possible whether authentication would be successful.  Of course, that is a change in behavior, and I suspect most clients delay the authentication step anyway.  (The ones that don\u0027t delay authentication probably need to use the provided credentials to get some sort of session token for the subsequent requests, but even there it\u0027s possible to delay.)\n\nThe only change I\u0027d suggest making—and this is totally optional, and probably something of a personal style thing—is to move the \"if not self._auth_resolved\" into the _maybe_add_auth() method, or move the \"self._auth_resolved \u003d True\" back to here after the call.  That way, everything that manipulates _auth_resolved is in one place, making it a bit easier to figure out what\u0027s going on.",
+      "parentUuid": "7f96bb07_bcc041e2",
       "revId": "42b08eeb7438651cab889f1c1e6b08cf36b72de1",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
