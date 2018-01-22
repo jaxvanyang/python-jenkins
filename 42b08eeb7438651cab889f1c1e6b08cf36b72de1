@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7f96bb07_1cb13590",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 17
+      },
+      "lineNbr": 268,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-01-22T19:02:03Z",
+      "side": 1,
+      "message": "The alternative to this is a custom auth class that tries kerberos first if available and then basic auth, but that seemed so messy that I defaulted to just trying one and then the other below, defaulting to the last authentication method.",
+      "revId": "42b08eeb7438651cab889f1c1e6b08cf36b72de1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7f96bb07_9c622516",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 17
+      },
+      "lineNbr": 325,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-01-22T19:02:03Z",
+      "side": 1,
+      "message": "Is there any risk around multi threaded applications here?",
+      "revId": "42b08eeb7438651cab889f1c1e6b08cf36b72de1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7f96bb07_bcc041e2",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 17
+      },
+      "lineNbr": 470,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-01-22T19:02:03Z",
+      "side": 1,
+      "message": "So this seems hacky, should I call this in the init? or as done here?\n\nDoing it here matches the existing behaviour, in which we try to resolve the authentication at the first request. Putting it in the init will mean an initial request will be made first.",
+      "revId": "42b08eeb7438651cab889f1c1e6b08cf36b72de1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
