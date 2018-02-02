@@ -90,6 +90,24 @@
     },
     {
       "key": {
+        "uuid": "5f93b717_9c011808",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 16
+      },
+      "lineNbr": 264,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-02-02T12:36:35Z",
+      "side": 1,
+      "message": "I\u0027ve tested this extensively now, and it doesn\u0027t appear to work the way you\u0027d expect. Setting self._session.auth to the desired value does not appear to get applied to a \u0027PreppedRequest\u0027 that is then sent via Session.send(...).\n\nYou can set defaults in the Session, but it seems it\u0027s limited to simple properties. I suspect the problem is that auth is a called class that will apply headers to the request rather than a attribute. If using simple values (user, pass) it apparently works, but I suspect it\u0027s because it then passes it to a default Basic auth class to apply the headers. Using one of the auth classes directly as we need to do, unfortunately doesn\u0027t work.",
+      "parentUuid": "9f91af0f_140a3489",
+      "revId": "59bcc28f1d8de91b54ad5a7679f3232e56927b5c",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9f91af0f_54ef5caf",
         "filename": "jenkins/__init__.py",
         "patchSetId": 16
