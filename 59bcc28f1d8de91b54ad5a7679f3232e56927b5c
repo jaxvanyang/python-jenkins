@@ -108,6 +108,24 @@
     },
     {
       "key": {
+        "uuid": "5f93b717_31e586dc",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 16
+      },
+      "lineNbr": 264,
+      "author": {
+        "id": 679
+      },
+      "writtenOn": "2018-02-02T18:26:16Z",
+      "side": 1,
+      "message": "I actually wondered about that, because of how we\u0027re passing in Request rather than allocating one in the context of the session.  That might come back to the argument over whether to pass Request to jenkins_open() vs. having jenkins_open() make the appropriate request by calling, e.g., _session.get()/_session.post().\n\nOn another topic, I looked at the requests documentation on sessions[1], and it points out this same phenomenon, and says this: \"However, the above code will lose some of the advantages of having a Requests Session object. In particular, Session-level state such as cookies will not get applied to your request. To get a PreparedRequest with that state applied, replace the call to Request.prepare() with a call to Session.prepare_request()[.]\"\n\nBased on that, we might want to look at using something along the lines of:\n\n    self._session.prepare_request(req)\n\nbefore the rest of the logic in jenkins_open()\n\n[1] http://docs.python-requests.org/en/master/user/advanced/#session-objects",
+      "parentUuid": "5f93b717_9c011808",
+      "revId": "59bcc28f1d8de91b54ad5a7679f3232e56927b5c",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9f91af0f_54ef5caf",
         "filename": "jenkins/__init__.py",
         "patchSetId": 16
