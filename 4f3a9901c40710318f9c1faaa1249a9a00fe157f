@@ -16,6 +16,24 @@
       "revId": "4f3a9901c40710318f9c1faaa1249a9a00fe157f",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3fa0c359_5db5fe7c",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 20
+      },
+      "lineNbr": 317,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-02-12T11:18:04Z",
+      "side": 1,
+      "message": "Thanks, when I tested originally tested that approach I was getting a lot of errors, so I switched it while working on the code and forgot to retest with it again afterwards.",
+      "parentUuid": "5f93b717_6cc011e2",
+      "revId": "4f3a9901c40710318f9c1faaa1249a9a00fe157f",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
