@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1f9dbf25_41706473",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 782,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-02-28T10:17:51Z",
+      "side": 1,
+      "message": "This needs a bit more explanation, usually I\u0027d recommend the commit message to expand on why here.",
+      "revId": "c97ff703e132b1181e8d462ca05bb8ee8dcaded2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1f9dbf25_c18eb42d",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 836,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-02-28T10:17:51Z",
+      "side": 1,
+      "message": "you could just test for the \u0027jobs\u0027 attribute?",
+      "range": {
+        "startLine": 835,
+        "startChar": 16,
+        "endLine": 836,
+        "endChar": 70
+      },
+      "revId": "c97ff703e132b1181e8d462ca05bb8ee8dcaded2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1f9dbf25_6159e0fc",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 840,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-02-28T10:17:51Z",
+      "side": 1,
+      "message": "I would keep this in a separate patch, and you need to expand what this is trying to solve. Commit message at least so anyone looking at the code in the future has something to refer back to as to why this part was being changed.\n\nRight now if we removed these lines, there would be no change to the commit message, which indicates we\u0027re missing info.",
+      "range": {
+        "startLine": 835,
+        "startChar": 16,
+        "endLine": 840,
+        "endChar": 28
+      },
+      "revId": "c97ff703e132b1181e8d462ca05bb8ee8dcaded2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
