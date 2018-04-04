@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bf659307_e2173745",
+        "filename": "tox.ini",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 5196
+      },
+      "writtenOn": "2018-04-04T21:10:07Z",
+      "side": 1,
+      "message": "Looking at the ansible logs from the failure on coverage and the job definition in zuul-jobs the artifact collection is expecting an html output to be generated at the cover/ dir. Just add::\n\n  coverage html -d cover\n\nto the job and that should fix the issue for you.",
+      "revId": "0e70b6b043063b99006c46e189ee013f85c25ae6",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
