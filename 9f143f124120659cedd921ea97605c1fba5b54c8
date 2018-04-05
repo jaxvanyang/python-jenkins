@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bf659307_f048565d",
+        "filename": "tox.ini",
+        "patchSetId": 3
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-04-05T08:59:35Z",
+      "side": 1,
+      "message": "it would seem like these are unnecessary with PYTHONDONTWRITEBYTECODE\u003d1",
+      "range": {
+        "startLine": 14,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 48
+      },
+      "revId": "9f143f124120659cedd921ea97605c1fba5b54c8",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
