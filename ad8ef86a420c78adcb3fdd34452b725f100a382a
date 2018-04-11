@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bf659307_4129b387",
+        "filename": "tests/test_build.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 459,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-04-11T15:30:09Z",
+      "side": 1,
+      "message": "I\u0027m guessing this will fail the pep8 test\n\nFollowing will work to solve:\n\n    self.assertEqual(\n        self.j.build_job_url(\"Test Job\", parameters\u003dparams, token\u003dtoken),\n        self.make_url(\n                \u0027job/Test%20Job/buildWithParameters?m_select\u003dvalue1\u0027\n                \u0027\u0026m_select\u003dvalue3\u0026s_select\u003ds_select2\u0026token\u003dtoken123\u0027))\n\nPython will implicitly concatenate strings between brackets.",
+      "revId": "ad8ef86a420c78adcb3fdd34452b725f100a382a",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
