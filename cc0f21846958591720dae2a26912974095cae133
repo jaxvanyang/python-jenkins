@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "bf659307_47375fff",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 289,
+      "author": {
+        "id": 24162
+      },
+      "writtenOn": "2018-04-12T18:29:43Z",
+      "side": 1,
+      "message": "Please check the new version, I had to rewrite most of it as I found several issues while trying to simplify the code, including a case where previous code was not working. \n\nNew code includes workarounds for these with links to requests bugs.",
+      "parentUuid": "bf659307_916055a7",
+      "range": {
+        "startLine": 285,
+        "startChar": 8,
+        "endLine": 289,
+        "endChar": 64
+      },
+      "revId": "cc0f21846958591720dae2a26912974095cae133",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "bf659307_b16559b7",
         "filename": "jenkins/__init__.py",
         "patchSetId": 3
@@ -59,6 +83,30 @@
       "writtenOn": "2018-04-12T16:50:16Z",
       "side": 1,
       "message": "Think if we remove this setting here, and rely on setting it directly on to self._session only when needed it should work as desired?",
+      "range": {
+        "startLine": 494,
+        "startChar": 57,
+        "endLine": 494,
+        "endChar": 77
+      },
+      "revId": "cc0f21846958591720dae2a26912974095cae133",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bf659307_c77ccfb7",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 494,
+      "author": {
+        "id": 24162
+      },
+      "writtenOn": "2018-04-12T18:29:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "bf659307_9137f5b0",
       "range": {
         "startLine": 494,
         "startChar": 57,
