@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bf659307_916055a7",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 289,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-04-12T16:50:16Z",
+      "side": 1,
+      "message": "I think we can remove all of this and only set \u0027self._session.verify \u003d  False\u0027 in the if block below instead of \u0027self.verify \u003d False\u0027 provided we remove setting for the self._session.send() call later.",
+      "range": {
+        "startLine": 285,
+        "startChar": 8,
+        "endLine": 289,
+        "endChar": 64
+      },
+      "revId": "cc0f21846958591720dae2a26912974095cae133",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bf659307_b16559b7",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 297,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-04-12T16:50:16Z",
+      "side": 1,
+      "message": "replace with \u0027self._session.verify \u003d False\u0027",
+      "range": {
+        "startLine": 297,
+        "startChar": 12,
+        "endLine": 297,
+        "endChar": 31
+      },
+      "revId": "cc0f21846958591720dae2a26912974095cae133",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bf659307_9137f5b0",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 494,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-04-12T16:50:16Z",
+      "side": 1,
+      "message": "Think if we remove this setting here, and rely on setting it directly on to self._session only when needed it should work as desired?",
+      "range": {
+        "startLine": 494,
+        "startChar": 57,
+        "endLine": 494,
+        "endChar": 77
+      },
+      "revId": "cc0f21846958591720dae2a26912974095cae133",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
