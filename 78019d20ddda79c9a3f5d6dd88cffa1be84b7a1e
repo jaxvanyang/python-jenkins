@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bf659307_aec956ac",
+        "filename": "tests/test_build.py",
+        "patchSetId": 5
+      },
+      "lineNbr": 457,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-04-13T17:47:41Z",
+      "side": 1,
+      "message": "Not sure why you are doing it this way, just create the initial dict using tuples as args to the ordereddict constructor.",
+      "revId": "78019d20ddda79c9a3f5d6dd88cffa1be84b7a1e",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
