@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9f6a8fd7_d6f9f1c7",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 648,
+      "author": {
+        "id": 19316
+      },
+      "writtenOn": "2018-04-23T10:16:06Z",
+      "side": 1,
+      "message": "number",
+      "range": {
+        "startLine": 648,
+        "startChar": 15,
+        "endLine": 648,
+        "endChar": 19
+      },
+      "revId": "f8e291feffe351728defdcab94c6b0337890bfc0",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9f6a8fd7_b6155de7",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 673,
+      "author": {
+        "id": 19316
+      },
+      "writtenOn": "2018-04-23T10:16:06Z",
+      "side": 1,
+      "message": "number",
+      "range": {
+        "startLine": 673,
+        "startChar": 15,
+        "endLine": 673,
+        "endChar": 19
+      },
+      "revId": "f8e291feffe351728defdcab94c6b0337890bfc0",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
