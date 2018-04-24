@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "9f6a8fd7_fb52b512",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-04-24T18:04:23Z",
+      "side": 1,
+      "message": "Spotted it\u0027s in the bug referenced, probably still worth including a comment that it was a request for build_info in the commit message, although adding a test would make that redundant.",
+      "parentUuid": "9f6a8fd7_102d08a7",
+      "range": {
+        "startLine": 9,
+        "startChar": 32,
+        "endLine": 9,
+        "endChar": 67
+      },
+      "revId": "e78e67d4697a3d844f2bb31d587f1c7e5bf1d4e3",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9f6a8fd7_f0365403",
         "filename": "jenkins/__init__.py",
         "patchSetId": 2
