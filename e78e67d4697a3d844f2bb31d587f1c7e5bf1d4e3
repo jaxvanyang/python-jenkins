@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9f6a8fd7_102d08a7",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-04-24T17:57:10Z",
+      "side": 1,
+      "message": "Would be useful to know when that occurs, for testing purposes and future reference?",
+      "range": {
+        "startLine": 9,
+        "startChar": 32,
+        "endLine": 9,
+        "endChar": 67
+      },
+      "revId": "e78e67d4697a3d844f2bb31d587f1c7e5bf1d4e3",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9f6a8fd7_f0365403",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 509,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-04-24T17:57:10Z",
+      "side": 1,
+      "message": "Technically is it possible for this to ever be less than 0? or is that just a belt and braces approach to testing in case content is custom type that could return -1 when len is called on it?",
+      "range": {
+        "startLine": 509,
+        "startChar": 16,
+        "endLine": 509,
+        "endChar": 43
+      },
+      "revId": "e78e67d4697a3d844f2bb31d587f1c7e5bf1d4e3",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
