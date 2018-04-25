@@ -143,6 +143,30 @@
     },
     {
       "key": {
+        "uuid": "9f6a8fd7_8039b8f2",
+        "filename": "tests/test_build.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 530,
+      "author": {
+        "id": 215
+      },
+      "writtenOn": "2018-04-25T12:06:07Z",
+      "side": 1,
+      "message": "Actually - can you tell me why testscenarios isn\u0027t in use for the majority of the tests contained herein?  Every class herein is basically a copy/paste with a calling function change in the middle (for negative tests)",
+      "parentUuid": "9f6a8fd7_a084fcd3",
+      "range": {
+        "startLine": 530,
+        "startChar": 5,
+        "endLine": 530,
+        "endChar": 25
+      },
+      "revId": "4e6586f635581a803f53b8fcf23051e30b6fdaf6",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9f6a8fd7_71123c64",
         "filename": "tests/test_build.py",
         "patchSetId": 2
