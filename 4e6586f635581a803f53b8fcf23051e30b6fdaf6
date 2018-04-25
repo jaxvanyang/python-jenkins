@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "9f6a8fd7_c0a330b1",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 666,
+      "author": {
+        "id": 215
+      },
+      "writtenOn": "2018-04-25T12:02:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9f6a8fd7_91d270d0",
+      "range": {
+        "startLine": 666,
+        "startChar": 12,
+        "endLine": 666,
+        "endChar": 88
+      },
+      "revId": "4e6586f635581a803f53b8fcf23051e30b6fdaf6",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9f6a8fd7_543e06b8",
         "filename": "tests/test_build.py",
         "patchSetId": 2
@@ -36,6 +60,30 @@
       "writtenOn": "2018-04-25T08:31:58Z",
       "side": 1,
       "message": "Does this approach of using build_response_mock not work for building the exceptions below?",
+      "range": {
+        "startLine": 70,
+        "startChar": 8,
+        "endLine": 73,
+        "endChar": 10
+      },
+      "revId": "4e6586f635581a803f53b8fcf23051e30b6fdaf6",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9f6a8fd7_80cf7827",
+        "filename": "tests/test_build.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 215
+      },
+      "writtenOn": "2018-04-25T12:02:49Z",
+      "side": 1,
+      "message": "It probably would, it would just need rewriting to do so.",
+      "parentUuid": "9f6a8fd7_543e06b8",
       "range": {
         "startLine": 70,
         "startChar": 8,
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "9f6a8fd7_a084fcd3",
+        "filename": "tests/test_build.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 530,
+      "author": {
+        "id": 215
+      },
+      "writtenOn": "2018-04-25T12:02:49Z",
+      "side": 1,
+      "message": "I can look at testscenarios.",
+      "parentUuid": "9f6a8fd7_51aff828",
+      "range": {
+        "startLine": 530,
+        "startChar": 5,
+        "endLine": 530,
+        "endChar": 25
+      },
+      "revId": "4e6586f635581a803f53b8fcf23051e30b6fdaf6",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9f6a8fd7_71123c64",
         "filename": "tests/test_build.py",
         "patchSetId": 2
@@ -94,6 +166,30 @@
     },
     {
       "key": {
+        "uuid": "9f6a8fd7_60d824ee",
+        "filename": "tests/test_build.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 538,
+      "author": {
+        "id": 215
+      },
+      "writtenOn": "2018-04-25T12:02:49Z",
+      "side": 1,
+      "message": "Will do",
+      "parentUuid": "9f6a8fd7_71123c64",
+      "range": {
+        "startLine": 538,
+        "startChar": 8,
+        "endLine": 538,
+        "endChar": 21
+      },
+      "revId": "4e6586f635581a803f53b8fcf23051e30b6fdaf6",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9f6a8fd7_5410464e",
         "filename": "tests/test_build.py",
         "patchSetId": 2
@@ -105,6 +201,30 @@
       "writtenOn": "2018-04-25T08:31:58Z",
       "side": 1,
       "message": "Is it possible for this to use the build_response_mock as hinted at further up to trigger a raise HTTPError?",
+      "range": {
+        "startLine": 540,
+        "startChar": 36,
+        "endLine": 541,
+        "endChar": 78
+      },
+      "revId": "4e6586f635581a803f53b8fcf23051e30b6fdaf6",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9f6a8fd7_a0a07c43",
+        "filename": "tests/test_build.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 541,
+      "author": {
+        "id": 215
+      },
+      "writtenOn": "2018-04-25T12:02:49Z",
+      "side": 1,
+      "message": "Can do, would just need rewriting",
+      "parentUuid": "9f6a8fd7_5410464e",
       "range": {
         "startLine": 540,
         "startChar": 36,
