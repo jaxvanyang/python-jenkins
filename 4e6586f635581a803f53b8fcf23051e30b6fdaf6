@@ -1,0 +1,119 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9f6a8fd7_91d270d0",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 666,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-04-25T08:31:58Z",
+      "side": 1,
+      "message": "might be worth adding this as a return value to the function description, maybe a note to explain to users reading docs that this will return None in certain cases.\n\nSame for the method below, we should improve all of them to indicate what exceptions can be thrown and why, but maybe lets just start here with highlighting that plugins may be required to be installed for these calls to work.",
+      "range": {
+        "startLine": 666,
+        "startChar": 12,
+        "endLine": 666,
+        "endChar": 88
+      },
+      "revId": "4e6586f635581a803f53b8fcf23051e30b6fdaf6",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9f6a8fd7_543e06b8",
+        "filename": "tests/test_build.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-04-25T08:31:58Z",
+      "side": 1,
+      "message": "Does this approach of using build_response_mock not work for building the exceptions below?",
+      "range": {
+        "startLine": 70,
+        "startChar": 8,
+        "endLine": 73,
+        "endChar": 10
+      },
+      "revId": "4e6586f635581a803f53b8fcf23051e30b6fdaf6",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9f6a8fd7_51aff828",
+        "filename": "tests/test_build.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 530,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-04-25T08:31:58Z",
+      "side": 1,
+      "message": "parameterized.expand looks like testscenarios.multiply_scenarios or even just how TestWithScenarios class is expected to work? Or is there something different about how parameterized.expand works. Seeing how we already have testscenarios included and are using the TestWithScenarios class as a super class of JenkinsTestBase I\u0027m just wondering if we really need another dependency to do the same thing?",
+      "range": {
+        "startLine": 530,
+        "startChar": 5,
+        "endLine": 530,
+        "endChar": 25
+      },
+      "revId": "4e6586f635581a803f53b8fcf23051e30b6fdaf6",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9f6a8fd7_71123c64",
+        "filename": "tests/test_build.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 538,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-04-25T08:31:58Z",
+      "side": 1,
+      "message": "Can you name these in line with the other test names, this looks like it should have \"raise_HTTPError\" in it\u0027s name. So that it\u0027s possible to see all test methods that are raising exceptions.",
+      "range": {
+        "startLine": 538,
+        "startChar": 8,
+        "endLine": 538,
+        "endChar": 21
+      },
+      "revId": "4e6586f635581a803f53b8fcf23051e30b6fdaf6",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9f6a8fd7_5410464e",
+        "filename": "tests/test_build.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 541,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-04-25T08:31:58Z",
+      "side": 1,
+      "message": "Is it possible for this to use the build_response_mock as hinted at further up to trigger a raise HTTPError?",
+      "range": {
+        "startLine": 540,
+        "startChar": 36,
+        "endLine": 541,
+        "endChar": 78
+      },
+      "revId": "4e6586f635581a803f53b8fcf23051e30b6fdaf6",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
