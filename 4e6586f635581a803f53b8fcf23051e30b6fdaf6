@@ -167,6 +167,30 @@
     },
     {
       "key": {
+        "uuid": "9f6a8fd7_435de544",
+        "filename": "tests/test_build.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 530,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-04-25T16:02:16Z",
+      "side": 1,
+      "message": "Probably just because no one has gotten around to it yet, various changes have tidied up a lot of the differences that used to exist, but there\u0027s a bit of effort in just working out the last step in providing a couple of common test methods that can be expanded out with a few options on all of the test classes.",
+      "parentUuid": "9f6a8fd7_8039b8f2",
+      "range": {
+        "startLine": 530,
+        "startChar": 5,
+        "endLine": 530,
+        "endChar": 25
+      },
+      "revId": "4e6586f635581a803f53b8fcf23051e30b6fdaf6",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9f6a8fd7_71123c64",
         "filename": "tests/test_build.py",
         "patchSetId": 2
