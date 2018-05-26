@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f7c97a3_b9c9e959",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 581,
+      "author": {
+        "id": 24162
+      },
+      "writtenOn": "2018-05-26T13:31:56Z",
+      "side": 1,
+      "message": "Another method where depth does not make sense to me.",
+      "revId": "43dbac331b8a847917284a5de3f576fb3f7bdf9c",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f7c97a3_99cc2d6b",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 758,
+      "author": {
+        "id": 24162
+      },
+      "writtenOn": "2018-05-26T13:31:56Z",
+      "side": 1,
+      "message": "I really don\u0027t get the meaning of depth for whoami method. Why it would ever make sense?",
+      "revId": "43dbac331b8a847917284a5de3f576fb3f7bdf9c",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
