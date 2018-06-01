@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f7c97a3_bd889e70",
+        "filename": "tests/test_jenkins_sockets.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-06-01T09:40:11Z",
+      "side": 1,
+      "message": "ah, this isn\u0027t using the base class, that explains a lot.",
+      "revId": "5e33487fc0313b0e43e5f37746120eab5c3bb917",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
