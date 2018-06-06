@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f7c97a3_b00aa11d",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 513,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-06-06T18:09:58Z",
+      "side": 1,
+      "message": "maybe the more correct thing is to remove the check on \u0027content-length\u0027 and \u0027transfer-encoding\u0027 above and instead just rely on checking the response.content below instead.",
+      "range": {
+        "startLine": 513,
+        "startChar": 16,
+        "endLine": 513,
+        "endChar": 51
+      },
+      "revId": "92d4f6c0bbb8ea4cc7a93f9ce18a43c042e867ba",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
