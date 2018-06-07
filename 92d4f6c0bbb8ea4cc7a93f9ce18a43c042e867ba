@@ -46,6 +46,30 @@
       "revId": "92d4f6c0bbb8ea4cc7a93f9ce18a43c042e867ba",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f7c97a3_1ec5963d",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 513,
+      "author": {
+        "id": 11969
+      },
+      "writtenOn": "2018-06-07T09:46:59Z",
+      "side": 1,
+      "message": "I think there should be checked response.status_code\u003d\u003d201 in couple with \u0027location\u0027. I\u0027ll add it with unit test.",
+      "parentUuid": "5f7c97a3_7e8daa28",
+      "range": {
+        "startLine": 513,
+        "startChar": 16,
+        "endLine": 513,
+        "endChar": 51
+      },
+      "revId": "92d4f6c0bbb8ea4cc7a93f9ce18a43c042e867ba",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
