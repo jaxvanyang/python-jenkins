@@ -22,6 +22,30 @@
       "revId": "92d4f6c0bbb8ea4cc7a93f9ce18a43c042e867ba",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f7c97a3_7e8daa28",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 513,
+      "author": {
+        "id": 11969
+      },
+      "writtenOn": "2018-06-07T09:44:38Z",
+      "side": 1,
+      "message": "In the case I faced the response.content is \u0027\u0027, because Jenkins answered HTTP code 201 with header \u0027Location\u0027:\u0027http://.../\u0027, pointing on the entry in queue, with no additional content.",
+      "parentUuid": "5f7c97a3_b00aa11d",
+      "range": {
+        "startLine": 513,
+        "startChar": 16,
+        "endLine": 513,
+        "endChar": 51
+      },
+      "revId": "92d4f6c0bbb8ea4cc7a93f9ce18a43c042e867ba",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
