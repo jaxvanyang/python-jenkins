@@ -111,6 +111,53 @@
       "revId": "92d4f6c0bbb8ea4cc7a93f9ce18a43c042e867ba",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f7c97a3_5858ef54",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 513,
+      "author": {
+        "id": 11969
+      },
+      "writtenOn": "2018-06-08T01:21:13Z",
+      "side": 1,
+      "message": "JenkinsClient.build_job() is expecting exactly that response, with \u0027Location\u0027 header.\nNo auto-redirects should be done here. See the comment for build_job() below.",
+      "parentUuid": "5f7c97a3_e0126b62",
+      "range": {
+        "startLine": 513,
+        "startChar": 16,
+        "endLine": 513,
+        "endChar": 51
+      },
+      "revId": "92d4f6c0bbb8ea4cc7a93f9ce18a43c042e867ba",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f7c97a3_9823e7be",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 1274,
+      "author": {
+        "id": 11969
+      },
+      "writtenOn": "2018-06-08T01:21:13Z",
+      "side": 1,
+      "message": "Here is the header that is expected as the result of the request. But this result is filtered in _response_handler() at the moment, because no other content found in case of http_close mode.",
+      "range": {
+        "startLine": 1274,
+        "startChar": 8,
+        "endLine": 1274,
+        "endChar": 47
+      },
+      "revId": "92d4f6c0bbb8ea4cc7a93f9ce18a43c042e867ba",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
