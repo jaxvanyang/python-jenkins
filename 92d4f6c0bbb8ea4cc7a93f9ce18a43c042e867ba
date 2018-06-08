@@ -158,6 +158,30 @@
       "revId": "92d4f6c0bbb8ea4cc7a93f9ce18a43c042e867ba",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f7c97a3_4ea58046",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 1274,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-06-08T09:00:32Z",
+      "side": 1,
+      "message": "can you have a look at how the tests for this method are passing so? I would be expecting the session send mock at https://git.openstack.org/cgit/openstack/python-jenkins/tree/tests/jobs/test_build.py?h\u003drefs/changes/79/572179/1#n10 to still result in the code going through the response handler above, it\u0027s possible there is an incorrect assumption in how the mock is being setup.\n\nLooking at https://git.openstack.org/cgit/openstack/python-jenkins/tree/tests/helper.py?h\u003drefs/changes/79/572179/1#n89 I suspect we\u0027re setting content-length to 0 when in this case the header is being left out completely, looks like we might need to establish when content-length should be set and when it should be left completely unset, that might shake a few more bugs out as well.",
+      "parentUuid": "5f7c97a3_9823e7be",
+      "range": {
+        "startLine": 1274,
+        "startChar": 8,
+        "endLine": 1274,
+        "endChar": 47
+      },
+      "revId": "92d4f6c0bbb8ea4cc7a93f9ce18a43c042e867ba",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
