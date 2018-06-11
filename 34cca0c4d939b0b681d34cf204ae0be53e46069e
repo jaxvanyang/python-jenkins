@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f7c97a3_5c0afed1",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 21
+      },
+      "lineNbr": 1120,
+      "author": {
+        "id": 13807
+      },
+      "writtenOn": "2018-06-11T00:06:55Z",
+      "side": 1,
+      "message": "This code broke then run_script() api. The code returns 200 OK though \u0027\"POST /scriptText HTTP/1.1\" 200 0\u0027 but the groovy script does not actually run on the server.\n\nIt also appears that requests.Request() does not return a text object that we can print back to the user as far as I can tell so we just get a blank object if we try to print the result of print(jenkins.run_script())",
+      "range": {
+        "startLine": 1117,
+        "startChar": 8,
+        "endLine": 1120,
+        "endChar": 80
+      },
+      "revId": "34cca0c4d939b0b681d34cf204ae0be53e46069e",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
