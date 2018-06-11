@@ -22,6 +22,30 @@
       "revId": "34cca0c4d939b0b681d34cf204ae0be53e46069e",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f7c97a3_f27205e3",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 21
+      },
+      "lineNbr": 1120,
+      "author": {
+        "id": 13807
+      },
+      "writtenOn": "2018-06-11T15:23:28Z",
+      "side": 1,
+      "message": "Submitted a fix proposal here Ibaffb768ea82c76b44ec5a6cccde8563afe1783f",
+      "parentUuid": "5f7c97a3_5c0afed1",
+      "range": {
+        "startLine": 1117,
+        "startChar": 8,
+        "endLine": 1120,
+        "endChar": 80
+      },
+      "revId": "34cca0c4d939b0b681d34cf204ae0be53e46069e",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
