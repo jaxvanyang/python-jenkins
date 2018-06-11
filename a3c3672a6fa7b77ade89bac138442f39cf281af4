@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f7c97a3_26559bc2",
+        "filename": "tests/test_script.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 13807
+      },
+      "writtenOn": "2018-06-11T17:21:11Z",
+      "side": 0,
+      "message": "We no longer need this since using a dictionary method we don\u0027t need to encode with quote().",
+      "revId": "a3c3672a6fa7b77ade89bac138442f39cf281af4",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
