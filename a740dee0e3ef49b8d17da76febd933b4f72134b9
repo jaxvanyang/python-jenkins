@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f7c97a3_61074a83",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 343,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-06-19T18:21:04Z",
+      "side": 1,
+      "message": "should this still use the session object to make the call?",
+      "range": {
+        "startLine": 341,
+        "startChar": 16,
+        "endLine": 343,
+        "endChar": 51
+      },
+      "revId": "a740dee0e3ef49b8d17da76febd933b4f72134b9",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f7c97a3_4129eeef",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 350,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-06-19T18:21:04Z",
+      "side": 1,
+      "message": "Is this possible? or rather should it be? I\u0027m guessing this is from mock side_effects which suggests the \u0027_resolve_api\u0027 method should probably be mocked out in the test code except for specific tests checking for this behaviour.",
+      "range": {
+        "startLine": 350,
+        "startChar": 16,
+        "endLine": 350,
+        "endChar": 32
+      },
+      "revId": "a740dee0e3ef49b8d17da76febd933b4f72134b9",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f7c97a3_0133f663",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 7
+      },
+      "lineNbr": 357,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-06-19T18:21:04Z",
+      "side": 1,
+      "message": "I think that\u0027s because we\u0027re not mocking this method out by default so anything with a side_effect/requests_mock has an extra call that it\u0027s not handling by default.",
+      "range": {
+        "startLine": 355,
+        "startChar": 8,
+        "endLine": 357,
+        "endChar": 29
+      },
+      "revId": "a740dee0e3ef49b8d17da76febd933b4f72134b9",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
