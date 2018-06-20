@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "5f7c97a3_2e1fe4b7",
+        "filename": "doc/source/conf.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13807
+      },
+      "writtenOn": "2018-06-20T16:29:14Z",
+      "side": 1,
+      "message": "Ok so this makes conf.py conform to flake8. Most projects I\u0027ve worked on skip this file in the checking so that confused me.",
+      "parentUuid": "5f7c97a3_2ef12496",
+      "revId": "59323b04f76b40c2b08a41f5e1889b5aa6ca1ebe",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5f7c97a3_2e4604c2",
         "filename": "doc/source/conf.py",
         "patchSetId": 1
@@ -30,6 +48,24 @@
       "writtenOn": "2018-06-20T16:27:39Z",
       "side": 1,
       "message": "Version\u0027s being handled by PBR so I\u0027m not sure why we need this line?",
+      "revId": "59323b04f76b40c2b08a41f5e1889b5aa6ca1ebe",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f7c97a3_ce83d0ca",
+        "filename": "doc/source/conf.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 13807
+      },
+      "writtenOn": "2018-06-20T16:29:14Z",
+      "side": 1,
+      "message": "Just realized the import was moved up the file.",
+      "parentUuid": "5f7c97a3_2e4604c2",
       "revId": "59323b04f76b40c2b08a41f5e1889b5aa6ca1ebe",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
