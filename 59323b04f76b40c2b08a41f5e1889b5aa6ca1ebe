@@ -90,6 +90,23 @@
     },
     {
       "key": {
+        "uuid": "5f7c97a3_cb9f3963",
+        "filename": "setup.cfg",
+        "patchSetId": 1
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 13807
+      },
+      "writtenOn": "2018-06-20T23:58:46Z",
+      "side": 1,
+      "message": "Is this file actually used by the pre-commit flake8?\n\nAs far as I can tell no.",
+      "revId": "59323b04f76b40c2b08a41f5e1889b5aa6ca1ebe",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5f7c97a3_2c004cab",
         "filename": "tox.ini",
         "patchSetId": 1
