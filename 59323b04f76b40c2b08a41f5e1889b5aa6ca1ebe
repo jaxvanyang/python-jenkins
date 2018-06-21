@@ -107,6 +107,24 @@
     },
     {
       "key": {
+        "uuid": "5f7c97a3_a23c4ebf",
+        "filename": "setup.cfg",
+        "patchSetId": 1
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 24162
+      },
+      "writtenOn": "2018-06-21T17:26:14Z",
+      "side": 1,
+      "message": "Yes. it is, flake8 from pre-commit is just flake8, so it will respect it settings.\nThis block was moved from tox.ini",
+      "parentUuid": "5f7c97a3_cb9f3963",
+      "revId": "59323b04f76b40c2b08a41f5e1889b5aa6ca1ebe",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5f7c97a3_2c004cab",
         "filename": "tox.ini",
         "patchSetId": 1
@@ -118,6 +136,30 @@
       "writtenOn": "2018-06-20T17:57:54Z",
       "side": 1,
       "message": "Should this get removed with this change?",
+      "range": {
+        "startLine": 55,
+        "startChar": 0,
+        "endLine": 62,
+        "endChar": 41
+      },
+      "revId": "59323b04f76b40c2b08a41f5e1889b5aa6ca1ebe",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f7c97a3_622dd68d",
+        "filename": "tox.ini",
+        "patchSetId": 1
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 24162
+      },
+      "writtenOn": "2018-06-21T17:26:14Z",
+      "side": 1,
+      "message": "It was not removed, just moved to setup.cfg a more appropiate place to keep it, \nespecially now that flake8 can be called without tox.",
+      "parentUuid": "5f7c97a3_2c004cab",
       "range": {
         "startLine": 55,
         "startChar": 0,
