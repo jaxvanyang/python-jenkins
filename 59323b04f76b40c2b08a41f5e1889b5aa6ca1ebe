@@ -143,6 +143,24 @@
     },
     {
       "key": {
+        "uuid": "5f7c97a3_ede9d77e",
+        "filename": "setup.cfg",
+        "patchSetId": 1
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 24162
+      },
+      "writtenOn": "2018-06-21T18:45:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5f7c97a3_c29f0ab1",
+      "revId": "59323b04f76b40c2b08a41f5e1889b5aa6ca1ebe",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5f7c97a3_2c004cab",
         "filename": "tox.ini",
         "patchSetId": 1
