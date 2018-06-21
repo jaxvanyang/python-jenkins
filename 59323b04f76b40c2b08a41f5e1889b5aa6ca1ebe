@@ -125,6 +125,24 @@
     },
     {
       "key": {
+        "uuid": "5f7c97a3_c29f0ab1",
+        "filename": "setup.cfg",
+        "patchSetId": 1
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 13807
+      },
+      "writtenOn": "2018-06-21T17:29:28Z",
+      "side": 1,
+      "message": "As far as I can tell flake8 isn\u0027t reading this file when run from pre-commit. If I delete the excludes for example it don\u0027t see it scanning my .tox/ directory.\n\nUnless I\u0027m missing something?",
+      "parentUuid": "5f7c97a3_a23c4ebf",
+      "revId": "59323b04f76b40c2b08a41f5e1889b5aa6ca1ebe",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5f7c97a3_2c004cab",
         "filename": "tox.ini",
         "patchSetId": 1
