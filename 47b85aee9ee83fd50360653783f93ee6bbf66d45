@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f7c97a3_a120c34a",
+        "filename": ".zuul.yaml",
+        "patchSetId": 6
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 6547
+      },
+      "writtenOn": "2018-06-22T05:14:30Z",
+      "side": 1,
+      "message": "you don\u0027t need this one",
+      "revId": "47b85aee9ee83fd50360653783f93ee6bbf66d45",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f7c97a3_81134701",
+        "filename": ".zuul.yaml",
+        "patchSetId": 6
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 6547
+      },
+      "writtenOn": "2018-06-22T05:14:30Z",
+      "side": 1,
+      "message": "docs-on-read-thedocs include the build-sphinx, remove it",
+      "revId": "47b85aee9ee83fd50360653783f93ee6bbf66d45",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
