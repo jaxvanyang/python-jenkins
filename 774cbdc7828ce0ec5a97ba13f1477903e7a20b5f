@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3f79a3b5_208d7cd2",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-08-13T14:57:13Z",
+      "side": 1,
+      "message": "I think reformat this into something like the follo9wing.\n\n Avoid repeatedly serializing and splitting the root path component of\n jobs being added to the list to be processed and returned.\n\n Consequences of attempting to split a string path using \u0027job\u0027 introduces\n a bug if a job every happens to also use the name \u0027job\u0027 as part of\n it\u0027s name.\n\n Maintain the root path to the folder in the hierarchy as a list of path\n components, add to it when descending and store the result of joining\n it with \u0027/job/\u0027 as a separate variable to avoid needing to re-parse.\n\nSimpler to follow if it just explains what the patch is about rather than following a more conversational style.",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 13,
+        "endChar": 63
+      },
+      "revId": "774cbdc7828ce0ec5a97ba13f1477903e7a20b5f",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3f79a3b5_406e782f",
+        "filename": "tests/jobs/base.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-08-13T14:57:13Z",
+      "side": 1,
+      "message": "if you plan to only use this on one of the test classes, it\u0027s perfectly ok to only set it on that one class",
+      "range": {
+        "startLine": 52,
+        "startChar": 4,
+        "endLine": 55,
+        "endChar": 5
+      },
+      "revId": "774cbdc7828ce0ec5a97ba13f1477903e7a20b5f",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
