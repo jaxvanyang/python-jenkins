@@ -45,6 +45,30 @@
       "revId": "774cbdc7828ce0ec5a97ba13f1477903e7a20b5f",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3f79a3b5_c98ab368",
+        "filename": "tests/jobs/base.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 27651
+      },
+      "writtenOn": "2018-08-13T16:19:16Z",
+      "side": 1,
+      "message": "\u003e if you plan to only use this on one of the test classes, it\u0027s\n \u003e perfectly ok to only set it on that one class\n\nIt never occurred to me that the sharing between test_getall and test_get is intentional -- it looked rather accidental, so I naturally added test data where I thought test data belongs: next to other test data. So... is it really intentional? Does testing the same things again in test_get bring any value?\n\nAnyway, I later merge this into jobs_in_folder as I don\u0027t think repeating the boilerplate in test_folder_named_job is worth it: https://review.openstack.org/#/c/591370/2\nCan you pls look at that patch first before I attempt to amend this one?",
+      "parentUuid": "3f79a3b5_406e782f",
+      "range": {
+        "startLine": 52,
+        "startChar": 4,
+        "endLine": 55,
+        "endChar": 5
+      },
+      "revId": "774cbdc7828ce0ec5a97ba13f1477903e7a20b5f",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
