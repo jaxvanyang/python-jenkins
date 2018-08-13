@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3f79a3b5_daa7d7bc",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-08-13T13:49:50Z",
+      "side": 1,
+      "message": "this seems like something that might be a good idea to add to the method definition.",
+      "range": {
+        "startLine": 30,
+        "startChar": 0,
+        "endLine": 33,
+        "endChar": 29
+      },
+      "revId": "67d59dfe778291b218f20ce1e0a539825618bbcb",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3f79a3b5_bd29b58a",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 993,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-08-13T13:49:50Z",
+      "side": 1,
+      "message": "I think this method docstring should expand on some of the behaviour of jenkins when you reach no more folders with the folder_depth_inc requesting more than were present. That information in the commit message is important enough to include here.",
+      "revId": "67d59dfe778291b218f20ce1e0a539825618bbcb",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3f79a3b5_1d30e9e7",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 997,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-08-13T13:49:50Z",
+      "side": 1,
+      "message": "Not sure about this name \u0027fetch_depth_per_request\u0027? or \u0027per_request_depth\u0027, not critical though if others think it\u0027s fine.",
+      "range": {
+        "startLine": 997,
+        "startChar": 15,
+        "endLine": 997,
+        "endChar": 31
+      },
+      "revId": "67d59dfe778291b218f20ce1e0a539825618bbcb",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}

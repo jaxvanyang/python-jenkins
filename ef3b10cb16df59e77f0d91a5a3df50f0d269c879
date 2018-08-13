@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3f79a3b5_1a16aff2",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-08-13T13:49:50Z",
+      "side": 0,
+      "message": "I\u0027m torn between trying to mostly keep this here and replace the second \u0027jobs\u0027 with a \u0027%(jobs)s\u0027 format placeholder, and the fact it would need to be split anyway into something like the following\n\n JOBS_QUERY_PREFIX \u003d \u0027?tree\u003d%(jobs_query)\u0027\n JOBS_QUERY \u003d \u0027jobs[url,color,name,%(jobs)s]\u0027\n\nAnd the fact that this allows consumers to alter the fields included by adjusting these library constants versus complicating it a bit more.",
+      "range": {
+        "startLine": 99,
+        "startChar": 13,
+        "endLine": 99,
+        "endChar": 46
+      },
+      "revId": "ef3b10cb16df59e77f0d91a5a3df50f0d269c879",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
