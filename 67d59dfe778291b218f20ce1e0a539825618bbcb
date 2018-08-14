@@ -42,6 +42,24 @@
     },
     {
       "key": {
+        "uuid": "3f79a3b5_7567a2b8",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 993,
+      "author": {
+        "id": 27651
+      },
+      "writtenOn": "2018-08-14T08:37:17Z",
+      "side": 1,
+      "message": "Agreed.",
+      "parentUuid": "3f79a3b5_bd29b58a",
+      "revId": "67d59dfe778291b218f20ce1e0a539825618bbcb",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3f79a3b5_1d30e9e7",
         "filename": "jenkins/__init__.py",
         "patchSetId": 4
@@ -53,6 +71,30 @@
       "writtenOn": "2018-08-13T13:49:50Z",
       "side": 1,
       "message": "Not sure about this name \u0027fetch_depth_per_request\u0027? or \u0027per_request_depth\u0027, not critical though if others think it\u0027s fine.",
+      "range": {
+        "startLine": 997,
+        "startChar": 15,
+        "endLine": 997,
+        "endChar": 31
+      },
+      "revId": "67d59dfe778291b218f20ce1e0a539825618bbcb",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3f79a3b5_b5f69ad6",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 997,
+      "author": {
+        "id": 27651
+      },
+      "writtenOn": "2018-08-14T08:37:17Z",
+      "side": 1,
+      "message": "I quite like \u0027folder_depth_per_request\u0027 (folder instead of fetch so that it\u0027s obvious both talk about the same thing). It\u0027s long, but descriptive enough to not require looking into documentation when reading code that uses it, and that\u0027s a good thing.",
+      "parentUuid": "3f79a3b5_1d30e9e7",
       "range": {
         "startLine": 997,
         "startChar": 15,

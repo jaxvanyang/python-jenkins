@@ -22,6 +22,30 @@
       "revId": "ef3b10cb16df59e77f0d91a5a3df50f0d269c879",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3f79a3b5_9576fe6f",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 27651
+      },
+      "writtenOn": "2018-08-14T08:37:17Z",
+      "side": 0,
+      "message": "Oh, I had no idea that these can/are meant to be overridden. I\u0027ll try to do it this way and if it isn\u0027t entirely ugly, keep it. :-)",
+      "parentUuid": "3f79a3b5_1a16aff2",
+      "range": {
+        "startLine": 99,
+        "startChar": 13,
+        "endLine": 99,
+        "endChar": 46
+      },
+      "revId": "ef3b10cb16df59e77f0d91a5a3df50f0d269c879",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
