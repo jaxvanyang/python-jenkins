@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3f79a3b5_89c1a283",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 384,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-08-18T11:46:13Z",
+      "side": 1,
+      "message": "Besides a test I think this code should emit a debug message in case someone doesn\u0027t realise they have left it set.\n\nThinking that there should be a way to provide this via the API for this project add well that overrides the environment value.",
+      "revId": "1b1bd5e652398db74de78a442fe7d6ae46e46ca0",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
