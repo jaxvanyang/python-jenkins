@@ -16,6 +16,24 @@
       "revId": "1b1bd5e652398db74de78a442fe7d6ae46e46ca0",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3f79a3b5_c3718e46",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 384,
+      "author": {
+        "id": 28882
+      },
+      "writtenOn": "2018-08-21T08:29:12Z",
+      "side": 1,
+      "message": "Test added. Do you really want an extra debug log message for every request? As far I can see only the SSL verification disabling does that (with a good reason, as that lowers security)",
+      "parentUuid": "3f79a3b5_89c1a283",
+      "revId": "1b1bd5e652398db74de78a442fe7d6ae46e46ca0",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
