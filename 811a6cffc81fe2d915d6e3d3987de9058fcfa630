@@ -16,6 +16,24 @@
       "revId": "811a6cffc81fe2d915d6e3d3987de9058fcfa630",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3f79a3b5_a4011c09",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 11
+      },
+      "lineNbr": 326,
+      "author": {
+        "id": 28882
+      },
+      "writtenOn": "2018-09-12T11:47:00Z",
+      "side": 1,
+      "message": "Let\u0027s see, tox did pass locally",
+      "parentUuid": "3f79a3b5_442e08ac",
+      "revId": "811a6cffc81fe2d915d6e3d3987de9058fcfa630",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
     }
   ]
 }
