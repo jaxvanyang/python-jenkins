@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3f79a3b5_442e08ac",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 11
+      },
+      "lineNbr": 326,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-09-12T11:44:22Z",
+      "side": 1,
+      "message": "you may get a pep8 violation on the length here, sorry I didn\u0027t check to make sure that both the logging call and the length of the line were correct.",
+      "revId": "811a6cffc81fe2d915d6e3d3987de9058fcfa630",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
