@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3f79a3b5_a4159ce7",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 10
+      },
+      "lineNbr": 330,
+      "author": {
+        "id": 1054
+      },
+      "writtenOn": "2018-09-12T11:17:56Z",
+      "side": 1,
+      "message": "is there a reason not to add the headers directly to the session object?\n\n extra_headers \u003d os.environ.get(\"JENKINS_API_EXTRA_HEADERS\", \"\").split(\"\\n\")\n if extra_headers:\n     logging.warning(\"JENKINS_API_EXTRA_HEADERS adds these HTTP headers: %s\", self.extra_headers\n for token in extra_headers:\n     if \":\" in token:\n         header, value \u003d token.split(\":\", 1)\n         self._session.headers[header] \u003d value.strip()\n\nThen there is no need to set them on individual requests?",
+      "range": {
+        "startLine": 330,
+        "startChar": 8,
+        "endLine": 330,
+        "endChar": 40
+      },
+      "revId": "e1f6af5854a82df5761dee58a1734c8a742a260f",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
