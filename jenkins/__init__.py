@@ -110,6 +110,7 @@ CONFIG_JOB = '%(folder_url)sjob/%(short_name)s/config.xml'
 DELETE_JOB = '%(folder_url)sjob/%(short_name)s/doDelete'
 ENABLE_JOB = '%(folder_url)sjob/%(short_name)s/enable'
 DISABLE_JOB = '%(folder_url)sjob/%(short_name)s/disable'
+CHECK_JENKINSFILE_SYNTAX = 'pipeline-model-converter/validateJenkinsfile'
 SET_JOB_BUILD_NUMBER = '%(folder_url)sjob/%(short_name)s/nextbuildnumber/submit'
 COPY_JOB = '%(from_folder_url)screateItem?name=%(to_short_name)s&mode=copy&from=%(from_short_name)s'
 RENAME_JOB = '%(from_folder_url)sjob/%(from_short_name)s/doRename?newName=%(to_short_name)s'
@@ -1169,6 +1170,53 @@ class Jenkins(object):
         '''
         if not self.job_exists(name):
             raise JenkinsException(exception_message % name)
+
+    def upsert_job(self, name, config_xml):
+        '''Create a new Jenkins job or reconfigures it if it exists
+
+        :param name: Name of Jenkins job, ``str``
+        :param config_xml: config file text, ``str``
+        '''
+
+        if self.job_exists(name):
+            self.reconfig_job(name, config_xml)
+        else:
+            self.create_job(name, config_xml)
+
+    def create_folder(self, folder_name, ignore_failures=False):
+        '''Create a new Jenkins folder
+
+        :param folder_name: Name of Jenkins Folder, ``str``
+        :param ignore_failures: if True, don't raise if it was not possible to create the folder, ``bool``
+        '''
+        folder_url, short_name = self._get_job_folder(folder_name)
+        url = self._build_url(CREATE_JOB, locals())
+        data = {
+            "name": folder_name,
+            "mode": "com.cloudbees.hudson.plugins.folder.Folder"
+        }
+        try:
+            response = self.jenkins_request(requests.Request('POST', url, data=data))
+        except requests.exceptions.HTTPError:
+            if not ignore_failures:
+                raise JenkinsException('Error creating folder [%s]. Probably it already exists.' % (folder_name))
+        self.assert_job_exists(folder_name, 'create_folder[%s] failed')
+
+    def check_jenkinsfile_syntax(self, jenkinsfile):
+        '''Checks if a Pipeline Jenkinsfile has a valid syntax
+        :param jenkinsfile: Jenkinsfile text, ``str``
+        :returns: List of errors in the Jenkinsfile. Empty list if no errors.
+        '''
+        # https://jenkins.io/doc/book/pipeline/development/#linter
+        # JENKINS_CRUMB=`curl "$JENKINS_URL/crumbIssuer/api/xml?xpath=concat(//crumbRequestField,\":\",//crumb)"`
+        # curl -X POST -H $JENKINS_CRUMB -F "jenkinsfile=<Jenkinsfile" $JENKINS_URL/pipeline-model-converter/validate
+        url = self._build_url(CHECK_JENKINSFILE_SYNTAX, locals())
+        the_data = {
+            "jenkinsfile": jenkinsfile
+        }
+        response = self.jenkins_request(requests.Request('POST', url, data=the_data,))
+
+        return response.json().get("data", {}).get("errors", [])
 
     def create_job(self, name, config_xml):
         '''Create a new Jenkins job
