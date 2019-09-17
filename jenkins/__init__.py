@@ -1182,6 +1182,24 @@ class Jenkins(object):
         else:
             self.create_job(name, config_xml)
 
+    def create_folder(self, folder_name, ignore_failures=False):
+        '''Create a new Jenkins folder
+
+        :param folder_name: Name of Jenkins Folder, ``str``
+        :param ignore_failures: if True, don't raise if it was not possible to create the folder, ``bool``
+        '''
+        folder_url, short_name = self._get_job_folder(folder_name)
+        url = self._build_url(CREATE_JOB, locals())
+        data = {
+            "name": folder_name,
+            "mode": "com.cloudbees.hudson.plugins.folder.Folder"
+        }
+        try:
+            response = self.jenkins_request(requests.Request('POST', url, data=data))
+        except requests.exceptions.HTTPError:
+            if not ignore_failures:
+                raise JenkinsException('Error creating folder [%s]. Probably it already exists.' % (folder_name))
+
     def create_job(self, name, config_xml):
         '''Create a new Jenkins job
 
