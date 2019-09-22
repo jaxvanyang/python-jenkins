@@ -1187,7 +1187,6 @@ class Jenkins(object):
         except requests.exceptions.HTTPError:
             if not ignore_failures:
                 raise JenkinsException('Error creating folder [%s]. Probably it already exists.' % (folder_name))
-        self.assert_job_exists(folder_name, 'create_folder[%s] failed')
 
     def create_job(self, name, config_xml):
         '''Create a new Jenkins job
