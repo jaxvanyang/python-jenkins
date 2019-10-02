@@ -1,0 +1,9 @@
+Code-Review+2: Thanh Ha (zxiiro) <zxiiro@gmail.com>
+Workflow+1: James Page <james.page@canonical.com>
+Code-Review+2: James Page <james.page@canonical.com>
+Verified+2: Zuul
+Submitted-by: Zuul
+Submitted-at: Wed, 02 Oct 2019 14:06:25 +0000
+Reviewed-on: https://review.opendev.org/685617
+Project: jjb/python-jenkins
+Branch: refs/heads/master
