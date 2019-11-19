@@ -1621,7 +1621,7 @@ class Jenkins(object):
             raise JenkinsException('job[%s] number[%d] does not exist'
                                    % (name, number))
 
-    def _get_job_folder(self, name):
+    def _get_job_folder(self, name, path='job/'):
         '''Return the name and folder (see cloudbees plugin).
 
         This is a method to support cloudbees folder plugin.
@@ -1631,10 +1631,9 @@ class Jenkins(object):
         :param name: Job name, ``str``
         :returns: Tuple [ 'folder path for Request', 'Name of job without folder path' ]
         '''
-
         a_path = name.split('/')
         short_name = a_path[-1]
-        folder_url = (('job/' + '/job/'.join(a_path[:-1]) + '/')
+        folder_url = ((path + '/'+ path.join(a_path[:-1]) + '/')
                       if len(a_path) > 1 else '')
 
         return folder_url, short_name
@@ -1653,8 +1652,8 @@ class Jenkins(object):
             retrieve jobs, ``str``.
         :returns: list of jobs, ``[{str: str, str: str, str: str, str: str}]``
         '''
-
-        folder_url, short_name = self._get_job_folder(name)
+        path = 'view/'
+        folder_url, short_name = self._get_job_folder(name, path)
         try:
             response = self.jenkins_open(requests.Request(
                 'GET', self._build_url(VIEW_JOBS, locals())
@@ -1684,7 +1683,8 @@ class Jenkins(object):
         :param name: View name, ``str``
         :returns: Name of view or None
         '''
-        folder_url, short_name = self._get_job_folder(name)
+        path = 'view/'
+        folder_url, short_name = self._get_job_folder(name, path)
         try:
             response = self.jenkins_open(requests.Request(
                 'GET', self._build_url(VIEW_NAME, locals())))
@@ -1733,7 +1733,8 @@ class Jenkins(object):
 
         :param name: Name of Jenkins view, ``str``
         '''
-        folder_url, short_name = self._get_job_folder(name)
+        path = 'view/'
+        folder_url, short_name = self._get_job_folder(name, path)
         self.jenkins_open(requests.Request(
             'POST', self._build_url(DELETE_VIEW, locals())
         ))
@@ -1746,7 +1747,8 @@ class Jenkins(object):
         :param name: Name of Jenkins view, ``str``
         :param config_xml: config file text, ``str``
         '''
-        folder_url, short_name = self._get_job_folder(name)
+        path='view/'
+        folder_url, short_name = self._get_job_folder(name, path)
         if self.view_exists(name):
             raise JenkinsException('view[%s] already exists' % (name))
 
@@ -1779,7 +1781,8 @@ class Jenkins(object):
         :param name: Name of Jenkins view, ``str``
         :returns: view configuration (XML format)
         '''
-        folder_url, short_name = self._get_job_folder(name)
+        path = 'view/'
+        folder_url, short_name = self._get_job_folder(name, path)
         request = requests.Request('GET', self._build_url(CONFIG_VIEW, locals()))
         return self.jenkins_open(request)
 
@@ -2176,3 +2179,4 @@ class Jenkins(object):
             time.sleep(1)
 
         return False
+
