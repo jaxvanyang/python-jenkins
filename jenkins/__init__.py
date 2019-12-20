@@ -1461,7 +1461,7 @@ class Jenkins(object):
                     raise
             for executor in info['executors']:
                 executable = executor['currentExecutable']
-                if executable and 'PlaceholderTask' not in executable.get('_class', ''):
+                if executable and 'number' in executable:
                     executor_number = executor['number']
                     build_number = executable['number']
                     url = executable['url']
