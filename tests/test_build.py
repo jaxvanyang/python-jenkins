@@ -432,7 +432,7 @@ class JenkinsListRunningBuildsTest(JenkinsTestBase):
 
     @patch.object(jenkins.Jenkins, 'get_node_info')
     @patch.object(jenkins.Jenkins, 'get_nodes')
-    def test_placeholder_task_in_queue(self, nodes_mock, node_info_mock):
+    def test_unnumbered_task_in_queue(self, nodes_mock, node_info_mock):
         nodes_to_return = [{
             'name': "foo-slave", 'offline': False
         }]
@@ -448,13 +448,7 @@ class JenkinsListRunningBuildsTest(JenkinsTestBase):
                     "progress": -1
                 },
                 {
-                    'currentExecutable': {
-                        '_class': (
-                            'org.jenkinsci.plugins.workflow.support.steps.'
-                            'ExecutorStepExecution$PlaceholderTask$'
-                            'PlaceholderExecutable'
-                        )
-                    },
+                    'currentExecutable': {},
                     'currentWorkUnit': {},
                     'idle': False,
                     'likelyStuck': False,
