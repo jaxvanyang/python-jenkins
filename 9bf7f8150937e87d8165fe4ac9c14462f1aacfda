@@ -1,0 +1,8 @@
+Code-Review+2: Thanh Ha (zxiiro) <zxiiro@gmail.com>
+Workflow+1: Thanh Ha (zxiiro) <zxiiro@gmail.com>
+Verified+2: Zuul
+Submitted-by: Zuul
+Submitted-at: Sun, 22 Dec 2019 14:21:27 +0000
+Reviewed-on: https://review.opendev.org/675239
+Project: jjb/python-jenkins
+Branch: refs/heads/master
