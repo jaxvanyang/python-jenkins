@@ -298,7 +298,8 @@ class Jenkins(object):
     _timeout_warning_issued = False
 
     def __init__(self, url, username=None, password=None,
-                 timeout=socket._GLOBAL_DEFAULT_TIMEOUT):
+                 timeout=socket._GLOBAL_DEFAULT_TIMEOUT,
+                 validate_certs=True):
         '''Create handle to Jenkins instance.
 
         All methods will raise :class:`JenkinsException` on failure.
@@ -307,6 +308,7 @@ class Jenkins(object):
         :param username: Server username, ``str``
         :param password: Server password, ``str``
         :param timeout: Server connection timeout in secs (default: not set), ``int``
+        :param validate_certs: Flag to disable Server SSL verification (default: True), ``bool``
         '''
         if url[-1] == '/':
             self.server = url
@@ -340,7 +342,7 @@ class Jenkins(object):
                 header, value = token.split(":", 1)
                 self._session.headers[header] = value.strip()
 
-        if os.getenv('PYTHONHTTPSVERIFY', '1') == '0':
+        if os.getenv('PYTHONHTTPSVERIFY', '1') == '0' or validate_certs is False:
             logging.debug('PYTHONHTTPSVERIFY=0 detected so we will '
                           'disable requests library SSL verification to keep '
                           'compatibility with older versions.')
