@@ -91,6 +91,7 @@ LAUNCHER_COMMAND = 'hudson.slaves.CommandLauncher'
 LAUNCHER_JNLP = 'hudson.slaves.JNLPLauncher'
 LAUNCHER_WINDOWS_SERVICE = 'hudson.os.windows.ManagedWindowsServiceLauncher'
 DEFAULT_HEADERS = {'Content-Type': 'text/xml; charset=utf-8'}
+RUNSCRIPT_MAGIC_STR = ')]}.'
 
 # REST Endpoints
 INFO = 'api/json'
@@ -1345,8 +1346,7 @@ class Jenkins(object):
             Plugin:mailer, Plugin:jquery, Plugin:antisamy-markup-formatter,
             Plugin:maven-plugin, Plugin:pam-auth]'
         '''
-        magic_str = ')]}.'
-        print_magic_str = 'print("{}")'.format(magic_str)
+        print_magic_str = 'print("{}")'.format(RUNSCRIPT_MAGIC_STR)
         data = {'script': "{0}\n{1}".format(script, print_magic_str).encode('utf-8')}
         if node:
             url = self._build_url(NODE_SCRIPT_TEXT, locals())
@@ -1356,7 +1356,7 @@ class Jenkins(object):
         result = self.jenkins_open(requests.Request(
             'POST', url, data=data))
 
-        if not result.endswith(magic_str):
+        if not result.endswith(RUNSCRIPT_MAGIC_STR):
             raise JenkinsException(result)
 
         return result[:result.rfind('\n')]
