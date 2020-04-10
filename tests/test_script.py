@@ -67,8 +67,8 @@ class JenkinsScriptTest(JenkinsTestBase):
                           '.getNeededDependencies().each{it.deploy()};Jenkins'
                           '.instance.updateCenter.getPlugin(\"jabber\").deploy();'))
         self.assertEqual(run_script_mock.call_args_list[1][0][0],
-                         ('Jenkins.instance.updateCenter'
-                          '.isRestartRequiredForCompletion()'))
+                         ('println(Jenkins.instance.updateCenter'
+                          '.isRestartRequiredForCompletion())'))
 
     @patch.object(jenkins.Jenkins, 'jenkins_open')
     @patch.object(jenkins.Jenkins, 'run_script')
@@ -82,17 +82,17 @@ class JenkinsScriptTest(JenkinsTestBase):
                          ('Jenkins.instance.updateCenter'
                           '.getPlugin(\"jabber\").deploy();'))
         self.assertEqual(run_script_mock.call_args_list[1][0][0],
-                         ('Jenkins.instance.updateCenter'
-                          '.isRestartRequiredForCompletion()'))
+                         ('println(Jenkins.instance.updateCenter'
+                          '.isRestartRequiredForCompletion())'))
 
-    @patch.object(jenkins.Jenkins, 'jenkins_open', return_value='\n{}'.format(MAGIC_STR))
+    @patch.object(jenkins.Jenkins, 'jenkins_open', return_value='false\n{}'.format(MAGIC_STR))
     def test_install_plugin_no_restart(self, jenkins_mock):
         '''Verify install plugin does not need a restart
         '''
         j = jenkins.Jenkins(self.make_url(''), 'test', 'test')
         self.assertFalse(j.install_plugin("jabber"))
 
-    @patch.object(jenkins.Jenkins, 'jenkins_open', return_value='\n{}'.format(MAGIC_STR))
+    @patch.object(jenkins.Jenkins, 'jenkins_open', return_value='true\n{}'.format(MAGIC_STR))
     def test_install_plugin_restart(self, jenkins_mock):
         '''Verify install plugin needs a restart
         '''
