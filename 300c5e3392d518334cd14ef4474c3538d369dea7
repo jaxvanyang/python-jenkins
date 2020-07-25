@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9f560f44_d96806bc",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 2961
+      },
+      "writtenOn": "2020-07-25T21:55:13Z",
+      "side": 1,
+      "message": "Couldn\u0027t we he have something that allows a custom trusted root certificate? This is extremely painful with the requests library (we currently patch the _session.verify in...)",
+      "revId": "300c5e3392d518334cd14ef4474c3538d369dea7",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
