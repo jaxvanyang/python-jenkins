@@ -46,15 +46,15 @@ Bug report:
 
 Repository:
 
-* https://git.openstack.org/cgit/openstack/python-jenkins
+* https://opendev.org/jjb/python-jenkins
 
 Cloning:
 
-* git clone https://git.openstack.org/openstack/python-jenkins
+* git clone https://opendev.org/jjb/python-jenkins
 
 Patches are submitted via Gerrit at:
 
-* https://review.openstack.org/
+* https://review.opendev.org/#/q/project:jjb/python-jenkins
 
 Please do not submit GitHub pull requests, they will be automatically closed.
 
