@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9f560f44_b22604b7",
+        "filename": "README.rst",
+        "patchSetId": 2
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2020-07-27T10:20:05Z",
+      "side": 1,
+      "message": "The manual got moved under opendev.org as well and does support HTTPS:\n\n https://docs.opendev.org/opendev/infra-manual/latest/developers.html",
+      "range": {
+        "startLine": 66,
+        "startChar": 2,
+        "endLine": 66,
+        "endChar": 56
+      },
+      "revId": "b0f9e24f808ea8ca61c135d64b0d21891d93c0a2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
