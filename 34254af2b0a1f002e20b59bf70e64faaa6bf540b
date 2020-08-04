@@ -1,0 +1,9 @@
+Code-Review+2: Thanh Ha (zxiiro) <zxiiro@gmail.com>
+Code-Review+2: Antoine Musso <hashar@free.fr>
+Workflow+1: Antoine Musso <hashar@free.fr>
+Verified+2: Zuul
+Submitted-by: Zuul
+Submitted-at: Tue, 04 Aug 2020 07:10:21 +0000
+Reviewed-on: https://review.opendev.org/743072
+Project: jjb/python-jenkins
+Branch: refs/heads/master
