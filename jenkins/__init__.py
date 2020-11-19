@@ -117,14 +117,14 @@ RENAME_JOB = '%(from_folder_url)sjob/%(from_short_name)s/doRename?newName=%(to_s
 BUILD_JOB = '%(folder_url)sjob/%(short_name)s/build'
 STOP_BUILD = '%(folder_url)sjob/%(short_name)s/%(number)s/stop'
 BUILD_WITH_PARAMS_JOB = '%(folder_url)sjob/%(short_name)s/buildWithParameters'
-BUILD_INFO = '%(folder_url)sjob/%(short_name)s/%(number)d/api/json?depth=%(depth)s'
-BUILD_CONSOLE_OUTPUT = '%(folder_url)sjob/%(short_name)s/%(number)d/consoleText'
-BUILD_ENV_VARS = '%(folder_url)sjob/%(short_name)s/%(number)d/injectedEnvVars/api/json' + \
+BUILD_INFO = '%(folder_url)sjob/%(short_name)s/%(number)s/api/json?depth=%(depth)s'
+BUILD_CONSOLE_OUTPUT = '%(folder_url)sjob/%(short_name)s/%(number)s/consoleText'
+BUILD_ENV_VARS = '%(folder_url)sjob/%(short_name)s/%(number)s/injectedEnvVars/api/json' + \
     '?depth=%(depth)s'
-BUILD_TEST_REPORT = '%(folder_url)sjob/%(short_name)s/%(number)d/testReport/api/json' + \
+BUILD_TEST_REPORT = '%(folder_url)sjob/%(short_name)s/%(number)s/testReport/api/json' + \
     '?depth=%(depth)s'
-BUILD_ARTIFACT = '%(folder_url)sjob/%(short_name)s/%(number)d/artifact/%(artifact)s'
-BUILD_STAGES = '%(folder_url)sjob/%(short_name)s/%(number)d/wfapi/describe/'
+BUILD_ARTIFACT = '%(folder_url)sjob/%(short_name)s/%(number)s/artifact/%(artifact)s'
+BUILD_STAGES = '%(folder_url)sjob/%(short_name)s/%(number)s/wfapi/describe/'
 DELETE_BUILD = '%(folder_url)sjob/%(short_name)s/%(number)s/doDelete'
 WIPEOUT_JOB_WORKSPACE = '%(folder_url)sjob/%(short_name)s/doWipeOutWorkspace'
 NODE_LIST = 'computer/api/json?depth=%(depth)s'
@@ -633,7 +633,7 @@ class Jenkins(object):
         '''Get build information dictionary.
 
         :param name: Job name, ``str``
-        :param number: Build number, ``int``
+        :param number: Build number, ``str``
         :param depth: JSON depth, ``int``
         :returns: dictionary of build information, ``dict``
 
@@ -654,22 +654,20 @@ class Jenkins(object):
             if response:
                 return json.loads(response)
             else:
-                raise JenkinsException('job[%s] number[%d] does not exist'
+                raise JenkinsException('job[%s] number[%s] does not exist'
                                        % (name, number))
         except (req_exc.HTTPError, NotFoundException):
-            raise JenkinsException('job[%s] number[%d] does not exist'
+            raise JenkinsException('job[%s] number[%s] does not exist'
                                    % (name, number))
         except ValueError:
-            raise JenkinsException(
-                'Could not parse JSON info for job[%s] number[%d]'
-                % (name, number)
-            )
+            raise JenkinsException('Could not parse JSON info for job[%s] number[%s]'
+                                   % (name, number))
 
     def get_build_env_vars(self, name, number, depth=0):
         '''Get build environment variables.
 
         :param name: Job name, ``str``
-        :param number: Build number, ``int``
+        :param number: Build number, ``str``
         :param depth: JSON depth, ``int``
         :returns: dictionary of build env vars, ``dict`` or None for workflow jobs,
             or if InjectEnvVars plugin not installed
@@ -681,12 +679,12 @@ class Jenkins(object):
             if response:
                 return json.loads(response)
             else:
-                raise JenkinsException('job[%s] number[%d] does not exist' % (name, number))
+                raise JenkinsException('job[%s] number[%s] does not exist' % (name, number))
         except req_exc.HTTPError:
-            raise JenkinsException('job[%s] number[%d] does not exist' % (name, number))
+            raise JenkinsException('job[%s] number[%s] does not exist' % (name, number))
         except ValueError:
             raise JenkinsException(
-                'Could not parse JSON info for job[%s] number[%d]' % (name, number))
+                'Could not parse JSON info for job[%s] number[%s]' % (name, number))
         except NotFoundException:
             # This can happen on workflow jobs, or if InjectEnvVars plugin not installed
             return None
@@ -695,7 +693,7 @@ class Jenkins(object):
         '''Get test results report.
 
         :param name: Job name, ``str``
-        :param number: Build number, ``int``
+        :param number: Build number, ``str``
         :returns: dictionary of test report results, ``dict`` or None if there is no Test Report
         '''
         folder_url, short_name = self._get_job_folder(name)
@@ -705,12 +703,12 @@ class Jenkins(object):
             if response:
                 return json.loads(response)
             else:
-                raise JenkinsException('job[%s] number[%d] does not exist' % (name, number))
+                raise JenkinsException('job[%s] number[%s] does not exist' % (name, number))
         except req_exc.HTTPError:
-            raise JenkinsException('job[%s] number[%d] does not exist' % (name, number))
+            raise JenkinsException('job[%s] number[%s] does not exist' % (name, number))
         except ValueError:
             raise JenkinsException(
-                'Could not parse JSON info for job[%s] number[%d]' % (name, number))
+                'Could not parse JSON info for job[%s] number[%s]' % (name, number))
         except NotFoundException:
             # This can happen if the test report wasn't generated for any reason
             return None
@@ -719,7 +717,7 @@ class Jenkins(object):
         """Get artifacts from job
 
         :param name: Job name, ``str``
-        :param number: Build number, ``int``
+        :param number: Build number, ``str``
         :param artifact: Artifact relative path, ``str``
         :returns: artifact to download, ``dict``
         """
@@ -732,12 +730,12 @@ class Jenkins(object):
             if response:
                 return json.loads(response)
             else:
-                raise JenkinsException('job[%s] number[%d] does not exist' % (name, number))
+                raise JenkinsException('job[%s] number[%s] does not exist' % (name, number))
         except requests.exceptions.HTTPError:
-            raise JenkinsException('job[%s] number[%d] does not exist' % (name, number))
+            raise JenkinsException('job[%s] number[%s] does not exist' % (name, number))
         except ValueError:
             raise JenkinsException(
-                'Could not parse JSON info for job[%s] number[%d]' % (name, number))
+                'Could not parse JSON info for job[%s] number[%s]' % (name, number))
         except NotFoundException:
             # This can happen if the artifact is not found
             return None
@@ -746,7 +744,7 @@ class Jenkins(object):
         """Get stages info from job
 
         :param name: Job name, ``str``
-        :param number: Build number, ``int``
+        :param number: Build number, ``str``
         :returns: dictionary of stages in the job, ``dict``
         """
         folder_url, short_name = self._get_job_folder(name)
@@ -758,12 +756,12 @@ class Jenkins(object):
             if response:
                 return json.loads(response)
             else:
-                raise JenkinsException('job[%s] number[%d] does not exist' % (name, number))
+                raise JenkinsException('job[%s] number[%s] does not exist' % (name, number))
         except requests.exceptions.HTTPError:
-            raise JenkinsException('job[%s] number[%d] does not exist' % (name, number))
+            raise JenkinsException('job[%s] number[%s] does not exist' % (name, number))
         except ValueError:
             raise JenkinsException(
-                'Could not parse JSON info for job[%s] number[%d]' % (name, number))
+                'Could not parse JSON info for job[%s] number[%s]' % (name, number))
         except NotFoundException:
             # This can happen if this isn't a stages/pipeline job
             return None
@@ -1707,7 +1705,7 @@ class Jenkins(object):
         '''Get build console text.
 
         :param name: Job name, ``str``
-        :param number: Build number, ``int``
+        :param number: Build number, ``str``
         :returns: Build console output,  ``str``
         '''
         folder_url, short_name = self._get_job_folder(name)
@@ -1718,10 +1716,10 @@ class Jenkins(object):
             if response:
                 return response
             else:
-                raise JenkinsException('job[%s] number[%d] does not exist'
+                raise JenkinsException('job[%s] number[%s] does not exist'
                                        % (name, number))
         except (req_exc.HTTPError, NotFoundException):
-            raise JenkinsException('job[%s] number[%d] does not exist'
+            raise JenkinsException('job[%s] number[%s] does not exist'
                                    % (name, number))
 
     def _get_job_folder(self, name):
