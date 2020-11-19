@@ -14,7 +14,7 @@ class JenkinsBuildConsoleTest(JenkinsTestBase):
     def test_simple(self, jenkins_mock):
         jenkins_mock.return_value = "build console output..."
 
-        build_info = self.j.get_build_console_output(u'Test Job', number=52)
+        build_info = self.j.get_build_console_output(u'Test Job', number='52')
 
         self.assertEqual(build_info, jenkins_mock.return_value)
         self.assertEqual(
@@ -26,7 +26,7 @@ class JenkinsBuildConsoleTest(JenkinsTestBase):
     def test_in_folder(self, jenkins_mock):
         jenkins_mock.return_value = "build console output..."
 
-        build_info = self.j.get_build_console_output(u'a Folder/Test Job', number=52)
+        build_info = self.j.get_build_console_output(u'a Folder/Test Job', number='52')
 
         self.assertEqual(build_info, jenkins_mock.return_value)
         self.assertEqual(
@@ -35,11 +35,23 @@ class JenkinsBuildConsoleTest(JenkinsTestBase):
         self._check_requests(jenkins_mock.call_args_list)
 
     @patch.object(jenkins.Jenkins, 'jenkins_open')
+    def test_matrix(self, jenkins_mock):
+        jenkins_mock.return_value = "build console output..."
+
+        build_info = self.j.get_build_console_output(u'a Folder/Test Job', number='52/label=matrix')
+
+        self.assertEqual(build_info, jenkins_mock.return_value)
+        self.assertEqual(
+            jenkins_mock.call_args[0][0].url,
+            self.make_url('job/a%20Folder/job/Test%20Job/52/label=matrix/consoleText'))
+        self._check_requests(jenkins_mock.call_args_list)
+
+    @patch.object(jenkins.Jenkins, 'jenkins_open')
     def test_return_none(self, jenkins_mock):
         jenkins_mock.return_value = None
 
         with self.assertRaises(jenkins.JenkinsException) as context_manager:
-            self.j.get_build_console_output(u'TestJob', number=52)
+            self.j.get_build_console_output(u'TestJob', number='52')
         self.assertEqual(
             str(context_manager.exception),
             'job[TestJob] number[52] does not exist')
@@ -50,17 +62,28 @@ class JenkinsBuildConsoleTest(JenkinsTestBase):
         jenkins_mock.return_value = None
 
         with self.assertRaises(jenkins.JenkinsException) as context_manager:
-            self.j.get_build_console_output(u'A Folder/TestJob', number=52)
+            self.j.get_build_console_output(u'A Folder/TestJob', number='52')
         self.assertEqual(
             str(context_manager.exception),
             'job[A Folder/TestJob] number[52] does not exist')
         self._check_requests(jenkins_mock.call_args_list)
 
     @patch.object(jenkins.Jenkins, 'jenkins_open')
+    def test_matrix_return_none(self, jenkins_mock):
+        jenkins_mock.return_value = None
+
+        with self.assertRaises(jenkins.JenkinsException) as context_manager:
+            self.j.get_build_console_output(u'A Folder/TestJob', number='52/label=matrix')
+        self.assertEqual(
+            str(context_manager.exception),
+            'job[A Folder/TestJob] number[52/label=matrix] does not exist')
+        self._check_requests(jenkins_mock.call_args_list)
+
+    @patch.object(jenkins.Jenkins, 'jenkins_open')
     def test_return_invalid_json(self, jenkins_mock):
         jenkins_mock.return_value = 'Invalid JSON'
 
-        console_output = self.j.get_build_console_output(u'TestJob', number=52)
+        console_output = self.j.get_build_console_output(u'TestJob', number='52')
         self.assertEqual(console_output, jenkins_mock.return_value)
 
     @patch('jenkins.requests.Session.send')
@@ -71,7 +94,7 @@ class JenkinsBuildConsoleTest(JenkinsTestBase):
         ])
 
         with self.assertRaises(jenkins.JenkinsException) as context_manager:
-            self.j.get_build_console_output(u'TestJob', number=52)
+            self.j.get_build_console_output(u'TestJob', number='52')
         self.assertEqual(
             session_send_mock.call_args_list[1][0][0].url,
             self.make_url('job/TestJob/52/consoleText'))
@@ -87,7 +110,7 @@ class JenkinsBuildConsoleTest(JenkinsTestBase):
         ])
 
         with self.assertRaises(jenkins.JenkinsException) as context_manager:
-            self.j.get_build_console_output(u'a Folder/TestJob', number=52)
+            self.j.get_build_console_output(u'a Folder/TestJob', number='52')
         self.assertEqual(
             session_send_mock.call_args_list[1][0][0].url,
             self.make_url('job/a%20Folder/job/TestJob/52/consoleText'))
@@ -108,7 +131,7 @@ class JenkinsBuildInfoTest(JenkinsTestBase):
         }
         jenkins_mock.return_value = json.dumps(build_info_to_return)
 
-        build_info = self.j.get_build_info(u'Test Job', number=52)
+        build_info = self.j.get_build_info(u'Test Job', number='52')
 
         self.assertEqual(build_info, build_info_to_return)
         self.assertEqual(
@@ -126,7 +149,7 @@ class JenkinsBuildInfoTest(JenkinsTestBase):
         }
         jenkins_mock.return_value = json.dumps(build_info_to_return)
 
-        build_info = self.j.get_build_info(u'a Folder/Test Job', number=52)
+        build_info = self.j.get_build_info(u'a Folder/Test Job', number='52')
 
         self.assertEqual(build_info, build_info_to_return)
         self.assertEqual(
@@ -135,11 +158,29 @@ class JenkinsBuildInfoTest(JenkinsTestBase):
         self._check_requests(jenkins_mock.call_args_list)
 
     @patch.object(jenkins.Jenkins, 'jenkins_open')
+    def test_matrix(self, jenkins_mock):
+        build_info_to_return = {
+            u'building': False,
+            u'msg': u'test',
+            u'revision': 66,
+            u'user': u'unknown'
+        }
+        jenkins_mock.return_value = json.dumps(build_info_to_return)
+
+        build_info = self.j.get_build_info(u'a Folder/Test Job', number='52/label=matrix')
+
+        self.assertEqual(build_info, build_info_to_return)
+        self.assertEqual(
+            jenkins_mock.call_args[0][0].url,
+            self.make_url('job/a%20Folder/job/Test%20Job/52/label=matrix/api/json?depth=0'))
+        self._check_requests(jenkins_mock.call_args_list)
+
+    @patch.object(jenkins.Jenkins, 'jenkins_open')
     def test_return_none(self, jenkins_mock):
         jenkins_mock.return_value = None
 
         with self.assertRaises(jenkins.JenkinsException) as context_manager:
-            self.j.get_build_info(u'TestJob', number=52)
+            self.j.get_build_info(u'TestJob', number='52')
         self.assertEqual(
             str(context_manager.exception),
             'job[TestJob] number[52] does not exist')
@@ -150,7 +191,7 @@ class JenkinsBuildInfoTest(JenkinsTestBase):
         jenkins_mock.return_value = 'Invalid JSON'
 
         with self.assertRaises(jenkins.JenkinsException) as context_manager:
-            self.j.get_build_info(u'TestJob', number=52)
+            self.j.get_build_info(u'TestJob', number='52')
         self.assertEqual(
             str(context_manager.exception),
             'Could not parse JSON info for job[TestJob] number[52]')
@@ -164,7 +205,7 @@ class JenkinsBuildInfoTest(JenkinsTestBase):
         ])
 
         with self.assertRaises(jenkins.JenkinsException) as context_manager:
-            self.j.get_build_info(u'TestJob', number=52)
+            self.j.get_build_info(u'TestJob', number='52')
         self.assertEqual(
             str(context_manager.exception),
             'job[TestJob] number[52] does not exist')
@@ -177,7 +218,7 @@ class JenkinsBuildInfoTest(JenkinsTestBase):
         ])
 
         with self.assertRaises(jenkins.JenkinsException) as context_manager:
-            self.j.get_build_info(u'a Folder/TestJob', number=52)
+            self.j.get_build_info(u'a Folder/TestJob', number='52')
         self.assertEqual(
             str(context_manager.exception),
             'job[a Folder/TestJob] number[52] does not exist')
@@ -187,7 +228,7 @@ class JenkinsStopBuildTest(JenkinsTestBase):
 
     @patch.object(jenkins.Jenkins, 'jenkins_open')
     def test_simple(self, jenkins_mock):
-        self.j.stop_build(u'Test Job', number=52)
+        self.j.stop_build(u'Test Job', number='52')
 
         self.assertEqual(
             jenkins_mock.call_args[0][0].url,
@@ -197,7 +238,7 @@ class JenkinsStopBuildTest(JenkinsTestBase):
     @patch.object(jenkins.Jenkins, 'jenkins_open')
     def test_in_folder(self, jenkins_mock):
 
-        self.j.stop_build(u'a Folder/Test Job', number=52)
+        self.j.stop_build(u'a Folder/Test Job', number='52')
 
         self.assertEqual(
             jenkins_mock.call_args[0][0].url,
@@ -209,7 +250,7 @@ class JenkinsDeleteBuildTest(JenkinsTestBase):
 
     @patch.object(jenkins.Jenkins, 'jenkins_open')
     def test_simple(self, jenkins_mock):
-        self.j.delete_build(u'Test Job', number=52)
+        self.j.delete_build(u'Test Job', number='52')
 
         self.assertEqual(
             jenkins_mock.call_args[0][0].url,
@@ -219,7 +260,7 @@ class JenkinsDeleteBuildTest(JenkinsTestBase):
     @patch.object(jenkins.Jenkins, 'jenkins_open')
     def test_in_folder(self, jenkins_mock):
 
-        self.j.delete_build(u'a Folder/Test Job', number=52)
+        self.j.delete_build(u'a Folder/Test Job', number='52')
 
         self.assertEqual(
             jenkins_mock.call_args[0][0].url,
@@ -496,7 +537,7 @@ class JenkinsBuildEnvVarUrlTest(JenkinsTestBase):
     @patch.object(jenkins.Jenkins, 'jenkins_open')
     def test_simple(self, jenkins_mock):
         jenkins_mock.return_value = '{}'
-        ret = self.j.get_build_env_vars(u'Test Job', number=52, depth=1)
+        ret = self.j.get_build_env_vars(u'Test Job', number='52', depth=1)
         self.assertEqual(ret, json.loads(jenkins_mock.return_value))
         self.assertEqual(
             jenkins_mock.call_args[0][0].url,
@@ -506,11 +547,22 @@ class JenkinsBuildEnvVarUrlTest(JenkinsTestBase):
     @patch.object(jenkins.Jenkins, 'jenkins_open')
     def test_in_folder(self, jenkins_mock):
         jenkins_mock.return_value = '{}'
-        ret = self.j.get_build_env_vars(u'a Folder/Test Job', number=52, depth=1)
+        ret = self.j.get_build_env_vars(u'a Folder/Test Job', number='52', depth=1)
         self.assertEqual(ret, json.loads(jenkins_mock.return_value))
         self.assertEqual(
             jenkins_mock.call_args[0][0].url,
             self.make_url('job/a%20Folder/job/Test%20Job/52/injectedEnvVars/api/json?depth=1'))
+        self._check_requests(jenkins_mock.call_args_list)
+
+    @patch.object(jenkins.Jenkins, 'jenkins_open')
+    def test_matrix(self, jenkins_mock):
+        jenkins_mock.return_value = '{}'
+        ret = self.j.get_build_env_vars(u'a Folder/Test Job', number='52/index=matrix', depth=1)
+        self.assertEqual(ret, json.loads(jenkins_mock.return_value))
+        self.assertEqual(
+            jenkins_mock.call_args[0][0].url,
+            self.make_url(
+                'job/a%20Folder/job/Test%20Job/52/index=matrix/injectedEnvVars/api/json?depth=1'))
         self._check_requests(jenkins_mock.call_args_list)
 
     @patch('jenkins.requests.Session.send', autospec=True)
@@ -519,7 +571,7 @@ class JenkinsBuildEnvVarUrlTest(JenkinsTestBase):
             build_response_mock(404, reason="Not Found"),  # crumb
             build_response_mock(404, reason="Not Found"),  # request
         ])
-        ret = self.j.get_build_env_vars(u'TestJob', number=52)
+        ret = self.j.get_build_env_vars(u'TestJob', number='52')
         self.assertIsNone(ret)
 
     @patch.object(jenkins.Jenkins, 'jenkins_open')
@@ -527,7 +579,7 @@ class JenkinsBuildEnvVarUrlTest(JenkinsTestBase):
         jenkins_mock.return_value = None
 
         with self.assertRaises(jenkins.JenkinsException) as context_manager:
-            self.j.get_build_env_vars(u'TestJob', number=52)
+            self.j.get_build_env_vars(u'TestJob', number='52')
         self.assertEqual(
             str(context_manager.exception),
             'job[TestJob] number[52] does not exist')
@@ -538,7 +590,7 @@ class JenkinsBuildEnvVarUrlTest(JenkinsTestBase):
         jenkins_mock.return_value = 'Invalid JSON'
 
         with self.assertRaises(jenkins.JenkinsException) as context_manager:
-            self.j.get_build_env_vars(u'TestJob', number=52)
+            self.j.get_build_env_vars(u'TestJob', number='52')
         self.assertEqual(
             str(context_manager.exception),
             'Could not parse JSON info for job[TestJob] number[52]')
@@ -552,7 +604,7 @@ class JenkinsBuildEnvVarUrlTest(JenkinsTestBase):
         ])
 
         with self.assertRaises(jenkins.JenkinsException) as context_manager:
-            self.j.get_build_env_vars(u'TestJob', number=52)
+            self.j.get_build_env_vars(u'TestJob', number='52')
         self.assertEqual(
             str(context_manager.exception),
             'Error in request. Possibly authentication failed [401]: Not Authorised')
@@ -565,7 +617,7 @@ class JenkinsBuildEnvVarUrlTest(JenkinsTestBase):
         ])
 
         with self.assertRaises(jenkins.JenkinsException) as context_manager:
-            self.j.get_build_env_vars(u'a Folder/TestJob', number=52)
+            self.j.get_build_env_vars(u'a Folder/TestJob', number='52')
         self.assertEqual(
             str(context_manager.exception),
             'Error in request. Possibly authentication failed [401]: Not Authorised')
@@ -576,7 +628,7 @@ class JenkinsBuildTestReportUrlTest(JenkinsTestBase):
     @patch.object(jenkins.Jenkins, 'jenkins_open')
     def test_simple(self, jenkins_mock):
         jenkins_mock.return_value = '{}'
-        ret = self.j.get_build_test_report(u'Test Job', number=52, depth=1)
+        ret = self.j.get_build_test_report(u'Test Job', number='52', depth=1)
         self.assertEqual(ret, json.loads(jenkins_mock.return_value))
         self.assertEqual(
             jenkins_mock.call_args[0][0].url,
@@ -586,11 +638,22 @@ class JenkinsBuildTestReportUrlTest(JenkinsTestBase):
     @patch.object(jenkins.Jenkins, 'jenkins_open')
     def test_in_folder(self, jenkins_mock):
         jenkins_mock.return_value = '{}'
-        ret = self.j.get_build_test_report(u'a Folder/Test Job', number=52, depth=1)
+        ret = self.j.get_build_test_report(u'a Folder/Test Job', number='52', depth=1)
         self.assertEqual(ret, json.loads(jenkins_mock.return_value))
         self.assertEqual(
             jenkins_mock.call_args[0][0].url,
             self.make_url('job/a%20Folder/job/Test%20Job/52/testReport/api/json?depth=1'))
+        self._check_requests(jenkins_mock.call_args_list)
+
+    @patch.object(jenkins.Jenkins, 'jenkins_open')
+    def test_matrix(self, jenkins_mock):
+        jenkins_mock.return_value = '{}'
+        ret = self.j.get_build_test_report(u'a Folder/Test Job', number='52/index=matrix', depth=1)
+        self.assertEqual(ret, json.loads(jenkins_mock.return_value))
+        self.assertEqual(
+            jenkins_mock.call_args[0][0].url,
+            self.make_url(
+                'job/a%20Folder/job/Test%20Job/52/index=matrix/testReport/api/json?depth=1'))
         self._check_requests(jenkins_mock.call_args_list)
 
     @patch('jenkins.requests.Session.send', autospec=True)
@@ -599,7 +662,7 @@ class JenkinsBuildTestReportUrlTest(JenkinsTestBase):
             build_response_mock(404, reason="Not Found"),  # crumb
             build_response_mock(404, reason="Not Found"),  # request
         ])
-        ret = self.j.get_build_test_report(u'TestJob', number=52)
+        ret = self.j.get_build_test_report(u'TestJob', number='52')
         self.assertIsNone(ret)
 
     @patch.object(jenkins.Jenkins, 'jenkins_open')
@@ -607,7 +670,7 @@ class JenkinsBuildTestReportUrlTest(JenkinsTestBase):
         jenkins_mock.return_value = None
 
         with self.assertRaises(jenkins.JenkinsException) as context_manager:
-            self.j.get_build_test_report(u'TestJob', number=52)
+            self.j.get_build_test_report(u'TestJob', number='52')
         self.assertEqual(
             str(context_manager.exception),
             'job[TestJob] number[52] does not exist')
@@ -618,7 +681,7 @@ class JenkinsBuildTestReportUrlTest(JenkinsTestBase):
         jenkins_mock.return_value = 'Invalid JSON'
 
         with self.assertRaises(jenkins.JenkinsException) as context_manager:
-            self.j.get_build_test_report(u'TestJob', number=52)
+            self.j.get_build_test_report(u'TestJob', number='52')
         self.assertEqual(
             str(context_manager.exception),
             'Could not parse JSON info for job[TestJob] number[52]')
@@ -632,7 +695,7 @@ class JenkinsBuildTestReportUrlTest(JenkinsTestBase):
         ])
 
         with self.assertRaises(jenkins.JenkinsException) as context_manager:
-            self.j.get_build_test_report(u'TestJob', number=52)
+            self.j.get_build_test_report(u'TestJob', number='52')
         self.assertEqual(
             str(context_manager.exception),
             'Error in request. Possibly authentication failed [401]: Not Authorised')
@@ -645,7 +708,7 @@ class JenkinsBuildTestReportUrlTest(JenkinsTestBase):
         ])
 
         with self.assertRaises(jenkins.JenkinsException) as context_manager:
-            self.j.get_build_test_report(u'a Folder/TestJob', number=52)
+            self.j.get_build_test_report(u'a Folder/TestJob', number='52')
         self.assertEqual(
             str(context_manager.exception),
             'Error in request. Possibly authentication failed [401]: Not Authorised')
@@ -656,7 +719,7 @@ class JenkinsBuildArtifactUrlTest(JenkinsTestBase):
     @patch.object(jenkins.Jenkins, 'jenkins_open')
     def test_simple(self, jenkins_mock):
         jenkins_mock.return_value = '{}'
-        ret = self.j.get_build_artifact(u'Test Job', number=52, artifact="filename")
+        ret = self.j.get_build_artifact(u'Test Job', number='52', artifact="filename")
         self.assertEqual(ret, json.loads(jenkins_mock.return_value))
         self.assertEqual(
             jenkins_mock.call_args[0][0].url,
@@ -666,11 +729,22 @@ class JenkinsBuildArtifactUrlTest(JenkinsTestBase):
     @patch.object(jenkins.Jenkins, 'jenkins_open')
     def test_in_folder(self, jenkins_mock):
         jenkins_mock.return_value = '{}'
-        ret = self.j.get_build_artifact(u'a Folder/Test Job', number=52, artifact="file name")
+        ret = self.j.get_build_artifact(u'a Folder/Test Job', number='52', artifact="file name")
         self.assertEqual(ret, json.loads(jenkins_mock.return_value))
         self.assertEqual(
             jenkins_mock.call_args[0][0].url,
             self.make_url('job/a%20Folder/job/Test%20Job/52/artifact/file%20name'))
+        self._check_requests(jenkins_mock.call_args_list)
+
+    @patch.object(jenkins.Jenkins, 'jenkins_open')
+    def test_matrix(self, jenkins_mock):
+        jenkins_mock.return_value = '{}'
+        ret = self.j.get_build_artifact(u'a Folder/Test Job', number='52/index=matrix',
+                                        artifact="file name")
+        self.assertEqual(ret, json.loads(jenkins_mock.return_value))
+        self.assertEqual(
+            jenkins_mock.call_args[0][0].url,
+            self.make_url('job/a%20Folder/job/Test%20Job/52/index=matrix/artifact/file%20name'))
         self._check_requests(jenkins_mock.call_args_list)
 
     @patch('jenkins.requests.Session.send', autospec=True)
@@ -679,7 +753,7 @@ class JenkinsBuildArtifactUrlTest(JenkinsTestBase):
             build_response_mock(404, reason="Not Found"),  # crumb
             build_response_mock(404, reason="Not Found"),  # request
         ])
-        ret = self.j.get_build_artifact(u'TestJob', number=52, artifact="filename")
+        ret = self.j.get_build_artifact(u'TestJob', number='52', artifact="filename")
         self.assertIsNone(ret)
 
     @patch.object(jenkins.Jenkins, 'jenkins_open')
@@ -687,7 +761,7 @@ class JenkinsBuildArtifactUrlTest(JenkinsTestBase):
         jenkins_mock.return_value = None
 
         with self.assertRaises(jenkins.JenkinsException) as context_manager:
-            self.j.get_build_artifact(u'TestJob', number=52, artifact="filename")
+            self.j.get_build_artifact(u'TestJob', number='52', artifact="filename")
         self.assertEqual(
             str(context_manager.exception),
             'job[TestJob] number[52] does not exist')
@@ -698,7 +772,7 @@ class JenkinsBuildArtifactUrlTest(JenkinsTestBase):
         jenkins_mock.return_value = 'Invalid JSON'
 
         with self.assertRaises(jenkins.JenkinsException) as context_manager:
-            self.j.get_build_artifact(u'TestJob', number=52, artifact="filename")
+            self.j.get_build_artifact(u'TestJob', number='52', artifact="filename")
         self.assertEqual(
             str(context_manager.exception),
             'Could not parse JSON info for job[TestJob] number[52]')
@@ -712,7 +786,7 @@ class JenkinsBuildArtifactUrlTest(JenkinsTestBase):
         ])
 
         with self.assertRaises(jenkins.JenkinsException) as context_manager:
-            self.j.get_build_artifact(u'TestJob', number=52, artifact="filename")
+            self.j.get_build_artifact(u'TestJob', number='52', artifact="filename")
         self.assertEqual(
             str(context_manager.exception),
             'Error in request. Possibly authentication failed [401]: Not Authorised')
@@ -725,7 +799,7 @@ class JenkinsBuildArtifactUrlTest(JenkinsTestBase):
         ])
 
         with self.assertRaises(jenkins.JenkinsException) as context_manager:
-            self.j.get_build_artifact(u'a Folder/TestJob', number=52, artifact="filename")
+            self.j.get_build_artifact(u'a Folder/TestJob', number='52', artifact="filename")
         self.assertEqual(
             str(context_manager.exception),
             'Error in request. Possibly authentication failed [401]: Not Authorised')
@@ -736,7 +810,7 @@ class JenkinsBuildStagesUrlTest(JenkinsTestBase):
     @patch.object(jenkins.Jenkins, 'jenkins_open')
     def test_simple(self, jenkins_mock):
         jenkins_mock.return_value = '{}'
-        ret = self.j.get_build_stages(u'Test Job', number=52)
+        ret = self.j.get_build_stages(u'Test Job', number='52')
         self.assertEqual(ret, json.loads(jenkins_mock.return_value))
         self.assertEqual(
             jenkins_mock.call_args[0][0].url,
@@ -744,9 +818,19 @@ class JenkinsBuildStagesUrlTest(JenkinsTestBase):
         self._check_requests(jenkins_mock.call_args_list)
 
     @patch.object(jenkins.Jenkins, 'jenkins_open')
+    def test_matrix(self, jenkins_mock):
+        jenkins_mock.return_value = '{}'
+        ret = self.j.get_build_stages(u'a Folder/Test Job', number='52/index=matrix')
+        self.assertEqual(ret, json.loads(jenkins_mock.return_value))
+        self.assertEqual(
+            jenkins_mock.call_args[0][0].url,
+            self.make_url('job/a%20Folder/job/Test%20Job/52/index=matrix/wfapi/describe/'))
+        self._check_requests(jenkins_mock.call_args_list)
+
+    @patch.object(jenkins.Jenkins, 'jenkins_open')
     def test_in_folder(self, jenkins_mock):
         jenkins_mock.return_value = '{}'
-        ret = self.j.get_build_stages(u'a Folder/Test Job', number=52)
+        ret = self.j.get_build_stages(u'a Folder/Test Job', number='52')
         self.assertEqual(ret, json.loads(jenkins_mock.return_value))
         self.assertEqual(
             jenkins_mock.call_args[0][0].url,
@@ -759,7 +843,7 @@ class JenkinsBuildStagesUrlTest(JenkinsTestBase):
             build_response_mock(404, reason="Not Found"),  # crumb
             build_response_mock(404, reason="Not Found"),  # request
         ])
-        ret = self.j.get_build_stages(u'TestJob', number=52)
+        ret = self.j.get_build_stages(u'TestJob', number='52')
         self.assertIsNone(ret)
 
     @patch.object(jenkins.Jenkins, 'jenkins_open')
@@ -767,7 +851,7 @@ class JenkinsBuildStagesUrlTest(JenkinsTestBase):
         jenkins_mock.return_value = None
 
         with self.assertRaises(jenkins.JenkinsException) as context_manager:
-            self.j.get_build_stages(u'TestJob', number=52)
+            self.j.get_build_stages(u'TestJob', number='52')
         self.assertEqual(
             str(context_manager.exception),
             'job[TestJob] number[52] does not exist')
@@ -778,7 +862,7 @@ class JenkinsBuildStagesUrlTest(JenkinsTestBase):
         jenkins_mock.return_value = 'Invalid JSON'
 
         with self.assertRaises(jenkins.JenkinsException) as context_manager:
-            self.j.get_build_stages(u'TestJob', number=52)
+            self.j.get_build_stages(u'TestJob', number='52')
         self.assertEqual(
             str(context_manager.exception),
             'Could not parse JSON info for job[TestJob] number[52]')
@@ -792,7 +876,7 @@ class JenkinsBuildStagesUrlTest(JenkinsTestBase):
         ])
 
         with self.assertRaises(jenkins.JenkinsException) as context_manager:
-            self.j.get_build_stages(u'TestJob', number=52)
+            self.j.get_build_stages(u'TestJob', number='52')
         self.assertEqual(
             str(context_manager.exception),
             'Error in request. Possibly authentication failed [401]: Not Authorised')
@@ -805,7 +889,7 @@ class JenkinsBuildStagesUrlTest(JenkinsTestBase):
         ])
 
         with self.assertRaises(jenkins.JenkinsException) as context_manager:
-            self.j.get_build_stages(u'a Folder/TestJob', number=52)
+            self.j.get_build_stages(u'a Folder/TestJob', number='52')
         self.assertEqual(
             str(context_manager.exception),
             'Error in request. Possibly authentication failed [401]: Not Authorised')
