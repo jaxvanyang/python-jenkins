@@ -117,14 +117,14 @@ RENAME_JOB = '%(from_folder_url)sjob/%(from_short_name)s/doRename?newName=%(to_s
 BUILD_JOB = '%(folder_url)sjob/%(short_name)s/build'
 STOP_BUILD = '%(folder_url)sjob/%(short_name)s/%(number)s/stop'
 BUILD_WITH_PARAMS_JOB = '%(folder_url)sjob/%(short_name)s/buildWithParameters'
-BUILD_INFO = '%(folder_url)sjob/%(short_name)s/%(number)d/api/json?depth=%(depth)s'
-BUILD_CONSOLE_OUTPUT = '%(folder_url)sjob/%(short_name)s/%(number)d/consoleText'
-BUILD_ENV_VARS = '%(folder_url)sjob/%(short_name)s/%(number)d/injectedEnvVars/api/json' + \
+BUILD_INFO = '%(folder_url)sjob/%(short_name)s/%(number)s/api/json?depth=%(depth)s'
+BUILD_CONSOLE_OUTPUT = '%(folder_url)sjob/%(short_name)s/%(number)s/consoleText'
+BUILD_ENV_VARS = '%(folder_url)sjob/%(short_name)s/%(number)s/injectedEnvVars/api/json' + \
     '?depth=%(depth)s'
-BUILD_TEST_REPORT = '%(folder_url)sjob/%(short_name)s/%(number)d/testReport/api/json' + \
+BUILD_TEST_REPORT = '%(folder_url)sjob/%(short_name)s/%(number)s/testReport/api/json' + \
     '?depth=%(depth)s'
-BUILD_ARTIFACT = '%(folder_url)sjob/%(short_name)s/%(number)d/artifact/%(artifact)s'
-BUILD_STAGES = '%(folder_url)sjob/%(short_name)s/%(number)d/wfapi/describe/'
+BUILD_ARTIFACT = '%(folder_url)sjob/%(short_name)s/%(number)s/artifact/%(artifact)s'
+BUILD_STAGES = '%(folder_url)sjob/%(short_name)s/%(number)s/wfapi/describe/'
 DELETE_BUILD = '%(folder_url)sjob/%(short_name)s/%(number)s/doDelete'
 WIPEOUT_JOB_WORKSPACE = '%(folder_url)sjob/%(short_name)s/doWipeOutWorkspace'
 NODE_LIST = 'computer/api/json?depth=%(depth)s'
