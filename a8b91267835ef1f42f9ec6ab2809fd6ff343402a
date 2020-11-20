@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fffc6b78_aa4cae76",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 120,
+      "author": {
+        "id": 31965
+      },
+      "writtenOn": "2020-11-20T09:02:11Z",
+      "side": 1,
+      "message": "Could you maybe extend the tests, for example test_build.py, to include some test cases with matrix jobs?\n\nThat could be useful to avoid regression in the future.",
+      "revId": "a8b91267835ef1f42f9ec6ab2809fd6ff343402a",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": false
+    }
+  ]
+}
