@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d382cf7e_90b814f8",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 636,
+      "author": {
+        "id": 31965
+      },
+      "writtenOn": "2020-11-23T08:42:18Z",
+      "side": 1,
+      "message": "It should accept both `int` and `str`, otherwise it breaks the API.",
+      "revId": "1ee5a7ee3038676c15447b1cc2bd2c61448f3cd7",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fffc6b78_20761dda",
+        "filename": "tests/test_build.py",
+        "patchSetId": 3
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 31965
+      },
+      "writtenOn": "2020-11-23T08:42:18Z",
+      "side": 1,
+      "message": "Actually I\u0027d suggest to leave the existing tests as before (and pass numbers), to make sure the API still accepts them as before. And then a new set of tests should be added with the number parameter being a string.",
+      "revId": "1ee5a7ee3038676c15447b1cc2bd2c61448f3cd7",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": true
+    }
+  ]
+}
