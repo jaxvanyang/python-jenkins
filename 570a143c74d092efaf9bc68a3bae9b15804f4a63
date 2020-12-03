@@ -1,0 +1,10 @@
+Code-Review+2: Thanh Ha <zxiiro@gmail.com>
+Code-Review+1: Adam Romanek <romanek.adam@gmail.com>
+Code-Review+1: Paride Legovini <paride.legovini@canonical.com>
+Workflow+1: Thanh Ha <zxiiro@gmail.com>
+Verified+2: Zuul
+Submitted-by: Zuul
+Submitted-at: Thu, 03 Dec 2020 01:09:29 +0000
+Reviewed-on: https://review.opendev.org/c/jjb/python-jenkins/+/763331
+Project: jjb/python-jenkins
+Branch: refs/heads/master
