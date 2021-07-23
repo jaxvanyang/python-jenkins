@@ -2,6 +2,7 @@ import json
 
 import collections
 from mock import patch
+import requests
 
 import jenkins
 from tests.base import JenkinsTestBase
@@ -515,11 +516,17 @@ class JenkinsBuildJobUrlTest(JenkinsTestBase):
             ('s_select', 's_select2')
         ]
         parameters = collections.OrderedDict(params)
+        req = requests.Request(
+            'POST',
+            url=self.j.build_job_url('Test Job', parameters=parameters, token=token),
+            data=parameters).prepare()
         self.assertEqual(
-            self.j.build_job_url('Test Job', parameters=parameters, token=token),
-            self.make_url(
-                'job/Test%20Job/buildWithParameters?m_select=value1'
-                '&s_select=s_select2&token=token123'))
+            req.url,
+            self.make_url('job/Test%20Job/buildWithParameters?token=token123'))
+        self.assertEqual(
+            req.body,
+            'm_select=value1&s_select=s_select2&token=token123'
+        )
 
     def test_params_as_list(self):
         token = 'token123'
@@ -528,11 +535,17 @@ class JenkinsBuildJobUrlTest(JenkinsTestBase):
             ('m_select', 'value3'),
             ('s_select', 's_select2')
         ]
+        req = requests.Request(
+            'POST',
+            url=self.j.build_job_url('Test Job', parameters=params, token=token),
+            data=params).prepare()
         self.assertEqual(
-            self.j.build_job_url('Test Job', parameters=params, token=token),
-            self.make_url(
-                'job/Test%20Job/buildWithParameters?m_select=value1'
-                '&m_select=value3&s_select=s_select2&token=token123'))
+            req.url,
+            self.make_url('job/Test%20Job/buildWithParameters?token=token123'))
+        self.assertEqual(
+            req.body,
+            'm_select=value1&m_select=value3&s_select=s_select2&token=token123'
+        )
 
 
 class JenkinsBuildEnvVarUrlTest(JenkinsTestBase):

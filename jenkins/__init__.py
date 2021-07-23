@@ -1327,6 +1327,9 @@ class Jenkins(object):
         Use ``list of two membered tuples`` to supply parameters with multi
         select options.
 
+        In case of large parameters, only encode (optional) token in url
+        query string to avoid HTTP 414 ERROR: URI Too Long.
+
         :param name: Name of Jenkins job, ``str``
         :param parameters: parameters for job, or None., ``dict`` or
             ``list of two membered tuples``
@@ -1346,7 +1349,7 @@ class Jenkins(object):
                                            'or a list of two membered tuples '
                                            'like [("param_key", "param_value",), ...]')
             return (self._build_url(BUILD_WITH_PARAMS_JOB, locals()) +
-                    '?' + urlencode(parameters))
+                    ('?' + urlencode({'token': token}) if token else ''))
         elif token:
             return (self._build_url(BUILD_JOB, locals()) +
                     '?' + urlencode({'token': token}))
@@ -1368,7 +1371,7 @@ class Jenkins(object):
         :returns: ``int`` queue item
         '''
         response = self.jenkins_request(requests.Request(
-            'POST', self.build_job_url(name, parameters, token)))
+            'POST', self.build_job_url(name, parameters, token), data=parameters))
 
         if 'Location' not in response.headers:
             raise EmptyResponseException(
