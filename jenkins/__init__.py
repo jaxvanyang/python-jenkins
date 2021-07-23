@@ -1318,7 +1318,8 @@ class Jenkins(object):
             headers=DEFAULT_HEADERS
         ))
 
-    def build_job_url(self, name, parameters=None, token=None):
+    def build_job_url(self, name, parameters=None, token=None,
+                      encode_parameters_in_url: bool = True):
         '''Get URL to trigger build job.
 
         Authenticated setups may require configuring a token on the server
@@ -1327,10 +1328,16 @@ class Jenkins(object):
         Use ``list of two membered tuples`` to supply parameters with multi
         select options.
 
+        In case of large parameters, we can set ``encode_parameters_in_url``(which
+        is True by default for forward compatibility) to False to avoid HTTP
+        414 ERROR: URI Too Long.
+
         :param name: Name of Jenkins job, ``str``
         :param parameters: parameters for job, or None., ``dict`` or
             ``list of two membered tuples``
         :param token: (optional) token for building job, ``str``
+        :param encode_parameters_in_url: (optional) default True. if False, we
+            need to put parameters in request body later, ``bool``
         :returns: URL for building job
         '''
         folder_url, short_name = self._get_job_folder(name)
@@ -1346,7 +1353,7 @@ class Jenkins(object):
                                            'or a list of two membered tuples '
                                            'like [("param_key", "param_value",), ...]')
             return (self._build_url(BUILD_WITH_PARAMS_JOB, locals()) +
-                    '?' + urlencode(parameters))
+                    ('?' + urlencode(parameters) if encode_parameters_in_url else ''))
         elif token:
             return (self._build_url(BUILD_JOB, locals()) +
                     '?' + urlencode({'token': token}))
@@ -1368,7 +1375,12 @@ class Jenkins(object):
         :returns: ``int`` queue item
         '''
         response = self.jenkins_request(requests.Request(
-            'POST', self.build_job_url(name, parameters, token)))
+            'POST', self.build_job_url(
+                name,
+                parameters,
+                token,
+                encode_parameters_in_url=False),
+            data=parameters))
 
         if 'Location' not in response.headers:
             raise EmptyResponseException(
