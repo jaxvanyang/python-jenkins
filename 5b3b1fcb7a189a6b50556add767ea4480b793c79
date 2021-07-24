@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "03d49f43_55883438",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 1330,
+      "author": {
+        "id": 31965
+      },
+      "writtenOn": "2021-07-24T02:57:59Z",
+      "side": 1,
+      "message": "Sorry but you\u0027re breaking the API contract here. And more impprtantly how should the consumer of the API know the parameters were not encoded at all?",
+      "revId": "5b3b1fcb7a189a6b50556add767ea4480b793c79",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543",
+      "unresolved": true
+    }
+  ]
+}
