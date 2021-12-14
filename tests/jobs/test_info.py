@@ -110,22 +110,36 @@ class JenkinsGetJobInfoTest(JenkinsJobsTestBase):
 
     @patch.object(jenkins.Jenkins, 'jenkins_open')
     def test_regex(self, jenkins_mock):
+        parent_job = {
+            u'name': u'nested-parent-job',
+            u'jobs': [{u'name': u'nested-child-job'}],
+        }
         jobs = [
             {u'name': u'my-job-1'},
             {u'name': u'my-job-2'},
             {u'name': u'your-job-1'},
             {u'name': u'Your-Job-1'},
             {u'name': u'my-project-1'},
+            parent_job,
         ]
         job_info_to_return = {u'jobs': jobs}
-        jenkins_mock.return_value = json.dumps(job_info_to_return)
+
+        def mock_jenkins_open(req, **kwargs):
+            return json.dumps(parent_job if parent_job['name'] in req.url else job_info_to_return)
+        jenkins_mock.side_effect = mock_jenkins_open
 
         self.assertEqual(len(self.j.get_job_info_regex('her-job')), 0)
         self.assertEqual(len(self.j.get_job_info_regex('my-job-1')), 1)
         self.assertEqual(len(self.j.get_job_info_regex('my-job')), 2)
-        self.assertEqual(len(self.j.get_job_info_regex('job')), 3)
+        self.assertEqual(len(self.j.get_job_info_regex('job')), 4)
+        self.assertEqual(len(self.j.get_job_info_regex('job', folder_depth=1)), 5)
         self.assertEqual(len(self.j.get_job_info_regex('project')), 1)
         self.assertEqual(len(self.j.get_job_info_regex('[Yy]our-[Jj]ob-1')), 2)
+        self.assertEqual(len(self.j.get_job_info_regex('nested-.*-job')), 1)
+        self.assertEqual(len(self.j.get_job_info_regex('nested-.*-job', folder_depth=1)), 2)
+        self.assertEqual(len(self.j.get_job_info_regex('parent')), 1)
+        self.assertEqual(len(self.j.get_job_info_regex('child')), 0)
+        self.assertEqual(len(self.j.get_job_info_regex('child', folder_depth=1)), 1)
         self._check_requests(jenkins_mock.call_args_list)
 
     @patch.object(jenkins.Jenkins, 'jenkins_open')
