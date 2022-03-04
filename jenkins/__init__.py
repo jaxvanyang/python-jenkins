@@ -360,7 +360,7 @@ class Jenkins(object):
             if k in ["name", "msg", "short_name", "from_short_name",
                      "to_short_name", "folder_url", "from_folder_url", "to_folder_url",
                      "artifact"]:
-                params[k] = quote(v.encode('utf8'))
+                params[k] = quote(v.encode('utf8'), safe='')
         return params
 
     def _build_url(self, format_spec, variables=None):
@@ -2154,12 +2154,12 @@ class Jenkins(object):
             reqUrl = CONFIG_CREDENTIAL
         else:
             reqUrl = CONFIG_CREDENTIAL_GLOBAL
-
+    
         return self.jenkins_open(requests.Request(
-            'GET', self._build_url(CONFIG_CREDENTIAL, locals())
+            'GET', self._build_url(reqUrl, locals())
             ))
 
-    def create_credential(self, folder_name="", config_xml,
+    def create_credential(self, config_xml, folder_name="", 
                           domain_name='_'):
         '''Create credentail in domain of folder
 
@@ -2205,7 +2205,7 @@ class Jenkins(object):
                                    'domain[%s] of [%s] failed'
                                    % (name, domain_name, folder_name))
 
-    def reconfig_credential(self, folder_name="", config_xml, domain_name='_'):
+    def reconfig_credential(self,config_xml,  folder_name="", domain_name='_'):
         '''Reconfig credential with new config in domain of folder
 
         :param folder_name: Folder name, ``str``
