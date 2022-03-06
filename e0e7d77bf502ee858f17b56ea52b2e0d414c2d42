@@ -1,0 +1,56 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fb94d23c_7a4da569",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 2075,
+      "author": {
+        "id": 31965
+      },
+      "writtenOn": "2022-03-06T13:47:14Z",
+      "side": 1,
+      "message": "It\u0027s usually preferred to use None as the default for a missing value, rather than an empty string.",
+      "revId": "e0e7d77bf502ee858f17b56ea52b2e0d414c2d42",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ded21518_7948e052",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 2162,
+      "author": {
+        "id": 31965
+      },
+      "writtenOn": "2022-03-06T13:47:14Z",
+      "side": 1,
+      "message": "\u003e linters: E999 SyntaxError: non-default argument follows default argument\n\nPlease fix.",
+      "parentUuid": "8beab65f_b2bc93e7",
+      "revId": "e0e7d77bf502ee858f17b56ea52b2e0d414c2d42",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5485cc34_59ae3485",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 2208,
+      "author": {
+        "id": 31965
+      },
+      "writtenOn": "2022-03-06T13:47:14Z",
+      "side": 1,
+      "message": "Same here.",
+      "revId": "e0e7d77bf502ee858f17b56ea52b2e0d414c2d42",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
