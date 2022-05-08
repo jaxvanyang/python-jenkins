@@ -629,12 +629,13 @@ class Jenkins(object):
                 'Could not parse JSON info for queue number[%d]' % number
             )
 
-    def get_build_info(self, name, number, depth=0):
+    def get_build_info(self, name, number, depth=0, matrix_axis=None):
         '''Get build information dictionary.
 
         :param name: Job name, ``str``
         :param number: Build number, ``str`` (also accepts ``int``)
         :param depth: JSON depth, ``int``
+        :param matrix_axis: (optional) Name of axis for matrix jobs, ``str``
         :returns: dictionary of build information, ``dict``
 
         Example::
@@ -647,6 +648,11 @@ class Jenkins(object):
             {u'building': False, u'changeSet': {u'items': [{u'date': u'2011-12-19T18:01:52.540557Z', u'msg': u'test', u'revision': 66, u'user': u'unknown', u'paths': [{u'editType': u'edit', u'file': u'/branches/demo/index.html'}]}], u'kind': u'svn', u'revisions': [{u'module': u'http://eaas-svn01.i3.level3.com/eaas', u'revision': 66}]}, u'builtOn': u'', u'description': None, u'artifacts': [{u'relativePath': u'dist/eaas-87-2011-12-19_18-01-57.war', u'displayPath': u'eaas-87-2011-12-19_18-01-57.war', u'fileName': u'eaas-87-2011-12-19_18-01-57.war'}, {u'relativePath': u'dist/eaas-87-2011-12-19_18-01-57.war.zip', u'displayPath': u'eaas-87-2011-12-19_18-01-57.war.zip', u'fileName': u'eaas-87-2011-12-19_18-01-57.war.zip'}], u'timestamp': 1324317717000, u'number': 87, u'actions': [{u'parameters': [{u'name': u'SERVICE_NAME', u'value': u'eaas'}, {u'name': u'PROJECT_NAME', u'value': u'demo'}]}, {u'causes': [{u'userName': u'anonymous', u'shortDescription': u'Started by user anonymous'}]}, {}, {}, {}], u'id': u'2011-12-19_18-01-57', u'keepLog': False, u'url': u'http://eaas-jenkins01.i3.level3.com:9080/job/build_war/87/', u'culprits': [{u'absoluteUrl': u'http://eaas-jenkins01.i3.level3.com:9080/user/unknown', u'fullName': u'unknown'}], u'result': u'SUCCESS', u'duration': 8826, u'fullDisplayName': u'build_war #87'}
         '''  # noqa: E501
         folder_url, short_name = self._get_job_folder(name)
+        job_name = name
+        if matrix_axis is not None:
+            short_name += '/' + matrix_axis
+            job_name += '/' + matrix_axis
+
         try:
             response = self.jenkins_open(requests.Request(
                 'GET', self._build_url(BUILD_INFO, locals())
@@ -655,13 +661,13 @@ class Jenkins(object):
                 return json.loads(response)
             else:
                 raise JenkinsException('job[%s] number[%s] does not exist'
-                                       % (name, number))
+                                       % (job_name, number))
         except (req_exc.HTTPError, NotFoundException):
             raise JenkinsException('job[%s] number[%s] does not exist'
-                                   % (name, number))
+                                   % (job_name, number))
         except ValueError:
             raise JenkinsException('Could not parse JSON info for job[%s] number[%s]'
-                                   % (name, number))
+                                   % (job_name, number))
 
     def get_build_env_vars(self, name, number, depth=0):
         '''Get build environment variables.
@@ -1704,14 +1710,20 @@ class Jenkins(object):
             headers=DEFAULT_HEADERS
         ))
 
-    def get_build_console_output(self, name, number):
+    def get_build_console_output(self, name, number, matrix_axis=None):
         '''Get build console text.
 
         :param name: Job name, ``str``
         :param number: Build number, ``str`` (also accepts ``int``)
+        :param matrix_axis: (optional) Name of axis for matrix jobs, ``str``
         :returns: Build console output,  ``str``
         '''
         folder_url, short_name = self._get_job_folder(name)
+        job_name = name
+        if matrix_axis is not None:
+            short_name += '/' + matrix_axis
+            job_name += '/' + matrix_axis
+
         try:
             response = self.jenkins_open(requests.Request(
                 'GET', self._build_url(BUILD_CONSOLE_OUTPUT, locals())
@@ -1720,10 +1732,10 @@ class Jenkins(object):
                 return response
             else:
                 raise JenkinsException('job[%s] number[%s] does not exist'
-                                       % (name, number))
+                                       % (job_name, number))
         except (req_exc.HTTPError, NotFoundException):
             raise JenkinsException('job[%s] number[%s] does not exist'
-                                   % (name, number))
+                                   % (job_name, number))
 
     def _get_job_folder(self, name):
         '''Return the name and folder (see cloudbees plugin).
