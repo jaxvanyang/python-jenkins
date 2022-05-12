@@ -542,13 +542,13 @@ class Jenkins(object):
         # when accessing .text property
         return response
 
-    def _request(self, req):
+    def _request(self, req, stream=None):
 
         r = self._session.prepare_request(req)
         # requests.Session.send() does not honor env settings by design
         # see https://github.com/requests/requests/issues/2807
         _settings = self._session.merge_environment_settings(
-            r.url, {}, None, self._session.verify, None)
+            r.url, {}, stream, self._session.verify, None)
         _settings['timeout'] = self.timeout
         return self._session.send(r, **_settings)
 
@@ -559,7 +559,14 @@ class Jenkins(object):
         '''
         return self.jenkins_request(req, add_crumb, resolve_auth).text
 
-    def jenkins_request(self, req, add_crumb=True, resolve_auth=True):
+    def jenkins_open_stream(self, req, add_crumb=True, resolve_auth=True):
+        '''Return the HTTP response body from a ``requests.Request``.
+
+        :returns: ``stream``
+        '''
+        return self.jenkins_request(req, add_crumb, resolve_auth, True)
+
+    def jenkins_request(self, req, add_crumb=True, resolve_auth=True, stream=None):
         '''Utility routine for opening an HTTP request to a Jenkins server.
 
         :param req: A ``requests.Request`` to submit.
@@ -567,6 +574,7 @@ class Jenkins(object):
                           before submitting. Defaults to ``True``.
         :param resolve_auth: If True, maybe add authentication. Defaults to
                              ``True``.
+        :param stream: If True, return a stream
         :returns: A ``requests.Response`` object.
         '''
         try:
@@ -576,7 +584,7 @@ class Jenkins(object):
                 self.maybe_add_crumb(req)
 
             return self._response_handler(
-                self._request(req))
+                self._request(req, stream))
 
         except req_exc.HTTPError as e:
             # Jenkins's funky authentication means its nigh impossible to
@@ -719,23 +727,20 @@ class Jenkins(object):
         :param name: Job name, ``str``
         :param number: Build number, ``str`` (also accepts ``int``)
         :param artifact: Artifact relative path, ``str``
-        :returns: artifact to download, ``dict``
+        :returns: artifact to download, ``str`` or ``bytes``
         """
         folder_url, short_name = self._get_job_folder(name)
 
         try:
-            response = self.jenkins_open(requests.Request(
-                    'GET', self._build_url(BUILD_ARTIFACT, locals())))
-
-            if response:
-                return json.loads(response)
-            else:
-                raise JenkinsException('job[%s] number[%s] does not exist' % (name, number))
+            with self.jenkins_open_stream(requests.Request(
+                    'GET', self._build_url(BUILD_ARTIFACT, locals()))) as response:
+                if response.encoding is None:
+                    return bytes(response.raw.read())
+                else:
+                    return str(response.text)
+            raise JenkinsException('job[%s] number[%s] does not exist' % (name, number))
         except requests.exceptions.HTTPError:
             raise JenkinsException('job[%s] number[%s] does not exist' % (name, number))
-        except ValueError:
-            raise JenkinsException(
-                'Could not parse JSON info for job[%s] number[%s]' % (name, number))
         except NotFoundException:
             # This can happen if the artifact is not found
             return None
