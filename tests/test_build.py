@@ -1,7 +1,7 @@
 import json
 
 import collections
-from mock import patch
+from mock import patch, Mock
 
 import jenkins
 from tests.base import JenkinsTestBase
@@ -723,32 +723,57 @@ class JenkinsBuildTestReportUrlTest(JenkinsTestBase):
 
 class JenkinsBuildArtifactUrlTest(JenkinsTestBase):
 
-    @patch.object(jenkins.Jenkins, 'jenkins_open')
+    def streamMock(self, encoding=None, text=None, binary=None):
+        streamMock = Mock()
+        streamMock.__exit__ = Mock()
+        streamMock.__enter__ = Mock()
+        if encoding is None and text is None and binary is None:
+            streamMock.__enter__.return_value = None
+            return streamMock
+        streamMock.__enter__.return_value = Mock()
+        streamMock.__enter__.return_value.encoding = encoding
+        streamMock.__enter__.return_value.text = text
+        streamMock.__enter__.return_value.raw = Mock()
+        streamMock.__enter__.return_value.raw.read = Mock()
+        streamMock.__enter__.return_value.raw.read.return_value = binary
+        return streamMock
+
+    @patch.object(jenkins.Jenkins, 'jenkins_open_stream')
     def test_simple(self, jenkins_mock):
-        jenkins_mock.return_value = '{}'
+        jenkins_mock.return_value = self.streamMock('utf-8', 'ascii')
         ret = self.j.get_build_artifact(u'Test Job', number='52', artifact="filename")
-        self.assertEqual(ret, json.loads(jenkins_mock.return_value))
+        self.assertEqual(ret, 'ascii')
         self.assertEqual(
             jenkins_mock.call_args[0][0].url,
             self.make_url('job/Test%20Job/52/artifact/filename'))
         self._check_requests(jenkins_mock.call_args_list)
 
-    @patch.object(jenkins.Jenkins, 'jenkins_open')
+    @patch.object(jenkins.Jenkins, 'jenkins_open_stream')
+    def test_simple_binary(self, jenkins_mock):
+        jenkins_mock.return_value = self.streamMock(binary=b'\0\1\2')
+        ret = self.j.get_build_artifact(u'Test Job', number='52', artifact="filename")
+        self.assertEqual(ret, b'\0\1\2')
+        self.assertEqual(
+            jenkins_mock.call_args[0][0].url,
+            self.make_url('job/Test%20Job/52/artifact/filename'))
+        self._check_requests(jenkins_mock.call_args_list)
+
+    @patch.object(jenkins.Jenkins, 'jenkins_open_stream')
     def test_in_folder(self, jenkins_mock):
-        jenkins_mock.return_value = '{}'
+        jenkins_mock.return_value = self.streamMock('utf-8', 'ascii')
         ret = self.j.get_build_artifact(u'a Folder/Test Job', number='52', artifact="file name")
-        self.assertEqual(ret, json.loads(jenkins_mock.return_value))
+        self.assertEqual(ret, 'ascii')
         self.assertEqual(
             jenkins_mock.call_args[0][0].url,
             self.make_url('job/a%20Folder/job/Test%20Job/52/artifact/file%20name'))
         self._check_requests(jenkins_mock.call_args_list)
 
-    @patch.object(jenkins.Jenkins, 'jenkins_open')
+    @patch.object(jenkins.Jenkins, 'jenkins_open_stream')
     def test_matrix(self, jenkins_mock):
-        jenkins_mock.return_value = '{}'
+        jenkins_mock.return_value = self.streamMock('utf-8', 'ascii')
         ret = self.j.get_build_artifact(u'a Folder/Test Job', number='52/index=matrix',
                                         artifact="file name")
-        self.assertEqual(ret, json.loads(jenkins_mock.return_value))
+        self.assertEqual(ret, 'ascii')
         self.assertEqual(
             jenkins_mock.call_args[0][0].url,
             self.make_url('job/a%20Folder/job/Test%20Job/52/index=matrix/artifact/file%20name'))
@@ -763,26 +788,14 @@ class JenkinsBuildArtifactUrlTest(JenkinsTestBase):
         ret = self.j.get_build_artifact(u'TestJob', number='52', artifact="filename")
         self.assertIsNone(ret)
 
-    @patch.object(jenkins.Jenkins, 'jenkins_open')
+    @patch.object(jenkins.Jenkins, 'jenkins_open_stream')
     def test_open_return_none(self, jenkins_mock):
-        jenkins_mock.return_value = None
-
+        jenkins_mock.return_value = self.streamMock()
         with self.assertRaises(jenkins.JenkinsException) as context_manager:
             self.j.get_build_artifact(u'TestJob', number='52', artifact="filename")
         self.assertEqual(
             str(context_manager.exception),
             'job[TestJob] number[52] does not exist')
-        self._check_requests(jenkins_mock.call_args_list)
-
-    @patch.object(jenkins.Jenkins, 'jenkins_open')
-    def test_return_invalid_json(self, jenkins_mock):
-        jenkins_mock.return_value = 'Invalid JSON'
-
-        with self.assertRaises(jenkins.JenkinsException) as context_manager:
-            self.j.get_build_artifact(u'TestJob', number='52', artifact="filename")
-        self.assertEqual(
-            str(context_manager.exception),
-            'Could not parse JSON info for job[TestJob] number[52]')
         self._check_requests(jenkins_mock.call_args_list)
 
     @patch('jenkins.requests.Session.send', autospec=True)
