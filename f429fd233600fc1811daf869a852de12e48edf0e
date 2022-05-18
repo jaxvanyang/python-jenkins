@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ede7fe85_8d5865a6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34829
+      },
+      "writtenOn": "2022-05-18T20:05:16Z",
+      "side": 1,
+      "message": "oh well, I just found in the existing tests that it\u0027s already possible to pass the matrix axis in the build number\n\nget_build_console_output(\u0027myJob\u0027, number\u003d\u002752/label\u003dmatrix\u0027)\n\nso this is not a useful change ... though using number as a string is kind of weird",
+      "revId": "f429fd233600fc1811daf869a852de12e48edf0e",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
