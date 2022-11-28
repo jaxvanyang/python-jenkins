@@ -22,7 +22,8 @@
             nodeset: ubuntu-xenial
         - tox-py36:
             nodeset: ubuntu-bionic
-        - jjb-tox-cross-jenkins-job-builder
+        - jjb-tox-cross-jenkins-job-builder:
+            nodeset: ubuntu-xenial
     gate:
       jobs:
         - tox-linters
@@ -33,4 +34,5 @@
             nodeset: ubuntu-xenial
         - tox-py36:
             nodeset: ubuntu-bionic
-        - jjb-tox-cross-jenkins-job-builder
+        - jjb-tox-cross-jenkins-job-builder:
+            nodeset: ubuntu-xenial
