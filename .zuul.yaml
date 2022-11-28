@@ -3,6 +3,7 @@
     name: jjb-tox-cross-jenkins-job-builder
     description: Tests compatibility with master branch of jenkins-job-builder
     parent: tox-py27
+    nodeset: ubuntu-xenial
     required-projects:
       - jjb/python-jenkins
       - jjb/jenkins-job-builder
@@ -10,8 +11,10 @@
 
 - project:
     templates:
-      - build-openstack-docs-pti
-      - openstack-cover-jobs
+      - build-openstack-docs-pti:
+        nodeset: ubuntu-xenial
+      - openstack-cover-jobs:
+        nodeset: ubuntu-xenial
       - openstack-python35-jobs
       - openstack-python36-jobs
     check:
