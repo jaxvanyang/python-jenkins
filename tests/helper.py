@@ -1,7 +1,7 @@
 import functools
 import json
-from multiprocessing import Process
-from multiprocessing import Queue
+from multiprocess import Process
+from multiprocess import Queue
 import traceback
 
 from mock import Mock
