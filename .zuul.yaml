@@ -3,6 +3,7 @@
     name: jjb-tox-cross-jenkins-job-builder
     description: Tests compatibility with master branch of jenkins-job-builder
     parent: tox-py27
+    nodeset: ubuntu-xenial
     required-projects:
       - jjb/python-jenkins
       - jjb/jenkins-job-builder
@@ -12,10 +13,12 @@
     check:
       jobs:
         # Only in check:
-        - tox-cover
+        - tox-cover:
+            nodeset: ubuntu-xenial
         # Jobs common to gate pipeline
         - tox-linters
-        - opendev-tox-docs
+        - opendev-tox-docs:
+            nodeset: ubuntu-xenial
         - tox-py27:
             nodeset: ubuntu-xenial
         - tox-py35:
@@ -26,7 +29,8 @@
     gate:
       jobs:
         - tox-linters
-        - opendev-tox-docs
+        - opendev-tox-docs:
+            nodeset: ubuntu-xenial
         - tox-py27:
             nodeset: ubuntu-xenial
         - tox-py35:
