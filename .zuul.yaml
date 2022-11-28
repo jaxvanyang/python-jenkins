@@ -22,6 +22,14 @@
             nodeset: ubuntu-xenial
         - tox-py36:
             nodeset: ubuntu-bionic
+        - tox-py37:
+            nodeset: ubuntu-bionic
+        - tox-py38:
+            nodeset: ubuntu-focal
+        - tox-py39:
+            nodeset: ubuntu-focal
+        - tox-py310:
+            nodeset: ubuntu-jammy
         - jjb-tox-cross-jenkins-job-builder
     gate:
       jobs:
@@ -33,4 +41,12 @@
             nodeset: ubuntu-xenial
         - tox-py36:
             nodeset: ubuntu-bionic
+        - tox-py37:
+            nodeset: ubuntu-bionic
+        - tox-py38:
+            nodeset: ubuntu-focal
+        - tox-py39:
+            nodeset: ubuntu-focal
+        - tox-py310:
+            nodeset: ubuntu-jammy
         - jjb-tox-cross-jenkins-job-builder
