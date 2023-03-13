@@ -42,7 +42,7 @@
 import operator
 import re
 
-import pkg_resources
+import packaging
 
 
 class Plugin(dict):
@@ -76,14 +76,14 @@ class PluginVersion(str):
         '''Parse plugin version and store it for comparison.'''
 
         self._version = version
-        self.parsed_version = pkg_resources.parse_version(
+        self.parsed_version = packaging.version.parse(
             self.__convert_version(version))
 
     def __convert_version(self, version):
         return self._VERSION_RE.sub(r'\g<1>.preview', str(version))
 
     def __compare(self, op, version):
-        return op(self.parsed_version, pkg_resources.parse_version(
+        return op(self.parsed_version, packaging.version.parse(
             self.__convert_version(version)))
 
     def __le__(self, version):
