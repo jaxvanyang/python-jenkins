@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "22ac5486_de7b9d03",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2023-03-16T20:09:27Z",
+      "side": 1,
+      "message": "From my comment on https://review.opendev.org/c/jjb/python-jenkins/+/865776\n\n\u003e Locally I can reproduce the failure it comes from v66.0.0 https://setuptools.pypa.io/en/latest/history.html#v66-0-0\n\u003e \n\u003e 15 Jan 2023\n\u003e    Breaking Changes\n\u003e \n\u003e #2497: Support for PEP 440 non-conforming versions has been removed. Environments containing packages with non-conforming versions may fail or the packages may not be recognized.\n\n",
+      "revId": "28b2499e4fb7f24aaa5969172d2a1afb55dbb721",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "03a4256c_ca3a81f9",
