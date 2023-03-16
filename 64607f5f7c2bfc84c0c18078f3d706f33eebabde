@@ -16,6 +16,24 @@
       "message": "I suspect you need to indent these lines, under dict key.",
       "revId": "64607f5f7c2bfc84c0c18078f3d706f33eebabde",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5fd08e22_f0e255de",
+        "filename": ".zuul.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 34567
+      },
+      "writtenOn": "2023-03-16T16:48:29Z",
+      "side": 1,
+      "message": "```\nIn [276]: yaml.safe_load(\u0027\u0027\u0027\n     ...: root:\n     ...: - a:\n     ...:   b: c\n     ...:   \u0027\u0027\u0027)\nOut[276]: {\u0027root\u0027: [{\u0027a\u0027: None, \u0027b\u0027: \u0027c\u0027}]}\n\n```",
+      "parentUuid": "c1415213_79d8c026",
+      "revId": "64607f5f7c2bfc84c0c18078f3d706f33eebabde",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
