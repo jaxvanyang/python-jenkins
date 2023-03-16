@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "03a4256c_ca3a81f9",
+        "filename": "jenkins/plugins.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2023-03-16T15:47:30Z",
+      "side": 1,
+      "message": "That should be:\n\n import packaging.version",
+      "range": {
+        "startLine": 45,
+        "startChar": 0,
+        "endLine": 45,
+        "endChar": 16
+      },
+      "revId": "28b2499e4fb7f24aaa5969172d2a1afb55dbb721",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "63abd45c_8882f036",
+        "filename": "jenkins/plugins.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2023-03-16T15:47:30Z",
+      "side": 1,
+      "message": "I have hit the issue previously when parsing a list of Jenkins plugins. Their version do not match whatever PEP defines a version and thus some versions might end up being invalid.\n\n import pkg_resources\n import packaging.version\n \n versions \u003d [\u00271.4.4\u0027, \u00271.5\u0027, \u00274.5.13-138.v4e7d9a_7b_a_e61\u0027]\n \n for v in versions:\n     print(\u0027Version\u0027, v, end\u003d\u0027 \u0027)\n     try:\n         pkg_resources.parse_version(v)\n         print(\u0027OK\u0027)\n         packaging.version.parse(v)\n         print(\u0027OK\u0027)\n     except Exception as e:\n         print(\u0027Exception\u0027, e)\n\nWhich gives:\n\n Version 1.4.4                                                                                                                                                                                 \n OK                                                                                                                                                                                            \n OK                                                                                                                                                                                            \n Version 1.5                                                                                                                                                                                   \n OK                                                                                                                                                                                            \n OK                                                                                                                                                                                            \n Version 4.5.13-138.v4e7d9a_7b_a_e61                                                                                                                                                           \n OK                                                                                                                                                                                            \n Exception Invalid version: \u00274.5.13-138.v4e7d9a_7b_a_e61\u0027",
+      "range": {
+        "startLine": 79,
+        "startChar": 0,
+        "endLine": 80,
+        "endChar": 44
+      },
+      "revId": "28b2499e4fb7f24aaa5969172d2a1afb55dbb721",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
