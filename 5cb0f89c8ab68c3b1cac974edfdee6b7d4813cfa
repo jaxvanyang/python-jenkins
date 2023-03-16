@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "69e302c3_e0f57cb2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2023-03-16T19:49:07Z",
+      "side": 1,
+      "message": "The openstack-tox-cover fails when using pkg_resources version system. I guess something changed in there and we have a patch to remove it entirely ( https://review.opendev.org/c/jjb/python-jenkins/+/877243 ).\n\nLooking at the openstack-tox-cover job, it comes with setuptools 67.4.0 while openstack-tox-py36 uses setuptools\u003d\u003d59.6.0. Locally I can reproduce the failure it comes from v66.0.0 https://setuptools.pypa.io/en/latest/history.html#v66-0-0\n\n\u003e 15 Jan 2023\n\u003e Breaking Changes\n\u003e \n\u003e #2497: Support for PEP 440 non-conforming versions has been removed. Environments containing packages with non-conforming versions may fail or the packages may not be recognized.\n\n",
+      "revId": "5cb0f89c8ab68c3b1cac974edfdee6b7d4813cfa",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
