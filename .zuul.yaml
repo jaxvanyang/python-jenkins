@@ -9,18 +9,28 @@
     voting: true
 
 - project:
-    templates:
-      - build-openstack-docs-pti
-      - openstack-cover-jobs
-      - openstack-python35-jobs
-      - openstack-python36-jobs
     check:
       jobs:
-        - openstack-tox-linters
-        - openstack-tox-py27
+        # Only in check:
+        - tox-cover
+        # Jobs common to gate pipeline
+        - tox-linters
+        - opendev-tox-docs
+        - tox-py27:
+          nodeset: ubuntu-xenial
+        - tox-py35:
+          nodeset: ubuntu-xenial
+        - tox-py36:
+          nodeset: ubuntu-bionic
         - jjb-tox-cross-jenkins-job-builder
     gate:
       jobs:
-        - openstack-tox-linters
-        - openstack-tox-py27
+        - tox-linters
+        - opendev-tox-docs
+        - tox-py27:
+          nodeset: ubuntu-xenial
+        - tox-py35:
+          nodeset: ubuntu-xenial
+        - tox-py36:
+          nodeset: ubuntu-bionic
         - jjb-tox-cross-jenkins-job-builder
