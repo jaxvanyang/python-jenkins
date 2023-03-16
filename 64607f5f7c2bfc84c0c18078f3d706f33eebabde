@@ -70,6 +70,24 @@
       "parentUuid": "7a0b6cf1_68b4367d",
       "revId": "64607f5f7c2bfc84c0c18078f3d706f33eebabde",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "22623bac_97879b45",
+        "filename": ".zuul.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2023-03-16T17:08:59Z",
+      "side": 1,
+      "message": "Possibly, then I found out Zuul apparently removed that job attribute entirely: https://zuul-ci.org/docs/zuul/latest/releasenotes.html#relnotes-4-7-0-deprecation-notes ;)\n\nI am going to rebase on top of https://review.opendev.org/c/jjb/python-jenkins/+/865776 which is trying to fix a few other issues.",
+      "parentUuid": "cda5a9b7_95913f0c",
+      "revId": "64607f5f7c2bfc84c0c18078f3d706f33eebabde",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
