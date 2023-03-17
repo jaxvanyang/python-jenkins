@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3457e73c_0e975d3f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2023-03-17T10:41:02Z",
+      "side": 1,
+      "message": "We should go with https://pypi.org/project/semantic-version/ , see my rationale in the diff comment ;)",
+      "revId": "68bc075c934f94925900743a7fb8befae3ccffd2",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
