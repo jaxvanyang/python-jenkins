@@ -1528,6 +1528,36 @@ class Jenkins(object):
                                    'executor': executor_number})
         return builds
 
+    def get_nodes_with_info(self, depth=0):
+        '''Get a list of nodes connected to the Master
+
+        Each node is a dictionary of node info
+
+        :returns: List of nodes
+        '''
+        try:
+            nodes_data = json.loads(self.jenkins_open(
+                requests.Request('GET', self._build_url(NODE_LIST, locals()))))
+            nodes_info = []
+            for c in nodes_data["computer"]:
+                node_info = {}
+                node_info['name'] = c["displayName"]
+                node_info['description'] = c["description"]
+                node_info['assignedLabels'] = c["assignedLabels"]
+                node_info['idle'] = c["idle"]
+                node_info['offline'] = c["offline"]
+                node_info['offlineCause'] = c['offlineCause']
+                node_info['offlineCauseReason'] = c["offlineCauseReason"]
+                node_info['temporarilyOffline'] = c["temporarilyOffline"]
+                nodes_info.append(node_info)
+            return nodes_info
+        except (req_exc.HTTPError, BadStatusLine):
+            raise BadHTTPException("Error communicating with server[%s]"
+                                   % self.server)
+        except ValueError:
+            raise JenkinsException("Could not parse JSON info for server[%s]"
+                                   % self.server)
+
     def get_nodes(self, depth=0):
         '''Get a list of nodes connected to the Master
 
