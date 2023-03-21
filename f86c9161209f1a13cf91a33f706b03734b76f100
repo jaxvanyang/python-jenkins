@@ -16,6 +16,23 @@
       "message": "recheck\nThe tests are failing for no package \u0027python-dev\u0027 and file/directory \u0027tox\u0027 exists. This is not related to the changes I made. Please recheck.",
       "revId": "f86c9161209f1a13cf91a33f706b03734b76f100",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "03c97e39_e7c162a1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2023-03-21T09:24:49Z",
+      "side": 1,
+      "message": "Indeed, the test jobs are broken and we have a fix pending at https://review.opendev.org/c/jjb/python-jenkins/+/865776 ;)",
+      "revId": "f86c9161209f1a13cf91a33f706b03734b76f100",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
