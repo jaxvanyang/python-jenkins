@@ -50,6 +50,23 @@
       "message": "recheck after CI fix https://review.opendev.org/c/jjb/python-jenkins/+/865776",
       "revId": "f86c9161209f1a13cf91a33f706b03734b76f100",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "244508c1_ffdd1465",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35866
+      },
+      "writtenOn": "2023-03-21T11:00:23Z",
+      "side": 1,
+      "message": "Thank you for informing me about this. Do you happen to have any information regarding when it will be resolved?",
+      "revId": "f86c9161209f1a13cf91a33f706b03734b76f100",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
