@@ -85,6 +85,24 @@
       "parentUuid": "244508c1_ffdd1465",
       "revId": "f86c9161209f1a13cf91a33f706b03734b76f100",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b0f9f204_143e0f5c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35866
+      },
+      "writtenOn": "2023-03-21T11:15:41Z",
+      "side": 1,
+      "message": "Yes, I will push the changes after fixing the issue.\nCertainly, please inform me if any further changes are necessary during your review of the code.",
+      "parentUuid": "3e46ae6e_fd285879",
+      "revId": "f86c9161209f1a13cf91a33f706b03734b76f100",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
