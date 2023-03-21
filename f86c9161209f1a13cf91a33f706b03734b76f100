@@ -67,6 +67,24 @@
       "message": "Thank you for informing me about this. Do you happen to have any information regarding when it will be resolved?",
       "revId": "f86c9161209f1a13cf91a33f706b03734b76f100",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3e46ae6e_fd285879",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2023-03-21T11:06:24Z",
+      "side": 1,
+      "message": "We got CI fixed via https://review.opendev.org/c/jjb/python-jenkins/+/865776 (which I approved after I got ping on IRC earlier today).\n\nIt is now failing on lines being too long which should be able to reproduce locally by running:\n\n tox -e linters\n\nAs for reviewing the code itself, it will need a bit of a time since this repository is not that active anymore. I will look at doing a pass of review over the week-end.",
+      "parentUuid": "244508c1_ffdd1465",
+      "revId": "f86c9161209f1a13cf91a33f706b03734b76f100",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
