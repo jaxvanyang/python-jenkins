@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a41a4332_361db34d",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 1553,
+      "author": {
+        "id": 35874
+      },
+      "writtenOn": "2023-03-23T02:59:57Z",
+      "side": 1,
+      "message": "Small suggestion\nThe Pythonic way doing this is list comprehension. May improve the performance in large scale data iteration.\nLike\n\n```\nreturn [\n    {\n        \"name\": c[\"displayName\"],\n        \"description\": c[\"description\"],\n        ...\n    }\n    for c in nodes_data[\"computer\"]\n]\n```",
+      "revId": "bb772c3497d4b7891060993c7acadd15dcfdb5f5",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
