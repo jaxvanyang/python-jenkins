@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "805a4c3d_734082fd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35866
+      },
+      "writtenOn": "2023-03-24T06:15:41Z",
+      "side": 1,
+      "message": "Though all parameters are significant, I never added them because they can be fetched for the individual node by get_node_info().\n\nI\u0027ve excluded some parameters from the node information, which were large, to reduce the time and payload when rest calls are made. For example, \"monitorData\" is a parameter containing much information.\n\nI\u0027ve included the parameters of utmost importance; if you think some other parameters are essential, please let me know, and I\u0027ll add them too. \n\nThe goal/ need of the function has been mentioned in the commit description.",
+      "revId": "5eb8afaf9b1ff61107a4eb01b7160dd5271accbb",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
