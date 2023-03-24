@@ -16,6 +16,24 @@
       "message": "Small suggestion\nThe Pythonic way doing this is list comprehension. May improve the performance in large scale data iteration.\nLike\n\n```\nreturn [\n    {\n        \"name\": c[\"displayName\"],\n        \"description\": c[\"description\"],\n        ...\n    }\n    for c in nodes_data[\"computer\"]\n]\n```",
       "revId": "bb772c3497d4b7891060993c7acadd15dcfdb5f5",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "70e2341e_4b2602be",
+        "filename": "jenkins/__init__.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 1553,
+      "author": {
+        "id": 35866
+      },
+      "writtenOn": "2023-03-24T06:17:54Z",
+      "side": 1,
+      "message": "I\u0027ve added the mentioned changes; please check and let me know if you have further suggestions.",
+      "parentUuid": "a41a4332_361db34d",
+      "revId": "bb772c3497d4b7891060993c7acadd15dcfdb5f5",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
