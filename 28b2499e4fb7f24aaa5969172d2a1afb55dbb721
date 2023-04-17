@@ -86,6 +86,30 @@
       },
       "revId": "28b2499e4fb7f24aaa5969172d2a1afb55dbb721",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "66e67122_e5d0fc8e",
+        "filename": "jenkins/plugins.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 9369
+      },
+      "writtenOn": "2023-04-17T04:49:30Z",
+      "side": 1,
+      "message": "semantic_version isn\u0027t nearly lax enough to make the existing test suite pass. Pasting some of the underlying code from LegacyVersion from packaging before it was removed makes the existing tests pass.",
+      "parentUuid": "2509d39c_6ee2dd71",
+      "range": {
+        "startLine": 79,
+        "startChar": 0,
+        "endLine": 80,
+        "endChar": 44
+      },
+      "revId": "28b2499e4fb7f24aaa5969172d2a1afb55dbb721",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
