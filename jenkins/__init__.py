@@ -1194,7 +1194,7 @@ class Jenkins(object):
         folder_url, short_name = self._get_job_folder(name)
         self.jenkins_open(requests.Request(
             'POST', self._build_url(SET_JOB_BUILD_NUMBER, locals()),
-            data=("nextBuildNumber=%d" % number).encode('utf-8')))
+            data=[("nextBuildNumber", number), ("Submit", ""), ("Jenkins-Crumb", self.crumb['crumb'])]))
 
     def job_exists(self, name):
         '''Check whether a job exists
