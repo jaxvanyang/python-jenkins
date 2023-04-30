@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f90667cb_04b148d6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 35972
+      },
+      "writtenOn": "2023-04-30T10:04:49Z",
+      "side": 1,
+      "message": "Zuul produces two errors, but I don\u0027t see how they are related to this changeset. 🤔",
+      "revId": "93acddd5f9c40a707cf5eb1b86d8dd6a3f69c695",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
