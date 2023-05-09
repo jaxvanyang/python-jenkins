@@ -1,5 +1,4 @@
 import json
-import socket
 
 from mock import patch
 import six
@@ -68,7 +67,7 @@ class JenkinsConstructorTest(JenkinsTestBase):
 
     def test_default_timeout(self):
         j = jenkins.Jenkins('{0}'.format(self.base_url))
-        self.assertEqual(j.timeout, socket._GLOBAL_DEFAULT_TIMEOUT)
+        self.assertEqual(j.timeout, jenkins.DEFAULT_TIMEOUT)
 
     def test_custom_timeout(self):
         j = jenkins.Jenkins('{0}'.format(self.base_url), timeout=300)
