@@ -16,6 +16,23 @@
       "message": "I\u0027ve tested this on Python 3.11.3 with urllib3 1.26.12 and 2.0.2, and it works with both 1.x and 2.x.",
       "revId": "85851b0d2b03f176e13f25f46419b0bafc6770c6",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0b5803cf_918383d9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34567
+      },
+      "writtenOn": "2023-05-25T08:19:28Z",
+      "side": 1,
+      "message": "recheck",
+      "revId": "85851b0d2b03f176e13f25f46419b0bafc6770c6",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
