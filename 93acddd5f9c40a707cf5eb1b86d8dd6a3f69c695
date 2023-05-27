@@ -34,6 +34,23 @@
       "parentUuid": "f90667cb_04b148d6",
       "revId": "93acddd5f9c40a707cf5eb1b86d8dd6a3f69c695",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f8d6b2dd_a75905b8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34829
+      },
+      "writtenOn": "2023-05-27T14:37:40Z",
+      "side": 1,
+      "message": "looks good to me (code is indeed identical to https://github.com/pypa/packaging/blob/21.3/packaging/version.py)",
+      "revId": "93acddd5f9c40a707cf5eb1b86d8dd6a3f69c695",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
