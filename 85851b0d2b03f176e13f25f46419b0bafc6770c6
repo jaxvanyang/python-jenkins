@@ -33,6 +33,23 @@
       "message": "recheck",
       "revId": "85851b0d2b03f176e13f25f46419b0bafc6770c6",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d6e17d7d_2f33540e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34829
+      },
+      "writtenOn": "2023-05-27T14:02:16Z",
+      "side": 1,
+      "message": "if you rebase with https://review.opendev.org/c/jjb/python-jenkins/+/865915 that should take care of some of the CI failures",
+      "revId": "85851b0d2b03f176e13f25f46419b0bafc6770c6",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
