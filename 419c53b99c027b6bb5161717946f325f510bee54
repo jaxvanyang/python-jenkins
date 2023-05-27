@@ -33,6 +33,24 @@
       "message": "should we remove tests on 27, 35, 36 at the same time ? (and maybe even 37 : keep only 38 to 310 should be enough)",
       "revId": "419c53b99c027b6bb5161717946f325f510bee54",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "49975201_788701f0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34829
+      },
+      "writtenOn": "2023-05-27T16:49:02Z",
+      "side": 1,
+      "message": "some of the issues seem caused by requests_mock not yet compatible with urllib3\u003e\u003d2\nhttps://github.com/jamielennox/requests-mock/issues/228",
+      "parentUuid": "d257c088_a21c08a0",
+      "revId": "419c53b99c027b6bb5161717946f325f510bee54",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
