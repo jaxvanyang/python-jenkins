@@ -69,6 +69,24 @@
       "parentUuid": "74c71cbe_0ac6856b",
       "revId": "d3399ace708a3168000ee9c1a9d0e657ead0d686",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "05f0da90_8f2ebb1a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 13
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34829
+      },
+      "writtenOn": "2023-05-27T16:22:09Z",
+      "side": 1,
+      "message": "yes: did just that in https://review.opendev.org/c/jjb/python-jenkins/+/884566",
+      "parentUuid": "43ca52d0_1d60a862",
+      "revId": "d3399ace708a3168000ee9c1a9d0e657ead0d686",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
