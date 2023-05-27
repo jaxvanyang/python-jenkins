@@ -16,6 +16,23 @@
       "message": "I tried to do the fix without the dependency to https://review.opendev.org/c/jjb/python-jenkins/+/877699 because I have no idea if this is a good move or not. (I guess it is but wanted to see if I could do it without depending on it)\n\nanyway, it did not work : cf patch 11 \u0026 12\nplease advise if this would be a better approach",
       "revId": "d3399ace708a3168000ee9c1a9d0e657ead0d686",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "74c71cbe_0ac6856b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 13
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34829
+      },
+      "writtenOn": "2023-05-27T14:00:41Z",
+      "side": 1,
+      "message": "maybe jjb-tox-cross-jenkins-job-builder should depend on a more recent version\n\nI tried to add py37 to py310 : cf patch 5 \nbut it failed",
+      "revId": "d3399ace708a3168000ee9c1a9d0e657ead0d686",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
