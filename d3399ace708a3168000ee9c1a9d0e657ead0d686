@@ -33,6 +33,24 @@
       "message": "maybe jjb-tox-cross-jenkins-job-builder should depend on a more recent version\n\nI tried to add py37 to py310 : cf patch 5 \nbut it failed",
       "revId": "d3399ace708a3168000ee9c1a9d0e657ead0d686",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5f1ab34d_b732ea20",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 13
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34829
+      },
+      "writtenOn": "2023-05-27T16:18:13Z",
+      "side": 1,
+      "message": "additional effort for py37 to py310 done in https://review.opendev.org/c/jjb/python-jenkins/+/884566",
+      "parentUuid": "74c71cbe_0ac6856b",
+      "revId": "d3399ace708a3168000ee9c1a9d0e657ead0d686",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
