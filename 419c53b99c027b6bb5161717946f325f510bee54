@@ -16,6 +16,23 @@
       "message": "tests failed with urllib3 2.0.2 (patchset 1)\nand they still fail even with https://review.opendev.org/c/jjb/python-jenkins/+/882757 fix\n\nmaybe the mock directives needs to be adapted for that version\n\nworked it arround with urllib3\u003c2 in test-requirements : needs more work",
       "revId": "419c53b99c027b6bb5161717946f325f510bee54",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "55e8d34f_395a65c6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34829
+      },
+      "writtenOn": "2023-05-27T16:25:08Z",
+      "side": 1,
+      "message": "should we remove tests on 27, 35, 36 at the same time ? (and maybe even 37 : keep only 38 to 310 should be enough)",
+      "revId": "419c53b99c027b6bb5161717946f325f510bee54",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
