@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b17e7396_11e161a7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 13
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34829
+      },
+      "writtenOn": "2023-05-27T13:58:14Z",
+      "side": 1,
+      "message": "I tried to do the fix without the dependency to https://review.opendev.org/c/jjb/python-jenkins/+/877699 because I have no idea if this is a good move or not. (I guess it is but wanted to see if I could do it without depending on it)\n\nanyway, it did not work : cf patch 11 \u0026 12\nplease advise if this would be a better approach",
+      "revId": "d3399ace708a3168000ee9c1a9d0e657ead0d686",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
