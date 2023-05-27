@@ -18,6 +18,24 @@
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "83462500_fb4ff708",
+        "filename": ".zuul.yaml",
+        "patchSetId": 6
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 34829
+      },
+      "writtenOn": "2023-05-27T13:26:08Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ca2c37d9_283c5356",
+      "revId": "0de1a998ae013bcb50a442d89f7dd00e7d12a5c1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "7ae710da_777527df",
@@ -31,6 +49,24 @@
       "writtenOn": "2023-05-27T12:08:51Z",
       "side": 1,
       "message": "And here.",
+      "revId": "0de1a998ae013bcb50a442d89f7dd00e7d12a5c1",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4134b7f8_8c2b822a",
+        "filename": ".zuul.yaml",
+        "patchSetId": 6
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 34829
+      },
+      "writtenOn": "2023-05-27T13:26:08Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7ae710da_777527df",
       "revId": "0de1a998ae013bcb50a442d89f7dd00e7d12a5c1",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
