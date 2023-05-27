@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4b841d09_e7caf2ac",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 14
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34829
+      },
+      "writtenOn": "2023-05-27T14:22:02Z",
+      "side": 1,
+      "message": "it\u0027s been sitting here for a year now ...\n\nany chance this could be in a future version soon ? How can I get the core developers to consider it ?\n\nthis is fixing a blocking issue (build artifacts are usually not json formatted)",
+      "revId": "dbb4efd014b7e4ef78569e72fbfc57d4e9ea9fe5",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
