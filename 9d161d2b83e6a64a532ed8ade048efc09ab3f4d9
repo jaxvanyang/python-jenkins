@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "40ba8c52_ec9871ff",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34829
+      },
+      "writtenOn": "2023-06-08T19:56:08Z",
+      "side": 1,
+      "message": "I rebased it by mistake while working on https://review.opendev.org/c/jjb/python-jenkins/+/884566\nI reverted to put the original base back\n\nbut now tests are failing : https://review.opendev.org/c/jjb/python-jenkins/+/865915 takes care of that",
+      "revId": "9d161d2b83e6a64a532ed8ade048efc09ab3f4d9",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
