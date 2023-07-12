@@ -1798,6 +1798,8 @@ class Jenkins(object):
             return None
         else:
             actual = json.loads(response)['name']
+            if actual == 'all':
+                actual = 'All'
             if actual != short_name:
                 raise JenkinsException(
                     'Jenkins returned an unexpected view name %s '
