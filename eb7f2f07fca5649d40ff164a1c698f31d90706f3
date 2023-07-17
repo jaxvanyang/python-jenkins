@@ -20,6 +20,24 @@
     {
       "unresolved": false,
       "key": {
+        "uuid": "94ccb3b8_f02a5d69",
+        "filename": ".zuul.yaml",
+        "patchSetId": 6
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 34829
+      },
+      "writtenOn": "2023-07-17T12:59:48Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2bafa32f_08f4feb6",
+      "revId": "eb7f2f07fca5649d40ff164a1c698f31d90706f3",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
         "uuid": "a4c70a34_1bb23df3",
         "filename": "/PATCHSET_LEVEL",
         "patchSetId": 6
@@ -54,6 +72,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "ffdcd751_4da536f1",
+        "filename": "test-requirements.txt",
+        "patchSetId": 6
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 34829
+      },
+      "writtenOn": "2023-07-17T12:59:48Z",
+      "side": 1,
+      "message": "right I removed it\nthough, I needed it to be able to test locally in my environment without errors.",
+      "parentUuid": "1020a471_2eb59fbf",
+      "revId": "eb7f2f07fca5649d40ff164a1c698f31d90706f3",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "62ff7f65_a7f58bd6",
         "filename": "tests/test_jenkins.py",
         "patchSetId": 6
@@ -65,6 +101,24 @@
       "writtenOn": "2023-07-17T12:32:13Z",
       "side": 1,
       "message": "I have incorporated the use of `jenkins.DEFAULT_TIMEOUT` in https://review.opendev.org/c/jjb/python-jenkins/+/882757 :)",
+      "revId": "eb7f2f07fca5649d40ff164a1c698f31d90706f3",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1553f931_0e3d3d18",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 34829
+      },
+      "writtenOn": "2023-07-17T12:59:48Z",
+      "side": 1,
+      "message": "rebased to get it",
+      "parentUuid": "62ff7f65_a7f58bd6",
       "revId": "eb7f2f07fca5649d40ff164a1c698f31d90706f3",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
