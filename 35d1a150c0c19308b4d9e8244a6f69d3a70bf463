@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "932b591a_a3c990fe",
+        "filename": ".zuul.yaml",
+        "patchSetId": 17
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2023-07-17T11:41:23Z",
+      "side": 1,
+      "message": "I have moved all those `nodeset: ubuntu-xenial` to the parent change https://review.opendev.org/c/jjb/python-jenkins/+/877699/8..9  in the hope that fixes the CI build there.",
+      "revId": "35d1a150c0c19308b4d9e8244a6f69d3a70bf463",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
