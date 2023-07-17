@@ -119,6 +119,24 @@
       "message": "Using https://opendev.org/zuul/zuul-jobs/src/branch/master/zuul-tests.d/project.yaml as a reference, looks like like py36 and later need different nodesets than ubuntu-xenial.",
       "revId": "db2d5f0f3513c84f8660bb4148e89710bca6789b",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7a3d6127_9c9dc1e5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34829
+      },
+      "writtenOn": "2023-07-17T13:36:43Z",
+      "side": 1,
+      "message": "I saw other projects use ubuntu-bionic for 3.6 \u0026 3.7, ubuntu-focal for 3.8 \u0026 3.9 \u0026 ubuntu-jammy for 3.10\nfor example https://opendev.org/jjb/jenkins-job-builder/src/branch/master/.zuul.yaml (they don\u0027t explicitely set ubuntu-jammy for 3.10 but it might be the default one these days)\n\nit worked with patchset5, I\u0027m reverting to that",
+      "parentUuid": "11fbd78a_e5891d4b",
+      "revId": "db2d5f0f3513c84f8660bb4148e89710bca6789b",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
