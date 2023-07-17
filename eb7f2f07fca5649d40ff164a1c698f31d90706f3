@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2bafa32f_08f4feb6",
+        "filename": ".zuul.yaml",
+        "patchSetId": 6
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2023-07-17T12:32:13Z",
+      "side": 1,
+      "message": "I think all those `nodeset: ubuntu-xenial` have been added by merged change https://review.opendev.org/c/jjb/python-jenkins/+/877699/",
+      "revId": "eb7f2f07fca5649d40ff164a1c698f31d90706f3",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a4c70a34_1bb23df3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2023-07-17T12:32:13Z",
+      "side": 1,
+      "message": "I guess this change got amended with multiple modifications until it passed on CI. The fixes are available several small changes and as such should be rebased to only include the addition of new python versions :)   Maybe once the other changes got merged if they are needed.",
+      "revId": "eb7f2f07fca5649d40ff164a1c698f31d90706f3",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1020a471_2eb59fbf",
+        "filename": "test-requirements.txt",
+        "patchSetId": 6
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2023-07-17T12:32:13Z",
+      "side": 1,
+      "message": "multiprocess is proposed in another change: https://review.opendev.org/c/jjb/python-jenkins/+/865915",
+      "revId": "eb7f2f07fca5649d40ff164a1c698f31d90706f3",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "62ff7f65_a7f58bd6",
+        "filename": "tests/test_jenkins.py",
+        "patchSetId": 6
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2023-07-17T12:32:13Z",
+      "side": 1,
+      "message": "I have incorporated the use of `jenkins.DEFAULT_TIMEOUT` in https://review.opendev.org/c/jjb/python-jenkins/+/882757 :)",
+      "revId": "eb7f2f07fca5649d40ff164a1c698f31d90706f3",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
