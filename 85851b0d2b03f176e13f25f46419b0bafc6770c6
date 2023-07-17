@@ -67,6 +67,23 @@
       "message": "in tests/test-jenkins.py\n\n`        self.assertEqual(j.timeout, socket._GLOBAL_DEFAULT_TIMEOUT)`\nshould be\n`        self.assertEqual(j.timeout, jenkins.DEFAULT_TIMEOUT)`",
       "revId": "85851b0d2b03f176e13f25f46419b0bafc6770c6",
       "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1a81f5f4_974e4df2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2023-07-17T12:12:39Z",
+      "side": 1,
+      "message": "recheck after CI environment fix got merged: https://review.opendev.org/c/jjb/python-jenkins/+/877699",
+      "revId": "85851b0d2b03f176e13f25f46419b0bafc6770c6",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
     }
   ]
 }
