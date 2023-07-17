@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "213bfed5_3b6e4005",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2023-07-17T13:20:50Z",
+      "side": 1,
+      "message": "Thank you Guillaume for the removal of the unused `import socket` statement !",
+      "revId": "ba9f06e0c2381f6506a92e9c0553b2f475975a18",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
