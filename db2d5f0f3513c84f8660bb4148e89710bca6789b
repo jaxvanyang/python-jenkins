@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "11fbd78a_e5891d4b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 2475
+      },
+      "writtenOn": "2023-07-17T13:26:37Z",
+      "side": 1,
+      "message": "The jobs fail apparently due to missing pythonXX-dev packages :-\\\n\n* No package matching \u0027python3.7-dev\u0027 is available\n* No package matching \u0027python3.6-dev\u0027 is available\n* No package matching \u0027python3.10-dev\u0027 is available\n\nI guess because Ubuntu Xenial does not have those versions of python? I don\u0027t know how to set them up or whether other nodes exists with multiple python versions available.",
+      "revId": "db2d5f0f3513c84f8660bb4148e89710bca6789b",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
