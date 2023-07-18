@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6a7aadd6_802da8c4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 34567
+      },
+      "writtenOn": "2023-07-18T06:39:35Z",
+      "side": 1,
+      "message": "Anil, have you tried this patchset with your Jenkins version? Does it fix your problem?",
+      "revId": "a5f7431e063e002d9269d72f017f6f9118eff307",
+      "serverId": "4a232e18-c5a9-48ee-94c0-e04e7cca6543"
+    }
+  ]
+}
