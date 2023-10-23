@@ -1,0 +1,11 @@
+Workflow+1: Vsevolod Fedorov <vsevolod.fedorov@gmail.com>
+Verified+2: Zuul
+Code-Review+1: Joel Capitao <jcapitao@redhat.com>
+Code-Review+1: Artem Nikitin <anikitin@networkoptix.com>
+Code-Review+2: Vsevolod Fedorov <vsevolod.fedorov@gmail.com>
+Code-Review+1: gdemengin <gdemengin@gmail.com>
+Submitted-by: Zuul
+Submitted-at: Mon, 23 Oct 2023 07:35:24 +0000
+Reviewed-on: https://review.opendev.org/c/jjb/python-jenkins/+/881904
+Project: jjb/python-jenkins
+Branch: refs/heads/master
