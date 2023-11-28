@@ -1498,7 +1498,7 @@ class Jenkins(object):
         """
         folder_url, short_name = self._get_job_folder(name)
         self.jenkins_open(requests.Request('POST',
-                          self._build_url(DELETE_BUILD, locals()), b''))
+                          self._build_url(DELETE_BUILD, locals())))
 
     def wipeout_job_workspace(self, name):
         """Wipe out workspace for given Jenkins job.
@@ -1508,7 +1508,7 @@ class Jenkins(object):
         folder_url, short_name = self._get_job_folder(name)
         self.jenkins_open(requests.Request('POST',
                           self._build_url(WIPEOUT_JOB_WORKSPACE,
-                                          locals()), b''))
+                                          locals())))
 
     def get_running_builds(self):
         '''Return list of running builds.
