@@ -35,6 +35,8 @@
             nodeset: ubuntu-jammy
         - tox-py311:
             nodeset: ubuntu-jammy
+        - tox-py312:
+            nodeset: ubuntu-jammy
         - jjb-tox-cross-jenkins-job-builder
     gate:
       jobs:
@@ -56,5 +58,7 @@
         - tox-py310:
             nodeset: ubuntu-jammy
         - tox-py311:
+            nodeset: ubuntu-jammy
+        - tox-py312:
             nodeset: ubuntu-jammy
         - jjb-tox-cross-jenkins-job-builder
