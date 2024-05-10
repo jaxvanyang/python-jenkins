@@ -1827,7 +1827,7 @@ class Jenkins(object):
             return None
         else:
             actual = json.loads(response)['name']
-            if actual == 'all':
+            if actual == 'all' and short_name == 'All':
                 actual = 'All'
             if actual != short_name:
                 raise JenkinsException(
