@@ -17,4 +17,4 @@
 
 import pbr.version
 
-version_info = pbr.version.VersionInfo('jenkins')
+version_info = pbr.version.VersionInfo('python-jenkins')
